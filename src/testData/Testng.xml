@@ -4,7 +4,7 @@
 <suite name="example suite 1" verbose="1" >
 <test name="sample">
 <classes>
-<class name="testCases.NewTest">
+<class name="t">
 
 
 

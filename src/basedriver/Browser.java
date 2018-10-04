@@ -9,25 +9,28 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 public class Browser {
 	static WebDriver driver;
 	public static WebDriver startBrowser(String broswername,String url) {
-		if(broswername.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "E:\\practice_selenium_Framework\\Lib\\chromedriver.exe");
-			ChromeOptions options=new ChromeOptions();
-			options.addArguments("--disable-notifications");
-			driver=new ChromeDriver(options);
-			}
-		else if(broswername.equalsIgnoreCase("firefox")){
-		     System.setProperty("webdriver.gecko.driver", "E:\\practice_selenium_Framework\\Lib\\geckodriver.exe");
-		     driver=new FirefoxDriver(); 
-	  }
-	  else if(broswername.equalsIgnoreCase("ie")){
-		  System.setProperty("webdriver.ie.driver", "E:\\practice_selenium_Framework\\Lib\\IEDriverServer.exe");
-		  driver = new InternetExplorerDriver();
-		  }
-	 driver.get(url);
-	 driver.manage().window().maximize();
-	 return driver;
 		
-	}
+			if(broswername.equalsIgnoreCase("IE"))
+			{
+				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Lib//chromedriver.exe");
+				driver=new InternetExplorerDriver();
+			}
+			else if(broswername.equalsIgnoreCase(" Firefox"))
+			{
+				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Lib//geckodriver.exe");
+				driver=new FirefoxDriver();
+			}
+			else if (broswername.equalsIgnoreCase("Chrome")){
+				 System.setProperty("webdriver.chrom.driver", System.getProperty("user.dir")+"//lib//chromedriver.exe");
+			      driver=new ChromeDriver();
+			}
+			
+			driver.get(url);
+			driver.manage().window().maximize();
+			return driver;
+			
+		}
+	
 	public static WebDriver getdriver() {
 		return driver;
 	}

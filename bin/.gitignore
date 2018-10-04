@@ -1,4 +1,5 @@
-/PageObjects/
-/testCases/
-/Config/
-/TestNGfiles/
+/utilities/
+/testData/
+/pageobject/
+/testcases/
+/testngReports/
