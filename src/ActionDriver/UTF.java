@@ -22,64 +22,19 @@ import org.openqa.selenium.support.ui.Select;
 
 
 import basedriver.Browser;
+import utilities.Log4j;
 import utilities.PropertiesReusabuls;
     public class UTF extends Browser {
 	static WebDriver driver=Browser.getdriver();
 	
-	  public static WebElement findElement(String attributeType, String attributeValue ) {
-		if(attributeType.equalsIgnoreCase("id")) {
-			return	driver.findElement(By.id(attributeValue));
-		 }
-		else if(attributeType.equalsIgnoreCase("xpath")) {
-			return driver.findElement(By.xpath(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("className")) {
-		    return driver.findElement(By.className(attributeValue))	;
-		}
-		else if(attributeType.equalsIgnoreCase("cssSelector")) {
-			return driver.findElement(By.cssSelector(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("linkText")) {
-			return driver.findElement(By.linkText(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("partialLinkText")) {
-			return driver.findElement(By.partialLinkText(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("tagName")) {
-			return driver.findElement(By.tagName(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("name")) {
-			return driver.findElement(By.name(attributeValue));
-		}
-		return null;
+	  public static WebElement findElement(String attributeType, String attributeValue ) 
+	  {
+			return	driver.findElement(locator(attributeType,attributeValue));
 		
 	  }
 	  public static List<WebElement> findelements(String attributeType, String attributeValue) {
-		if(attributeType.equalsIgnoreCase("id")) {
-			return	driver.findElements(By.id(attributeValue));
-		 }
-		else if(attributeType.equalsIgnoreCase("xpath")) {
-			return driver.findElements(By.xpath(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("className")) {
-		    return driver.findElements(By.className(attributeValue))	;
-		}
-		else if(attributeType.equalsIgnoreCase("cssSelector")) {
-			return driver.findElements(By.cssSelector(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("linkText")) {
-			return driver.findElements(By.linkText(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("partialLinkText")) {
-			return driver.findElements(By.partialLinkText(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("tagName")) {
-			return driver.findElements(By.tagName(attributeValue));
-		}
-		else if(attributeType.equalsIgnoreCase("name")) {
-			return driver.findElements(By.name(attributeValue));
-		}
-		return null;
+		
+			return	driver.findElements(locator(attributeType,attributeValue));
 		
 	}
 	  public static By locator(String attributeType, String attributeValue){
@@ -317,9 +272,10 @@ import utilities.PropertiesReusabuls;
 	  
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 	  public static void callLog4j(String className) throws Exception {
-		  PropertiesReusabuls properies=new PropertiesReusabuls(System.getProperty("user.dir")+"\\src\\utilities\\Log4j.properies");
+		  PropertiesReusabuls properies=new PropertiesReusabuls(System.getProperty("user.dir")+"\\src\\utilities\\Log4j.properties");
 		  System.out.println(properies.getProperty("log4j.appender.FILE.File"));
 		  properies.setProperty("log4j.appender.FILE.File", ".//src//TestLogs//"+className+".log");
+		  Log4j log=new Log4j();
 	  }
 	  }
 

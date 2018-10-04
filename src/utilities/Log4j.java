@@ -7,7 +7,7 @@ public class Log4j {
 	static Logger log;
 	public Log4j() {
 		log=Logger.getLogger(Log4j.class);
-		PropertyConfigurator.configure("E:\\practice_selenium_Framework\\src\\utilities\\Log4j.properies");
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"\\src\\utilities\\Log4j.properties");
 	   }
 	public static void infoLog(String message){
 		log.info(message);
