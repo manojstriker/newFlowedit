@@ -19,6 +19,7 @@ public class Login
 			UTF.clickelement("partialLinkText", "Login");
 	       UTF.inputText("id", "username", username);
 	       UTF.inputText("id", "password", password);
+	       UTF.clickelement("id", "loginsubmit");
 		}
 		catch (Exception e) {
 			e.printStackTrace();

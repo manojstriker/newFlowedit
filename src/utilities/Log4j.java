@@ -19,8 +19,8 @@ public class Log4j {
    
     
     public static void main(String[] args) {
-		Log4j log=new Log4j();
-		log.infoLog("SSSSSSSSSSSSS");
+		//Log4j log=new Log4j();
+		//log.infoLog("SSSSSSSSSSSSS");
 	}
 	
 }

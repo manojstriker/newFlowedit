@@ -1,5 +1,10 @@
-/utilities/
-/testData/
+/ActionDriver/
+/Configurations/
+/TestNGfiles/
+/basedriver/
 /pageobject/
-/testcases/
+/testCases/
+/testData/
+/testLogs/
 /testngReports/
+/utilities/

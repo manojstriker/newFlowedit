@@ -14,7 +14,7 @@ public class TestCases
 	public void salesValidation()
 	{
 		try {
-			MarketingAutomation market=new MarketingAutomation("", "Testcase");
+			MarketingAutomation market=new MarketingAutomation("MyServices/MarketingAutmation.xml", "Testcase");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

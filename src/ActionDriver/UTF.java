@@ -227,7 +227,9 @@ import utilities.PropertiesReusabuls;
 	  public static void switchtowindowName(String WindowName) {
 			 driver.switchTo().window(WindowName) ;
 		 }
-
+       public static void switchtoDefaletwindow() {
+    	   driver.switchTo().defaultContent();
+       }
 //**<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>**//
 	  public static void alertAcept() {
 		  Alert alert=driver.switchTo().alert();

@@ -23,12 +23,13 @@ public class Browser {
 	}
 	public static WebDriver startBrowser(String broswername,String url) {
 		
-			if(broswername.equalsIgnoreCase("Chrome"))
+			if(broswername.equalsIgnoreCase("chrome"))
 			{
-				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Lib//chromedriver.exe");
-				DesiredCapabilities cap=new DesiredCapabilities().chrome();
-				cap.setJavascriptEnabled(true);
-				driver=new ChromeDriver(cap);
+				 System.setProperty("webdriver.chrom.driver", System.getProperty("user.dir")+"//lib//chromedriver.exe");
+			      driver=new ChromeDriver();
+				//DesiredCapabilities cap=new DesiredCapabilities().chrome();
+				//cap.setJavascriptEnabled(true);
+				//driver=new ChromeDriver();
 			}
 			else if(broswername.equalsIgnoreCase(" Firefox"))
 			{
