@@ -85,6 +85,9 @@ import utilities.PropertiesReusabuls;
 	      String text = driver.getTitle();
 	      return text;
 	    }
+	  public static String getpageSource() {
+		 return driver.getPageSource();
+	  }
 //*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*//
 	
 	  public static void selectByVisibleText(String attributeType,String attributeValue,String text) {
@@ -274,7 +277,7 @@ import utilities.PropertiesReusabuls;
 	  
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>//
 	  public static void callLog4j(String className) throws Exception {
-		  PropertiesReusabuls properies=new PropertiesReusabuls(System.getProperty("user.dir")+"\\src\\utilities\\Log4j.properties");
+		  PropertiesReusabuls properies=new PropertiesReusabuls(System.getProperty("user.dir")+"//src//utilities//Log4j.properties");
 		  System.out.println(properies.getProperty("log4j.appender.FILE.File"));
 		  properies.setProperty("log4j.appender.FILE.File", ".//src//TestLogs//"+className+".log");
 		  Log4j log=new Log4j();

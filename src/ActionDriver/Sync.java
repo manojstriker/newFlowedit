@@ -30,6 +30,12 @@ public class Sync extends UTF {
 			WebDriverWait wait=new WebDriverWait(driver, timesec);
 			wait.until(ExpectedConditions.presenceOfElementLocated(locator(attributeType, attributeValue)));
 	    }
+	  public static void presenceofElementsLocated(String attributeType, String attributeValue,int timesec){
+			WebDriverWait wait=new WebDriverWait(driver, timesec);
+			wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(locator(attributeType, attributeValue)));
+			
+	    }
+	  
 	  public static void elementToBeClickable(String attributeType, String attributeValue,int timesec){
 		    WebDriverWait wait=new WebDriverWait(driver, timesec);
 		    wait.until(ExpectedConditions.elementToBeClickable(locator(attributeType, attributeValue)));

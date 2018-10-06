@@ -16,7 +16,8 @@ public class Browser {
 	static WebDriver driver;
 	
 	public static WebDriver startBrowser() throws IOException {
-		PropertiesReusabuls properies=new PropertiesReusabuls(System.getProperty("user.dir")+"\\src\\Configurations\\config.properties");
+		PropertiesReusabuls properies=new PropertiesReusabuls(System.getProperty("user.dir")+"//src//Configurations//config.properties");
+				//System.getProperty("user.dir")+"\\src\\Configurations\\config.properties");
 		String browser=properies.getProperty("Browser");
 		String url=properies.getProperty("URL");
 		return startBrowser(browser, url);
@@ -26,10 +27,9 @@ public class Browser {
 			if(broswername.equalsIgnoreCase("chrome"))
 			{
 				 System.setProperty("webdriver.chrom.driver", System.getProperty("user.dir")+"//lib//chromedriver.exe");
-			      driver=new ChromeDriver();
-				//DesiredCapabilities cap=new DesiredCapabilities().chrome();
-				//cap.setJavascriptEnabled(true);
-				//driver=new ChromeDriver();
+			     DesiredCapabilities cap=new DesiredCapabilities().chrome();
+				 cap.setJavascriptEnabled(true);
+				 driver=new ChromeDriver();
 			}
 			else if(broswername.equalsIgnoreCase(" Firefox"))
 			{

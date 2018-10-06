@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import ActionDriver.UTF;
 import basedriver.Browser;
+import pageobject.MyServices.marketingAutomation.home.DashBordcomponeat;
 import pageobject.MyServices.marketingAutomation.home.HomeComponent;
 import utilities.Login;
 
@@ -26,17 +27,19 @@ public class NewTest {
 	//UTF.clickelement("id", "loginsubmit");
 	 
 	Login.LoginWithAdmin("MyServices//AdminLogin.xml");
+	DashBordcomponeat.verifying_dashboardfutures("today calls");
+	
 	//HomeComponent.clickhomeof();
 	// HomeComponent.clickDashBord();
 	
-	HomeComponent.clickhomebutton();
+	/*HomeComponent.clickhomebutton();
 	HomeComponent.clickDashBord();
     HomeComponent.clickProjectSetUp();
 	HomeComponent.clickChat();
 	
 	HomeComponent.clickReports();
 	HomeComponent.clickProfile();
-	
+	*/
 	
 	 //Login.LoginWithAdminUser();
 	// Login.LoginWithAdminUser();

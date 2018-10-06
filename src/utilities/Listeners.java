@@ -17,7 +17,7 @@ public class Listeners implements ITestListener {
 		SimpleDateFormat fromt=new SimpleDateFormat("dd-MM-yy-hh-mm-ss");
 		String date=fromt.format(clendar.getTime());
 		String method=result.getName();
-		Log4j.infoLog(method+date);
+		//Log4j.infoLog(method+date);
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class Listeners implements ITestListener {
 		String date=format.format(calender.getTime());
 		Log4j.infoLog("***** Error "+result.getName()+" test has failed *****");
 		String methodName=result.getName().toString().trim();
-		String filePath=System.getProperty("user.dir")+"\\src\\testngReports\\ScreenShot.folder\\";
+		String filePath=System.getProperty("user.dir")+"\\src\\testngReports\\ScreenShots\\";
 		Log4j.infoLog("filepath is "+filePath);
 		ActionDriver.UTF.takeScrenShort(filePath+methodName+date);
 		Log4j.infoLog("***** Place screen Short in"+filePath+"****");
@@ -57,7 +57,7 @@ public class Listeners implements ITestListener {
 	@Override
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		Log4j.infoLog(context.getName());
+	//	Log4j.infoLog(context.getName());
 	}
 
 	@Override

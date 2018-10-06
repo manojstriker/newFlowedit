@@ -31,7 +31,8 @@ public class Login
 	{
 		try {
 			
-			PropertiesReusabuls properies=new PropertiesReusabuls(System.getProperty("user.dir")+"\\src\\Configurations\\config.properties");
+			PropertiesReusabuls properies=new PropertiesReusabuls(System.getProperty("user.dir")+"//src//Configurations//config.properties");
+					//System.getProperty("user.dir")+"\\src\\Configurations\\config.properties");
 			String username=properies.getProperty("AdminUserName");
 			String password=properies.getProperty("AdminPassword");
 			Browser.startBrowser();

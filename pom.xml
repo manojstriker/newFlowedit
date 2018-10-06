@@ -31,7 +31,7 @@
 				</goals>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/TestNGfiles/TestSuite.xml</suiteXmlFile>
+						<suiteXmlFile>src/TestNGfiles/Testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

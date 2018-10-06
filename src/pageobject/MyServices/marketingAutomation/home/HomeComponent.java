@@ -17,18 +17,7 @@ public class HomeComponent {
 		//Browser.getdriver();
 		
 	}
-     public static void clickhomeof() {
-    	 //  UTF.clickelement("linkText", "Home");
-    	 
-    	   List<WebElement> elemets=UTF.findelements("classname", "smart-dropdown");
-    	    for(WebElement element:elemets ){
-    	    	System.out.println(element.getText());
-    	    	
-    	    }
-    	   System.out.println("buttontext");
-    	 //  Log4j.infoLog("clicking the Home button");
-    	   
-       }
+     
       public static void clickhomebutton() {
     	   Sync.procesWait(1600);
     	   UTF.clickelement("partialLinkText", "Home");	 
