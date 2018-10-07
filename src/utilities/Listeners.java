@@ -3,13 +3,15 @@ package utilities;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 
 
-public class Listeners implements ITestListener {
+public class Listeners implements ITestListener,ISuiteListener{
 
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -52,6 +54,7 @@ public class Listeners implements ITestListener {
 		// TODO Auto-generated method stub
 		Log4j.infoLog(result.getName());
 		
+		
 	}
 
 	@Override
@@ -65,5 +68,24 @@ public class Listeners implements ITestListener {
 		// TODO Auto-generated method stub
 		Log4j.infoLog(context.getName());
 	}
+
+	@Override
+	public void onStart(ISuite suite) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void onFinish(ISuite suite) {
+		try {
+			SendMail.sendMailReport();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
 
 }
