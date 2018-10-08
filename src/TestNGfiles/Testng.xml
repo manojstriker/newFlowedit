@@ -7,7 +7,7 @@
 </listeners>
 <test name="sample">
 <classes>
-<class name="testCases.Home.DashBord.DashBordfuturesVerfying">
+<class name="testCases.Home.DashBord.DashBordfeaturesVerfying">
 
 
 

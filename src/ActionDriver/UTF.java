@@ -70,6 +70,10 @@ import utilities.PropertiesReusabuls;
 		findElement(attributeType, attributeValue).clear();
 		findElement(attributeType, attributeValue).sendKeys(data);
 		}
+	  public static void clickinputText(String attributeType,String attributeValue,String data) {
+		  findElement(attributeType, attributeValue).sendKeys(data);
+		  
+	  }
 	  public static void cleardata(String attributeType,String attributeValue,String data) {
 		findElement(attributeType, attributeValue).clear();
 		}
@@ -127,7 +131,8 @@ import utilities.PropertiesReusabuls;
 		  select.deselectAll();
 	   }
 	  public static List<WebElement> getAllSelectedOptions(String attributeType,String attributeValue) {
-		 Select select=new Select(findElement(attributeType, attributeValue));
+		 
+		  Select select=new Select(findElement(attributeType, attributeValue));
 		 return select.getAllSelectedOptions();
 		
 	   }

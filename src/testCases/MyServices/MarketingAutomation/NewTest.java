@@ -27,7 +27,7 @@ public class NewTest {
 	//UTF.clickelement("id", "loginsubmit");
 	 
 	Login.LoginWithAdmin("MyServices//AdminLogin.xml");
-	DashBordcomponeat.verifying_dashboardfutures("today calls");
+	DashBordcomponeat.verifying_dashboardfeatures("today calls");
 	
 	//HomeComponent.clickhomeof();
 	// HomeComponent.clickDashBord();
