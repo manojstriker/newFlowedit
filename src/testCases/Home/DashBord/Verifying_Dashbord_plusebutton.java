@@ -2,6 +2,7 @@ package testCases.Home.DashBord;
 
 import org.testng.annotations.Test;
 
+import basedriver.Browser;
 import pageobject.MyServices.marketingAutomation.home.DashBordcomponeat;
 import utilities.Login;
 
@@ -12,7 +13,7 @@ public class Verifying_Dashbord_plusebutton {
   @Test
   public void verifying_Dashbord_plusebutton() throws Exception {
 	  DashBordcomponeat dashbord=new DashBordcomponeat("Verifying_Dashbord_plusebutton");
-	   DashBordcomponeat.verifying_plusebutton();
+	   DashBordcomponeat.verifying_plusbutton();
   }
   @BeforeMethod
   public void beforeMethod() {
@@ -22,6 +23,7 @@ public class Verifying_Dashbord_plusebutton {
 
   @AfterMethod
   public void afterMethod() {
+	  Browser.closebrowser();
   }
 
 }

@@ -2,6 +2,7 @@ package testCases.Home.DashBord;
 
 import org.testng.annotations.Test;
 
+import basedriver.Browser;
 import pageobject.MyServices.marketingAutomation.home.DashBordcomponeat;
 import utilities.Login;
 
@@ -13,7 +14,7 @@ public class verifying_plusebuttonfeatures {
   public void verifying_plusebutton_features() {
 	  try {
 		DashBordcomponeat dashbord=new DashBordcomponeat("verifying_plusebuttonfeatures");
-		DashBordcomponeat.verifying_plusebuttonfeatures();
+		DashBordcomponeat.verifying_plusbuttonfeatures();
 	} catch (Exception e) {
 		
 		e.printStackTrace();
@@ -21,6 +22,8 @@ public class verifying_plusebuttonfeatures {
   }
   @BeforeMethod
   public void beforeMethod() {
+	 // Browser.startBrowser("Firefox", "http://demo.office24by7.com/");
+	  //Login.LoginWithAdminUser();
 	  Login.LoginWithAdmin("MyServices//AdminLogin.xml");
 	  
 	  
@@ -28,6 +31,7 @@ public class verifying_plusebuttonfeatures {
 
   @AfterMethod
   public void afterMethod() {
+	  Browser.closebrowser();
   }
 
 }

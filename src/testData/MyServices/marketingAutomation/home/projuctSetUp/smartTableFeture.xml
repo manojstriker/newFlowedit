@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+<dataset name="smarttableFeature">
+<Features>S.NO,Company Name,Lead Category Type,Category Name,Status,Action</Features>
+</dataset>
+<dataset name ="AddCatrgoty_optionNames">
+<Features>Company Name */Category Type */Category Name *</Features>
+</dataset>
+
+</Testdata>

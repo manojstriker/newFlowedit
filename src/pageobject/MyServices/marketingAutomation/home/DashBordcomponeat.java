@@ -56,9 +56,18 @@ public static	XmlReader readData;
 		//*[@id="myModal"]/div/div/div[2]/div/form/ul/li[6]/div/label/input
 		  List<WebElement> oCheckBox= UTF.findelements("xpath", "//ul[@class='filter-search']/li[*]");
 		System.out.println(oCheckBox.size());
-		  for(int i=0;i<oCheckBox.size();i++) {
-		//	String s=  UTF.findElement("xpath", "//ui[@class='filter-search']/li[i]/dive[1]").getText();
-			String s=  UTF.findElement("xpath", "//ul[@class='filter-search']/li[i]/following::span[1]").getText();
+		Sync.procesWait(2000);
+	String	si=    UTF.findElement("xpath",".//*[@id='myModal']/div/div/div[2]/div/form/ul/li[1]/div/label/input").getAttribute("checked");
+	 System.out.println(si);
+		
+		
+		for(int i=0;i<oCheckBox.size();i++) {
+			
+			  // Sync.procesWait(2000);
+			//String s=  UTF.findElement("xpath", "//ui[@class='filter-search']/li[i]/dive[1]").getText();
+			//String s=  UTF.findElement("xpath", "//ul[@class='filter-search']/li[i]/following::span[1]").getText();
+			  String s=  UTF.findElement("xpath", ".//*[@class='filter-search']").getText();	  
+			 System.out.println(s);
 			String as=  UTF.findElement("xpath", "//ul[@class='filter-search']/li[i]/following::input[1]").getAttribute("checked");
 		System.out.println("text is==>"+s);
 		System.out.println("checked is==>"+as);
@@ -82,7 +91,7 @@ public static	XmlReader readData;
 				   
 			//   }
 			//   else {
-				  System.out.println(",");
+				
 			//   }
 			   
 		     }
@@ -92,20 +101,20 @@ public static	XmlReader readData;
 	 
 	  
 	 public static void  verifying_plusbutton() {
-		 HomeComponent.clickhomebutton();
+		   HomeComponent.clickhomebutton();
 		   Log4j.infoLog("click the home button");
 		   HomeComponent.clickDashBord();
 		   Log4j.infoLog("click the dash button");
 		   Sync.procesWait(1600); 
 		   boolean disply=UTF.findElement("className", "smart-add").isDisplayed();
-		   boolean selected=UTF.findElement("className", "smart-add").isSelected();
+		  // boolean selected=UTF.findElement("className", "smart-add").isSelected();
 		   if(disply ) {
 			   UTF.clickelement("className", "smart-add");
-			   System.out.println("verifying_plusebutton is  working ");
+			   Log4j.infoLog("verifying_plusebutton is  working ");
 			   
 		   }
 		   else {
-			   System.out.println("verifying_plusebutton is not working ");
+			   Log4j.infoLog("verifying_plusebutton is not working ");
 		   }
 	 }
 	

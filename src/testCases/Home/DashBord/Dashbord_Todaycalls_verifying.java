@@ -2,6 +2,7 @@ package testCases.Home.DashBord;
 
 import org.testng.annotations.Test;
 
+import basedriver.Browser;
 import pageobject.MyServices.marketingAutomation.home.DashBordcomponeat;
 import utilities.Login;
 
@@ -27,6 +28,7 @@ public class Dashbord_Todaycalls_verifying {
 
   @AfterMethod
   public void afterMethod() {
+	  Browser.closebrowser();
   }
 
 }

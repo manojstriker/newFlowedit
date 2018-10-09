@@ -77,14 +77,15 @@ public class Listeners implements ITestListener,ISuiteListener{
 
 	@Override
 	public void onFinish(ISuite suite) {
-		try {
+		/*try {
 			SendMail.sendMailReport();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+	*/	
 	}
+	
 	
 	
 

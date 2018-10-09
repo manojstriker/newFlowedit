@@ -31,9 +31,9 @@ public class Browser {
 				 cap.setJavascriptEnabled(true);
 				 driver=new ChromeDriver();
 			}
-			else if(broswername.equalsIgnoreCase(" Firefox"))
+			else if(broswername.equalsIgnoreCase("Firefox"))
 			{
-				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//Lib//geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//lib//geckodriver.exe");
 				driver=new FirefoxDriver();
 			}
 			driver.get(url);

@@ -20,6 +20,7 @@ public class HomeComponent {
      
       public static void clickhomebutton() {
     	   Sync.procesWait(1600);
+    	   Log4j.infoLog("clickhomebutton");
     	   UTF.clickelement("partialLinkText", "Home");	 
       }
       
@@ -28,7 +29,9 @@ public class HomeComponent {
     	   //Log4j.infoLog("clicking the dashbord");
        }
        public static void clickProjectSetUp() {
-    	   UTF.clickelement("partialLinkText", "Project");
+    	   Sync.procesWait(1600);
+    	   UTF.clickelement("partialLinkText", "Project SetUp");
+    	   Log4j.infoLog("clickProjectSetUp");
        }
        public static void clickChat() {
     	   Sync.visabilityofElementLocated("partialLinkText", "Chat", 30);
@@ -36,11 +39,11 @@ public class HomeComponent {
     	   UTF.switchtoDefaletwindow();
        }
       public static void clickReports() {
-    	  Sync.visabilityofElementLocated("partialLinkText", "Chat", 30);
+    	  Sync.visabilityofElementLocated("partialLinkText", "Reports", 30);
     	  UTF.clickelement("partialLinkText", "Reports");
       }
       public static void clickProfile() {
-    	  Sync.visabilityofElementLocated("partialLinkText", "Chat", 30);
+    	  Sync.visabilityofElementLocated("partialLinkText", "Profile", 30);
     	  UTF.clickelement("partialLinkText", "Profile");
       }
       
