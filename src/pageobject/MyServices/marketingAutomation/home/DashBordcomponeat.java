@@ -20,7 +20,7 @@ import utilities.Login;
 import utilities.XmlReader;
 
 public class DashBordcomponeat {
-	XmlReader readData;
+public static	XmlReader readData;
 	 public DashBordcomponeat (String filename,String className) throws Exception{
 		  UTF.callLog4j(className);
 		  readData=new XmlReader(filename);
@@ -48,13 +48,42 @@ public class DashBordcomponeat {
 		   }
 		   }
 	
-	  public static void verifying_plusebuttonfeatures() {
-		  DashBordcomponeat.verifying_plusebutton();
-		  Sync.procesWait(1600);
-		  List<WebElement> oCheckBox= UTF.findelements("className", "filter-search");
-		   for(WebElement element:oCheckBox) {
-			   String features=element.getText();
-			   System.out.println(features);
+	  public static void verifying_plusbuttonfeatures() {
+		  DashBordcomponeat.verifying_plusbutton();
+		  Sync.procesWait(2000);
+		 // List<WebElement> oCheckBox= UTF.findelements("className", "filter-search");
+		//*[@id="myModal"]/div/div/div[2]/div/form/ul
+		//*[@id="myModal"]/div/div/div[2]/div/form/ul/li[6]/div/label/input
+		  List<WebElement> oCheckBox= UTF.findelements("xpath", "//ul[@class='filter-search']/li[*]");
+		System.out.println(oCheckBox.size());
+		  for(int i=0;i<oCheckBox.size();i++) {
+		//	String s=  UTF.findElement("xpath", "//ui[@class='filter-search']/li[i]/dive[1]").getText();
+			String s=  UTF.findElement("xpath", "//ul[@class='filter-search']/li[i]/following::span[1]").getText();
+			String as=  UTF.findElement("xpath", "//ul[@class='filter-search']/li[i]/following::input[1]").getAttribute("checked");
+		System.out.println("text is==>"+s);
+		System.out.println("checked is==>"+as);
+		
+		System.out.println("text is==>==================");
+		  }
+		  
+	//	  for(WebElement element:oCheckBox) {
+			   
+			   // findelements //ul[@class='search']/li[*]
+			   //for(int i=1;i<=elemts.size()'i++)
+			   {
+				/*findlement   ul[@class='search']/li[i]/div[1].getText()
+				findlement  ul[@class='search']/li[i]/following::input[1]).getattribut(checked")
+            */				
+			//   }
+		//	   System.out.println(  element.getText());
+		//	 System.out.println(element.getAttribute("checked"));
+		//	   if(element.getAttribute("checked")!=null) {
+		//		   System.out.println(element.getText());
+				   
+			//   }
+			//   else {
+				  System.out.println(",");
+			//   }
 			   
 		     }
 		
@@ -62,7 +91,7 @@ public class DashBordcomponeat {
 	  }
 	 
 	  
-	 public static void  verifying_plusebutton() {
+	 public static void  verifying_plusbutton() {
 		 HomeComponent.clickhomebutton();
 		   Log4j.infoLog("click the home button");
 		   HomeComponent.clickDashBord();
@@ -94,7 +123,9 @@ public class DashBordcomponeat {
 		 for(int i=0;i<futures.size();i++) {
 			   System.out.println(futures.get(i).getText());
 			   
-			 
+		 }
+			
+	 }
 		 
 		 
 		 /* Iterator<WebElement> datas = futures.iterator();
@@ -104,9 +135,7 @@ public class DashBordcomponeat {
 	          // if (we.getText().equals(futurename) ){
 			   System.out.println("futurepresent in dash bord");
 		 */
-	 }
-	
-	 }
+	 
 }
 
 
