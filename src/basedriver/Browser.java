@@ -26,7 +26,7 @@ public class Browser {
 		
 			if(broswername.equalsIgnoreCase("Chrome"))
 			{
-				 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//lib//chromedriver.exe");
+				 System.setProperty("webdriver.chrom.driver",System.getProperty("user.dir")+"//lib//chromedriver.exe");
 			     DesiredCapabilities cap=new DesiredCapabilities().chrome();
 				 cap.setJavascriptEnabled(true);
 				 driver=new ChromeDriver(cap);
