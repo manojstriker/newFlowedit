@@ -17,9 +17,9 @@ public class Login
 			String username=readData.getdata("AdminLogin", "username");
 			String password=readData.getdata("AdminLogin", "password");
 			UTF.clickelement("partialLinkText", "Login");
-	       UTF.inputText("id", "username", username);
-	       UTF.inputText("id", "password", password);
-	       UTF.clickelement("id", "loginsubmit");
+	        UTF.inputText("id", "username", username);
+	        UTF.inputText("id", "password", password);
+	        UTF.clickelement("id", "loginsubmit");
 		}
 		catch (Exception e) {
 			e.printStackTrace();

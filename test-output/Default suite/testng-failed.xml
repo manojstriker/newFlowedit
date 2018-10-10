@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.Sampleptog">
+      <class name="testCases.Home.ProjectSetUp.Verifying_projuctSet_validation">
         <methods>
-          <include name="afterMethod"/>
-          <include name="f"/>
+          <include name="projuctSet_validation"/>
           <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- testCases.Sampleptog -->
+      </class> <!-- testCases.Home.ProjectSetUp.Verifying_projuctSet_validation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -24,12 +24,12 @@ public class Browser {
 	}
 	public static WebDriver startBrowser(String broswername,String url) {
 		
-			if(broswername.equalsIgnoreCase("chrome"))
+			if(broswername.equalsIgnoreCase("Chrome"))
 			{
-				 System.setProperty("webdriver.chrom.driver", System.getProperty("user.dir")+"//lib//chromedriver.exe");
+				 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//lib//chromedriver.exe");
 			     DesiredCapabilities cap=new DesiredCapabilities().chrome();
 				 cap.setJavascriptEnabled(true);
-				 driver=new ChromeDriver();
+				 driver=new ChromeDriver(cap);
 			}
 			else if(broswername.equalsIgnoreCase("Firefox"))
 			{

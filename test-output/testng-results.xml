@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29255" started-at="2018-10-05T12:52:01Z" finished-at="2018-10-05T12:52:30Z">
+  <suite started-at="2018-10-09T17:59:38Z" name="Default suite" finished-at="2018-10-09T18:00:06Z" duration-ms="27515">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29255" started-at="2018-10-05T12:52:01Z" finished-at="2018-10-05T12:52:30Z">
-      <class name="testCases.MyServices.MarketingAutomation.NewTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testCases.MyServices.MarketingAutomation.NewTest@52feb982]" name="beforeMethod" is-config="true" duration-ms="29188" started-at="2018-10-05T12:52:01Z" finished-at="2018-10-05T12:52:30Z">
+    <test started-at="2018-10-09T17:59:38Z" name="Default test" finished-at="2018-10-09T18:00:06Z" duration-ms="27515">
+      <class name="testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying@44a7bfbc]" started-at="2018-10-09T17:59:38Z" name="beforeMethod" finished-at="2018-10-09T17:59:56Z" duration-ms="17229" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:0, instance:testCases.MyServices.MarketingAutomation.NewTest@52feb982]" name="f" duration-ms="10" started-at="2018-10-05T12:52:30Z" finished-at="2018-10-05T12:52:30Z">
+        <test-method signature="verifying_ProjuctSetUp_table_Fetures()[pri:0, instance:testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying@44a7bfbc]" started-at="2018-10-09T17:59:56Z" name="verifying_ProjuctSetUp_table_Fetures" finished-at="2018-10-09T18:00:06Z" duration-ms="10192" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testCases.MyServices.MarketingAutomation.NewTest@52feb982]" name="afterMethod" is-config="true" duration-ms="10" started-at="2018-10-05T12:52:30Z" finished-at="2018-10-05T12:52:30Z">
+        </test-method> <!-- verifying_ProjuctSetUp_table_Fetures -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying@44a7bfbc]" started-at="2018-10-09T18:00:06Z" name="afterMethod" finished-at="2018-10-09T18:00:06Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.MyServices.MarketingAutomation.NewTest -->
+      </class> <!-- testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

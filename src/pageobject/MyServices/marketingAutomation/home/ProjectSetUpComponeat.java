@@ -26,39 +26,48 @@ public class ProjectSetUpComponeat {
 	 
 	 public static void projectSetUp_smart_table_features() throws Exception {
 		 String data=readData.getdata("smarttableFeature", "Features");
-		 String[]  datas=data.split(",");
+		 String[]  indexNames=data.split(",");
 		 HashMap<String, Integer> hashmap = new  HashMap<String, Integer> ();
 		 HomeComponent.clickhomebutton();
 		 HomeComponent.clickProjectSetUp();
 		 Sync.procesWait(2000);
-		//String featuresnames= UTF.findElement("cssSelector", ".table.smart-table").getText();
+		 //String featuresnames= UTF.findElement("cssSelector", ".table.smart-table").getText();
 		//System.out.println(featuresnames);
-	  //String xpath=UTF.findElement("xpath", "html/body/div[4]/div/table/thead/tr/th");
-		String beforexpath="html/body/div[4]/div/table/thead/tr/th[";
-		String affterxpath="]";
-		List<WebElement> colum=UTF.findelements("xpath", "html/body/div[4]/div/table/thead/tr/th");
+	   //String xpath=UTF.findElement("xpath", "html/body/div[4]/div/table/thead/tr/th");
+		 String beforexpath="html/body/div[4]/div/table/thead/tr/th[*]";
+		 String affterxpath="]";
+		List<WebElement> colum=UTF.findelements("xpath", "html/body/div[4]/div/table/thead/tr[1]/th[*]");
 		for(int i=1;i<colum.size();i++) {
-			String Xpaths =beforexpath+i+affterxpath;
-			String columnames=UTF.findElement("xpath", Xpaths).getText();
+		//	String Xpaths =beforexpath+i+affterxpath;
+			String columnames=colum.get(i).getText();
 			//Log4j.infoLog(columnames);
 		   hashmap.put(columnames, i);
-			
-			for(int j=0;j<datas.length;j++) {
+		}
+			for(int j=0;j<indexNames.length;j++) {
 				//System.out.println(datas.);
-				if(hashmap.containsKey(data.charAt(i))) {
-					System.out.println("eqlual");
+				if(hashmap.containsKey(indexNames[j])) {
+					System.out.println(indexNames[j]+"values exsit in application");
 					
 				}
 			}
 			
+			//*[@id="3"]/div
+			//*[@id="3"]/div/span[1]/img
+			//*[@id="2"]/div/span[1]/img
+			//*[@id="2"]/div/span[2]
+			//*[@id="2 "]/div/span[1]/img cont
+			//*[@id="2 "]/div cont
+			//*[@id="3 "]/div/span[1]/img
+			//*[@id="3 "]/div/span[1]/img sov
+			//*[@id="1 "]/div/span[1]/img
 			
 		}
 		
-		 }
+		 
 	 public static void  plusbuttonIn_projucts() {
 		   HomeComponent.clickhomebutton();
 		   HomeComponent.clickProjectSetUp();
-		   Sync.procesWait(1600); 
+		   Sync.procesWait(2000); 
 		   boolean disply=UTF.findElement("className", "smart-add").isDisplayed();
 		   if(disply ) {
 			   UTF.clickelement("className", "smart-add");
@@ -72,13 +81,22 @@ public class ProjectSetUpComponeat {
 	public static void addcategory() {
         plusbuttonIn_projucts();
         Sync.procesWait(2000);
-		boolean category= UTF.findElement("cssSelector", ".modal-content").isDisplayed();
-		if(category) {
-			Log4j.infoLog("addcategory is displayed");
-		}
-		else {
-			Log4j.infoLog("addcategory is Not displayed");
-		}
+		
+			//UTF.clickelement("cssSelector", ".modal-content");
+			//Sync.procesWait(2000);
+        UTF.selectByVisibleText("id", "company_id", "striker");
+        Log4j.infoLog("select the company name");
+		//UTF.selectByValue("id", "company_id", "125");
+			//UTF.selectByValue("id", "category_type", "Traffic~Marketing Manager~59");
+        Sync.procesWait(2000);
+     
+         UTF.inputText("xpath", "//*[@id='ProjectSetUp']/div[3]/input", "manoj");
+        Log4j.infoLog("Category Name is entere");
+         Sync.procesWait(2000);
+         UTF.clickelement("id", "desigsubmit");
+         Log4j.infoLog("click the submit");
+			
+		
 		  
 	  }
 	public static void closebutton_addcategory_option() {
@@ -121,7 +139,16 @@ public class ProjectSetUpComponeat {
 		}
 	}
 		
-		
+	public static void projuctSetUpCreation() {
+		 HomeComponent.clickhomebutton();
+		 Sync.procesWait(2000);
+		 HomeComponent.clickProfile();
+		 Sync.procesWait(2000);
+		// UTF.clickelement("partialLinkText", "Flow Edit");
+		 UTF.mouseover("xpath", "/html/body/div[4]/div/table/tbody/tr/td[6]/a[1]");
+		//UTF.clickelement("xpath", " /html/body/div[4]/div/table/tbody/tr/td[6]/a[1]");
+		Log4j.infoLog("click the flow edit");
+	}
 		
 		
 		

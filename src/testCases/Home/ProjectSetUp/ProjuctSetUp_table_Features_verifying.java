@@ -16,12 +16,10 @@ public class ProjuctSetUp_table_Features_verifying{
 		ProjectSetUpComponeat projuctSetup=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/smartTableFeture.xml","ProjuctSetUp_table_Fetures_verifying");
 		ProjectSetUpComponeat.projectSetUp_smart_table_features();
 	  } catch (Exception e) {
-		
 		e.printStackTrace();
 		Assert.fail();
-	}
-	  
-  }
+		}
+	    }
   @BeforeMethod
   public void beforeMethod() {
 	  Login.LoginWithAdmin("MyServices//AdminLogin.xml");
@@ -29,6 +27,6 @@ public class ProjuctSetUp_table_Features_verifying{
 
   @AfterMethod
   public void afterMethod() {
-	  UTF.closebrowser();
+	//.closebrowser();
   }
 }

@@ -9,13 +9,13 @@ import basedriver.Browser;
 import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
-public class Verifying_addcategory_displayed {
+public class Verifying_addcategory {
 	@Test
 	
-	  public void verifying_addcategory_displayed () throws Exception {
+	  public void verifying_addcategor () throws Exception {
 		
 		try {
-			ProjectSetUpComponeat projuct=new ProjectSetUpComponeat("verifying_addcategory_displayed");
+			ProjectSetUpComponeat project=new ProjectSetUpComponeat("verifying_addcategory_displayed");
 			ProjectSetUpComponeat.addcategory();
 	
 			
@@ -35,6 +35,6 @@ public class Verifying_addcategory_displayed {
 
 	  @AfterMethod
 	  public void afterMethod() {
-		  Browser.closebrowser();
+		  //Browser.closebrowser();
 	  }
 }
