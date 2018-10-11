@@ -190,8 +190,8 @@ import utilities.PropertiesReusabuls;
 		   WebElement element=findElement(attributeType, attributeValue);
 		   driver.switchTo().frame(element);
 	  }
-	  public static void SwitchToFrameByName(String idname) {
-		  driver.switchTo().frame(idname);
+	  public static void SwitchToFrameByName(String name) {
+		  driver.switchTo().frame(name);
 	  }
 	  public static void SwitchToDefaltFrame() {
 		  driver.switchTo().defaultContent();

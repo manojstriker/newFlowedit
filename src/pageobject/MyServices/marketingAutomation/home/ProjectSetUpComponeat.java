@@ -161,7 +161,6 @@ public class ProjectSetUpComponeat {
       
       }
     public static void clickOn_ProjectManagement_upperbord() {
-    	clickFlowEdit();
     	Sync.procesWait(3000);
     	UTF.clickelement("id", "flow_name,append_values_2,MARKETING_PROJECT_MANAGEMENT");
     	Log4j.infoLog("click on the ProjectManagement_upperbord");
@@ -210,7 +209,7 @@ public class ProjectSetUpComponeat {
      }
      public static void clickOn_User_Lowerbord() {
     	 Sync.procesWait(3000);
-    	 UTF.clickelement("xpath", ".//*[@id='2' ]/div");
+    	 UTF.clickelement("xpath", "//*[contains(@title, 'Users')]");
     	 Log4j.infoLog("clickOn_User_Lowerbord");
      }
      public static void clickOn_CXO_Upperbord() {
@@ -238,8 +237,8 @@ public class ProjectSetUpComponeat {
     }
    
    public static void clickOn_Manager_Lowerbord() {
-   	 Sync.procesWait(3000);
-   	 UTF.clickelement("xpath", "//*[contains(@title, 'Manager')]");
+   	 Sync.procesWait(4000);
+   	 UTF.clickelement("xpath", "//li[@title='Manager']");
    	 Log4j.infoLog("clickOn_Manager_Lowerbord");
    	 }
 
@@ -247,8 +246,25 @@ public class ProjectSetUpComponeat {
    	 Sync.procesWait(3000);
    	 UTF.clickelement("xpath", ".//*[@id='MARKETING_USER_MANAGER' and @type='button']");
    	 Log4j.infoLog("clickOn_Manager_Editoption");
+   	 Sync.procesWait(2000);
+   	 UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+   	Log4j.infoLog("switch the frame");
+   	 String message= UTF.findElement("xpath", "//form[@id='dynamic_curd_pagination']/following::div[1]").getText();
+   	 Log4j.infoLog(message);
    	
    }
+   public static void delete_Manager() {
+	   	UTF.SwitchToDefaltFrame();
+	   	 Sync.procesWait(3000);
+	   	 UTF.mouseover("xpath", "//li[@title='Project Management']");
+	   	Sync.procesWait(2000);
+	   	 UTF.clickelement("xpath", "//li[@title='Project Management']/following::button[2]");
+	   	 Log4j.infoLog("delete button clicked ");
+	   	 Sync.procesWait(3000);
+	   	 UTF.clickelement("xpath", "//li[@title='Project Management']/following::button[2]/following::a[1]");
+	   	 Log4j.infoLog("button clicked");
+	   	
+	   }
    public static void clickOn_MARKETING_PROJECT_SETTINGS_Upperbord() {
 		Sync.procesWait(3000);
 		 UTF.clickelement("id", "append_values_2,append_values_14,MARKETING_PROJECT_SETTINGS");
