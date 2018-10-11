@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+
+
+<dataset name="Manager">
+<username>manoj</username>
+<password>Striker@123</password>
+<ConfirmPassword>Striker@123</ConfirmPassword>
+<FistName>manoj</FistName>
+<LastName>kumar</LastName>
+<Emailaddress>manoj.k@office@24by7.com</Emailaddress>
+<Mobilenumber>9999999999</Mobilenumber>
+<ADDBranchName>kphb</ADDBranchName>
+<AddDivision>cxo</AddDivision>
+<AddUserRole>operative </AddUserRole>
+<AddUserRoles>operative  (Level 2)</AddUserRoles>
+<seleteLevel>2</seleteLevel>
+<SelectReportingRole>Admin</SelectReportingRole>
+<Reportingto></Reportingto>
+<Country>1_INDIA</Country>
+<state>TELANGANA</state>
+<city>Belampalli</city>
+<ContactAddress>TELANGANA,Belampalli</ContactAddress>
+<PinCode>500089</PinCode>
+<JoiningDateManth>Jul</JoiningDateManth>
+<JoiningDateyear>2018</JoiningDateyear>
+<EmployeeID>11kq1a1</EmployeeID>
+<DateOfBirthmanth>Jul</DateOfBirthmanth> 
+<DateOfBirthyear>1994</DateOfBirthyear>
+
+</dataset>
+
+
+</Testdata>

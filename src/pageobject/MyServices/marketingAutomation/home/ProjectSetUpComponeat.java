@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import ActionDriver.Sync;
 import ActionDriver.UTF;
@@ -167,11 +168,14 @@ public class ProjectSetUpComponeat {
     	
     }
     public static void clickOn_ProjectManagement_delete() {
-    	Sync.procesWait(3000);
-    	UTF.clickelement("xpath", ".//*[@id='1']/div/button[1]");
-    	Sync.procesWait(2000);
-    	UTF.clickelement("partialLinkText", "Yes");
-    	Log4j.infoLog("delete ProjectManagement" );
+    	 Sync.procesWait(3000);
+	   	 UTF.clickelement("xpath", "//li[@title='Project Management']");
+	     Sync.procesWait(2000);
+	     UTF.clickelement("cssSelector", ".btn.btn-danger.glxy-delet");
+	     Log4j.infoLog("delete button clicked ");
+	   	 Sync.procesWait(3000);
+	   	 UTF.clickelement("partialLinkText", "Yes");
+    	 Log4j.infoLog("delete ProjectManagement" );
     }
 	public static void clickOn_projuctManagement_lowerbord() {
 		Sync.procesWait(3000);
@@ -242,37 +246,369 @@ public class ProjectSetUpComponeat {
    	 Log4j.infoLog("clickOn_Manager_Lowerbord");
    	 }
 
-   public static void clickOn_Manager_Editoption() {
-   	 Sync.procesWait(3000);
+   public static void clickOn_Manager_Editoption() throws Exception {
+	 Sync.procesWait(3000);
    	 UTF.clickelement("xpath", ".//*[@id='MARKETING_USER_MANAGER' and @type='button']");
    	 Log4j.infoLog("clickOn_Manager_Editoption");
    	 Sync.procesWait(2000);
-   	 UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-   	Log4j.infoLog("switch the frame");
-   	 String message= UTF.findElement("xpath", "//form[@id='dynamic_curd_pagination']/following::div[1]").getText();
-   	 Log4j.infoLog(message);
-   	
-   }
+    }
    public static void delete_Manager() {
-	   	UTF.SwitchToDefaltFrame();
+	     Sync.procesWait(3000);
+	     UTF.mouseover("xpath", "//li[@title='Manager']");
+	     Log4j.infoLog("clickOn_Manager_Lowerbord");
+	     Sync.procesWait(4000);             
+	     UTF.clickelement("xpath", ".//li[@title='Manager']/following::button[2]");
+	     Log4j.infoLog("delete button clicked ");
 	   	 Sync.procesWait(3000);
-	   	 UTF.mouseover("xpath", "//li[@title='Project Management']");
-	   	Sync.procesWait(2000);
-	   	 UTF.clickelement("xpath", "//li[@title='Project Management']/following::button[2]");
-	   	 Log4j.infoLog("delete button clicked ");
-	   	 Sync.procesWait(3000);
-	   	 UTF.clickelement("xpath", "//li[@title='Project Management']/following::button[2]/following::a[1]");
-	   	 Log4j.infoLog("button clicked");
-	   	
+	   	 UTF.clickelement("partialLinkText", "Yes");
+  	     Log4j.infoLog("delete ProjectManagement" );
+	   
 	   }
-   public static void clickOn_MARKETING_PROJECT_SETTINGS_Upperbord() {
+   
+   public static void clickOn_Template_Settings_Upperbord() {
 		Sync.procesWait(3000);
-		 UTF.clickelement("id", "append_values_2,append_values_14,MARKETING_PROJECT_SETTINGS");
-		Log4j.infoLog("clickOn_MARKETING_PROJECT_SETTINGS_Upperbord");
+		UTF.clickelement("id", "append_values_2,append_values_14,MARKETING_PROJECT_SETTINGS");
+		Log4j.infoLog("click On Template_Settings_Upperbord");
 	}
-   public static void ClickOn_MARKETING_PROJECT_SETTINGSs_Lowerbord() {
-   	Sync.procesWait(3000);
-    UTF.clickelement("xpath", "//*[contains(@title, 'Template Settings')]");
-  	 Log4j.infoLog("ClickOn_MARKETING_PROJECT_SETTINGSs_Lowerbord");
+     public static void ClickOn_Template_Settings_Lowerbord() {
+   	 Sync.procesWait(3000);
+     UTF.clickelement("xpath", "//*[contains(@title, 'Template Settings')]");
+ 	 Log4j.infoLog(" ClickOn_Template_Settings_Lowerbord");
+    }
+    public static void clickOn_SMS_Upperbord() {
+		Sync.procesWait(3000);
+	    UTF.clickelement("id", "append_values_14,append_values_24,MARKETING_SMS_STORE");
+		Log4j.infoLog("clickOn_SMS_Upperbord");
+	  }
+      public static void ClickOn_SMS_Lowerbord() {
+ 	   Sync.procesWait(3000);
+       UTF.clickelement("xpath", "//*[contains(@title, 'SMS')]");
+	   Log4j.infoLog("ClickOn_SMS_Lowerbord");
+        }
+      
+       public static void clickOn_Email_Upperbord() {
+		Sync.procesWait(3000);
+	    UTF.clickelement("id", "append_values_14,append_values_25,MARKETING_EMAIL_STORE");
+		Log4j.infoLog("clickOn_Email_Upperbord");
+	   }
+       public static void ClickOn_Email_Lowerbord() {
+	   Sync.procesWait(3000);
+       UTF.clickelement("xpath", "//*[contains(@title, 'Email')]");
+	   Log4j.infoLog("ClickOn_Email_Lowerbord");
+       }
+       public static void clickOn_Audio_Upperbord() {
+	    Sync.procesWait(3000);
+        UTF.clickelement("id", "append_values_14,append_values_26,MARKETING_AUDIO_STORE");
+	    Log4j.infoLog("clickOn_Audio_Upperbord");
+       }
+        public static void ClickOn_Audio_Lowerbord() {
+        Sync.procesWait(3000);
+        UTF.clickelement("xpath", "//*[contains(@title, 'Audio')]");
+        Log4j.infoLog("ClickOn_Audio_Lowerbord");
+        }
+
+
+       public static void clickOn_Audio_Editoption() throws Exception {
+	    Sync.procesWait(3000);
+  	    UTF.clickelement("xpath", ".//*[@id='MARKETING_AUDIO_STORE' and @type='button']");
+  	    Log4j.infoLog("clickOn_Audio_Editoption");
+  	    Sync.procesWait(2000);
    }
+  
+
+
+
+
+
+     public  void  addManagerfields() throws Exception {
+	   
+	     String username=readData.getdata("Manager", "username");
+	     String password=readData.getdata("Manager", "password");
+	     String ConfirmPassword=readData.getdata("Manager", "ConfirmPassword");
+	     String FistName=readData.getdata("Manager", "FistName");
+	     String LastName=readData.getdata("Manager", "LastName");
+	 
+	     String Emailaddress=readData.getdata("Manager", "Emailaddress");
+	     String Mobilenumber=readData.getdata("Manager", "Mobilenumber");
+	     String ADDBranchName=readData.getdata("Manager", "ADDBranchName");
+	     String AddDivision=readData.getdata("Manager", "AddDivision");
+	     String AddUserRole=readData.getdata("Manager", "AddUserRole");
+	     String AddUserRoles=readData.getdata("Manager", "AddUserRoles");
+	     String seleteLevel=readData.getdata("Manager", "seleteLevel");
+	     String SelectReportingRole=readData.getdata("Manager", "SelectReportingRole");
+	   
+	     String Country=readData.getdata("Manager", "Country");
+	     String state=readData.getdata("Manager", "state");
+	     String city=readData.getdata("Manager", "city");
+	     String ContactAddress=readData.getdata("Manager", "ContactAddress");
+	     String PinCode=readData.getdata("Manager", "PinCode");
+	     String  JoiningDateMonth=readData.getdata("Manager", "JoiningDateManth");
+	     String  JoiningDateyear=readData.getdata("Manager", "JoiningDateyear");
+	     String  EmployeeID=readData.getdata("Manager", "EmployeeID");
+	     String  DateOfBirthmonth=readData.getdata("Manager", "DateOfBirthmanth");
+	     String  DateOfBirthyear=readData.getdata("Manager", "DateOfBirthyear");
+	   
+	     
+	     UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+	     Sync.procesWait(2000);
+	     Log4j.infoLog("switch the frame");
+	     String message= UTF.findElement("xpath", "//form[@id='dynamic_curd_pagination']/following::div[1]").getText();
+	     Log4j.infoLog(message); 
+	    if(message.equals("NO DATA")) {
+	    	UTF.clickelement("xpath", ".//*[@id='action']/img");
+	    	Log4j.infoLog("click the plse button");
+	    }
+	    else {
+	    	Log4j.infoLog("data is present edit on it");
+	    }
+	     Sync.procesWait(2000);
+	     UTF.inputText("id", "username", username);
+	     Log4j.infoLog("enter the user name");
+	     UTF.inputText("id", "password", password);
+	     Log4j.infoLog("enter the password");
+	     UTF.inputText("id", "conf_password", ConfirmPassword);
+	     Log4j.infoLog("enter the confirmpassword");
+	     UTF.inputText("id", "First_Name", FistName);
+	     Log4j.infoLog("enter the FistName");
+	     UTF.inputText("id", "Last_Name", LastName);
+	     Log4j.infoLog("enter LastName");
+	     UTF.inputText("name", "Email_ID",Emailaddress);
+	     Log4j.infoLog("enter Emailaddress");
+	     UTF.inputText("id", "Mobile_Number", Mobilenumber);
+	     Log4j.infoLog("enter Mobilenumber");
+	     UTF.selectByValue("id", "Company_ID","125_striker" );
+	     Log4j.infoLog("select the company");
+	     UTF.findElement("id", "addDesg").click();
+	     Sync.procesWait(2000);
+	     UTF.inputText("id", "designtn",ADDBranchName );
+	     Log4j.infoLog("enter the ADDBranchName ");
+	     UTF.clickelement("xpath", ".//*[@id='designationadd']/following::button");
+	     Log4j.infoLog("close the popup branchname ");
+	   
+	     UTF.clickelement("id", "designatins");
+	     UTF.selectByVisibleText("id", "Branch_ID", ADDBranchName);
+	     Log4j.infoLog("select the branch  ");
+	    
+	     Sync.procesWait(2000);
+	     UTF.clickelement("id", "addGroup");
+	     Log4j.infoLog("click the  addGroup");
+	     Sync.procesWait(2000);
+	     UTF.inputText("id", "group",AddDivision );
+	     Log4j.infoLog("enter the AddDivision ");
+	     UTF.clickelement("id", "groups");
+	     Log4j.infoLog("click the  ADDbuttion");
+	     UTF.clickelement("xpath", ".//*[@id='groupadd']/following::button");
+	     Log4j.infoLog("click the  closebutton");
+	     UTF.selectByVisibleText("id", "Group_ID",AddDivision );
+	     Log4j.infoLog("select the AddDivision");
+	     
+	     
+	     UTF.clickelement("id", "addUserrole");
+	     Log4j.infoLog("click the addUserrole");
+	     Sync.procesWait(2000);
+	     UTF.inputText("id", "deptname", AddUserRole);
+	     Log4j.infoLog("enter userrole");
+	     Sync.procesWait(2000);
+	     UTF.selectByValue("id", "Dept_Level", seleteLevel);
+	    
+	     Log4j.infoLog("select the level");
+	     Sync.procesWait(2000);
+	     UTF.selectByVisibleText("id", "Reporting_Dept", SelectReportingRole);
+	     Log4j.infoLog("select the ReportingRole");
+	     UTF.clickelement("id", "userroles");
+	     Log4j.infoLog("click the addbutton");
+	     UTF.clickelement("cssSelector", ".close");
+	     Log4j.infoLog("click the close button");
+	     
+	     UTF.selectByVisibleText("id", "Dept_ID", AddUserRoles);
+	     Log4j.infoLog("select the add user role");
+	     
+	     UTF.selectByValue("id", "countryid", Country);
+	     Log4j.infoLog("select the Country");
+	     UTF.selectByVisibleText("id", "stateid",state );
+	     Log4j.infoLog("select the state");
+	     UTF.selectByVisibleText("id", "cityid", city);
+	     Log4j.infoLog("select the city");
+	     UTF.inputText("id", "Contact_Address", ContactAddress);
+	     Log4j.infoLog("select the ContactAddress");
+	     UTF.inputText("id", "Pincode", PinCode);
+	     Log4j.infoLog("select the PinCode");
+	     
+	     UTF.clickelement("id", "DOJ");
+	     Log4j.infoLog("select Date of join ");
+	     
+	     UTF.selectByVisibleText("className", "ui-datepicker-month", JoiningDateMonth);
+	     Log4j.infoLog("select JoiningDateManth ");
+	     UTF.clickelement("partialLinkText", "6");
+	     Log4j.infoLog("select DAY ");
+	     UTF.selectByValue("className", "ui-datepicker-year", JoiningDateyear);
+	     Log4j.infoLog("select JoiningDateyear ");
+	     
+	     UTF.inputText("id", "Emp_ID", EmployeeID);
+	     Log4j.infoLog("EmployeeID ");
+	  
+	     UTF.clickelement("id", "DOB");
+	     Log4j.infoLog("select DateOfBirth ");
+	     Sync.procesWait(2000);
+	     UTF.selectByVisibleText("className", "ui-datepicker-month", DateOfBirthmonth);
+	     Log4j.infoLog("select DateOfBirth month ");
+	     UTF.clickelement("partialLinkText", "6");
+	     Log4j.infoLog("Day selected ");
+	     UTF.selectByValue("className", "ui-datepicker-year", DateOfBirthyear);
+	     Log4j.infoLog("select DateOfBirthyear ");
+	     UTF.clickelement("xpath", ".//*[@id='adduser']/div[21]/button");
+	     
+	     
+	   /*  Assert.assertTrue(message.equals("NO DATA"));
+	 	 UTF.SwitchToDefaltFrame();
+	    */
+   }
+   
+       public void addCXOfields() throws Exception {
+    	 String username=readData.getdata("CXO", "username");
+  	     String password=readData.getdata("CXO", "password");
+  	     String ConfirmPassword=readData.getdata("CXO", "ConfirmPassword");
+  	     String FistName=readData.getdata("CXO", "FistName");
+  	     String LastName=readData.getdata("CXO", "LastName");
+  	 
+  	     String Emailaddress=readData.getdata("CXO", "Emailaddress");
+  	     String Mobilenumber=readData.getdata("CXO", "Mobilenumber");
+  	     String ADDBranchName=readData.getdata("CXO", "ADDBranchName");
+  	     String AddDivision=readData.getdata("CXO", "AddDivision");
+  	     String AddUserRole=readData.getdata("CXO", "AddUserRole");
+  	     String AddUserRoles=readData.getdata("CXO", "AddUserRoles");
+  	     String seleteLevel=readData.getdata("CXO", "seleteLevel");
+  	     String SelectReportingRole=readData.getdata("CXO", "SelectReportingRole");
+  	   
+  	     String Country=readData.getdata("CXO", "Country");
+  	     String state=readData.getdata("CXO", "state");
+  	     String city=readData.getdata("CXO", "city");
+  	     String ContactAddress=readData.getdata("CXO", "ContactAddress");
+  	     String PinCode=readData.getdata("CXO", "PinCode");
+  	     String  JoiningDateMonth=readData.getdata("CXO", "JoiningDateManth");
+  	     String  JoiningDateyear=readData.getdata("CXO", "JoiningDateyear");
+  	     String  EmployeeID=readData.getdata("CXO", "EmployeeID");
+  	     String  DateOfBirthmonth=readData.getdata("CXO", "DateOfBirthmanth");
+  	     String  DateOfBirthyear=readData.getdata("CXO", "DateOfBirthyear");
+  	   
+  	     
+  	     UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+  	     Sync.procesWait(2000);
+  	     Log4j.infoLog("switch the frame");
+  	     String message= UTF.findElement("xpath", "//form[@id='dynamic_curd_pagination']/following::div[1]").getText();
+  	     Log4j.infoLog(message); 
+  	    if(message.equals("NO DATA")) {
+  	    	UTF.clickelement("xpath", ".//*[@id='action']/img");
+  	    	Log4j.infoLog("click the plse button");
+  	    }
+  	    else {
+  	    	Log4j.infoLog("data is present edit on it");
+  	    }
+  	     Sync.procesWait(2000);
+  	     UTF.inputText("id", "username", username);
+  	     Log4j.infoLog("enter the user name");
+  	     UTF.inputText("id", "password", password);
+  	     Log4j.infoLog("enter the password");
+  	     UTF.inputText("id", "conf_password", ConfirmPassword);
+  	     Log4j.infoLog("enter the confirmpassword");
+  	     UTF.inputText("id", "First_Name", FistName);
+  	     Log4j.infoLog("enter the FistName");
+  	     UTF.inputText("id", "Last_Name", LastName);
+  	     Log4j.infoLog("enter LastName");
+  	     UTF.inputText("name", "Email_ID",Emailaddress);
+  	     Log4j.infoLog("enter Emailaddress");
+  	     UTF.inputText("id", "Mobile_Number", Mobilenumber);
+  	     Log4j.infoLog("enter Mobilenumber");
+  	     UTF.selectByValue("id", "Company_ID","125_striker" );
+  	     Log4j.infoLog("select the company");
+  	     UTF.findElement("id", "addDesg").click();
+  	     Sync.procesWait(2000);
+  	     UTF.inputText("id", "designtn",ADDBranchName );
+  	     Log4j.infoLog("enter the ADDBranchName ");
+  	     UTF.clickelement("xpath", ".//*[@id='designationadd']/following::button");
+  	     Log4j.infoLog("close the popup branchname ");
+  	   
+  	     UTF.clickelement("id", "designatins");
+  	     UTF.selectByVisibleText("id", "Branch_ID", ADDBranchName);
+  	     Log4j.infoLog("select the branch  ");
+  	    
+  	     Sync.procesWait(2000);
+  	     UTF.clickelement("id", "addGroup");
+  	     Log4j.infoLog("click the  addGroup");
+  	     Sync.procesWait(2000);
+  	     UTF.inputText("id", "group",AddDivision );
+  	     Log4j.infoLog("enter the AddDivision ");
+  	     UTF.clickelement("id", "groups");
+  	     Log4j.infoLog("click the  ADDbuttion");
+  	     UTF.clickelement("xpath", ".//*[@id='groupadd']/following::button");
+  	     Log4j.infoLog("click the  closebutton");
+  	     UTF.selectByVisibleText("id", "Group_ID",AddDivision );
+  	     Log4j.infoLog("select the AddDivision");
+  	     
+  	     
+  	     UTF.clickelement("id", "addUserrole");
+  	     Log4j.infoLog("click the addUserrole");
+  	     Sync.procesWait(2000);
+  	     UTF.inputText("id", "deptname", AddUserRole);
+  	     Log4j.infoLog("enter userrole");
+  	     Sync.procesWait(2000);
+  	     UTF.selectByValue("id", "Dept_Level", seleteLevel);
+  	    
+  	     Log4j.infoLog("select the level");
+  	     Sync.procesWait(2000);
+  	     UTF.selectByVisibleText("id", "Reporting_Dept", SelectReportingRole);
+  	     Log4j.infoLog("select the ReportingRole");
+  	     UTF.clickelement("id", "userroles");
+  	     Log4j.infoLog("click the addbutton");
+  	     UTF.clickelement("cssSelector", ".close");
+  	     Log4j.infoLog("click the close button");
+  	     
+  	     UTF.selectByVisibleText("id", "Dept_ID", AddUserRoles);
+  	     Log4j.infoLog("select the add user role");
+  	     
+  	     UTF.selectByValue("id", "countryid", Country);
+  	     Log4j.infoLog("select the Country");
+  	     UTF.selectByVisibleText("id", "stateid",state );
+  	     Log4j.infoLog("select the state");
+  	     UTF.selectByVisibleText("id", "cityid", city);
+  	     Log4j.infoLog("select the city");
+  	     UTF.inputText("id", "Contact_Address", ContactAddress);
+  	     Log4j.infoLog("select the ContactAddress");
+  	     UTF.inputText("id", "Pincode", PinCode);
+  	     Log4j.infoLog("select the PinCode");
+  	     
+  	     UTF.clickelement("id", "DOJ");
+  	     Log4j.infoLog("select Date of join ");
+  	     
+  	     UTF.selectByVisibleText("className", "ui-datepicker-month", JoiningDateMonth);
+  	     Log4j.infoLog("select JoiningDateManth ");
+  	     UTF.clickelement("partialLinkText", "6");
+  	     Log4j.infoLog("select DAY ");
+  	     UTF.selectByValue("className", "ui-datepicker-year", JoiningDateyear);
+  	     Log4j.infoLog("select JoiningDateyear ");
+  	     
+  	     UTF.inputText("id", "Emp_ID", EmployeeID);
+  	     Log4j.infoLog("EmployeeID ");
+  	  
+  	     UTF.clickelement("id", "DOB");
+  	     Log4j.infoLog("select DateOfBirth ");
+  	     Sync.procesWait(2000);
+  	     UTF.selectByVisibleText("className", "ui-datepicker-month", DateOfBirthmonth);
+  	     Log4j.infoLog("select DateOfBirth month ");
+  	     UTF.clickelement("partialLinkText", "6");
+  	     Log4j.infoLog("Day selected ");
+  	     Sync.implicitwait(2000);
+  	     UTF.selectByValue("className", "ui-datepicker-year", DateOfBirthyear);
+  	     Log4j.infoLog("select DateOfBirthyear ");
+  	     UTF.clickelement("xpath", ".//*[@id='adduser']/div[21]/button");
+  	     
+	   
+       }
+   
+   
+   
+   
+   
+   
+   
 }
