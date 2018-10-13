@@ -1,8 +1,11 @@
 package pageobject.MyServices.marketingAutomation.home;
 
 import java.io.IOException;
+import java.io.Reader;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -92,7 +95,7 @@ public class ProjectSetUpComponeat {
         Sync.procesWait(2000);
      
          UTF.inputText("xpath", "//*[@id='ProjectSetUp']/div[3]/input", "manoj");
-        Log4j.infoLog("Category Name is entere");
+         Log4j.infoLog("Category Name is entere");
          Sync.procesWait(2000);
          UTF.clickelement("id", "desigsubmit");
          Log4j.infoLog("click the submit");
@@ -646,7 +649,7 @@ public class ProjectSetUpComponeat {
   	     String  DateOfBirthmonth=readData.getdata("CXO", "DateOfBirthmanth");
   	     String  DateOfBirthyear=readData.getdata("CXO", "DateOfBirthyear");
   	   
-  	     
+  	     Sync.procesWait(2000);
   	     UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
   	     Sync.procesWait(2000);
   	     Log4j.infoLog("switch the frame");
@@ -760,15 +763,32 @@ public class ProjectSetUpComponeat {
 	   
        }
    
+       public void upDate() {
+    	   Sync.procesWait(2000);
+      	    UTF.clickelement("partialLinkText", "Update");  
+      	    Log4j.infoLog("click the update buttion");
+       }
+       
+       
       public void checking_manager_usersRoles() {
+    	  
+    	  Map<String,String> hashmap=new HashMap<String,String>();
+    	  
     	  Sync.procesWait(2000);
     	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
    	      Sync.procesWait(2000);
-   	   UTF.clickelement("xpath", ".//*[@id='item_127']/tr[1]/td[5]/button");
-   	  Sync.procesWait(2000);
-   	  List<WebElement> elements=UTF.findelements("xpath", ".//*[@id='item_127']/tr/td/h4/span");
-   	      for(WebElement text:elements){
-   	    	   System.out.println(text.getText());
+   	      UTF.clickelement("xpath", ".//*[@id='item_127']/tr[1]/td[5]/button");
+   	      Sync.procesWait(2000);
+   	      List<WebElement> melements=UTF.findelements("xpath", ".//*[@id='item_127']/tr/td/h4");
+   	     for(WebElement melemet:melements) {
+   	    
+   	    		System.out.println(melemet.getText());
+   	    
+   	    	
+   	    	
+   	  // hashmap.put(melemet.getText().split(":")[0].trim(),melemet.getText().split(":")[1].trim() );
+   	    	    	    	 
+   	    	//   System.out.println(hashmap.keySet());
    	      }
    	      
    	   	  Sync.procesWait(2000);
@@ -794,8 +814,77 @@ public class ProjectSetUpComponeat {
      	  UTF.clickelement("linkText", "manoj kumar");
     	   
        }
-   
-   
-   
+       
+       public void clickCancel_marketing_EMAIL_SETTINGS() {
+    	   Sync.procesWait(2000);
+    	   UTF.clickelement("xpath", ".//*[@id='dynamic_curd_form']//button");
+    	   Log4j.infoLog("click the cancel");
+    	   
+       }
+       public void clickSave_Save() {
+    	   Sync.procesWait(2000);
+    	   UTF.clickelement("xpath", "..//*[@id='addSubmit']");
+    	   Log4j.infoLog("click the Save");
+    	   
+       }
+       
+       public void marketing_EMAIL_SETTINGS_uploadingform() throws Exception {
+    	   Sync.procesWait(2000);
+    	   String Company_Name=readData.getdata("emailsettingsform", "Company_Name");
+    	   String From =readData.getdata("emailsettingsform", "From");
+    	   String  Reply_To=readData.getdata("emailsettingsform", "Reply_To");
+    	   String CC=readData.getdata("emailsettingsform", "CC");
+    	   String BCC=readData.getdata("emailsettingsform", "BCC");
+    	   
+    	   
+    	   UTF.selectByVisibleText("id", "Company_ID", Company_Name);
+    	   Log4j.infoLog("select the compnay name");
+    	   
+    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[2]/input", From);
+    	   Log4j.infoLog("enter the from email");
+    	  
+    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[3]/input", Reply_To);
+    	   Log4j.infoLog("enter the To email");
+    	   
+    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[4]/input", CC);
+    	   Log4j.infoLog("enter the CC");
+    	   
+    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[5]/input", BCC);
+    	   Log4j.infoLog("enter the BCC");
+       }
+       
+       
+       public void clickemailplusebutton() {
+    	   Sync.procesWait(2000);
+    	   UTF.clickelement("id", "action");
+       }
+       public void marketing_EMAIL_SETTINGS_dataupload() throws Exception {
+    	   Sync.procesWait(2000);
+    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+           String emailseetingmessage=	UTF.findElement("xpath", "//form[@id='dynamic_curd_form']/following::div[2]").getText();   
+    	   Log4j.infoLog("get the message "+emailseetingmessage);
+    	   if(emailseetingmessage.equals("No Emails Found")) {
+    		   clickemailplusebutton();
+    		   marketing_EMAIL_SETTINGS_uploadingform();
+    		   //clickSave_Save();
+    		   }
+    	   else {
+    		   Log4j.infoLog("datata allredy exist");
+    	   }
+    	   }
+    
+       public void SENDER_NAMES() {
+    	   
+       }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
    
 }

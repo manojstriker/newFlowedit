@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+<dataset name="emailsettingsform">
+<Company_Name>striker</Company_Name>
+<From ></From>
+<Reply_To></Reply_To>
+<CC></CC>
+<BCC></BCC>
+</dataset>
+
+</Testdata>
