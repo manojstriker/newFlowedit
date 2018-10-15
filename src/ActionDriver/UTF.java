@@ -170,6 +170,11 @@ import utilities.PropertiesReusabuls;
 	  public static void clickEneter() {
 		  Actions action=new Actions(driver);
 		  action.sendKeys(Keys.ENTER).build().perform();
+		  
+	  }
+	  public static void doubleclick(String attributeType,String attributeValue) {
+		  Actions action=new Actions(driver);
+		  action.doubleClick(findElement(attributeType,attributeValue)).build().perform();
 	  }
 	  public static void takeScrenShort(String filepath) {
 		File srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

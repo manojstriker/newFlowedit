@@ -3,6 +3,7 @@ package pageobject.MyServices.marketingAutomation.home;
 import java.io.IOException;
 import java.io.Reader;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -465,7 +466,27 @@ public class ProjectSetUpComponeat {
     	   Log4j.infoLog(" EmailStore");
     	   
        }
-       
+       public void errormessagesforManager () {
+    	  String username_error_message= UTF.findElement("xpath", ".//*[@id='username']/following::div[4]").getText();
+    	  Log4j.infoLog(username_error_message);
+    	  String password_error_message=UTF.findElement("xpath", ".//*[@id='password']/following::div[3]").getText();
+    	 
+    	  String ConfirmPassword_error_message=UTF.findElement("xpath", ".//*[@id='conf_password']/following::div[3]").getText();
+    	  
+    	  String First_Name_error_message= UTF.findElement("xpath", ".//*[@id='First_Name']/following::div[3]").getText();
+    	  
+    	  String Last_Name_error_message=UTF.findElement("xpath", ".//*[@id='Last_Name']/following::div[3]").getText();
+    	  
+    	  String Email_address_error_message=UTF.findElement("xpath", ".//*[@name='Email_ID']/following::div[3]").getText();
+    	  
+    	  
+    	  String Mobile_Number_error_message=UTF.findElement("xpath", ".//*[@id='Mobile_Number']/following::div[3]").getText();
+    	  
+    	  String Branch_error_message=UTF.findElement("xpath", ".//*[@id='Branch_ID']/following::div[3]").getText();
+    	  String Division_error_message=UTF.findElement("xpath", ".//*[@id='Group_ID']/following::div[3]").getText();
+    	  String UserRole_error_message=UTF.findElement("xpath", ".//*[@id='Dept_ID']/following::div[3]").getText();
+    	  String Reportingto_error_message=UTF.findElement("xpath", ".//*[@id='Reporting_Dept_UserId']/following::div[3]").getText();
+       }
 
 
 
@@ -491,11 +512,11 @@ public class ProjectSetUpComponeat {
 	     String city=readData.getdata("Manager", "city");
 	     String ContactAddress=readData.getdata("Manager", "ContactAddress");
 	     String PinCode=readData.getdata("Manager", "PinCode");
-	     String  JoiningDateMonth=readData.getdata("Manager", "JoiningDateManth");
-	     String  JoiningDateyear=readData.getdata("Manager", "JoiningDateyear");
-	     String  EmployeeID=readData.getdata("Manager", "EmployeeID");
-	     String  DateOfBirthmonth=readData.getdata("Manager", "DateOfBirthmanth");
-	     String  DateOfBirthyear=readData.getdata("Manager", "DateOfBirthyear");
+	     String JoiningDateMonth=readData.getdata("Manager", "JoiningDateManth");
+	     String JoiningDateyear=readData.getdata("Manager", "JoiningDateyear");
+	     String EmployeeID=readData.getdata("Manager", "EmployeeID");
+	     String DateOfBirthmonth=readData.getdata("Manager", "DateOfBirthmanth");
+	     String DateOfBirthyear=readData.getdata("Manager", "DateOfBirthyear");
 	   
 	     
 	     UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
@@ -612,7 +633,9 @@ public class ProjectSetUpComponeat {
 	     UTF.clickelement("partialLinkText", "6");
 	     Log4j.infoLog("Day selected ");
 	     Sync.procesWait(2000);
-	     UTF.clickelement("id", "usersubmit");
+	    
+	   //  UTF.clickelement("xpath", ".//*[@id='usersubmit']");
+	     UTF.doubleclick("xpath",".//*[@id='usersubmit']");
 	     Log4j.infoLog("click submit ");
 	     
 	     /*UTF.clickelement("xpath", ".//*[@id='adduser']/div[21]/button");
@@ -770,16 +793,24 @@ public class ProjectSetUpComponeat {
        }
        
        
-      public void checking_manager_usersRoles() {
-    	  
+      public void checking_manager_usersRoles() throws Exception {
+    	 String username=readData.getdata("Manager", "username");
+ 	     String FistName=readData.getdata("Manager", "FistName");
+ 	     String LastName=readData.getdata("Manager", "LastName");
+ 	     String Fullname=FistName+" "+LastName;
+ 	     String Emailaddress=readData.getdata("Manager", "Emailaddress");
+ 	     String Mobilenumber=readData.getdata("Manager", "Mobilenumber");
+ 	     String AddUserRole=readData.getdata("Manager", "AddUserRole");
+ 	     String Status=readData.getdata("Manager", "Status");
+ 	
     	  Map<String,String> hashmap=new HashMap<String,String>();
-    	  
     	  Sync.procesWait(2000);
     	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
    	      Sync.procesWait(2000);
-   	      UTF.clickelement("xpath", ".//*[@id='item_127']/tr[1]/td[5]/button");
+   	      UTF.clickelement("xpath", ".//*[@class='table event-cell-table']/tbody/tr[1]/td[5]/button");
    	      Sync.procesWait(2000);
-   	      List<WebElement> melements=UTF.findelements("xpath", ".//*[@id='item_127']/tr/td/h4");
+   	      List<WebElement> melements=UTF.findelements("xpath", ".//*[@class='table event-cell-table']/tbody/tr/td/h4");
+   	      //.//*[@class='table event-cell-table']/tbody/tr/td/h4
    	      for(int i=1;i<melements.size();i++)
    	      {
    	    	  System.out.println("i vlue is==============="+i);
@@ -787,11 +818,32 @@ public class ProjectSetUpComponeat {
    	    	{
    	    		continue;
    	    	}
-   	    	System.out.println(melements.get(i).getText().split(":")[0].trim());
-   	    	System.out.println(melements.get(i).getText().split(":")[1].trim());
-   	    	hashmap.put(melements.get(i).getText().split(":")[0].trim(), melements.get(i).getText().split(":")[1].trim());
    	    	
-   	      }
+   	    	//System.out.println(melements.get(i).getText().split(":")[0].trim());
+   	    	//System.out.println(melements.get(i).getText().split(":")[1].trim());
+   	    	hashmap.put(melements.get(i).getText().split(":")[0].trim(), melements.get(i).getText().split(":")[1].trim());
+   	        }
+   	   for(String values:hashmap.values()) {
+	    		if(values.equals(username)) {
+	    			Log4j.infoLog("username==>"+username+":>"+"present and valid");
+	    		}
+	    		else if(values.equals(Fullname)) {
+	    			Log4j.infoLog("Fullname==>"+Fullname+":>"+"present and valid");
+	    		}
+	    		else if(values.equals(Emailaddress)) {
+	    			Log4j.infoLog("Emailaddress==>"+Emailaddress+":>"+"present and valid");
+	    		}
+	    		else if(values.equals(Mobilenumber)) {
+	    			Log4j.infoLog("Mobilenumber==>"+Mobilenumber+":>"+"present and valid");
+	    		}
+	    		else if(values.equals(AddUserRole)) {
+	    			Log4j.infoLog("AddUserRole==>"+AddUserRole+":>"+"present and valid");
+	    		}
+	    		else if(values.equals(Status)) {
+	    			Log4j.infoLog("Status==>"+Status+":>"+"present and valid");
+	    		}
+	    		
+	    	}
    	      
    	   	  Sync.procesWait(2000);
    	    UTF.clickelement("partialLinkText", "Update");  

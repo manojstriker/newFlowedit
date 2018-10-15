@@ -13,7 +13,7 @@ public class Sample {
 		@Test
 		
 		   public void projuctSet_validation () throws Exception {
-			ProjectSetUpComponeat project=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/marketing_EMAIL_SETTINGSUploadingform.xml","Verifying_projuctSet_validation");
+			ProjectSetUpComponeat project=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Manager.xml","Verifying_projuctSet_validation");
 			try {
 				
 				
@@ -24,6 +24,17 @@ public class Sample {
 				project.ClickOn__userprivilleges_Upperbord();
 				project.ClickOn__userprivilleges_lowerbord();
 				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				project.ClickOn_userPrivilleges_Editoption();
 				project.user_Privileges_Web();
 				*/
@@ -31,8 +42,17 @@ public class Sample {
 				project.clickFlowEdit();
 				project.clickOn_ProjectManagement_upperbord();
 				project.clickOn_projuctManagement_lowerbord();
-				project.clickOn_Template_Settings_Upperbord();
-				project.ClickOn_Template_Settings_Lowerbord();
+				//project.clickOn_Template_Settings_Upperbord();
+				project.clickOn_USERS_Upperbord();
+				project.clickOn_User_Lowerbord();
+				project.clickOn_Manager_Upperbord();
+				project.clickOn_Manager_Lowerbord();
+				project.clickOn_Manager_Editoption();
+				project.checking_manager_usersRoles();
+	
+				//project.checking_manager_usersRoles();
+				
+			/*	project.ClickOn_Template_Settings_Lowerbord();
 				project.clickOn_Email_Upperbord();
 				project.ClickOn_Email_Lowerbord();
 				project.clickOn_MARKETING_EMAIL_SETTINGS_Upperbord();
