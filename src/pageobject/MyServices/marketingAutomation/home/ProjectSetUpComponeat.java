@@ -780,15 +780,17 @@ public class ProjectSetUpComponeat {
    	      UTF.clickelement("xpath", ".//*[@id='item_127']/tr[1]/td[5]/button");
    	      Sync.procesWait(2000);
    	      List<WebElement> melements=UTF.findelements("xpath", ".//*[@id='item_127']/tr/td/h4");
-   	     for(WebElement melemet:melements) {
-   	    
-   	    		System.out.println(melemet.getText());
-   	    
+   	      for(int i=1;i<melements.size();i++)
+   	      {
+   	    	  System.out.println("i vlue is==============="+i);
+   	    	if(i==6)
+   	    	{
+   	    		continue;
+   	    	}
+   	    	System.out.println(melements.get(i).getText().split(":")[0].trim());
+   	    	System.out.println(melements.get(i).getText().split(":")[1].trim());
+   	    	hashmap.put(melements.get(i).getText().split(":")[0].trim(), melements.get(i).getText().split(":")[1].trim());
    	    	
-   	    	
-   	  // hashmap.put(melemet.getText().split(":")[0].trim(),melemet.getText().split(":")[1].trim() );
-   	    	    	    	 
-   	    	//   System.out.println(hashmap.keySet());
    	      }
    	      
    	   	  Sync.procesWait(2000);
@@ -823,7 +825,7 @@ public class ProjectSetUpComponeat {
        }
        public void clickSave_Save() {
     	   Sync.procesWait(2000);
-    	   UTF.clickelement("xpath", "..//*[@id='addSubmit']");
+    	   UTF.clickelement("id", "addSubmit");
     	   Log4j.infoLog("click the Save");
     	   
        }
@@ -866,7 +868,7 @@ public class ProjectSetUpComponeat {
     	   if(emailseetingmessage.equals("No Emails Found")) {
     		   clickemailplusebutton();
     		   marketing_EMAIL_SETTINGS_uploadingform();
-    		   //clickSave_Save();
+    		  clickSave_Save();
     		   }
     	   else {
     		   Log4j.infoLog("datata allredy exist");
