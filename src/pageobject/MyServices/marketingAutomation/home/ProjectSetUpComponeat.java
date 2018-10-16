@@ -464,7 +464,21 @@ public class ProjectSetUpComponeat {
     	   Sync.procesWait(2000);
 	   	   UTF.clickelement("partialLinkText", "Yes");
     	   Log4j.infoLog(" EmailStore");
+    	  
+       }
+    /*   getpasswordNotification(String passwrod)
+       {	
     	   
+    	   return password_error_message
+       }
+       public void messagelength()
+       {
+    	 assert  getpass
+ 
+       }
+       public void upperandlowerdig(String datasetname)
+       {
+    	 assert  getpasswordNotification(data);
        }
        public void errormessagesforManager () {
     	  String username_error_message= UTF.findElement("xpath", ".//*[@id='username']/following::div[4]").getText();
@@ -488,7 +502,24 @@ public class ProjectSetUpComponeat {
     	  String Reportingto_error_message=UTF.findElement("xpath", ".//*[@id='Reporting_Dept_UserId']/following::div[3]").getText();
        }
 
-
+  */
+       
+       public void addbranchInManager(String Branchname) {
+    	 Sync.procesWait(2000);
+    	 if(UTF.findElement("", "").getText().equals(Branchname)) {
+    	   UTF.selectByVisibleText("id", "Branch_ID",Branchname );
+    	 }
+    	 UTF.findElement("id", "addDesg").click();
+  	     UTF.inputText("id", "designtn",Branchname );
+  	     Log4j.infoLog("enter the ADDBranchName ");
+    	   UTF.clickelement("", "");
+       }
+        
+       
+       public void managersubmitbuttion() {
+    	   Sync.elementToBeClickable("xpath", ".//*[@id='usersubmit']", 40);
+    	   UTF.clickelement("xpath", ".//*[@id='usersubmit']");
+       }
 
      public  void  addManagerfields() throws Exception {
 	   
@@ -526,10 +557,10 @@ public class ProjectSetUpComponeat {
 	     Log4j.infoLog(message); 
 	    if(message.equals("NO DATA")) {
 	    	UTF.clickelement("xpath", ".//*[@id='action']/img");
-	    	Log4j.infoLog("click the plse button");
+	    	Log4j.infoLog("click the pluse button");
 	    }
 	    else {
-	    	Log4j.infoLog("data is present edit on it");
+	    	Log4j.infoLog("scren is present edit on it");
 	    }
 	     Sync.procesWait(2000);
 	     UTF.inputText("id", "username", username);
@@ -633,10 +664,12 @@ public class ProjectSetUpComponeat {
 	     UTF.clickelement("partialLinkText", "6");
 	     Log4j.infoLog("Day selected ");
 	     Sync.procesWait(2000);
-	    
-	   //  UTF.clickelement("xpath", ".//*[@id='usersubmit']");
-	     UTF.doubleclick("xpath",".//*[@id='usersubmit']");
-	     Log4j.infoLog("click submit ");
+	    // clickSave_Save();
+	    managersubmitbuttion();
+	    // UTF.clickelement("xpath", ".//*[@id='usersubmit']");
+	    // UTF.javaScriptclick("xpath", ".//input[@id='usersubmit']");
+	    // UTF.doubleclick("xpath",".//input[@id='usersubmit']");
+	     //Log4j.infoLog("click submit ");
 	     
 	     /*UTF.clickelement("xpath", ".//*[@id='adduser']/div[21]/button");
 	     Log4j.infoLog("click the cancile ");

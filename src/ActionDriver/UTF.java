@@ -269,17 +269,13 @@ import utilities.PropertiesReusabuls;
 	    	
 	    }
 	
-	  
-	  
-	  /*
-	   * java script methods 
-	   
-	  
-	  public static void  javaScriptclick() {
-           JavaScriptException js=(JavaScriptException)driver;
-           js.executeScript("arguments[0].click();");
+	  public static void  javaScriptclick(String attributeType, String attributeValue) {
+       WebElement element =findElement(attributeType,attributeValue);
+       JavascriptExecutor executor = (JavascriptExecutor)driver;
+       executor.executeScript("arguments[0].click();", element);
 	  }
-	  public static void javaScriptSchroolDown() {
+	  /*
+	  public static void javaScriptSchroolDown(findElement(String attributeType, String attributeValue ) ) {
 		  JavaScriptException js = (JavaScriptException)driver;
 		  js.executeScript("history.go(0)");
 	  }
