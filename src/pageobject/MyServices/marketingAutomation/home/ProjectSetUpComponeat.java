@@ -160,7 +160,7 @@ public class ProjectSetUpComponeat {
       Sync.procesWait(2000);
       HomeComponent.clickProjectSetUp();
       Sync.procesWait(2000);
-      UTF.clickelement("xpath", "html/body/div[4]/div/table/tbody/tr/td[6]/a[1]");
+      UTF.clickelement("xpath", "html/body/div[3]/div/table/tbody/tr/td[6]/a[1]");
       Log4j.infoLog(" clickFlowEdit buttion");
      List<WebElement> projects= UTF.findelements("CSSSelector", ".galaxy-slide.scrollbar.gxyleft_450px");
    
@@ -423,14 +423,14 @@ public class ProjectSetUpComponeat {
           UTF.clickelement("id", "append_values_25,append_values_32,MARKETING_EMAIL_SETTINGS");
 	      Log4j.infoLog("clickOn_MARKETING_EMAIL_SETTINGS_Upperbord");
        }
-       public static void ClickOn_MARKETING_EMAIL_SETTINGS_Lowerbord() {
+       public  void ClickOn_MARKETING_EMAIL_SETTINGS_Lowerbord() {
           Sync.procesWait(3000);
           UTF.clickelement("xpath", "//*[contains(@title, 'Email Settings')]");
           Log4j.infoLog("ClickOn_MARKETING_EMAIL_SETTINGS_Lowerbord");
         }
 
 
-       public static void clickOn_MARKETING_EMAIL_SETTINGS_Editoption() throws Exception {
+       public  void clickOn_MARKETING_EMAIL_SETTINGS_Editoption() throws Exception {
 	      Sync.procesWait(3000);
   	      UTF.clickelement("xpath", ".//*[@id='MARKETING_EMAIL_SETTINGS' and @type='button']");
   	      Log4j.infoLog("clickOn_MARKETING_EMAIL_SETTINGS_Editoption");
@@ -1158,7 +1158,7 @@ public class ProjectSetUpComponeat {
     	   
        }
        
-       public void marketing_EMAIL_SETTINGS_uploadingform() throws Exception {
+       public void marketing_EMAIL_SETTINGS_Creating() throws Exception {
     	   Sync.procesWait(2000);
     	   String Company_Name=readData.getdata("emailsettingsform", "Company_Name");
     	   String From =readData.getdata("emailsettingsform", "From");
