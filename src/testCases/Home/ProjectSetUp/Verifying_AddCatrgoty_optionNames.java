@@ -17,8 +17,8 @@ public class Verifying_AddCatrgoty_optionNames {
 		
 		try {
 			ProjectSetUpComponeat projuct=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/smartTableFeture.xml","verifying_AddCatrgoty_optionNames");
-			//ProjectSetUpComponeat.addcategory_option_names();
-			ProjectSetUpComponeat.configCallFlowbutton_addcategory_option();
+			ProjectSetUpComponeat.addcategory_option_names();
+			
 			
 		}
 		catch (Exception e) {

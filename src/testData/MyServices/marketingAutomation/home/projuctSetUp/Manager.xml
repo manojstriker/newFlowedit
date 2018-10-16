@@ -13,8 +13,8 @@
 <ADDBranchName>kphb</ADDBranchName>
 <AddDivision>cxo</AddDivision>
 <AddUserRole>operative </AddUserRole>
-<AddUserRoles>operative  (Level 2)</AddUserRoles>
-<seleteLevel>2</seleteLevel>
+<AddUserRoles>manager</AddUserRoles>
+<seleteLevel>Level 2</seleteLevel>
 <SelectReportingRole>Admin</SelectReportingRole>
 <Reportingto></Reportingto>
 <Country>1_INDIA</Country>
@@ -31,5 +31,8 @@
 
 </dataset>
 
-
+<dataset name="invalidpassword">
+<lessthen4letters>mano</lessthen4letters>
+<empetypassowrd></empetypassowrd>
+</dataset>
 </Testdata>

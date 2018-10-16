@@ -19,7 +19,7 @@ public class HomeComponent {
 	}
      
       public static void clickhomebutton() {
-    	   Sync.procesWait(1600);
+    	   Sync.procesWait(3000);
     	   Log4j.infoLog("clickhomebutton");
     	   UTF.clickelement("partialLinkText", "Home");	 
       }
@@ -29,7 +29,7 @@ public class HomeComponent {
     	   //Log4j.infoLog("clicking the dashbord");
        }
        public static void clickProjectSetUp() {
-    	   Sync.procesWait(1600);
+    	   Sync.procesWait(3000);
     	   UTF.clickelement("partialLinkText", "Project SetUp");
     	   Log4j.infoLog("clickProjectSetUp");
        }

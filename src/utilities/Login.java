@@ -3,6 +3,7 @@ package utilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import ActionDriver.Sync;
 import ActionDriver.UTF;
 import basedriver.Browser;
 
@@ -16,7 +17,8 @@ public class Login
 			XmlReader readData=new XmlReader(filepath);
 			String username=readData.getdata("AdminLogin", "username");
 			String password=readData.getdata("AdminLogin", "password");
-			UTF.clickelement("partialLinkText", "Login");
+			Sync.procesWait(2000);
+			UTF.clickelement("xpath", ".//*[@class='nav-item office-login']/a");
 	        UTF.inputText("id", "username", username);
 	        UTF.inputText("id", "password", password);
 	        UTF.clickelement("id", "loginsubmit");

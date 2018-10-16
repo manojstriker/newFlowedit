@@ -18,7 +18,7 @@ public class Verifying_configCallFlowbutton {
 		try {
 			ProjectSetUpComponeat projuct=new ProjectSetUpComponeat("Verifying_configCallFlowbutton");
 			
-			ProjectSetUpComponeat.configCallFlowbutton_addcategory_option();
+			projuct.configCallFlowbutton_addcategory_option();
 			
 		}
 		catch (Exception e) {

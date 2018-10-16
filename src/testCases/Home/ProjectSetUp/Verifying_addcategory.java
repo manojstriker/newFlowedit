@@ -12,11 +12,11 @@ import utilities.Login;
 public class Verifying_addcategory {
 	@Test
 	
-	  public void verifying_addcategor () throws Exception {
+	  public void verifying_addcategory () throws Exception {
 		
 		try {
 			ProjectSetUpComponeat project=new ProjectSetUpComponeat("verifying_addcategory_displayed");
-			ProjectSetUpComponeat.addcategory();
+			project.addcategory();
 	
 			
 		}
@@ -35,6 +35,6 @@ public class Verifying_addcategory {
 
 	  @AfterMethod
 	  public void afterMethod() {
-		  //Browser.closebrowser();
+		 Browser.closebrowser();
 	  }
 }

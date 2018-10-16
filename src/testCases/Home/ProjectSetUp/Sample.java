@@ -15,7 +15,18 @@ public class Sample {
 		   public void projuctSet_validation () throws Exception {
 			ProjectSetUpComponeat project=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Manager.xml","Verifying_projuctSet_validation");
 			try {
+				project.clickFlowEdit();
+				project.clickOn_Manager_Editoption();
+				project.clickPlsebuttionmanger();
+				project.inavalidpasswordvalidation();
+				project.managersubmitbuttion();
 				
+				/*project.clickFlowEdit();
+				project.clickOn_Manager_Editoption();
+				project.clickPlsebuttionmanger();
+				project.addbranchInManager("kphb");
+				project.addDivisionInmanager("office");
+				project.adduserRolesInManager("manager", "Level 2", "Admin");
 				
 				
 	
@@ -25,7 +36,7 @@ public class Sample {
 				project.ClickOn__userprivilleges_lowerbord();
 				
 				
-				
+				project.clickFlowEdit();
 				
 				
 				
@@ -38,7 +49,7 @@ public class Sample {
 				project.ClickOn_userPrivilleges_Editoption();
 				project.user_Privileges_Web();
 				*/
-				
+				/*
 				project.clickFlowEdit();
 				project.clickOn_ProjectManagement_upperbord();
 				project.clickOn_projuctManagement_lowerbord();
