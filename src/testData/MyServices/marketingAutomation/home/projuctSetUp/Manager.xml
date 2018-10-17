@@ -33,6 +33,11 @@
 
 <dataset name="invalidpassword">
 <lessthen4letters>mano</lessthen4letters>
+<upperlatters>MANOJ</upperlatters>
+<lowcharcter>manojk</lowcharcter>
+<nummbers>12345</nummbers>
+
 <empetypassowrd></empetypassowrd>
+
 </dataset>
 </Testdata>

@@ -9,7 +9,7 @@ import java.util.Map;
 
 
 import org.openqa.selenium.WebElement;
-
+import org.testng.Assert;
 
 import ActionDriver.Sync;
 import ActionDriver.UTF;
@@ -478,45 +478,31 @@ public class ProjectSetUpComponeat {
     	   Log4j.infoLog(" EmailStore");
     	  
        }
-    public String   getpasswordNotification(String passwrod)
+    public String getpasswordNotification(String passwrod) throws InterruptedException
        {	
     	
-    	   if(passwrod==null) {
+    	   if(passwrod!=null) {
+    		   Sync.procesWait(3000);
     		   UTF.inputText("id", "password", passwrod);
+    		   Thread.sleep(2000);
     		   String password_error_message=UTF.findElement("xpath", ".//*[@id='password']/following::div[3]").getText();
     		   return password_error_message;
     	   }
-    	   else if(passwrod.length()==4) {
-    		   Sync.procesWait(2000);
-    		   UTF.inputText("id", "password", passwrod);
-    		   String password_error_message=UTF.findElement("xpath", ".//*[@id='password']/following::div[3]").getText();
-    		   return password_error_message;
-    	   }
-    	   else if(passwrod.toLowerCase()==passwrod) {
-    		   UTF.inputText("id", "password", passwrod);
-    		   String password_error_message=UTF.findElement("xpath", ".//*[@id='password']/following::div[3]").getText();
-    		   return password_error_message;
-    	   }
-    	   else if(passwrod==passwrod.toUpperCase()) {
-    		   UTF.inputText("id", "password", passwrod);
-    		   String password_error_message=UTF.findElement("xpath", ".//*[@id='password']/following::div[3]").getText();
-    		   return password_error_message;
-    	   }
-    	   else if(passwrod==passwrod.valueOf("")) {
-    		   
-    	   }
+    	   else
 		   return null;
        }
-    public void inavalidpasswordvalidation() throws Exception {
-    	String lessthen4letters=readData.getdata("invalidpassword", "lessthen4letters");
-    	String empetypassowrd=readData.getdata("invalidpassword", "empetypassowrd");
-    	
-    	if(getpasswordNotification(empetypassowrd).equals("Please enter at least 5 characters.")) {
-    		Log4j.infoLog("get error message Please enter at least 5 characters.");
+    public void inavalidpasswordvalidation(String datatSet) throws Exception {
+    	String password=readData.getdata(datatSet, "lessthen4letters");
+    	if(password.length()<5)
+    	{	
+    	Assert.assertEquals(getpasswordNotification(password),"Please enter at least 5 characters.");
+    		Log4j.infoLog(" entered at least 5 characters.");
     	}
     	else {
-    		Log4j.infoLog("wrong error message");
+    		Assert.assertEquals(getpasswordNotification(password),"Should Contain Uppercase,Lowercase,Numeric and Special Character");
+        		Log4j.infoLog("get error message Please enter at least 5 characters.");
     	}
+    	
     }
     
     
@@ -872,6 +858,15 @@ public class ProjectSetUpComponeat {
 	  
    }
 
+     
+     public void edit_flows_settingfor_manger() {
+    	 Sync.procesWait(4000);
+       	 UTF.clickelement("xpath", "//li[@title='Manager']");
+     }
+     
+     
+     
+     
      public void clickPlsebuttionCXO() {
   	    Sync.procesWait(2000);
   	    UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
