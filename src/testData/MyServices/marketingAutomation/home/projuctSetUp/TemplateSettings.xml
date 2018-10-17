@@ -11,15 +11,20 @@
 /*** sms sender data
 <dataset name ="smsSendername_manoj">
 <Company_Name>striker</Company_Name>
-<Sender_Name>manoj</Sender_Name>
+<Sender_Name>apsrtc</Sender_Name>
 </dataset>
 
 <dataset name ="smsSendername_sundeep">
 <Company_Name>striker</Company_Name>
-<Sender_Name>Sundeep</Sender_Name>
+<Sender_Name>Sundee</Sender_Name>
+</dataset>
+
+
+/***sms template settings
+<dataset  name="smstemplate_wish">
+<companeyname>striker</companeyname>
+<Template_Name>Bday_wish</Template_Name>
+<Template>this is doing for testing the application  sample demo code is  running </Template>
 </dataset>
 
 </Testdata>
-
-
-

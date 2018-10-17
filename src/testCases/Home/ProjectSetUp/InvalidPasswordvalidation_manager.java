@@ -14,24 +14,23 @@ public class InvalidPasswordvalidation_manager {
 	  try {
 		ProjectSetUpComponeat project=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Manager.xml","InvalidPasswordvalidation_manager");
 		 project.clickFlowEdit();
-		
-			project.clickOn_ProjectManagement_upperbord();
+		    project. edit_flows_settingfor_manger(); 
+			/*project.clickOn_ProjectManagement_upperbord();
 			project.clickOn_projuctManagement_lowerbord();
 			project.clickOn_USERS_Upperbord();
 			project.clickOn_USER_Lowerbord();
 			project.clickOn_Manager_Upperbord();
 			project.clickOn_Manager_Lowerbord();
-			
-			
-			
-			project.clickOn_Manager_Editoption();
-			project.clickPlsebuttionmanger();
+		    project.clickOn_Manager_Editoption();
+			*/
+		    project.clickPlsebuttio();
 			project.inavalidpasswordvalidation("invalidpassword");
 			project.inavalidpasswordvalidation("lowcharcter");
 			project.inavalidpasswordvalidation("upperlatters");
 			project.inavalidpasswordvalidation("nummbers");
+			project.managersubmitbuttion();
 		
-		project.inavalidpasswordvalidation("");
+		//project.inavalidpasswordvalidation("");
 	} catch (Exception e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

@@ -11,6 +11,8 @@ import java.util.Map;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import com.google.common.base.Utf8;
+
 import ActionDriver.Sync;
 import ActionDriver.UTF;
 
@@ -181,7 +183,7 @@ public class ProjectSetUpComponeat {
     
     
     
-    public  void delete_ProjectManagement() {
+    public static void delete_ProjectManagement() {
     	 Sync.procesWait(3000);
 	   	 UTF.clickelement("xpath", "//li[@title='Project Management']");
 	     Sync.procesWait(2000);
@@ -278,7 +280,7 @@ public class ProjectSetUpComponeat {
    	 Log4j.infoLog("clickOn_Manager_Lowerbord");
    	 }
 
-   public  void clickOn_Manager_Editoption() throws Exception {
+   public  void clickOn_Manager_Editoption()  {
 	 Sync.procesWait(3000);
    	 UTF.clickelement("xpath", ".//*[@id='MARKETING_USER_MANAGER' and @type='button']");
    	 Log4j.infoLog("clickOn_Manager_Editoption");
@@ -298,12 +300,12 @@ public class ProjectSetUpComponeat {
 	   
 	   }
    
-   public static void clickOn_Template_Settings_Upperbord() {
+   public  void clickOn_Template_Settings_Upperbord() {
 		Sync.procesWait(3000);
 		UTF.clickelement("id", "append_values_2,append_values_14,MARKETING_PROJECT_SETTINGS");
 		Log4j.infoLog("click On Template_Settings_upper");
 	}
-     public static void ClickOn_Template_Settings_Lowerbord() {
+     public  void ClickOn_Template_Settings_Lowerbord() {
    	 Sync.procesWait(3000);
      UTF.clickelement("xpath", "//*[contains(@title, 'Template Settings')]");
  	 Log4j.infoLog(" ClickOn_Template_Settings_Lowerbord");
@@ -321,12 +323,12 @@ public class ProjectSetUpComponeat {
      
      
      
-      public static void clickOn_SMS_Upperbord() {
+      public  void clickOn_SMS_Upperbord() {
 		   Sync.procesWait(3000);
 	       UTF.clickelement("id", "append_values_14,append_values_24,MARKETING_SMS_STORE");
 		   Log4j.infoLog("clickOn_SMS_Upperbord");
 	  }
-       public static void ClickOn_SMS_Lowerbord() {
+       public  void clickOn_SMS_Lowerbord() {
  	       Sync.procesWait(3000);
            UTF.clickelement("xpath", "//*[contains(@title, 'SMS')]");
 	       Log4j.infoLog("ClickOn_SMS_Lowerbord");
@@ -348,12 +350,12 @@ public class ProjectSetUpComponeat {
 		   Log4j.infoLog("clickOn_MARKETING_SMS_TEMPLETES_Upperbord");
     	   
        }
-       public static void ClickOn_MARKETING_SMS_TEMPLETES_Lowerbord() {
+       public  void clickOn_MARKETING_SMS_TEMPLETES_Lowerbord() {
 	       Sync.procesWait(3000);
            UTF.clickelement("xpath", "//*[contains(@title, 'SMS Templates')]");
 	       Log4j.infoLog("ClickOn_SENDER_NAMES_Lowerbord");
        }
-       public static void clickOn_MARKETING_SMS_TEMPLETES_Editoption() {
+       public  void clickOn_MARKETING_SMS_TEMPLETES_Editoption() {
  	      Sync.procesWait(3000);
    	      UTF.clickelement("xpath", ".//*[@id='MARKETING_SMS_TEMPLETES' and @type='button']");
    	      Log4j.infoLog("clickOn_SENDER_NAMES_Editoption");
@@ -542,7 +544,7 @@ public class ProjectSetUpComponeat {
        }
 
   */
-       public void clickPlsebuttionmanger() {
+       public void clickPlsebuttio() {
     	    Sync.procesWait(2000);
     	    UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
 	 	    Log4j.infoLog("switch the frame");
@@ -668,7 +670,7 @@ public class ProjectSetUpComponeat {
 	     
 	     
 	     
-	     clickPlsebuttionmanger();
+	     clickPlsebuttion();
 	     Sync.procesWait(2000);
 	     UTF.inputText("id", "username", username);
 	     Log4j.infoLog("enter the user name");
@@ -696,7 +698,7 @@ public class ProjectSetUpComponeat {
 	     adduserRolesInManager(AddUserRole,seleteLevel,SelectReportingRole,AddUserRoles);
 	     Sync.procesWait(2000);
 	     UTF.selectByVisibleText("id", "Reporting_Dept_UserId", SelectReportingRole);
-	    Log4j.infoLog("select the deporting");
+	     Log4j.infoLog("select the deporting");
 	     
 	     UTF.selectByValue("id", "countryid", Country);
 	     Log4j.infoLog("select the Country");
@@ -806,7 +808,7 @@ public class ProjectSetUpComponeat {
 	     
 	     Sync.procesWait(2000);
 	     UTF.selectByVisibleText("id", "Reporting_Dept_UserId", SelectReportingRole);
-	    Log4j.infoLog("select the deporting");
+	     Log4j.infoLog("select the deporting");
 	     
 	     UTF.selectByValue("id", "countryid", Country);
 	     Log4j.infoLog("select the Country");
@@ -844,11 +846,11 @@ public class ProjectSetUpComponeat {
 	     UTF.clickelement("partialLinkText", "6");
 	     Log4j.infoLog("Day selected ");
 	     Sync.procesWait(2000);
-	    // clickSave_Save();
-	    managersubmitbuttion();
-	    // UTF.clickelement("xpath", ".//*[@id='usersubmit']");
-	    // UTF.javaScriptclick("xpath", ".//input[@id='usersubmit']");
-	    // UTF.doubleclick("xpath",".//input[@id='usersubmit']");
+	     // clickSave_Save();
+	     managersubmitbuttion();
+	     // UTF.clickelement("xpath", ".//*[@id='usersubmit']");
+	     // UTF.javaScriptclick("xpath", ".//input[@id='usersubmit']");
+	     // UTF.doubleclick("xpath",".//input[@id='usersubmit']");
 	     //Log4j.infoLog("click submit ");
 	     
 	     /*UTF.clickelement("xpath", ".//*[@id='adduser']/div[21]/button");
@@ -859,15 +861,27 @@ public class ProjectSetUpComponeat {
    }
 
      
-     public void edit_flows_settingfor_manger() {
+     public void edit_flows_settingfor_manger()   {
     	 Sync.procesWait(4000);
-       	 UTF.clickelement("xpath", "//li[@title='Manager']");
+    	if( UTF.findElement("id", "MARKETING_USER_MANAGER").getText().equals("Manager")) {
+    		clickOn_Manager_Editoption() ;
+    	}
+    	else {
+    		clickOn_ProjectManagement_upperbord();
+			clickOn_projuctManagement_lowerbord();
+			clickOn_USERS_Upperbord();
+			clickOn_USER_Lowerbord();
+			clickOn_Manager_Upperbord();
+			clickOn_Manager_Lowerbord();
+		    clickOn_Manager_Editoption();
+    	}
+       	
      }
      
      
      
      
-     public void clickPlsebuttionCXO() {
+     public void clickPlsebuttion() {
   	    Sync.procesWait(2000);
   	    UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
 	 	    Log4j.infoLog("switch the frame");
@@ -989,7 +1003,7 @@ public class ProjectSetUpComponeat {
   	     String  EmployeeID=readData.getdata("CXO", "EmployeeID");
   	     String  DateOfBirthmonth=readData.getdata("CXO", "DateOfBirthmanth");
   	     String  DateOfBirthyear=readData.getdata("CXO", "DateOfBirthyear");
-  	   clickPlsebuttionmanger();
+  	     clickPlsebuttion();
 	     Sync.procesWait(2000);
 	     UTF.inputText("id", "username", username);
 	     Log4j.infoLog("enter the user name");
@@ -1115,19 +1129,18 @@ public class ProjectSetUpComponeat {
 	    		}
 	    		
 	    	}
-   	      
-   	   	  Sync.procesWait(2000);
+   	       Sync.procesWait(2000);
    	    UTF.clickelement("partialLinkText", "Update");  
    	      
    	      
-   	  // UTF.clickelement("xpath", ".//*[@id='item_127']/tr[1]/td[5]/button");
-   	      
-   	      
-   	     // UTF.clickelement("xpath", ".//*[@id='item_127']/tr[1]/td[5]/button");
-   	      
+   	  
       }
    
-   
+      
+     /*
+      * this method  for uaser privileges 
+      */
+      
        public void user_Privileges_Web() {
     	  Sync.procesWait(2000);
      	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
@@ -1161,7 +1174,7 @@ public class ProjectSetUpComponeat {
     	   String CC=readData.getdata("emailsettingsform", "CC");
     	   String BCC=readData.getdata("emailsettingsform", "BCC");
     	   
-    	   clickemailplusebutton();
+    	   clickplusbutton();
     	   UTF.selectByVisibleText("id", "Company_ID", Company_Name);
     	   Log4j.infoLog("select the compnay name");
     	   
@@ -1180,7 +1193,7 @@ public class ProjectSetUpComponeat {
        }
        
        
-       public void clickemailplusebutton() {
+       public void clickplusbutton() {
     	   Sync.procesWait(2000);
     	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
     	   Sync.procesWait(2000);
@@ -1201,16 +1214,121 @@ public class ProjectSetUpComponeat {
     
        
        
+       /*
+        * sma related functions
+        */
        
-       
-       public void SENDER_NAMES() {
+       public void sms_Sender_Names_noData_verifying() {
     	   
+    	  Sync.procesWait(2000);
+      	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+      	  Log4j.infoLog(" shifting to sms sender name  frame");
+      	 String message= UTF.findElement("xpath", "//form[@id='dynamic_curd_form']/following::div[3]").getText();
+	     Log4j.infoLog(message); 
+	   if(message.equals("NO DATA")) {
+		   Log4j.infoLog("no data is prest on screen");
+		   }
+	  else {
+	    	Log4j.infoLog("scren is present edit on it");
+	       }
+      	  
     	   
        }
+       public void clicksave_SmsSendername() {
+    	   Sync.procesWait(2000);
+    	   UTF.clickelement("id", "addsendername");
+    	   Log4j.infoLog("click the save buttion");
+       }
        
+       public void clickeplusbutton() {
+    	   Sync.procesWait(2000);
+    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+    	   Sync.procesWait(2000);
+    	   UTF.clickelement("id", "action");
+    	   Log4j.infoLog("click the plse buttion ");
+       }
+      public void sms_Sendername_creation(String datasetname) throws Exception {
+    	 String  companyname= readData.getdata(datasetname, "Company_Name");
+    	 String sendername=readData.getdata(datasetname, "Sender_Name");
+    	  
+    	 // clickOn_SENDER_NAMES_Editoption();
+    	 clickeplusbutton();
+    	  Sync.procesWait(2000);
+    	  UTF.selectByVisibleText("id", "Company_ID", companyname);
+    	  Log4j.infoLog("select the company name");
+    	  UTF.inputText("id", "Sender_ID", sendername);
+    	  Log4j.infoLog("enter the sender name");
+    	  clicksave_SmsSendername();
+    	  UTF.SwitchToDefaltFrame();
+    	  
+      }
        
+   /*  public void delete_SmsSendername_creation() {
+    	Sync.procesWait(2000);
+  	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+  	   Sync.procesWait(2000);
+  	   UTF.clickelement("partialLinkText", "Delete");
+  	   Log4j.infoLog("click the delete buttion");
+  	   Sync.procesWait(2000);
+  	   
+  	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
+  	  Log4j.infoLog("click the confirm");
+  	  
+  	    
+  	   UTF.SwitchToDefaltFrame();
+     }
+     */
+     public void delete_smsSender(String datasetname) throws Exception {
+    	   String sendername=readData.getdata(datasetname, "Sender_Name");
+           Sync.procesWait(2000);
+    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+    	   Sync.procesWait(2000);
+    	   String sendernamexpath="//h4[contains(text(),'"+sendername.toUpperCase()+"')]/following::td[2]/h4/a";
+    	   UTF.clickelement("xpath",sendernamexpath );
+    	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
+    	   Log4j.infoLog("click the confirm");
+    	   UTF.SwitchToDefaltFrame();
+    	      }
+
+    	  public void saveSmsTemplate() {
+    		  UTF.clickelement("id", "addSubmittemp");
+    	  }
+      public void creationSmsTemplate(String datasetname) throws Exception {
+    	  String Template_Name=readData.getdata(datasetname, "Template_Name");
+    	  String Template=readData.getdata(datasetname, "Template");
+    	  String companeyname=readData.getdata(datasetname, "companeyname");
+    	  
+    	 Sync.procesWait(2000);
+    	 UTF.selectByVisibleText("id", "Company_ID", companeyname);
+    	 Sync.procesWait(2000);
+    	 UTF.inputText("id", "Template_Name", Template_Name);
+    	 Sync.procesWait(2000);
+    	 UTF.inputText("id", "Template", Template);
+    	 saveSmsTemplate();
+    	 UTF.SwitchToDefaltFrame();
+       }
+    	
+      public void SmsTemplate_deletion(String datasetname ) throws Exception {
+    	  //.//h4[contains(text(),' Bday_wish')]/following::td[3]/h4/a[2]
+    	  String Template_Name=readData.getdata(datasetname, "Template_Name");
+          Sync.procesWait(2000);
+   	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+   	   Sync.procesWait(2000);
+   	   String Template_Namexpath=" .//h4[contains(text(),'"+ Template_Name.toUpperCase()+"')]/following::td[3]/h4/a[2]";
+   	   UTF.clickelement("xpath",Template_Namexpath );
+   	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
+   	   Log4j.infoLog("click the confirm");
+   	   UTF.SwitchToDefaltFrame();
+      }
        
-       
+     
+
+
+
+}
+     
+    
+    
        
        
        
@@ -1218,4 +1336,4 @@ public class ProjectSetUpComponeat {
        
        
    
-}
+
