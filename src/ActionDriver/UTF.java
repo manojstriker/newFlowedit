@@ -92,6 +92,9 @@ import utilities.PropertiesReusabuls;
 	  public static String getpageSource() {
 		 return driver.getPageSource();
 	  }
+	  public static void refresh() {
+		  driver.navigate().refresh();
+	  }
 //*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*//
 	
 	  public static void selectByVisibleText(String attributeType,String attributeValue,String text) {

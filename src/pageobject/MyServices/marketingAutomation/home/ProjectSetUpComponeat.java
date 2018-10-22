@@ -166,8 +166,7 @@ public class ProjectSetUpComponeat {
      List<WebElement> projects= UTF.findelements("CSSSelector", ".galaxy-slide.scrollbar.gxyleft_450px");
    
      for(WebElement projectsText: projects) {
-    	 Log4j.infoLog(projectsText.getText());
-    	if( projectsText.getText().equals("Contacts")) {
+    	 if( projectsText.getText().equals("Contacts")) {
     		 Log4j.infoLog(" FlowEdit buttion managers working as per excepet ");
     	}
      }
@@ -1316,7 +1315,7 @@ public class ProjectSetUpComponeat {
  * @throws Exception 
  * 
  */
-      public void userPrivileges_web(String datasetname) throws Exception {
+  public void userPrivileges_web(String datasetname) throws Exception {
   String calenderview=readData.getdata(datasetname, "calenderview");
   String Calendar_add=readData.getdata(datasetname, "Calendar_add");
   String Calendar_Update=readData.getdata(datasetname, "Calendar_Update");
@@ -1393,6 +1392,552 @@ public class ProjectSetUpComponeat {
   
      
       }
+  
+  
+  
+ /*
+  * this method for source managements clickig
+  */
+  
+  public void clickSourceManagemenet_UpperBord() {
+	   Sync.elementToBeClickable("id", "flow_name,append_values_36,MARKETING_MARKETING_MANAGEMENT", 40);
+	   UTF.clickelement("id", "flow_name,append_values_36,MARKETING_MARKETING_MANAGEMENT");
+	   Log4j.infoLog("clickSourceManagemenet_UpperBord");
+	   }
+  
+  public void clickSourceManagemenet_lowerBord() {
+	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Management')]/div", 40);
+	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Management')]/div");
+  	   Log4j.infoLog("clickSourceManagemenet_lowerBord");
+       }
+  public static void delete_SourceManagemenetnode() {
+	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Management')]/div", 40);
+	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Management')]/div");
+	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Management')]/div/button[1]", 40);
+	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Management')]/div/button[1]");
+	   Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+	   UTF.clickelement("partialLinkText", "Yes");
+	   Log4j.infoLog("delete_SourceManagemenetnode");
+  }
+  
+  /*
+   * this method  related productCosting  nodes
+   */
+  
+ 
+    public void clickProductCosting_UpperBord() {
+	   Sync.elementToBeClickable("id", "append_values_36,append_values_38,MARKETING_MARKETING_COSTING", 40);
+	   UTF.clickelement("id", "append_values_36,append_values_38,MARKETING_MARKETING_COSTING");
+	   Log4j.infoLog("clickProductCosting_UpperBord");
+	   }
+    
+    public void clickProductCosting_lowerBord() {
+ 	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Product Costing')]/div", 40);
+ 	   UTF.clickelement("xpath", "//*[contains(@title, 'Product Costing')]/div");
+   	   Log4j.infoLog("clickProductCosting_lowerBord");
+        }
+    
+    public  void clickProductCosting_Edit()  {
+    	  Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_MARKETING_COSTING']", 40);
+	      UTF.clickelement("xpath", ".//button[@id='MARKETING_MARKETING_COSTING']");
+	      Log4j.infoLog("clickOn_Audio_Editoption");
+	      Sync.procesWait(2000);
+      }
+    public void delete_ProductCostingnode() {
+       Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Product Costing')]/div", 40);
+   	   UTF.clickelement("xpath", "//*[contains(@title, 'Product Costing')]/div");
+ 	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Product Costing')]/div/button[2]", 40);
+ 	   UTF.clickelement("xpath", "//*[contains(@title, 'Product Costing')]/div/button[2]");
+ 	   Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+ 	   UTF.clickelement("partialLinkText", "Yes");
+ 	   Log4j.infoLog("delete_ProductCostingnode");
+   }
+   /*
+    * this methods for Source Tracker nodes 
+    */
+    
+    public void clickSourceTracker_UpperBord() {
+ 	   Sync.elementToBeClickable("id", "append_values_36,append_values_93,MARKETING_SOURCE_TRACKER", 40);
+ 	   UTF.clickelement("id", "append_values_36,append_values_93,MARKETING_SOURCE_TRACKER");
+ 	   Log4j.infoLog("clickSourceTracker_UpperBord");
+ 	   }
+     
+     public void clickSourceTracker_lowerBord() {
+  	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Tracker')]/div", 40);
+  	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Tracker')]/div");
+       Log4j.infoLog("clickSourceTracker_lowerBord");
+         }
+     public void delete_SourceTrackernode() {
+       Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Tracker')]/div", 40);
+       UTF.clickelement("xpath", "//*[contains(@title, 'Source Tracker')]/div");
+   	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Tracker')]/div/button[1]", 40);
+   	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Tracker')]/div/button[1]");
+   	   Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+   	   UTF.clickelement("partialLinkText", "Yes");
+   	   Log4j.infoLog("delete_SourceTrackernode");
+       }
+     
+     /*
+     * this method for  
+     * this methods Source Management------>> Website Tracker---->>Sources 
+	 * Sources  related nodes flow
+     */
+     public void clickSource_UpperBord() {
+   	   Sync.elementToBeClickable("id", "append_values_93,append_values_97,MARKETING_SOURCE_MANAGER", 40);
+   	   UTF.clickelement("id", "append_values_93,append_values_97,MARKETING_SOURCE_MANAGER");
+   	   Log4j.infoLog("clickSources_UpperBord()");
+   	   }
+       
+     public void clickSource_lowerBord() {
+       Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Sources')]/div", 40);
+       UTF.clickelement("xpath", "//*[contains(@title, 'Sources')]/div");
+       Log4j.infoLog("clickSource_lowerBord");
+       }
+     public void clickSource_edit() {
+       Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOURCE_MANAGER']", 40);
+	   UTF.clickelement("xpath", ".//button[@id='MARKETING_SOURCE_MANAGER']");
+	   Log4j.infoLog("clickSource_edit");
+	   }
+     public void delete_SourceNode() {
+       /* Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Sources')]/div", 40);
+       UTF.clickelement("xpath", "//*[contains(@title, 'Sources')]/div");
+       */
+       Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOURCE_MANAGER']/following::button[1]", 40);
+       UTF.clickelement("xpath", ".//button[@id='MARKETING_SOURCE_MANAGER']/following::button[1]");
+       Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+       UTF.clickelement("partialLinkText", "Yes");
+       Log4j.infoLog("delete_SourceTrackernode");
+         }
+     
+     /*
+     * this method for  
+     * this methods Source Management------>> Website Tracker---->>Events 
+	 * Events  related nodes flow
+     */
+     
+       public void clickEvents_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_93,append_values_96,MARKETING_EVENT_MANAGER", 40);
+     	   UTF.clickelement("id", "append_values_93,append_values_96,MARKETING_EVENT_MANAGER");
+     	   Log4j.infoLog("clickEvents_UpperBord()");
+     	   }
+         
+       public void clickEvents_lowerBord() {
+          Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Events')]/div", 40);
+          UTF.clickelement("xpath", "//*[contains(@title, 'Events')]/div");
+          Log4j.infoLog("clickEvents_lowerBord");
+          }
+       public void clickEvents_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_EVENT_MANAGER']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_EVENT_MANAGER']");
+  	      Log4j.infoLog("clickEvents_edit");
+  	     
+  	      }
+       public void delete_EventsNode() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_EVENT_MANAGER']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_EVENT_MANAGER']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_SourceTrackernode");
+          }
+       public void SwitchtoEventFrame() {
+    	   Sync.frameToBeAvailableAndSwitchToitlocator("id", "Dynamic_Frame", 40);
+     	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+       }
+       
+       public void creatingEvents(String datasheetname) throws Exception {
+    	   String Event_Name= readData.getdata(datasheetname, "Event_Name");
+    	   Sync.procesWait(2000);
+    	   UTF.inputText("xpath", ".//*[@id='dynamic_source_form']/div[1]/input", Event_Name);
+    	   Log4j.infoLog("entring user name ");
+           Sync.elementToBeClickable("xpath", ".//*[@id='dynamic_source_form']/div[2]/input", 40);
+           UTF.clickelement("xpath", ".//*[@id='dynamic_source_form']/div[2]/input");
+           Log4j.infoLog("clcik the save buttion ");
+    	   }
+       
+       public void creatingsources(String datasheetname) throws Exception {
+    	   String Event_Name= readData.getdata(datasheetname, "Event_Name");
+    	   String Source_Type= readData.getdata(datasheetname, "Source_Type");
+    	   String Source_Name= readData.getdata(datasheetname, "Source_Name");
+    	   Sync.procesWait(2000);
+    	   UTF.selectByVisibleText("xpath", ".//*[@id='Event_Name']", Event_Name);
+    	   Log4j.infoLog("entring user name ");
+    	   Sync.procesWait(2000);
+    	   UTF.selectByVisibleText("id", "source_type_id", Source_Type);
+    	   Sync.procesWait(2000);
+    	   UTF.inputText("id", "src_type", Source_Name);
+    	   
+    	   UTF.clickelement("xpath", ".//*[@id='dynamic_source_form']/div[5]/input");
+    	   
+       }
+      /* this node is CONNECTOR
+       * 
+       * 
+       *  sourcemanagement---->>CONNECTOR
+       *  
+       *  
+       */
+       
+
+       public void click_CONNECTOR_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_36,append_values_98,MARKETING_CONNECTOR", 40);
+     	   UTF.clickelement("id", "append_values_36,append_values_98,MARKETING_CONNECTOR");
+     	   Log4j.infoLog("clickCONNECTOR_UpperBord()");
+     	   }
+         
+       public void click_CONNECTOR_lowerBord() {
+          Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Connector')]/div", 40);
+          UTF.clickelement("xpath", "//*[contains(@title, 'Connector')]/div");
+          Log4j.infoLog("clickCONNECTOR_lowerBord");
+          }
+       public void click_CONNECTOR_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_CONNECTOR']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_CONNECTOR']");
+  	      Log4j.infoLog("clickCONNECTOR_edit");
+  	     
+  	      }
+       public void delete_CONNECTOR_Node() {
+          Sync.elementToBeClickable("xpath", "//button[@id='MARKETING_CONNECTOR']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_CONNECTOR']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_SourceTrackernode");
+          } 
+       
+       
+       public void Connector_Configuration(String Datasheetname) throws Exception {
+    	   
+    	   String Categroy= readData.getdata(Datasheetname, "Categroy");
+    	   String Permanent_Token= readData.getdata(Datasheetname, "Permanent_Token");
+    	   String Ad_Account_Id= readData.getdata(Datasheetname, "Ad_Account_Id");
+    	 
+    	   Sync.procesWait(2000);
+    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+    	  
+    	   Sync.elementToBeClickable("id", "newConnector", 40);
+    	   UTF.clickelement("id", "newConnector");
+    	   Log4j.infoLog("click the pluse butiion");
+    	   
+    	   
+    	   
+    	   UTF.selectByVisibleText("id", "categroy", Categroy);
+    	   Log4j.infoLog("Select Categroy is selected");
+    	   
+    	   UTF.inputText("xpath", ".//*[@id='connectorForm']/div[1]/input", Permanent_Token);
+    	   Log4j.infoLog("Permanent Token  is enter ");
+    	   
+    	   
+    	   UTF.inputText("xpath", ".//*[@id='connectorForm']/div[2]/input[1]", Ad_Account_Id);
+    	   Log4j.infoLog("Ad Account Id is eneter  ");
+    	   
+    	   UTF.clickelement("xpath", ".//*[@id='connectorForm']/div[3]/input");
+    	   Log4j.infoLog("click the  save button");
+    	   
+       }
+      /*
+       * 
+       *  Social Media 
+       *  sourcemanagement---->>Social Media
+       *  
+       *  
+       */
+       
+       public void click_SocialMedia_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_36,append_values_100,MARKETING_SOCIAL_MEDIA'", 40);
+     	   UTF.clickelement("id", "append_values_36,append_values_100,MARKETING_SOCIAL_MEDIA'");
+     	   Log4j.infoLog("click_SocialMedia_UpperBord()");
+     	   }
+         
+       public void click_SocialMedia_lowerBord() {
+          Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Social Media')]/div", 40);
+          UTF.clickelement("xpath", "//*[contains(@title, 'Social Media')]/div");
+          Log4j.infoLog("click_SocialMedia_lowerBord");
+          }
+       public void delete_SocialMedia_Node() {
+           Sync.elementToBeClickable("xpath", ".//span[@id='MARKETING_SOCIAL_MEDIA']/following::button[1]", 40);
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_SOCIAL_MEDIA']/following::button[1]");
+           Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+           UTF.clickelement("partialLinkText", "Yes");
+           Log4j.infoLog("delete_SourceTrackernode");
+           } 
+       
+       /*
+        * 
+        *  Social media source
+        *  sourcemanagement---->>Social Media--->Social media source
+        *  
+        *  
+        */
+       public void click_Socialmediasource_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_100,append_values_101,MARKETING_SOCIAL_SOURCE", 40);
+     	   UTF.clickelement("id", "append_values_100,append_values_101,MARKETING_SOCIAL_SOURCE");
+     	   Log4j.infoLog(" click_Socialmediasource_UpperBord");
+     	   }
+         
+       public void click_Socialmediasource_lowerBord() {
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Social media source')]/div", 40);
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Social media source')]/div");
+          Log4j.infoLog("click_Socialmediasource_lowerBord");
+          }
+       public void click_Socialmediasource_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOCIAL_SOURCE']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_SOCIAL_SOURCE']");
+  	      Log4j.infoLog("click_Socialmediasource_edit");
+  	     
+  	      }
+       public void delete_Socialmediasource_Node() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOCIAL_SOURCE']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_SOCIAL_SOURCE']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_Socialmediasource_Node");
+          } 
+       
+       /*
+        * 
+        *  Add posting
+        *  sourcemanagement---->>Social Media--->Add posting
+        *  
+        *  
+        */
+       public void click_Addposting_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_100,append_values_102,MARKETING_ADD_POSTING", 40);
+     	   UTF.clickelement("id", "append_values_100,append_values_102,MARKETING_ADD_POSTING");
+     	   Log4j.infoLog(" click_Addposting_UpperBord");
+     	   }
+         
+       public void click_Addposting_lowerBord() {
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Add posting')]/div", 40);
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Add posting')]/div");
+          Log4j.infoLog("click_Addposting_lowerBord");
+          }
+       public void click_Addposting_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_ADD_POSTING']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_ADD_POSTING']");
+  	      Log4j.infoLog("click_Addposting_edit");
+  	     
+  	      }
+       public void delete_Addposting_Node() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_ADD_POSTING']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_ADD_POSTING']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_Addposting_Node");
+          } 
+       /*
+        * 
+        *  Account Information
+        *  sourcemanagement---->>Social Media--->Account Information
+        *  
+        *  
+        */
+       public void click_AccountInformation_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_100,append_values_103,MARKETING_ACCOUNT_INFORMATION", 40);
+     	   UTF.clickelement("id", "append_values_100,append_values_103,MARKETING_ACCOUNT_INFORMATION");
+     	   Log4j.infoLog(" click_Addposting_UpperBord");
+     	   }
+         
+       public void click_AccountInformation_lowerBord() {
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Account Information')]/div", 40);
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Account Information')]/div");
+          Log4j.infoLog("click_AccountInformation_lowerBord");
+          }
+       public void click_AccountInformation_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_ACCOUNT_INFORMATION']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_ACCOUNT_INFORMATION']");
+  	      Log4j.infoLog("click_AccountInformation_edit");
+  	     
+  	      }
+       public void delete_AccountInformation_Node() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_ACCOUNT_INFORMATION']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_ACCOUNT_INFORMATION']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_AccountInformation_Node");
+          } 
+       /*
+        * 
+        *  Competitor analysis
+        *  sourcemanagement---->>Social Media--->Competitor analysis
+        *  
+        *  
+        */
+       public void click_Competitoranalysis_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_100,append_values_104,MARKETING_COMPETITOR_ANALYSIS", 40);
+     	   UTF.clickelement("id", "append_values_100,append_values_104,MARKETING_COMPETITOR_ANALYSIS");
+     	   Log4j.infoLog(" click_Competitoranalysis_UpperBord");
+     	   }
+         
+       public void click_Competitoranalysis_lowerBord() {
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Competitor analysis')]/div", 40);
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Competitor analysis')]/div");
+          Log4j.infoLog("click_Competitoranalysis_lowerBord");
+          }
+       public void click_Competitoranalysis_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_COMPETITOR_ANALYSIS']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_COMPETITOR_ANALYSIS']");
+  	      Log4j.infoLog("click_AccountInformation_edit");
+  	     
+  	      }
+       public void delete_Competitoranalysis_Node() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_COMPETITOR_ANALYSIS']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_COMPETITOR_ANALYSIS']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_AccountInformation_Node");
+          } 
+       /*
+        * 
+        *  Social chart
+        *  sourcemanagement---->>Social Media--->Social chart
+        *  
+        *  
+        */
+       public void click_Socialchart_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_100,append_values_105,MARKETING_SOCIAL_CHART", 40);
+     	   UTF.clickelement("id", "append_values_100,append_values_105,MARKETING_SOCIAL_CHART");
+     	   Log4j.infoLog(" click_Socialchart_UpperBord");
+     	   }
+         
+       public void click_Socialchart_lowerBord() {
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Social chart')]/div", 40);
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Social chart')]/div");
+          Log4j.infoLog("click_Socialchart_lowerBord");
+          }
+       public void click_Socialchart_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOCIAL_CHART']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_SOCIAL_CHART']");
+  	      Log4j.infoLog("click_Socialchart_edit");
+  	     
+  	      }
+       public void delete_Socialchart_Node() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOCIAL_CHART']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_SOCIAL_CHART']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_Socialchart_Node");
+          } 
+      
+       /*
+        * 
+        *   Push Notifications
+        *  sourcemanagement---->> Push Notifications--->
+        *  
+        *  
+        */
+       public void click_PushNotifications_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_36,append_values_106,MARKETING_PUSH_NOTIFICATIONS", 40);
+     	   UTF.clickelement("id", "append_values_36,append_values_106,MARKETING_PUSH_NOTIFICATIONS");
+     	   Log4j.infoLog(" click_Socialchart_UpperBord");
+     	   }
+         
+       public void click_PushNotifications_lowerBord() {
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Push Notifications')]/div", 40);
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Push Notifications')]/div");
+          Log4j.infoLog("click_Socialchart_lowerBord");
+          }
+      
+       public void delete_PushNotifications_Node() {
+          Sync.elementToBeClickable("xpath", ".//span[@id='MARKETING_MARKETING_MANAGEMENT']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//span[@id='MARKETING_MARKETING_MANAGEMENT']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_Socialchart_Node");
+          } 
+       
+       /*
+        * 
+        *  MOBILE_PUSH_NOTIFICATIONS
+        *  sourcemanagement---->>PUSH_NOTIFICATIONS-->>MOBILE_PUSH_NOTIFICATIONS
+        *  
+        *  
+        */
+       public void click_MOBILE_PUSH_NOTIFICATIONS_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_106,append_values_107,MARKETING_MOBILE_PUSH_NOTIFICATIONS", 40);
+     	   UTF.clickelement("id", "append_values_106,append_values_107,MARKETING_MOBILE_PUSH_NOTIFICATIONS");
+     	   Log4j.infoLog("click_MOBILE_PUSH_NOTIFICATIONS_UpperBord");
+     	   }
+         
+       public void click_MOBILE_PUSH_NOTIFICATIONS_lowerBord() {
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Mobile push notifications')]/div", 40);
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Mobile push notifications')]/div");
+          Log4j.infoLog("click_MOBILE_PUSH_NOTIFICATIONS_lowerBord");
+          }
+       public void click_MOBILE_PUSH_NOTIFICATIONS_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']");
+  	      Log4j.infoLog("click_MOBILE_PUSH_NOTIFICATIONS_edit");
+  	     
+  	      }
+       public void delete_MOBILE_PUSH_NOTIFICATIONS_Node() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_MOBILE_PUSH_NOTIFICATIONS_Node");
+          } 
+       /*
+        * 
+        *  Web push notifications
+        *  sourcemanagement---->>PUSH_NOTIFICATIONS-->>Web push notifications
+        *  
+        *  
+        */
+       public void click__WEB_PUSH_NOTIFICATIONS_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_106,append_values_108,MARKETING_WEB_PUSH_NOTIFICATIONS", 40);
+     	   UTF.clickelement("id", "append_values_106,append_values_108,MARKETING_WEB_PUSH_NOTIFICATIONS");
+     	   Log4j.infoLog("click_MOBILE_PUSH_NOTIFICATIONS_UpperBord");
+     	   }
+         
+       public void click__WEB_PUSH_NOTIFICATIONS_lowerBord() {
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Web push notifications')]/div", 40);
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Mobile push notifications')]/div");
+          Log4j.infoLog("click__WEB_PUSH_NOTIFICATIONS_lowerBord");
+          }
+       public void click__WEB_PUSH_NOTIFICATIONS_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']");
+  	      Log4j.infoLog("click__WEB_PUSH_NOTIFICATIONS_edit");
+  	     
+  	      }
+       public void delete__WEB_PUSH_NOTIFICATIONS_Node() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete_MOBILE_PUSH_NOTIFICATIONS_Node");
+          } 
+       /*
+        * 
+        *  Web push notifications
+        *  sourcemanagement---->>PUSH_NOTIFICATIONS-->>Web push notifications
+        *  
+        *  
+        */
+       public void click__IN_APP_MESSAGES_UpperBord() {
+     	   Sync.elementToBeClickable("id", "append_values_106,append_values_109,MARKETING_IN_APP_MESSAGES", 40);
+     	   UTF.clickelement("id", "append_values_106,append_values_109,MARKETING_IN_APP_MESSAGES");
+     	   Log4j.infoLog("click__IN_APP_MESSAGES_UpperBord");
+     	   }
+         
+       public void click__IN_APP_MESSAGES_lowerBord() {
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'In-App messages')]/div", 40);
+          UTF.clickelement("xpath", ".//*[contains(@title, 'In-App messages')]/div");
+          Log4j.infoLog("click__IN_APP_MESSAGES_lowerBord");
+          }
+       public void click__IN_APP_MESSAGES_edit() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_IN_APP_MESSAGES']", 40);
+  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_IN_APP_MESSAGES']");
+  	      Log4j.infoLog("click__IN_APP_MESSAGES_edit");
+  	     
+  	      }
+       public void delete__IN_APP_MESSAGES_Node() {
+          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_IN_APP_MESSAGES']/following::button[1]", 40);
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_IN_APP_MESSAGES']/following::button[1]");
+          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete__IN_APP_MESSAGES_Node");
+          } 
+       
 }
      
     
