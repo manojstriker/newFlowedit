@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+
+
+<dataset name="Manager">
+<userrole>Manager</userrole>
+<Users>manoj kumar</Users>
+<calenderview>".//*[@name='Calendar_Prev[]' and @value='View']/following::span[1]"</calenderview>
+
+<Calendar_add>".//*[@name='Calendar_Prev[]' and @value='Add']/following::span[1]"</Calendar_add>
+<Calendar_Update>".//*[@name='Calendar_Prev[]' and @value='Update']/following::span[1]"</Calendar_Update>
+<Contacts_Addevent>".//*[@value='Add Event']/following::span[1]"</Contacts_Addevent>
+<Contacts_viewgroup>".//*[@value='View Group']/following::span[1]"</Contacts_viewgroup>
+<Contacts_AddGroup>".//*[@value='Add Group']/following::span[1]"</Contacts_AddGroup>
+<Contacts_EditGroup>".//*[@value='Edit Group']/following::span[1]"</Contacts_EditGroup>
+<Contacts_DeleteGroup>".//*[@value='Delete Group']/following::span[1]"</Contacts_DeleteGroup>
+<Contacts_ShareGroup>".//*[@value='Share Group']/following::span[1]"</Contacts_ShareGroup>
+<Contacts_MoveGroup>".//*[@value='Move Group']/following::span[1]"</Contacts_MoveGroup>
+<Contacts_SetPermission>".//*[@value='Set Permission']/following::span[1]"</Contacts_SetPermission>
+<Contacts_ViewContacts>".//*[@value='View Contacts']/following::span[1]"</Contacts_ViewContacts>
+<Contacts_EditContact>=".//*[@value='Edit Contact']/following::span[1]"</Contacts_EditContact>
+<Contacts_DeleteContact>".//*[@value='Delete Contact']/following::span[1]"</Contacts_DeleteContact>
+<Contacts_AddComment>".//*[@value='Add Comment']/following::span[1]"</Contacts_AddComment>
+<Contacts_SMS>".//*[@value='SMS']/following::span[1]"</Contacts_SMS>
+<Contacts_Voice>".//*[@value='Voice']/following::span[1]"</Contacts_Voice>
+<Contacts_Email>".//*[@value='Email']/following::span[1]"</Contacts_Email>
+<Contacts_Upload>".//*[@value='Upload']/following::span[1]"</Contacts_Upload>
+<reportingview>".//*[@name='Reports_Prev[]']/following::span[1]"</reportingview>
+<sourceTracker>".//*[@name='Source_Tracker_Prev[]']/following::span[1]"</sourceTracker>
+</dataset>
+</Testdata>
+

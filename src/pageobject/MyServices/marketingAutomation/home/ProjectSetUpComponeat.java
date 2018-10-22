@@ -6,8 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
-
+import org.apache.commons.logging.Log;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -195,30 +194,28 @@ public class ProjectSetUpComponeat {
   	    
     }
 	public  void clickOn_projuctManagement_lowerbord() {
-		Sync.procesWait(3000);
+		Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Project Management')]", 40);
 		UTF.clickelement("xpath", "//*[contains(@title, 'Project Management')]");
 		Log4j.infoLog("clickOn_projuctManagement_lowerbord");
 	}
-    public  void ClickOn__userprivilleges_Upperbord() {
-    	Sync.procesWait(3000);
+    public  void clickOn__userprivilleges_Upperbord() {
+    	Sync.elementToBeClickable("id", "append_values_2,append_values_12,MARKETING_USER_ROLES", 40);
     	UTF.clickelement("id", "append_values_2,append_values_12,MARKETING_USER_ROLES");
     	Log4j.infoLog("ClickOn__userprivilleges_Upperbord");
     }
-    public  void ClickOn__userprivilleges_lowerbord() {
-    	Sync.procesWait(3000);
-    	 UTF.clickelement("xpath", "//*[contains(@title, 'UserPrivilleges')]");
+    public  void clickOn__userprivilleges_lowerbord() {
+    	Sync.elementToBeClickable("xpath", ".//*[@id='1' and contains(@title, 'User Privilleges')]/div", 40);  	
+    	
+    	//UTF.clickelement("id","MARKETING_USER_ROLES");
+    	UTF.clickelement("xpath", ".//*[@id='1' and contains(@title, 'User Privilleges')]/div");
     	Log4j.infoLog("ClickOn__userprivilleges_lowerbord");
     }
     
    
 	
-     public static void ClickOn_userPrivilleges_Editoption() {
-    	 Sync.procesWait(3000);
-    	 UTF.clickelement("xpath", "//*[contains(@title, 'User Privilleges')]");
-    	 Sync.procesWait(3000);          
+     public  void clickOn_userPrivilleges_Editoption() {
+    	Sync.elementToBeClickable("xpath", ".//*[@id='MARKETING_USER_ROLES' and  @type='button']", 40);  	         
     	UTF.clickelement("xpath", ".//*[@id='MARKETING_USER_ROLES' and  @type='button']");
-    	
-    	Sync.procesWait(3000);
     	Log4j.infoLog("ClickOn_userPrivilleges_Editoption");
      }
      public  void clickOn_USERS_Upperbord() {
@@ -621,8 +618,11 @@ public class ProjectSetUpComponeat {
        }
        
        public void managersubmitbuttion() {
-    	   Sync.elementToBeClickable("xpath", ".//*[@id='usersubmit']", 40);
-    	   UTF.clickelement("xpath", ".//*[@id='usersubmit']");
+    	   Sync.elementToBeClickable("xpath", ".//input[@id='usersubmit']", 40);
+    	   UTF.clickelement("xpath", ".//input[@id='usersubmit']");
+    	   Log4j.infoLog("click submit buttion");
+    	   
+    	 //  UTF.SwitchToDefaltFrame();
        }
        
        public void verifyingNOData() {
@@ -639,38 +639,38 @@ public class ProjectSetUpComponeat {
 	       }
        }
 
-     public  void  addManagerfields() throws Exception {
+     public  void  addManager_user_fields(String datasetname) throws Exception {
 	   
-	     String username=readData.getdata("Manager", "username");
-	     String password=readData.getdata("Manager", "password");
-	     String ConfirmPassword=readData.getdata("Manager", "ConfirmPassword");
-	     String FistName=readData.getdata("Manager", "FistName");
-	     String LastName=readData.getdata("Manager", "LastName");
+	     String username=readData.getdata(datasetname, "username");
+	     String password=readData.getdata(datasetname, "password");
+	     String ConfirmPassword=readData.getdata(datasetname, "ConfirmPassword");
+	     String FistName=readData.getdata(datasetname, "FistName");
+	     String LastName=readData.getdata(datasetname, "LastName");
 	 
-	     String Emailaddress=readData.getdata("Manager", "Emailaddress");
-	     String Mobilenumber=readData.getdata("Manager", "Mobilenumber");
-	     String ADDBranchName=readData.getdata("Manager", "ADDBranchName");
-	     String AddDivision=readData.getdata("Manager", "AddDivision");
-	     String AddUserRole=readData.getdata("Manager", "AddUserRole");
-	     String AddUserRoles=readData.getdata("Manager", "AddUserRoles");
-	     String seleteLevel=readData.getdata("Manager", "seleteLevel");
-	     String SelectReportingRole=readData.getdata("Manager", "SelectReportingRole");
+	     String Emailaddress=readData.getdata(datasetname, "Emailaddress");
+	     String Mobilenumber=readData.getdata(datasetname, "Mobilenumber");
+	     String ADDBranchName=readData.getdata(datasetname, "ADDBranchName");
+	     String AddDivision=readData.getdata(datasetname, "AddDivision");
+	     String AddUserRole=readData.getdata(datasetname, "AddUserRole");
+	     String AddUserRoles=readData.getdata(datasetname, "AddUserRoles");
+	     String seleteLevel=readData.getdata(datasetname, "seleteLevel");
+	     String SelectReportingRole=readData.getdata(datasetname, "SelectReportingRole");
 	   
-	     String Country=readData.getdata("Manager", "Country");
-	     String state=readData.getdata("Manager", "state");
-	     String city=readData.getdata("Manager", "city");
-	     String ContactAddress=readData.getdata("Manager", "ContactAddress");
-	     String PinCode=readData.getdata("Manager", "PinCode");
-	     String JoiningDateMonth=readData.getdata("Manager", "JoiningDateManth");
-	     String JoiningDateyear=readData.getdata("Manager", "JoiningDateyear");
-	     String EmployeeID=readData.getdata("Manager", "EmployeeID");
-	     String DateOfBirthmonth=readData.getdata("Manager", "DateOfBirthmanth");
-	     String DateOfBirthyear=readData.getdata("Manager", "DateOfBirthyear");
+	     String Country=readData.getdata(datasetname, "Country");
+	     String state=readData.getdata(datasetname, "state");
+	     String city=readData.getdata(datasetname, "city");
+	     String ContactAddress=readData.getdata(datasetname, "ContactAddress");
+	     String PinCode=readData.getdata(datasetname, "PinCode");
+	     String JoiningDateMonth=readData.getdata(datasetname, "JoiningDateManth");
+	     String JoiningDateyear=readData.getdata(datasetname, "JoiningDateyear");
+	     String EmployeeID=readData.getdata(datasetname, "EmployeeID");
+	     String DateOfBirthmonth=readData.getdata(datasetname, "DateOfBirthmanth");
+	     String DateOfBirthyear=readData.getdata(datasetname, "DateOfBirthyear");
 	   
 	     
 	     
 	     
-	     clickPlsebuttion();
+	    
 	     Sync.procesWait(2000);
 	     UTF.inputText("id", "username", username);
 	     Log4j.infoLog("enter the user name");
@@ -977,34 +977,33 @@ public class ProjectSetUpComponeat {
 	       }
      }
    
-       public void addCXOfields() throws Exception {
-    	 String username=readData.getdata("CXO", "username");
-  	     String password=readData.getdata("CXO", "password");
-  	     String ConfirmPassword=readData.getdata("CXO", "ConfirmPassword");
-  	     String FistName=readData.getdata("CXO", "FistName");
-  	     String LastName=readData.getdata("CXO", "LastName");
+       public void addCXOfields(String datasetname) throws Exception {
+    	 String username=readData.getdata(datasetname, "username");
+  	     String password=readData.getdata(datasetname, "password");
+  	     String ConfirmPassword=readData.getdata(datasetname, "ConfirmPassword");
+  	     String FistName=readData.getdata(datasetname, "FistName");
+  	     String LastName=readData.getdata(datasetname, "LastName");
   	 
-  	     String Emailaddress=readData.getdata("CXO", "Emailaddress");
-  	     String Mobilenumber=readData.getdata("CXO", "Mobilenumber");
-  	     String ADDBranchName=readData.getdata("CXO", "ADDBranchName");
-  	     String AddDivision=readData.getdata("CXO", "AddDivision");
-  	     String AddUserRole=readData.getdata("CXO", "AddUserRole");
-  	     String AddUserRoles=readData.getdata("CXO", "AddUserRoles");
-  	     String seleteLevel=readData.getdata("CXO", "seleteLevel");
-  	     String SelectReportingRole=readData.getdata("CXO", "SelectReportingRole");
+  	     String Emailaddress=readData.getdata(datasetname, "Emailaddress");
+  	     String Mobilenumber=readData.getdata(datasetname, "Mobilenumber");
+  	     String ADDBranchName=readData.getdata(datasetname, "ADDBranchName");
+  	     String AddDivision=readData.getdata(datasetname, "AddDivision");
+  	     String AddUserRole=readData.getdata(datasetname, "AddUserRole");
+  	     String AddUserRoles=readData.getdata(datasetname, "AddUserRoles");
+  	     String seleteLevel=readData.getdata(datasetname, "seleteLevel");
+  	     String SelectReportingRole=readData.getdata(datasetname, "SelectReportingRole");
   	   
-  	     String Country=readData.getdata("CXO", "Country");
-  	     String state=readData.getdata("CXO", "state");
-  	     String city=readData.getdata("CXO", "city");
-  	     String ContactAddress=readData.getdata("CXO", "ContactAddress");
-  	     String PinCode=readData.getdata("CXO", "PinCode");
-  	     String  JoiningDateMonth=readData.getdata("CXO", "JoiningDateManth");
-  	     String  JoiningDateyear=readData.getdata("CXO", "JoiningDateyear");
-  	     String  EmployeeID=readData.getdata("CXO", "EmployeeID");
-  	     String  DateOfBirthmonth=readData.getdata("CXO", "DateOfBirthmanth");
-  	     String  DateOfBirthyear=readData.getdata("CXO", "DateOfBirthyear");
-  	     clickPlsebuttion();
-	     Sync.procesWait(2000);
+  	     String Country=readData.getdata(datasetname, "Country");
+  	     String state=readData.getdata(datasetname, "state");
+  	     String city=readData.getdata(datasetname, "city");
+  	     String ContactAddress=readData.getdata(datasetname, "ContactAddress");
+  	     String PinCode=readData.getdata(datasetname, "PinCode");
+  	     String  JoiningDateMonth=readData.getdata(datasetname, "JoiningDateManth");
+  	     String  JoiningDateyear=readData.getdata(datasetname, "JoiningDateyear");
+  	     String  EmployeeID=readData.getdata(datasetname, "EmployeeID");
+  	     String  DateOfBirthmonth=readData.getdata(datasetname, "DateOfBirthmanth");
+  	     String  DateOfBirthyear=readData.getdata(datasetname, "DateOfBirthyear");
+  	     
 	     UTF.inputText("id", "username", username);
 	     Log4j.infoLog("enter the user name");
 	     UTF.inputText("id", "password", password);
@@ -1090,10 +1089,8 @@ public class ProjectSetUpComponeat {
  	
     	  Map<String,String> hashmap=new HashMap<String,String>();
     	  Sync.procesWait(2000);
-    	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-   	      Sync.procesWait(2000);
-   	      UTF.clickelement("xpath", ".//*[@class='table event-cell-table']/tbody/tr[1]/td[5]/button");
-   	      Sync.procesWait(2000);
+    	
+   	      
    	      List<WebElement> melements=UTF.findelements("xpath", ".//*[@class='table event-cell-table']/tbody/tr/td/h4");
    	      //.//*[@class='table event-cell-table']/tbody/tr/td/h4
    	      for(int i=1;i<melements.size();i++)
@@ -1137,21 +1134,8 @@ public class ProjectSetUpComponeat {
       }
    
       
-     /*
-      * this method  for uaser privileges 
-      */
+    
       
-       public void user_Privileges_Web() {
-    	  Sync.procesWait(2000);
-     	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-     	  Log4j.infoLog("shfiting uberprivilegs sheet");
-     	  UTF.clickelement("xpath`", ".//*[@id='usertab_privilleges']");
-     	  Sync.procesWait(2000);
-     	  UTF.selectByVisibleText("id", "userrole", "Manager");
-     	  Sync.procesWait(2000);
-     	  UTF.clickelement("linkText", "manoj kumar");
-    	   
-       }
        
        public void clickCancel_marketing_EMAIL_SETTINGS() {
     	   Sync.procesWait(2000);
@@ -1292,6 +1276,7 @@ public class ProjectSetUpComponeat {
 
     	  public void saveSmsTemplate() {
     		  UTF.clickelement("id", "addSubmittemp");
+    		  Log4j.infoLog("click on the save buttion");
     	  }
       public void creationSmsTemplate(String datasetname) throws Exception {
     	  String Template_Name=readData.getdata(datasetname, "Template_Name");
@@ -1300,10 +1285,13 @@ public class ProjectSetUpComponeat {
     	  
     	 Sync.procesWait(2000);
     	 UTF.selectByVisibleText("id", "Company_ID", companeyname);
+    	 Log4j.infoLog("Enter the company name::");
     	 Sync.procesWait(2000);
     	 UTF.inputText("id", "Template_Name", Template_Name);
+    	 Log4j.infoLog("Enter the  TemplateName ::");
     	 Sync.procesWait(2000);
     	 UTF.inputText("id", "Template", Template);
+    	 Log4j.infoLog("Enter the  Template  ::");
     	 saveSmsTemplate();
     	 UTF.SwitchToDefaltFrame();
        }
@@ -1314,7 +1302,7 @@ public class ProjectSetUpComponeat {
           Sync.procesWait(2000);
    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
    	   Sync.procesWait(2000);
-   	   String Template_Namexpath=" .//h4[contains(text(),'"+ Template_Name.toUpperCase()+"')]/following::td[3]/h4/a[2]";
+   	   String Template_Namexpath=" .//h4[contains(text(),'"+ Template_Name+"')]/following::td[3]/h4/a[2]";
    	   UTF.clickelement("xpath",Template_Namexpath );
    	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
    	   Log4j.infoLog("click the confirm");
@@ -1324,7 +1312,87 @@ public class ProjectSetUpComponeat {
      
 
 
-
+/********user privi
+ * @throws Exception 
+ * 
+ */
+      public void userPrivileges_web(String datasetname) throws Exception {
+  String calenderview=readData.getdata(datasetname, "calenderview");
+  String Calendar_add=readData.getdata(datasetname, "Calendar_add");
+  String Calendar_Update=readData.getdata(datasetname, "Calendar_Update");
+  String Contacts_Addevent=readData.getdata(datasetname, "Contacts_Addevent");
+  String Contacts_viewgroup=readData.getdata(datasetname, "Contacts_viewgroup");
+  String Contacts_AddGroup=readData.getdata(datasetname, "Contacts_AddGroup");
+  String Contacts_EditGroup=readData.getdata(datasetname, "Contacts_EditGroup");
+  String Contacts_DeleteGroup=readData.getdata(datasetname, "Contacts_DeleteGroup");
+  String Contacts_ShareGroup=readData.getdata(datasetname, "Contacts_ShareGroup");
+  String Contacts_MoveGroup=readData.getdata(datasetname, "Contacts_MoveGroup");
+  String Contacts_SetPermission=readData.getdata(datasetname, "Contacts_SetPermission");
+  String Contacts_ViewContacts=readData.getdata(datasetname, "Contacts_ViewContacts");
+  String Contacts_DeleteContact=readData.getdata(datasetname, "Contacts_DeleteContact");
+  String Contacts_AddComment=readData.getdata(datasetname, "Contacts_AddComment");
+  String Contacts_SMS=readData.getdata(datasetname, "Contacts_SMS");
+  String Contacts_Voice=readData.getdata(datasetname, "Contacts_Voice");
+  String Contacts_Email=readData.getdata(datasetname, "Contacts_Email");
+  String Contacts_Upload=readData.getdata(datasetname, "Contacts_Upload");
+  String reportingview=readData.getdata(datasetname, "reportingview");
+  String sourceTracker=readData.getdata(datasetname, "sourceTracker");
+     Sync.frameToBeAvailableAndSwitchToitlocator("id", "Dynamic_Frame", 40);
+     UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+     
+      UTF.clickelement("xpath", ".//*[contains(text(),'manoj kumar')]");
+      Log4j.infoLog("click the the useres");
+      UTF.clickelement("xpath", ".//input[@name='Web_Email_Prev[]']/following::span[1]");
+      Log4j.infoLog("selecting the webmail view option");
+      
+      UTF.clickelement("xpath",calenderview);
+      
+      UTF.clickelement("xpath",Calendar_add);
+      
+      UTF.clickelement("xpath",Calendar_Update);
+      
+      UTF.clickelement("xpath",Contacts_Addevent);
+      
+      UTF.clickelement("xpath",Contacts_viewgroup);
+      
+      UTF.clickelement("xpath",Contacts_AddGroup);
+      
+      UTF.clickelement("xpath",Contacts_EditGroup);
+      
+      UTF.clickelement("xpath",Contacts_DeleteGroup);
+      
+      UTF.clickelement("xpath",Contacts_ShareGroup);
+      
+      UTF.clickelement("xpath",Contacts_MoveGroup);
+      
+      UTF.clickelement("xpath",Contacts_SetPermission);
+      
+      UTF.clickelement("xpath",Contacts_ViewContacts);
+      
+      UTF.clickelement("xpath",Contacts_DeleteContact);
+      
+      UTF.clickelement("xpath",Contacts_AddComment);
+      
+      UTF.clickelement("xpath",Contacts_SMS);
+      
+      UTF.clickelement("xpath",Contacts_Voice);
+      
+      UTF.clickelement("xpath",Contacts_Email);
+      
+      
+      UTF.clickelement("xpath",Contacts_Upload);
+      
+      
+      UTF.clickelement("xpath",reportingview);
+      
+      UTF.clickelement("xpath",sourceTracker);
+      
+      
+      
+      UTF.clickelement("xpath", ".//*[@id='assign_usermenus_submit']");
+  
+     
+      }
 }
      
     

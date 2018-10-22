@@ -3,18 +3,18 @@
 
 
 <dataset name="CXO">
-<username>manoj</username>
+<username>kumarm</username>
 <password>Striker@123</password>
 <ConfirmPassword>Striker@123</ConfirmPassword>
 <FistName>manoj</FistName>
-<LastName>kumar</LastName>
-<Emailaddress>manoj.k@office@24by7.com</Emailaddress>
+<LastName>man</LastName>
+<Emailaddress>manoj.k@gmail.com</Emailaddress>
 <Mobilenumber>9999999999</Mobilenumber>
 <ADDBranchName>kphb</ADDBranchName>
-<AddDivision>mahi</AddDivision>
+<AddDivision>Manager</AddDivision>
 <AddUserRole>operative </AddUserRole>
-<AddUserRoles>operative  (Level 2)</AddUserRoles>
-<seleteLevel>2</seleteLevel>
+<AddUserRoles>manager</AddUserRoles>
+<seleteLevel>Level 2</seleteLevel>
 <SelectReportingRole>Admin</SelectReportingRole>
 <Reportingto></Reportingto>
 <Country>1_INDIA</Country>
@@ -23,12 +23,12 @@
 <ContactAddress>TELANGANA,Belampalli</ContactAddress>
 <PinCode>500089</PinCode>
 <JoiningDateManth>Jul</JoiningDateManth>
-<JoiningDateyear>2018</JoiningDateyear>
+<JoiningDateyear>2017</JoiningDateyear>
 <EmployeeID>11kq1a1</EmployeeID>
 <DateOfBirthmanth>Jul</DateOfBirthmanth> 
-<DateOfBirthyear>1994</DateOfBirthyear>
+<DateOfBirthyear>2000</DateOfBirthyear>
+<Status>Active</Status>
 
 </dataset>
-
 
 </Testdata>

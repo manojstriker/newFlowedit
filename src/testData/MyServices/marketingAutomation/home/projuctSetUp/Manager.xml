@@ -31,6 +31,36 @@
 
 </dataset>
 
+
+<dataset name="Managersundeep">
+<username>sundeep</username>
+<password>Striker@123</password>
+<ConfirmPassword>Striker@123</ConfirmPassword>
+<FistName>sundeep</FistName>
+<LastName>kumar</LastName>
+<Emailaddress>manoj.k@gmail.com</Emailaddress>
+<Mobilenumber>9999999999</Mobilenumber>
+<ADDBranchName>kphb</ADDBranchName>
+<AddDivision>cxo</AddDivision>
+<AddUserRole>operative </AddUserRole>
+<AddUserRoles>manager</AddUserRoles>
+<seleteLevel>Level 2</seleteLevel>
+<SelectReportingRole>Admin</SelectReportingRole>
+<Reportingto></Reportingto>
+<Country>1_INDIA</Country>
+<state>TELANGANA</state>
+<city>Belampalli</city>
+<ContactAddress>TELANGANA,Belampalli</ContactAddress>
+<PinCode>500089</PinCode>
+<JoiningDateManth>Jul</JoiningDateManth>
+<JoiningDateyear>2017</JoiningDateyear>
+<EmployeeID>11kq1a1</EmployeeID>
+<DateOfBirthmanth>Jul</DateOfBirthmanth> 
+<DateOfBirthyear>2000</DateOfBirthyear>
+<Status>Active</Status>
+
+</dataset>
+
 <dataset name="invalidpassword">
 <lessthen4letters>mano</lessthen4letters>
 <upperlatters>MANOJ</upperlatters>
