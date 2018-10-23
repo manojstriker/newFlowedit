@@ -1938,6 +1938,177 @@ public class ProjectSetUpComponeat {
           Log4j.infoLog("delete__IN_APP_MESSAGES_Node");
           } 
        
+       /*
+        * 
+        * 
+          Long Code
+        *  sourcemanagement---->>-->Long Code
+
+        *  
+        *  
+        */
+        public void click__LongCode_UpperBord() {
+       	
+       	   UTF.clickelement("id", "append_values_36,append_values_77,MARKETING_LONG_CODE");
+       	   Log4j.infoLog("click__LongCode_UpperBord");
+       	   }
+         
+        public void click_LongCode_edit() {
+              UTF.clickelement("xpath", ".//button[@id='MARKETING_LONG_CODE']");
+    	      Log4j.infoLog("click__ILongCode_edit");
+    	     
+    	      }
+        public void click_LongCode_lowerBord() {
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Long Code')]/div");
+          Log4j.infoLog("click___LongCode_lowerBord");
+          }
+        
+        public void delete_LongCode_Node() {
+          UTF.clickelement("xpath", ".//button[@id='MARKETING_LONG_CODE']/following::button[1]");
+          UTF.clickelement("partialLinkText", "Yes");
+          Log4j.infoLog("delete___LongCode_Node");
+          } 
+        
+        public void filling_LongCode(String datasheetname) throws Exception {
+        	String Event_Name=readData.getdata(datasheetname, "Event_Name");
+
+        	String source_name=readData.getdata(datasheetname, "source_name");
+        	Log4j.infoLog("source_name is enter");
+        	String long_code=readData.getdata(datasheetname, "long_code");
+        	
+        	UTF.selectByVisibleText("id", "Event_Name", Event_Name);
+        	Log4j.infoLog(" select the event name");
+        	UTF.selectByVisibleText("id", "source_name",source_name);
+        	Log4j.infoLog(" select the source_name");
+        	UTF.selectByVisibleText("id", "long_code", long_code);
+        	Log4j.infoLog(" select the long_code");
+        	UTF.clickelement("id", "fieldsssubmit");
+        	Log4j.infoLog(" click save ");
+        	
+        }
+        
+        
+        /*
+         * 
+         * 
+           Customer Score
+         *  sourcemanagement---->>-->Customer Score
+
+         *  
+         *  
+         */
+         public void click_CustomerScore_UpperBord() {
+        	
+        	   UTF.clickelement("id", "append_values_36,append_values_79,MARKETING_CUSTOMER_SCORE");
+        	   Log4j.infoLog("click__CustomerScore_UpperBord");
+        	   }
+          
+       
+         public void click_CustomerScore_lowerBord() {
+           UTF.clickelement("xpath", ".//*[contains(@title, 'Customer Score')]/div");
+           Log4j.infoLog("click_CustomerScore_lowerBord");
+           }
+         
+         public void delete_CustomerScore_Node() {
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_CUSTOMER_SCORE']/following::button[1]");
+           UTF.clickelement("partialLinkText", "Yes");
+           Log4j.infoLog("delete___LongCode_Node");
+           } 
+        
+         /*
+          * 
+          * 
+            Source Wise
+          *  sourcemanagement---->>-->Customer Score----------->>>Source Wise
+
+          *  
+          *  
+          */
+          public void click_SourceWise_UpperBord() {
+         	
+         	   UTF.clickelement("id", "append_values_79,append_values_86,MARKETING_CUSTOMER_SCORE_SOURCE_WISE");
+         	   Log4j.infoLog("click__SourceWise_UpperBord()");
+         	   }
+           
+          public void click_SourceWise_edit() {
+                UTF.clickelement("xpath", ".//button[@id='MARKETING_CUSTOMER_SCORE_SOURCE_WISE']");
+      	        Log4j.infoLog("click_SourceWise_edit");
+      	     
+      	      }
+          public void click_SourceWise_lowerBord() {
+            UTF.clickelement("xpath", ".//*[contains(@title, 'Source Wise')]/div");
+            Log4j.infoLog("click_SourceWise_lowerBord");
+            }
+          
+          public void delete_SourceWise_Node() {
+            UTF.clickelement("xpath", ".//button[@id='MARKETING_CUSTOMER_SCORE_SOURCE_WISE']/following::button[1]");
+            UTF.clickelement("partialLinkText", "Yes");
+            Log4j.infoLog("delete_SourceWise_Node");
+            } 
+          
+         public void SourceWiseScore(String datasheetname) throws Exception {
+             String Dynamic_Source=	 readData.getdata(datasheetname, "Dynamic_Source");
+             String Source_Type=	 readData.getdata(datasheetname, "Source_Type");
+             String Source_Name=	 readData.getdata(datasheetname, "Source_Name");
+             String Source_Score=	 readData.getdata(datasheetname, "Source_Score");
+        	 
+        	 UTF.selectByVisibleText("id", "source", Dynamic_Source);
+        	 Log4j.infoLog("click the source");
+            
+        	 UTF.selectByVisibleText("id", "source_type_id", Source_Type);
+        	 Log4j.infoLog("select the source type ");
+        	 
+        	 UTF.selectByVisibleText("id", "source_name", Source_Name);
+        	 Log4j.infoLog("select the source name  ");
+        	 
+        	 UTF.inputText("id", "sourcescore", Source_Score);
+        	 Log4j.infoLog("entring score  ");
+        	 
+        	 
+        	 
+        	 UTF.clickelement("id", "fieldsssubmit");
+        	 Log4j.infoLog("click the save buttion");
+         }
+          
+
+          /*
+           * 
+           * 
+            
+              Field Wise
+           *  sourcemanagement---->>-->Customer Score----------->>>Field Wise
+
+           *  
+           *  
+           */
+           public void click__FieldWise_UpperBord() {
+          	
+          	   UTF.clickelement("id", "append_values_79,append_values_87,MARKETING_CUSTOMER_SCORE_FIELDS_WISE");
+          	   Log4j.infoLog("click__FieldWise_UpperBord()");
+          	   }
+            
+           
+           public void click_FieldWise_lowerBord() {
+             UTF.clickelement("xpath", ".//*[contains(@title, 'Field Wise')]/div");
+             Log4j.infoLog("click_FieldWise_lowerBord()");
+             }
+           
+           public void click_FieldWise_edit() {
+               UTF.clickelement("xpath", ".//button[@id='MARKETING_CUSTOMER_SCORE_FIELDS_WISE']");
+     	        Log4j.infoLog("click_FieldWise_edit");
+     	     
+     	      }
+           
+           public void delete_FieldWise_Node() {
+             UTF.clickelement("xpath", ".//button[@id='click_FieldWise_edit']/following::button[1]");
+             UTF.clickelement("partialLinkText", "Yes");
+             Log4j.infoLog("delete_FieldWise_Node");
+             } 
+           
+        
+        
+        
+       
 }
      
     

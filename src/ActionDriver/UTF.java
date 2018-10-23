@@ -71,6 +71,7 @@ import utilities.PropertiesReusabuls;
 		findElement(attributeType, attributeValue).sendKeys(data);
 		}
 	  public static void clickinputText(String attributeType,String attributeValue,String data) {
+		  Sync.elementToBeClickable(attributeType, attributeValue, 40);
 		  findElement(attributeType, attributeValue).sendKeys(data);
 		  
 	  }
@@ -98,7 +99,8 @@ import utilities.PropertiesReusabuls;
 //*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*//
 	
 	  public static void selectByVisibleText(String attributeType,String attributeValue,String text) {
-		Select select=new Select(findElement(attributeType, attributeValue));
+		Sync.textToBePresentInElementLocated(attributeType, attributeValue, 40, text);
+		  Select select=new Select(findElement(attributeType, attributeValue));
 		select.selectByVisibleText(text);
 	   }
 	  public static void selectByValue(String attributeType,String attributeValue,String value) {
@@ -167,6 +169,7 @@ import utilities.PropertiesReusabuls;
 	  }
 	  public static void clickelement(String attributeType,String attributeValue) {
 		  Actions action=new Actions(driver);
+		  Sync.elementToBeClickable(attributeType, attributeValue, 40);
 		  WebElement element=findElement(attributeType, attributeValue);
 		  action.click(element).build().perform();
 	  }
