@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
 public class Verifying_ManagerNode_Marketing {
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void verifying_ManagerNode_Marketing() {
 	  ProjectSetUpComponeat project;
 	try {
@@ -28,7 +28,9 @@ public class Verifying_ManagerNode_Marketing {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	   
+	finally {
+		  ProjectSetUpComponeat.delete_ProjectManagement();
+	  }   
 	  
 	  
   }

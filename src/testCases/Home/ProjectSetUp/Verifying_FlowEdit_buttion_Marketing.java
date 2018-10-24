@@ -13,7 +13,7 @@ import org.testng.annotations.AfterMethod;
 public class Verifying_FlowEdit_buttion_Marketing {
 	
 	
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void verifying_FlowEdit_buttion() {
 	  try {
 		ProjectSetUpComponeat project=new ProjectSetUpComponeat("verifying_FlowEdit_buttion");

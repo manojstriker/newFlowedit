@@ -5,13 +5,11 @@
 <listeners>
 <listener class-name="utilities.Listeners"></listener>
 </listeners>
-<test name="sample">
+<test name="userscreation">
 <classes>
-<class name="testCases.Home.DashBord.DashBordfeaturesVerfying">
+  <class name="testCases/Home/ProjectSetUp/Creating_CXO_usercreationFrom"/>
+ <class name="testCases.Home..ProjectSetUp.Creating_Manger_usercreationFrom"/>
 
-
-
-</class> 
 </classes>
 </test>
 </suite>

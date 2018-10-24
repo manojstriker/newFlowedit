@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Verifying_ProductCosting_node {
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
  
   public void verifying_ProductCosting_node() {
 	    ProjectSetUpComponeat project;

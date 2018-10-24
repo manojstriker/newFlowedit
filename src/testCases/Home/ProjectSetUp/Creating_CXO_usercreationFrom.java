@@ -2,6 +2,7 @@ package testCases.Home.ProjectSetUp;
 
 import org.testng.annotations.Test;
 
+import basedriver.Browser;
 import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
@@ -10,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Creating_CXO_usercreationFrom {
-	@Test
+	@Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	  public void creating_CXO_usercreationFrom() {
 		  ProjectSetUpComponeat project;
 		try {
@@ -44,7 +45,7 @@ public class Creating_CXO_usercreationFrom {
 
 	  @AfterMethod
 	  public void afterMethod() {
-		// Browser.closebrowser();
+		 Browser.closebrowser();
 	  }
 
 }

@@ -9,7 +9,7 @@ import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
 public class UserPrivileges_web {
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void userPrivileges_web() {
 	  ProjectSetUpComponeat project;
 	try {

@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Verifying_LongCode_Node {
-	 @Test
+	 @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	  public void verifying_LongCode_Node() {
 		    ProjectSetUpComponeat project;
 			try {

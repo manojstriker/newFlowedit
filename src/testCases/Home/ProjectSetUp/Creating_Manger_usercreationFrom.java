@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Creating_Manger_usercreationFrom {
-	@Test
+	@Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	  public void creating_Manger_usercreationFrom() {
 		  ProjectSetUpComponeat project;
 		try {

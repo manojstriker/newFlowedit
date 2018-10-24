@@ -10,7 +10,7 @@ import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
 public class Verifying_ProjectManagementNode__Marketing {
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void verifying_ProjectManagementNode() {
 	  try {
 		ProjectSetUpComponeat project=new ProjectSetUpComponeat("verifying_ProjectManagementNode");

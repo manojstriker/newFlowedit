@@ -9,7 +9,7 @@ import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
 public class InvalidPasswordvalidation_manager {
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void invalidPasswordvalidation_manager() {
 	  try {
 		ProjectSetUpComponeat project=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Manager.xml","InvalidPasswordvalidation_manager");

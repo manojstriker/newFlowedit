@@ -11,7 +11,7 @@ import org.testng.annotations.AfterMethod;
 public class Delete_SmaSendername_creation {
 	
 	
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void delete_SmaSendername_creation() {
 	  try {
 		ProjectSetUpComponeat project=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/TemplateSettings.xml","delete_SmaSendername_creation");

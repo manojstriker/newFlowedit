@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
 public class Delete_SmsTemplate {
-	@Test
+	@Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	  public void delete_SmsTemplate()  {
 		  ProjectSetUpComponeat project;
 		try {

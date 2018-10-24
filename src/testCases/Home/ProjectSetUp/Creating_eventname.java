@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Creating_eventname {
-	 @Test
+	 @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	  public void creating_eventname() {
 		    ProjectSetUpComponeat project;
 			try {

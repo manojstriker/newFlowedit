@@ -10,7 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
 public class Creating_SmsSenderName_from {
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void creating_SmsSenderName_from() {
   try {
   ProjectSetUpComponeat project=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/TemplateSettings.xml","creating_SmsSenderName_from");

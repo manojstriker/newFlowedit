@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Creating_ConnectorConfiguration {
-	 @Test
+	 @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	  public void creating_ConnectorConfiguration() {
 		    ProjectSetUpComponeat project;
 			try {

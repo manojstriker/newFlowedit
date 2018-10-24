@@ -12,7 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Verifying_USERNode_merketing_Marketing {
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void verifying_USERnode() {
 	  try {
 		ProjectSetUpComponeat project=new ProjectSetUpComponeat("Verifying_USERNode_merketing_Marketing");

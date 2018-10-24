@@ -9,7 +9,7 @@ import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
 public class Verifying_projuctSet_validation {
-	@Test
+	@Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	
 	  public void projuctSet_validation () throws Exception {
 		

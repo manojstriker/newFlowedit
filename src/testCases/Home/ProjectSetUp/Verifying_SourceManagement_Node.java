@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Verifying_SourceManagement_Node {
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void verifying_SourceManagement_Node() {
 	    ProjectSetUpComponeat project;
 		try {

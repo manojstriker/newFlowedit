@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Verifying_AddCatrgoty_optionNames {
-	@Test
+	@Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	
 	  public void verifying_AddCatrgoty_optionNames () throws Exception {
 		

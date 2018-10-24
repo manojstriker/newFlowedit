@@ -10,7 +10,7 @@ import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
 public class Verifying_addcategory {
-	@Test
+	@Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	
 	  public void verifying_addcategory () throws Exception {
 		

@@ -2,6 +2,8 @@ package utilities;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -9,7 +11,7 @@ import org.w3c.dom.NodeList;
  public class XmlReader {
 String filepath;
   DocumentBuilderFactory dbFactory;
- DocumentBuilder dBuilder;
+  DocumentBuilder dBuilder;
   Document doc;
   String value;
  static NodeList nlist;
@@ -31,4 +33,8 @@ String filepath;
 		   }
  	   } return null;
 }
+   public void writedata(String datasetname,String keyValue) throws Exception {
+	    
+   }
+   
 }

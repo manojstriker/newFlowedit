@@ -10,7 +10,7 @@ import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
 public class ProjuctSetUp_table_Features_verifying{
-  @Test
+  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
   public void verifying_ProjuctSetUp_table_Fetures() {
 	  try {
 		ProjectSetUpComponeat projuctSetup=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/smartTableFeture.xml","ProjuctSetUp_table_Fetures_verifying");

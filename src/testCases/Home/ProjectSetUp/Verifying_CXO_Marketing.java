@@ -11,7 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Verifying_CXO_Marketing {
-	@Test
+	@Test(retryAnalyzer=utilities.RetryAnalyzer.class)
 	  public void verifying_CXO_Marketing() {
 		  try {
 			ProjectSetUpComponeat project=new ProjectSetUpComponeat("Verifying_CXO_Marketing");
@@ -32,6 +32,9 @@ public class Verifying_CXO_Marketing {
 			e.printStackTrace();
 			Assert.fail();
 		}
+		  finally {
+			  ProjectSetUpComponeat.delete_ProjectManagement();
+		  }  
 	  }
 	  @BeforeMethod
 	  public void beforeMethod() {
