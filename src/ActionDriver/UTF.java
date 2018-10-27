@@ -67,12 +67,13 @@ import utilities.PropertiesReusabuls;
 		return null;
         }
 	  public static void inputText(String attributeType,String attributeValue,String data) {
-		findElement(attributeType, attributeValue).clear();
+		Sync.presenceofElementLocated(attributeType, attributeValue, 40);
+		  findElement(attributeType, attributeValue).clear();
 		findElement(attributeType, attributeValue).sendKeys(data);
 		}
-	  public static void clickinputText(String attributeType,String attributeValue,String data) {
+	  public static void click(String attributeType,String attributeValue) {
 		  Sync.elementToBeClickable(attributeType, attributeValue, 40);
-		  findElement(attributeType, attributeValue).sendKeys(data);
+		  findElement(attributeType, attributeValue).click();
 		  
 	  }
 	  public static void cleardata(String attributeType,String attributeValue,String data) {
@@ -198,6 +199,7 @@ import utilities.PropertiesReusabuls;
 		  driver.switchTo().frame(index);
 	  }
 	  public static void SwitchToFrameByWebElement(String attributeType,String attributeValue) {
+		  
 		   WebElement element=findElement(attributeType, attributeValue);
 		   driver.switchTo().frame(element);
 	  }

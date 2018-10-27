@@ -9,17 +9,17 @@ import utilities.Login;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
-public class Verifying_ManagerNode_Marketing {
+public class Verifying_ManagerNode {
   @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
-  public void verifying_ManagerNode_Marketing() {
+  public void verifying_ManagerNode() {
 	  ProjectSetUpComponeat project;
 	try {
-		project = new ProjectSetUpComponeat("Verifying_ManagerNode_Marketing");
+		project = new ProjectSetUpComponeat("Verifying_ManagerNode");
 		    project.clickFlowEdit();
 			project.clickOn_ProjectManagement_upperbord();
 			project.clickOn_projuctManagement_lowerbord();
-			project.clickOn_USERS_Upperbord();
-			project.clickOn_USER_Lowerbord();
+			project.clickon_USERS_Upperbord();
+			project.clickon_USER_Lowerbord();
 			project.clickOn_Manager_Upperbord();
 			project.clickOn_Manager_Lowerbord();
 			project.clickOn_Manager_Editoption();
@@ -28,9 +28,7 @@ public class Verifying_ManagerNode_Marketing {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
-	finally {
-		  ProjectSetUpComponeat.delete_ProjectManagement();
-	  }   
+	 
 	  
 	  
   }

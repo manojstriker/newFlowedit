@@ -16,7 +16,13 @@ public class Sample {
 			ProjectSetUpComponeat project=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Manager.xml","Verifying_projuctSet_validation");
 			try {
 				project.clickFlowEdit();
-				project.checking_manager_usersRoles();
+				project.clickOn_ProjectManagement_upperbord();
+				project.clickOn_projuctManagement_lowerbord();
+				project.clickOn__userprivilleges_Upperbord();
+				project.clickOn__userprivilleges_lowerbord();
+				project.clickOn_userPrivilleges_Editoption();
+			
+			
 				
 				
 				

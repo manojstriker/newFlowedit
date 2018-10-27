@@ -17,7 +17,6 @@ public class Verifying_EventsNode {
 			try {
 				project = new ProjectSetUpComponeat("Verifying_EventsNode");
 				project.clickFlowEdit();
-				UTF.refresh();
 				project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
 				project.clickSourceTracker_UpperBord();

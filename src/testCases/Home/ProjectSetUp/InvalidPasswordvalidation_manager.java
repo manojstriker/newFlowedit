@@ -23,7 +23,7 @@ public class InvalidPasswordvalidation_manager {
 			project.clickOn_Manager_Lowerbord();
 		    project.clickOn_Manager_Editoption();
 			*/
-		    project.clickPlsebuttio();
+		    project.clickPlsebutton();
 			project.inavalidpasswordvalidation("invalidpassword");
 			project.inavalidpasswordvalidation("lowcharcter");
 			project.inavalidpasswordvalidation("upperlatters");

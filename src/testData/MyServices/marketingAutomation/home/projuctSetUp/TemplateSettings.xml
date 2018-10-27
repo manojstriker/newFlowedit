@@ -2,10 +2,10 @@
 <Testdata>
 <dataset name="emailsettingsform">
 <Company_Name>striker</Company_Name>
-<From ></From>
-<Reply_To></Reply_To>
-<CC></CC>
-<BCC></BCC>
+<From >manoj.k@office24by7.com</From>
+<Reply_To>manojkumar@office24by7.com</Reply_To>
+<CC>Striker@office24by7.com</CC>
+<BCC>Testing@office24by7.com</BCC>
 </dataset>
 
 /*** sms sender data
@@ -27,4 +27,21 @@
 <Template>this is doing for testing the application  sample demo code is  running </Template>
 </dataset>
 
+
+/****Audio  mobile***/
+<dataset  name="mobilerecod_fromnumbers">
+<Company_Name>striker</Company_Name>
+<mobile_number>8500563032</mobile_number>
+<file_name>audiofile</file_name>
+<servicenumber>04071903089</servicenumber>
+</dataset>
+
+/****text for record***/
+
+<dataset  name="Text_fromnumbers">
+<Company_Name>striker</Company_Name>
+<file_name>Textfile</file_name>
+<servicenumber>04071903089</servicenumber>
+<text_data>hello.how.areyoucomefast</text_data>
+</dataset>
 </Testdata>

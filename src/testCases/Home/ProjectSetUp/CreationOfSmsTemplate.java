@@ -21,10 +21,10 @@ public class CreationOfSmsTemplate {
 		project.ClickOn_Template_Settings_Lowerbord();
 		project.clickOn_SMS_Upperbord();
 		project.clickOn_SMS_Lowerbord();
-		project.clickOn_MARKETING_SMS_TEMPLETES_Upperbord();
-		project.clickOn_MARKETING_SMS_TEMPLETES_Lowerbord();
-		project.clickOn_MARKETING_SMS_TEMPLETES_Editoption();
-		project.clickPlsebuttio();
+		project.clickOn_SMS_TEMPLETES_Upperbord();
+		project.clickOn_SMS_TEMPLETES_Lowerbord();
+		project.clickOn_SMS_TEMPLETES_Editoption();
+		project.clickPlsebutton();
 		project.creationSmsTemplate("smstemplate_wish");
 	    } 
 	catch (Exception e) {

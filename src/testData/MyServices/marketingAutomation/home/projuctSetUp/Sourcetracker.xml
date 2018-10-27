@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Testdata>
-<dataset name="eventname_summeroffers">
-<Event_Name>summer offers</Event_Name>
+<dataset name="eventname_eventnode">
+<Event_Name>flashoffer</Event_Name>
 </dataset>
 <dataset name="eventname_fisttimeusers">
 <Event_Name>fisttimeusers</Event_Name>

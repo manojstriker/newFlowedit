@@ -10,16 +10,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class Verifying_CXO_Marketing {
+public class Verifying_CXO_Node {
 	@Test(retryAnalyzer=utilities.RetryAnalyzer.class)
-	  public void verifying_CXO_Marketing() {
+	  public void verifying_CXO_Node() {
 		  try {
-			ProjectSetUpComponeat project=new ProjectSetUpComponeat("Verifying_CXO_Marketing");
+			ProjectSetUpComponeat project=new ProjectSetUpComponeat("Verifying_CXO_Node");
 			project.clickFlowEdit();
 			project.clickOn_ProjectManagement_upperbord();
 			project.clickOn_projuctManagement_lowerbord();
-			project.clickOn_USERS_Upperbord();
-			project.clickOn_USER_Lowerbord();
+			project.clickon_USERS_Upperbord();
+			project.clickon_USER_Lowerbord();
 			project.clickOn_CXO_Upperbord();
 			project.clickOn_CXO_Lowerbord();
 			project.clickOn_CXO_Editoption();
@@ -32,9 +32,7 @@ public class Verifying_CXO_Marketing {
 			e.printStackTrace();
 			Assert.fail();
 		}
-		  finally {
-			  ProjectSetUpComponeat.delete_ProjectManagement();
-		  }  
+		 
 	  }
 	  @BeforeMethod
 	  public void beforeMethod() {

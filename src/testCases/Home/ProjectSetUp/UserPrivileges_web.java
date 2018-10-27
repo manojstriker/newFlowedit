@@ -9,7 +9,7 @@ import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
 public class UserPrivileges_web {
-  @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
+  @Test
   public void userPrivileges_web() {
 	  ProjectSetUpComponeat project;
 	try {
@@ -20,7 +20,7 @@ public class UserPrivileges_web {
 					project.clickOn__userprivilleges_Upperbord();
 					project.clickOn__userprivilleges_lowerbord();
 					project.clickOn_userPrivilleges_Editoption();
-					project.userPrivileges_web("Manager");
+					project.userPrivileges_creation_web("Cxo");
 					
 					
 	} catch (Exception e) {
@@ -28,10 +28,7 @@ public class UserPrivileges_web {
 		e.printStackTrace();
 		Assert.fail();
 	}
-	 finally {
-		  ProjectSetUpComponeat.delete_ProjectManagement();
-	  }   
-	  
+	
 	  
   }
   @BeforeMethod

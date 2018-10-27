@@ -2,10 +2,10 @@
 <Testdata>
 <dataset name="emailsettingsform">
 <Company_Name>striker</Company_Name>
-<From ></From>
-<Reply_To></Reply_To>
-<CC></CC>
-<BCC></BCC>
+<From >manoj.k@office24by7.com</From>
+<Reply_To>manojkumar@office24by7.com</Reply_To>
+<CC>Striker@office24by7.com</CC>
+<BCC>Testing@office24by7.com</BCC>
 </dataset>
 
 /*** sms sender data

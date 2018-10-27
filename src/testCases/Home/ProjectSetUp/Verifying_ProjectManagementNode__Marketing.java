@@ -18,6 +18,8 @@ public class Verifying_ProjectManagementNode__Marketing {
 		project.clickOn_ProjectManagement_upperbord();
 		project.clickOn_projuctManagement_lowerbord();
 		project.delete_ProjectManagement();
+		project.saveEditFlow_clickconfirm();
+		
 	  } catch (Exception e) {
 		e.printStackTrace();
 		Assert.fail();

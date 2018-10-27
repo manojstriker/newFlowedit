@@ -11,13 +11,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 public class Verifying_sourceNode {
-	 @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
+	 @Test
 	  public void verifying_sourceNode() {
 		    ProjectSetUpComponeat project;
 			try {
 				project = new ProjectSetUpComponeat("Verifying_sourceNode");
 				project.clickFlowEdit();
-				UTF.refresh();
+				
 				project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
 				project.clickSourceTracker_UpperBord();

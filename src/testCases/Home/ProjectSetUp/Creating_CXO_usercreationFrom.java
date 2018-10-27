@@ -19,8 +19,8 @@ public class Creating_CXO_usercreationFrom {
 			    project.clickFlowEdit();
 				project.clickOn_ProjectManagement_upperbord();
 				project.clickOn_projuctManagement_lowerbord();
-				project.clickOn_USERS_Upperbord();
-				project.clickOn_USER_Lowerbord();
+				project.clickon_USERS_Upperbord();
+				project.clickon_USER_Lowerbord();
 				project.clickOn_CXO_Upperbord();
 				project.clickOn_CXO_Lowerbord();
 				project.clickOn_CXO_Editoption();

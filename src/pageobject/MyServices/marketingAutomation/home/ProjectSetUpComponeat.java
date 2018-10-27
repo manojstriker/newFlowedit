@@ -1,6 +1,7 @@
 package pageobject.MyServices.marketingAutomation.home;
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import java.util.List;
@@ -161,9 +162,9 @@ public class ProjectSetUpComponeat {
       Sync.procesWait(2000);
       HomeComponent.clickProjectSetUp();
       Sync.procesWait(2000);
-      UTF.clickelement("xpath", "html/body/div[3]/div/table/tbody/tr/td[6]/a[1]");
+      UTF.clickelement("xpath", "html/body/div[3]/div[1]/div/table/tbody/tr/td[6]/a[1]");
       Log4j.infoLog(" clickFlowEdit buttion");
-     List<WebElement> projects= UTF.findelements("CSSSelector", ".galaxy-slide.scrollbar.gxyleft_450px");
+      List<WebElement> projects= UTF.findelements("CSSSelector", ".galaxy-slide.scrollbar.gxyleft_450px");
    
      for(WebElement projectsText: projects) {
     	 if( projectsText.getText().equals("Contacts")) {
@@ -172,9 +173,28 @@ public class ProjectSetUpComponeat {
      }
     
       }
+     public void editflow_popUp_confirm(){
+    	UTF.clickelement("xpath", "//*[@class='jconfirm-buttons']/button[1]");
+    	Log4j.infoLog("click the confrom");
+     }
+     public void editflow_popUp_cancel(){
+     	UTF.clickelement("xpath", "//*[@class='jconfirm-buttons']/button[2]");
+     	Log4j.infoLog("click the cancel");
+      }
+    public void saveEditFlow_clickconfirm() {
+    	UTF.clickelement("xpath", "html/body/div[3]/button[1]");
+    	Log4j.infoLog("click the save buttion");
+    	editflow_popUp_confirm();
+    }
+    public void ResetEditFlow_clickconfirm() {
+    	UTF.clickelement("xpath","html/body/div[3]/button[2]");
+    	Log4j.infoLog("click the Reset");
+    	editflow_popUp_confirm();
+    	
+    }
     public   void clickOn_ProjectManagement_upperbord() {
-    	Sync.procesWait(4000);
-    	UTF.clickelement("id", "flow_name,append_values_2,MARKETING_PROJECT_MANAGEMENT");
+    	Sync.procesWait(2000);
+    	UTF.clickelement("xpath", "//*[@index='MARKETING_PROJECT_MANAGEMENT|append_values_2']");
     	Log4j.infoLog("click on the ProjectManagement_upperbord");
     	
     }
@@ -182,10 +202,10 @@ public class ProjectSetUpComponeat {
     
     
     public static void delete_ProjectManagement() {
-    	 Sync.procesWait(3000);
+    	 Sync.procesWait(2000);
 	   	 UTF.clickelement("xpath", "//li[@title='Project Management']");
 	     Sync.procesWait(2000);
-	     UTF.clickelement("xpath", ".//*[@id='MARKETING_PROJECT_MANAGEMENT']/following::button[1]");
+	     UTF.clickelement("xpath", ".//span[@id='MARKETING_PROJECT_MANAGEMENT']/following::button[1]");
     	 Log4j.infoLog("delete button clicked ");
 	   	 Sync.procesWait(3000);
 	   	 UTF.clickelement("partialLinkText", "Yes");
@@ -193,183 +213,85 @@ public class ProjectSetUpComponeat {
   	    
     }
 	public  void clickOn_projuctManagement_lowerbord() {
-		Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Project Management')]", 40);
-		UTF.clickelement("xpath", "//*[contains(@title, 'Project Management')]");
+	
+		UTF.click("xpath", "//*[contains(@title, 'Project Management')]/div");
 		Log4j.infoLog("clickOn_projuctManagement_lowerbord");
 	}
-    public  void clickOn__userprivilleges_Upperbord() {
-    	Sync.elementToBeClickable("id", "append_values_2,append_values_12,MARKETING_USER_ROLES", 40);
-    	UTF.clickelement("id", "append_values_2,append_values_12,MARKETING_USER_ROLES");
-    	Log4j.infoLog("ClickOn__userprivilleges_Upperbord");
-    }
-    public  void clickOn__userprivilleges_lowerbord() {
-    	Sync.elementToBeClickable("xpath", ".//*[@id='1' and contains(@title, 'User Privilleges')]/div", 40);  	
-    	
-    	//UTF.clickelement("id","MARKETING_USER_ROLES");
-    	UTF.clickelement("xpath", ".//*[@id='1' and contains(@title, 'User Privilleges')]/div");
-    	Log4j.infoLog("ClickOn__userprivilleges_lowerbord");
-    }
-    
    
-	
-     public  void clickOn_userPrivilleges_Editoption() {
-    	Sync.elementToBeClickable("xpath", ".//*[@id='MARKETING_USER_ROLES' and  @type='button']", 40);  	         
-    	UTF.clickelement("xpath", ".//*[@id='MARKETING_USER_ROLES' and  @type='button']");
-    	Log4j.infoLog("ClickOn_userPrivilleges_Editoption");
-     }
-     public  void clickOn_USERS_Upperbord() {
-    	 Sync.procesWait(3000);
-    	 UTF.clickelement("id", "append_values_2,append_values_13,MARKETING_USERS");
-    	 Log4j.infoLog("clickon_USERS_Upperbord");
-
-     }
-     public  void clickOn_USER_Lowerbord() {
-    	 Sync.procesWait(3000);
-    	 UTF.clickelement("xpath", "//*[contains(@title, 'Users')]");
-    	 Log4j.infoLog("clickOn_User_Lowerbord");
-     }
-     public void delete_USER() {
-    	 Sync.procesWait(3000);
-    	 UTF.clickelement("xpath", ".//*[@id='MARKETING_USERS']/following::button[1]");
-    	 Log4j.infoLog("delete button clicked ");
-	   	 Sync.procesWait(3000);
-	   	 UTF.clickelement("partialLinkText", "Yes");
-  	     Log4j.infoLog("delete user" );
-     }
-     
-     public  void clickOn_CXO_Upperbord() {
-    	 Sync.procesWait(3000);
-    	 UTF.clickelement("id", "append_values_13,append_values_19,MARKETING_CXO");
-    	 Log4j.infoLog("clickOn_CXO_Upperbord");
-     }
-    
-    public  void clickOn_CXO_Lowerbord() {
-    	 Sync.procesWait(3000);
-    	 UTF.clickelement("xpath", "//*[contains(@title, 'CXO')]");
-    	 Log4j.infoLog("clickOn_CXO_Lowerbord");
-    	 }
-
-    public  void clickOn_CXO_Editoption() {
-    	 Sync.procesWait(3000);
-    	 UTF.clickelement("xpath", ".//*[@id='MARKETING_CXO' and @type='button']");
-    	 Log4j.infoLog("clickOn_CXO_Editoption");
-    	
-    }
-    public void delete_CXO() {
-    	 Sync.procesWait(3000);
-   	     UTF.clickelement("xpath", "//*[contains(@title, 'CXO')]");
-    	 UTF.clickelement("xpath", ".//*[@id='MARKETING_CXO']/following::button[2]");
-   	     Log4j.infoLog("delete button clicked ");
-   	   	 Sync.procesWait(3000);
-   	   	 UTF.clickelement("partialLinkText", "Yes");
-     	 Log4j.infoLog("delete_CXO" );
-    }
-    public  void clickOn_Manager_Upperbord() {
-   	 Sync.procesWait(3000);
-   	 UTF.clickelement("id", "append_values_13,append_values_20,MARKETING_USER_MANAGER");
-   	 Log4j.infoLog("clickOn_Manager_Upperbord");
-    }
    
-   public  void clickOn_Manager_Lowerbord() {
-   	 Sync.procesWait(4000);
-   	 UTF.clickelement("xpath", "//li[@title='Manager']");
-   	 Log4j.infoLog("clickOn_Manager_Lowerbord");
-   	 }
-
-   public  void clickOn_Manager_Editoption()  {
-	 Sync.procesWait(3000);
-   	 UTF.clickelement("xpath", ".//*[@id='MARKETING_USER_MANAGER' and @type='button']");
-   	 Log4j.infoLog("clickOn_Manager_Editoption");
-   	 Sync.procesWait(2000);
-    }
-   public  void delete_Manager() {
-	     Sync.procesWait(3000);
-	     UTF.mouseover("xpath", "//li[@title='Manager']");
-	     Log4j.infoLog("clickOn_Manager_Lowerbord");
-	     Sync.procesWait(4000);    
-	     UTF.clickelement("xpath", ".//*[@id='MARKETING_USER_MANAGER']/following::button[2]");
-	  // It is usefull for upper menu> UTF.clickelement("xpath", ".//*[@id='MARKETING_USER_MANAGER' and @type='button']");
-	     Log4j.infoLog("delete button clicked ");
-	   	 Sync.procesWait(3000);
-	   	 UTF.clickelement("partialLinkText", "Yes");
-  	     Log4j.infoLog("delete_Manager" );
-	   
-	   }
+   
+   /*
+   //Template_Settings related nodes
+   
+      related nodes 
+   */
    
    public  void clickOn_Template_Settings_Upperbord() {
-		Sync.procesWait(3000);
-		UTF.clickelement("id", "append_values_2,append_values_14,MARKETING_PROJECT_SETTINGS");
-		Log4j.infoLog("click On Template_Settings_upper");
-	}
-     public  void ClickOn_Template_Settings_Lowerbord() {
-   	 Sync.procesWait(3000);
-     UTF.clickelement("xpath", "//*[contains(@title, 'Template Settings')]");
- 	 Log4j.infoLog(" ClickOn_Template_Settings_Lowerbord");
+	   Sync.procesWait(2000);
+		  UTF.clickelement("xpath", ".//*[@index='MARKETING_PROJECT_SETTINGS|append_values_14']");
+		  Log4j.infoLog("click On Template_Settings_upper");
+	 }
+   public  void ClickOn_Template_Settings_Lowerbord() {
+	     Sync.procesWait(5000);
+	     UTF.clickelement("xpath", "//*[contains(@title, 'Template Settings')]");
+ 	      Log4j.infoLog(" ClickOn_Template_Settings_Lowerbord");
     }
     public void delete_Template_Settings() { 
-    	Sync.procesWait(3000);
-    	UTF.clickelement("xpath", "//*[contains(@title, 'Template Settings')]");
-        Sync.procesWait(4000);    
- 	    UTF.clickelement("xpath", ".//*[@id='MARKETING_PROJECT_SETTINGS']/following::button[1]");
- 	     Sync.procesWait(2000);
-	   	 UTF.clickelement("partialLinkText", "Yes");
- 	    Log4j.infoLog(" Detele_Template_Settings");
+    	  UTF.clickelement("xpath", ".//span[@id='MARKETING_PROJECT_SETTINGS']/following::button[1]");
+ 	      UTF.clickelement("partialLinkText", "Yes");
+ 	      Log4j.infoLog(" Detele_Template_Settings");
     }
-  // MARKETING_SMS_STORE
+ 
+     /*
+     // MARKETING_SMS_STORE
      
-     
+        related nodes 
+     */
      
       public  void clickOn_SMS_Upperbord() {
-		   Sync.procesWait(3000);
-	       UTF.clickelement("id", "append_values_14,append_values_24,MARKETING_SMS_STORE");
+    	   Sync.procesWait(3000);
+		   UTF.clickelement("xpath", ".//*[@index='MARKETING_SMS_STORE|append_values_24']");
 		   Log4j.infoLog("clickOn_SMS_Upperbord");
 	  }
        public  void clickOn_SMS_Lowerbord() {
  	       Sync.procesWait(3000);
-           UTF.clickelement("xpath", "//*[contains(@title, 'SMS')]");
+           UTF.clickelement("xpath", "//*[contains(@title, 'SMS')]/div");
 	       Log4j.infoLog("ClickOn_SMS_Lowerbord");
         }
        public void delete_SMSStore() {
-    	   Sync.procesWait(3000);
-           UTF.clickelement("xpath", "//*[contains(@title, 'SMS')]");
-           Sync.procesWait(4000);    
-   	       UTF.clickelement("xpath", ".//*[@id='MARKETING_SMS_STORE']/following::button[1]");
-   	       Sync.procesWait(2000);
-	   	   UTF.clickelement("partialLinkText", "Yes");
+    	   UTF.clickelement("xpath", ".//*[@id='MARKETING_SMS_STORE']/following::button[1]");
+   	   	   UTF.clickelement("partialLinkText", "Yes");
    	       Log4j.infoLog(" Detele_SMSStore");
       }
        
        
-       public void clickOn_MARKETING_SMS_TEMPLETES_Upperbord() {
-    	   Sync.procesWait(3000);
-	       UTF.clickelement("id", "append_values_24,append_values_31,MARKETING_SMS_TEMPLETES");
+       public void clickOn_SMS_TEMPLETES_Upperbord() {
+    	    Sync.procesWait(3000);
+    
+    	   UTF.clickelement("xpath", ".//*[@index='MARKETING_SMS_TEMPLETES|append_values_31']");
 		   Log4j.infoLog("clickOn_MARKETING_SMS_TEMPLETES_Upperbord");
     	   
        }
-       public  void clickOn_MARKETING_SMS_TEMPLETES_Lowerbord() {
+       public  void clickOn_SMS_TEMPLETES_Lowerbord() {
 	       Sync.procesWait(3000);
            UTF.clickelement("xpath", "//*[contains(@title, 'SMS Templates')]");
 	       Log4j.infoLog("ClickOn_SENDER_NAMES_Lowerbord");
        }
-       public  void clickOn_MARKETING_SMS_TEMPLETES_Editoption() {
+       public  void clickOn_SMS_TEMPLETES_Editoption() {
  	      Sync.procesWait(3000);
-   	      UTF.clickelement("xpath", ".//*[@id='MARKETING_SMS_TEMPLETES' and @type='button']");
+ 		  UTF.clickelement("xpath", ".//span[@id='MARKETING_SMS_TEMPLETES']/following::button[2]");
    	      Log4j.infoLog("clickOn_SENDER_NAMES_Editoption");
    	      Sync.procesWait(2000);
          }
-       public void delete_MARKETING_SMS_TEMPLETES() {
-    	   Sync.procesWait(3000);
-           UTF.clickelement("xpath", "//*[contains(@title, 'SMS Templates')]");
-           Sync.procesWait(2000);    
-   	       UTF.clickelement("xpath", ".//*[@id='MARKETING_SMS_TEMPLETES']/following::button[2]");
-   	       Sync.procesWait(2000);
-	   	   UTF.clickelement("partialLinkText", "Yes");
+       public void delete_SMS_TEMPLETES() {
+    	   UTF.clickelement("xpath", ".//span[@id='MARKETING_SMS_TEMPLETES']/following::button[1]");
+   	       UTF.clickelement("partialLinkText", "Yes");
    	       Log4j.infoLog("delete_MARKETING_SMS_TEMPLETES");
       }
        
        public void clickOn_SENDER_NAMES_Upperbord() {
     	   Sync.procesWait(3000);
-	       UTF.clickelement("id", "append_values_24,append_values_30,MARKETING_SENDER_NAMES");
+    	   UTF.clickelement("xpath", ".//*[@index='MARKETING_SENDER_NAMES|append_values_30']");
 		   Log4j.infoLog("SENDER_NAMES_Upperbord");
     	   
        }
@@ -380,45 +302,146 @@ public class ProjectSetUpComponeat {
        }
        public  void clickOn_SENDER_NAMES_Editoption() {
  	      Sync.procesWait(3000);
-   	      UTF.clickelement("xpath", ".//*[@id='MARKETING_SENDER_NAMES' and @type='button']");
+ 	     UTF.clickelement("xpath", ".//span[@id='MARKETING_SENDER_NAMES']/following::button[2]");
    	      Log4j.infoLog("clickOn_SENDER_NAMES_Editoption");
    	      Sync.procesWait(2000);
          }
        public void delete_SENDER_NAMES() {
-    	   Sync.procesWait(3000);
-           UTF.clickelement("xpath", "//*[contains(@title, 'Sender Names')]");
-           Sync.procesWait(2000);    
-   	       UTF.clickelement("xpath", ".//*[@id='MARKETING_SENDER_NAMES']/following::button[2]");
-   	       Sync.procesWait(2000);
-	   	   UTF.clickelement("partialLinkText", "Yes");
-   	       Log4j.infoLog(" Detele_SENDER_NAMES");
+    	    UTF.clickelement("xpath", ".//span[@id='MARKETING_SENDER_NAMES']/following::button[1]");
+   	        UTF.clickelement("partialLinkText", "Yes");
+   	        Log4j.infoLog(" Detele_SENDER_NAMES");
       }
        
+   
+       public void sms_Sender_Names_noData_verifying() {
+    	   
+     	  Sync.procesWait(2000);
+       	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+       	  Log4j.infoLog(" shifting to sms sender name  frame");
+       	 String message= UTF.findElement("xpath", "//form[@id='dynamic_curd_form']/following::div[3]").getText();
+ 	     Log4j.infoLog(message); 
+ 	   if(message.equals("NO DATA")) {
+ 		   Log4j.infoLog("no data is prest on screen");
+ 		   }
+ 	  else {
+ 	    	Log4j.infoLog("scren is present edit on it");
+ 	       }
+       	  
+     	   
+        }
+        public void clicksave_SmsSendername() {
+     	   Sync.procesWait(2000);
+     	   UTF.clickelement("id", "addsendername");
+     	   Log4j.infoLog("click the save buttion");
+        }
+        
+        public void clickeplusbutton() {
+     	   Sync.procesWait(2000);
+     	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+     	   Sync.procesWait(2000);
+     	   UTF.clickelement("id", "action");
+     	   Log4j.infoLog("click the plse buttion ");
+        }
+       public void sms_Sendername_creation(String datasetname) throws Exception {
+     	 String  companyname= readData.getdata(datasetname, "Company_Name");
+     	 String sendername=readData.getdata(datasetname, "Sender_Name");
+     	  
+     	 // clickOn_SENDER_NAMES_Editoption();
+     	 clickeplusbutton();
+     	  Sync.procesWait(2000);
+     	  UTF.selectByVisibleText("id", "Company_ID", companyname);
+     	  Log4j.infoLog("select the company name");
+     	  UTF.inputText("id", "Sender_ID", sendername);
+     	  Log4j.infoLog("enter the sender name");
+     	  clicksave_SmsSendername();
+     	  UTF.SwitchToDefaltFrame();
+     	  
+       }
+        
+    /*  public void delete_SmsSendername_creation() {
+     	Sync.procesWait(2000);
+   	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+   	   Sync.procesWait(2000);
+   	   UTF.clickelement("partialLinkText", "Delete");
+   	   Log4j.infoLog("click the delete buttion");
+   	   Sync.procesWait(2000);
+   	   
+   	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
+   	  Log4j.infoLog("click the confirm");
+   	  
+   	    
+   	   UTF.SwitchToDefaltFrame();
+      }
+      */
+      public void delete_smsSender(String datasetname) throws Exception {
+     	   String sendername=readData.getdata(datasetname, "Sender_Name");
+            Sync.procesWait(2000);
+     	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+     	   Sync.procesWait(2000);
+     	   String sendernamexpath="//h4[contains(text(),'"+sendername.toUpperCase()+"')]/following::td[2]/h4/a";
+     	   UTF.clickelement("xpath",sendernamexpath );
+     	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
+     	   Log4j.infoLog("click the confirm");
+     	   UTF.SwitchToDefaltFrame();
+     	      }
+
+     	  public void saveSmsTemplate() {
+     		  UTF.clickelement("id", "addSubmittemp");
+     		  Log4j.infoLog("click on the save buttion");
+     	  }
+       public void creationSmsTemplate(String datasetname) throws Exception {
+     	  String Template_Name=readData.getdata(datasetname, "Template_Name");
+     	  String Template=readData.getdata(datasetname, "Template");
+     	  String companeyname=readData.getdata(datasetname, "companeyname");
+     	  
+     	 Sync.procesWait(2000);
+     	 UTF.selectByVisibleText("id", "Company_ID", companeyname);
+     	 Log4j.infoLog("Enter the company name::");
+     	 Sync.procesWait(2000);
+     	 UTF.inputText("id", "Template_Name", Template_Name);
+     	 Log4j.infoLog("Enter the  TemplateName ::");
+     	 Sync.procesWait(2000);
+     	 UTF.inputText("id", "Template", Template);
+     	 Log4j.infoLog("Enter the  Template  ::");
+     	 saveSmsTemplate();
+     	 UTF.SwitchToDefaltFrame();
+        }
+     	
+       public void SmsTemplate_deletion(String datasetname ) throws Exception {
+     	  //.//h4[contains(text(),' Bday_wish')]/following::td[3]/h4/a[2]
+     	  String Template_Name=readData.getdata(datasetname, "Template_Name");
+           Sync.procesWait(2000);
+    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+    	   Sync.procesWait(2000);
+    	   String Template_Namexpath=" .//h4[contains(text(),'"+ Template_Name+"')]/following::td[3]/h4/a[2]";
+    	   UTF.clickelement("xpath",Template_Namexpath );
+    	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
+    	   Log4j.infoLog("click the confirm");
+    	   UTF.SwitchToDefaltFrame();
+       }
+        
+      
        
-       
-       public static void clickOn_Email_Upperbord() {
+       public  void clickOn_Email_Upperbord() {
 		   Sync.procesWait(3000);
-	       UTF.clickelement("id", "append_values_14,append_values_25,MARKETING_EMAIL_STORE");
+		   UTF.clickelement("xpath", ".//*[@index='MARKETING_EMAIL_STORE|append_values_25']");
 		   Log4j.infoLog("clickOn_Email_Upperbord");
 	   }
-       public static void ClickOn_Email_Lowerbord() {
+       public  void ClickOn_Email_Lowerbord() {
 	       Sync.procesWait(3000);
-           UTF.clickelement("xpath", "//*[contains(@title, 'Email')]");
+	       UTF.clickelement("xpath", "//*[contains(@title, 'Email')]");
 	       Log4j.infoLog("ClickOn_Email_Lowerbord");
        }
        public void dalete_EmailStore() {
     	   Sync.procesWait(3000);
-           UTF.clickelement("xpath", "//*[contains(@title, 'Email')]");
-           Sync.procesWait(4000);    
-    	   UTF.clickelement("xpath", ".//*[@id='MARKETING_EMAIL_STORE']/following::button[1]");
-    	   Sync.procesWait(2000);
-	   	   UTF.clickelement("partialLinkText", "Yes");
-    	   Log4j.infoLog(" EmailStore");
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_EMAIL_STORE']/following::button[1]");
+    	   UTF.clickelement("partialLinkText", "Yes");
+    	   Log4j.infoLog(" delete EmailStore");
        }
        
-       public static void clickOn_MARKETING_EMAIL_SETTINGS_Upperbord() {
+       public  void clickOn_MARKETING_EMAIL_SETTINGS_Upperbord() {
 	      Sync.procesWait(3000);
-          UTF.clickelement("id", "append_values_25,append_values_32,MARKETING_EMAIL_SETTINGS");
+	      UTF.clickelement("xpath", ".//*[@index='MARKETING_EMAIL_SETTINGS|append_values_32']");
 	      Log4j.infoLog("clickOn_MARKETING_EMAIL_SETTINGS_Upperbord");
        }
        public  void ClickOn_MARKETING_EMAIL_SETTINGS_Lowerbord() {
@@ -430,52 +453,240 @@ public class ProjectSetUpComponeat {
 
        public  void clickOn_MARKETING_EMAIL_SETTINGS_Editoption() throws Exception {
 	      Sync.procesWait(3000);
-  	      UTF.clickelement("xpath", ".//*[@id='MARKETING_EMAIL_SETTINGS' and @type='button']");
+	      UTF.clickelement("xpath", ".//span[@id='MARKETING_EMAIL_SETTINGS']/following::button[2]");;
   	      Log4j.infoLog("clickOn_MARKETING_EMAIL_SETTINGS_Editoption");
   	      Sync.procesWait(2000);
         }
        
        public void delete_MARKETING_EMAIL_SETTINGS() {
     	   Sync.procesWait(3000);
-           UTF.clickelement("xpath", "//*[contains(@title, 'Email Settings')]");
-           Sync.procesWait(2000);    
-    	   UTF.clickelement("xpath", ".//*[@id='MARKETING_EMAIL_SETTINGS']/following::button[2]");
-    	   Sync.procesWait(2000);
-	   	   UTF.clickelement("partialLinkText", "Yes");
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_EMAIL_SETTINGS']/following::button[1]");
+    	   UTF.clickelement("partialLinkText", "Yes");
     	   Log4j.infoLog("delete_MARKETING_EMAIL_SETTINGS");
     	   
        } 
        
+       public void clickCancel_marketing_EMAIL_SETTINGS() {
+    	   Sync.procesWait(2000);
+    	   UTF.clickelement("xpath", ".//*[@id='dynamic_curd_form']//button");
+    	   Log4j.infoLog("click the cancel");
+    	   
+       }
+       public void clickSave_Save() {
+    	   Sync.procesWait(2000);
+    	   UTF.clickelement("id", "addSubmit");
+    	   Log4j.infoLog("click the Save");
+    	   
+       }
        
-       public static void clickOn_Audio_Upperbord() {
+       public void marketing_EMAIL_SETTINGS_Creating(String DataSheetname) throws Exception {
+    	   Sync.procesWait(2000);
+    	   String Company_Name=readData.getdata(DataSheetname, "Company_Name");
+    	   String From =readData.getdata(DataSheetname, "From");
+    	   String  Reply_To=readData.getdata(DataSheetname, "Reply_To");
+    	   String CC=readData.getdata(DataSheetname, "CC");
+    	   String BCC=readData.getdata(DataSheetname, "BCC");
+    	   
+    	   clickplusbutton();
+    	   UTF.selectByVisibleText("id", "Company_ID", Company_Name);
+    	   Log4j.infoLog("select the compnay name");
+    	   
+    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[2]/input", From);
+    	   Log4j.infoLog("enter the from email");
+    	  
+    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[3]/input", Reply_To);
+    	   Log4j.infoLog("enter the To email");
+    	   
+    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[4]/input", CC);
+    	   Log4j.infoLog("enter the CC");
+    	   
+    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[5]/input", BCC);
+    	   Log4j.infoLog("enter the BCC");
+    	   
+    	   clickSave_Save();
+    	   UTF.SwitchToDefaltFrame();
+       }
+       
+       
+       public void clickplusbutton() {
+    	   Sync.procesWait(2000);
+    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+    	   Sync.procesWait(2000);
+    	   UTF.clickelement("id", "action");
+       }
+       public void marketing_EMAIL_SETTINGS_Nodataverification() throws Exception {
+    	   Sync.procesWait(2000);
+    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+           String emailseetingmessage=	UTF.findElement("xpath", "//form[@id='dynamic_curd_form']/following::div[2]").getText();   
+    	   Log4j.infoLog("get the message "+emailseetingmessage);
+    	   if(emailseetingmessage.equals("No Emails Found")) {
+    		   Log4j.infoLog("No Emails Found display");
+    		   }
+    	   else {
+    		   Log4j.infoLog("datata allredy exist");
+    	   }
+    	   }
+    
+       
+       public  void clickOn_Audio_Upperbord() {
 	      Sync.procesWait(3000);
-          UTF.clickelement("id", "append_values_14,append_values_26,MARKETING_AUDIO_STORE");
+	      UTF.clickelement("xpath", ".//*[@index='MARKETING_AUDIO_STORE|append_values_26']");
 	      Log4j.infoLog("clickOn_Audio_Upperbord");
        }
-       public static void ClickOn_Audio_Lowerbord() {
+       public  void ClickOn_Audio_Lowerbord() {
           Sync.procesWait(3000);
           UTF.clickelement("xpath", "//*[contains(@title, 'Audio')]");
           Log4j.infoLog("ClickOn_Audio_Lowerbord");
         }
 
 
-       public static void clickOn_Audio_Editoption() throws Exception {
+       public  void clickOn_Audio_Editoption() throws Exception {
 	      Sync.procesWait(3000);
-  	      UTF.clickelement("xpath", ".//*[@id='MARKETING_AUDIO_STORE' and @type='button']");
+	      UTF.clickelement("xpath", ".//span[@id='MARKETING_AUDIO_STORE']/following::button[2]");
   	      Log4j.infoLog("clickOn_Audio_Editoption");
   	      Sync.procesWait(2000);
         }
        
        public void delete_AudioStore() {
     	   Sync.procesWait(3000);
-           UTF.clickelement("xpath", "//*[contains(@title, 'Audio')]");
-           Sync.procesWait(4000);    
-    	   UTF.clickelement("xpath", ".//*[@id='MARKETING_AUDIO_STORE']/following::button[2]");
-    	   Sync.procesWait(2000);
-	   	   UTF.clickelement("partialLinkText", "Yes");
-    	   Log4j.infoLog(" EmailStore");
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_AUDIO_STORE']/following::button[1]");
+           UTF.clickelement("partialLinkText", "Yes");
+    	   Log4j.infoLog("delete_AudioStore");
     	  
        }
+       
+       public void  selectMobilerecording() {
+    	   UTF.clickelement("xpath", ".//*[@class='mob_rdi_yes']/following::span[1]");
+    	   Log4j.infoLog("select the mobilerecording");
+       }
+       public void selectTTS() {
+    	   UTF.clickelement("xpath", ".//*[@class='tts_rdi_yes']/following::span[1]");
+    	   Log4j.infoLog("selectTTS");
+       }
+       
+       public void crating_Audio_Templates_mobilerecord(String datasheetname) throws Exception {
+    	   String Company_Name=readData.getdata(datasheetname, "Company_Name");
+    	   String mobile_number =readData.getdata(datasheetname, "mobile_number");
+    	   String file_name =readData.getdata(datasheetname, "file_name");
+    	   String servicenumber =readData.getdata(datasheetname, "servicenumber");
+    
+    	   UTF.selectByVisibleText("id", "companyid", Company_Name);
+    	   Log4j.infoLog("select the company name");
+    	   selectMobilerecording();
+    	   Sync.procesWait(2000);
+    	   UTF.inputText("id", "mobile_number", mobile_number);
+    	   Log4j.infoLog("enter the mobile number");
+    	   UTF.inputText("id", "file_name", file_name);
+    	   Log4j.infoLog("enter the file name ");
+    	   UTF.selectByVisibleText("id", "servicenumber", servicenumber);
+    	   Log4j.infoLog("select service number");
+    	   UTF.clickelement("id", "urlsubmit");
+    	   Log4j.infoLog("click the subbmit");
+    	   
+       }
+       
+       public void crating_Audio_Templates_TTS(String datasheetname) throws Exception {
+    	   String Company_Name=readData.getdata(datasheetname, "Company_Name");
+    	   String file_name =readData.getdata(datasheetname, "file_name");
+    	   String text_data =readData.getdata(datasheetname, "text_data");
+    	   
+    	   UTF.clickelement("id", "companyid");
+    	   UTF.selectByVisibleText("id", "companyid", Company_Name);
+    	   Log4j.infoLog("select the company name");
+    	    selectTTS();
+    	    Sync.procesWait(2000);
+    	   UTF.inputText("id", "ttsfile_name", file_name);
+    	   Log4j.infoLog("enter the file name ");
+    	  
+    	   UTF.inputText("id", "text", text_data);
+    	   Log4j.infoLog("enter the text ");
+    	   
+    	   UTF.clickelement("id", "generate");
+    	   Log4j.infoLog("click the generate ");
+    	   
+    	   Sync.presenceofElementsLocated("id", "ttsaudio", 40);
+    	   UTF.clickelement("id", "urlsubmit");
+    	   
+       }
+       
+       
+       /*
+        * 
+        * this nodes are user node related 
+        * 
+        * 
+        * 
+        * 
+        */
+       public  void clickon_USERS_Upperbord() {
+      	 Sync.procesWait(3000);
+      	 UTF.clickelement("xpath", ".//*[@index='MARKETING_USERS|append_values_13']");
+      	 Log4j.infoLog("clickon_USERS_Upperbord");
+
+       }
+      
+       public  void clickon_USER_Lowerbord() {
+      	 Sync.procesWait(3000);
+      	 UTF.clickelement("xpath", "//*[contains(@title, 'Users')]/div");
+      	 Log4j.infoLog("clickOn_User_Lowerbord");
+       }
+       public void delete_USER() {
+      	 Sync.procesWait(3000);
+      	 UTF.clickelement("xpath", ".//span[@id='MARKETING_USERS']/following::button[1]");
+      	 Log4j.infoLog("delete button clicked ");
+  	   	 UTF.clickelement("partialLinkText", "Yes");
+    	     Log4j.infoLog("delete user" );
+       }
+       
+       public  void clickOn_CXO_Upperbord() {
+      	 Sync.procesWait(3000);
+      	 UTF.clickelement("xpath", ".//*[@index='MARKETING_CXO|append_values_19']");
+      	 Log4j.infoLog("clickOn_CXO_Upperbord");
+       }
+      
+      public  void clickOn_CXO_Lowerbord() {
+      	 Sync.procesWait(3000);
+      	 UTF.clickelement("xpath", "//*[contains(@title, 'CXO')]/div");
+      	 Log4j.infoLog("clickOn_CXO_Lowerbord");
+      	 }
+
+      public  void clickOn_CXO_Editoption() {
+      	 Sync.procesWait(3000);
+      	 UTF.clickelement("xpath", ".//span[@id='MARKETING_CXO']/following::button[2]");
+      	 Log4j.infoLog("clickOn_CXO_Editoption");
+      	
+      }
+      public void delete_CXO() {
+      	 UTF.clickelement("xpath", ".//span[@id='MARKETING_CXO']/following::button[1]");
+     	     Log4j.infoLog("delete button clicked ");
+     	   	 UTF.clickelement("partialLinkText", "Yes");
+       	 Log4j.infoLog("delete_CXO" );
+      }
+      public  void clickOn_Manager_Upperbord() {
+     	
+     	 UTF.clickelement("xpath", ".//*[@index='MARKETING_USER_MANAGER|append_values_20']");
+     	 Log4j.infoLog("clickOn_Manager_Upperbord");
+      }
+     
+     public  void clickOn_Manager_Lowerbord() {
+     	 Sync.procesWait(4000);
+     	 UTF.clickelement("xpath", "//li[@title='Manager']/div");
+     	 Log4j.infoLog("clickOn_Manager_Lowerbord");
+     	 }
+
+     public  void clickOn_Manager_Editoption()  {
+  	 Sync.procesWait(3000);
+     	 UTF.clickelement("xpath", ".//span[@id='MARKETING_USER_MANAGER']/following::button[2]");
+     	 Log4j.infoLog("clickOn_Manager_Editoption");
+     	
+      }
+     public  void delete_Manager() {
+  	     UTF.clickelement("xpath", ".//span[@id='MARKETING_USER_MANAGER']/following::button[1]");
+  		 Log4j.infoLog("delete button clicked ");
+  	   	 UTF.clickelement("partialLinkText", "Yes");
+    	     Log4j.infoLog("delete_Manager" );
+  	   
+  	   }
     public String getpasswordNotification(String passwrod) throws InterruptedException
        {	
     	
@@ -540,7 +751,7 @@ public class ProjectSetUpComponeat {
        }
 
   */
-       public void clickPlsebuttio() {
+       public void clickPlsebutton() {
     	    Sync.procesWait(2000);
     	    UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
 	 	    Log4j.infoLog("switch the frame");
@@ -566,7 +777,7 @@ public class ProjectSetUpComponeat {
 			 Sync.procesWait(2000);
 	  	     UTF.inputText("xpath", ".//*[@id='designtn']",Branchname );
 	  	     UTF.clickelement("id", "designatins");
-	  	     UTF.clickelement("xpath", ".//*[@id='designationadd']/following::button");
+	  	     UTF.clickelement("xpath", "//*[@id='designationadd']/div/div/div[1]/button");
 	  	     UTF.clickelement("xpath", ".//*[@id='refreshDesg']");
 	  	     Sync.procesWait(2000);
 			 UTF.selectByVisibleText("id", "Branch_ID",Branchname );
@@ -581,7 +792,7 @@ public class ProjectSetUpComponeat {
   	       Log4j.infoLog("enter the AddDivision ");
   	       UTF.clickelement("id", "groups");
   	       Log4j.infoLog("click the  ADDbuttion");
-  	       UTF.clickelement("xpath", ".//*[@id='groupadd']/following::button");
+  	     UTF.clickelement("xpath", ".//*[@id='groupadd']/div/div/div[1]/button");
   	       Log4j.infoLog("click the  closebutton");
   	       
   	       UTF.clickelement("xpath", " .//*[@id='refreshGroup']");
@@ -606,7 +817,7 @@ public class ProjectSetUpComponeat {
   	     Log4j.infoLog("select the ReportingRole");
   	     UTF.clickelement("id", "userroles");
   	     Log4j.infoLog("click the addbutton");
-  	     UTF.clickelement("cssSelector", ".close");
+  	     UTF.clickelement("xpath", "//*[@id='userroleadd']/div/div/div[1]/button");
   	     Log4j.infoLog("click the close button");
   	     Sync.procesWait(2000);
   	     UTF.clickelement("xpath", ".//*[@id='refreshRole']");
@@ -617,8 +828,8 @@ public class ProjectSetUpComponeat {
        }
        
        public void managersubmitbuttion() {
-    	   Sync.elementToBeClickable("xpath", ".//input[@id='usersubmit']", 40);
-    	   UTF.clickelement("xpath", ".//input[@id='usersubmit']");
+    	 
+    	   UTF.clickelement("xpath", "//input[@id='usersubmit']");
     	   Log4j.infoLog("click submit buttion");
     	   
     	 //  UTF.SwitchToDefaltFrame();
@@ -648,6 +859,7 @@ public class ProjectSetUpComponeat {
 	 
 	     String Emailaddress=readData.getdata(datasetname, "Emailaddress");
 	     String Mobilenumber=readData.getdata(datasetname, "Mobilenumber");
+	     String Company_name=readData.getdata(datasetname, "Company_name");
 	     String ADDBranchName=readData.getdata(datasetname, "ADDBranchName");
 	     String AddDivision=readData.getdata(datasetname, "AddDivision");
 	     String AddUserRole=readData.getdata(datasetname, "AddUserRole");
@@ -683,9 +895,11 @@ public class ProjectSetUpComponeat {
 	     Log4j.infoLog("enter LastName");
 	     UTF.inputText("name", "Email_ID",Emailaddress);
 	     Log4j.infoLog("enter Emailaddress");
+	     UTF.clickelement("id", "Mobile_Number");
 	     UTF.inputText("id", "Mobile_Number", Mobilenumber);
 	     Log4j.infoLog("enter Mobilenumber");
-	     UTF.selectByValue("id", "Company_ID","125_striker" );
+	    
+	     UTF.selectByVisibleText("id", "Company_ID",Company_name );
 	     Log4j.infoLog("select the company");
 	     
 	     addbranchInManager(ADDBranchName);
@@ -868,8 +1082,8 @@ public class ProjectSetUpComponeat {
     	else {
     		clickOn_ProjectManagement_upperbord();
 			clickOn_projuctManagement_lowerbord();
-			clickOn_USERS_Upperbord();
-			clickOn_USER_Lowerbord();
+			clickon_USERS_Upperbord();
+			//clickOn_USER_Lowerbord();
 			clickOn_Manager_Upperbord();
 			clickOn_Manager_Lowerbord();
 		    clickOn_Manager_Editoption();
@@ -906,7 +1120,7 @@ public class ProjectSetUpComponeat {
 			 Sync.procesWait(2000);
 	  	     UTF.inputText("xpath", ".//*[@id='designtn']",Branchname );
 	  	     UTF.clickelement("id", "designatins");
-	  	     UTF.clickelement("xpath", ".//*[@id='designationadd']/following::button");
+	  	     UTF.clickelement("xpath", ".//*[@id='designationadd']/div/div/div[1]/button");
 	  	     UTF.clickelement("xpath", ".//*[@id='refreshDesg']");
 	  	     Sync.procesWait(2000);
 			 UTF.selectByVisibleText("id", "Branch_ID",Branchname );
@@ -921,7 +1135,7 @@ public class ProjectSetUpComponeat {
 	       Log4j.infoLog("enter the AddDivision ");
 	       UTF.clickelement("id", "groups");
 	       Log4j.infoLog("click the  ADDbuttion");
-	       UTF.clickelement("xpath", ".//*[@id='groupadd']/following::button");
+	       UTF.clickelement("xpath", ".//*[@id='groupadd']/div/div/div[1]/button");
 	       Log4j.infoLog("click the  closebutton");
 	       
 	       UTF.clickelement("xpath", " .//*[@id='refreshGroup']");
@@ -946,7 +1160,7 @@ public class ProjectSetUpComponeat {
 	     Log4j.infoLog("select the ReportingRole");
 	     UTF.clickelement("id", "userroles");
 	     Log4j.infoLog("click the addbutton");
-	     UTF.clickelement("cssSelector", ".close");
+	     UTF.clickelement("xpath", "//*[@id='userroleadd']/div/div/div[1]/button");
 	     Log4j.infoLog("click the close button");
 	     Sync.procesWait(2000);
 	     UTF.clickelement("xpath", ".//*[@id='refreshRole']");
@@ -985,6 +1199,7 @@ public class ProjectSetUpComponeat {
   	 
   	     String Emailaddress=readData.getdata(datasetname, "Emailaddress");
   	     String Mobilenumber=readData.getdata(datasetname, "Mobilenumber");
+  	   String Company_name=readData.getdata(datasetname, "Company_name");
   	     String ADDBranchName=readData.getdata(datasetname, "ADDBranchName");
   	     String AddDivision=readData.getdata(datasetname, "AddDivision");
   	     String AddUserRole=readData.getdata(datasetname, "AddUserRole");
@@ -1015,9 +1230,11 @@ public class ProjectSetUpComponeat {
 	     Log4j.infoLog("enter LastName");
 	     UTF.inputText("name", "Email_ID",Emailaddress);
 	     Log4j.infoLog("enter Emailaddress");
+	     UTF.clickelement("id", "Mobile_Number");
 	     UTF.inputText("id", "Mobile_Number", Mobilenumber);
+	     
 	     Log4j.infoLog("enter Mobilenumber");
-	     UTF.selectByValue("id", "Company_ID","125_striker" );
+	     UTF.selectByVisibleText("id", "Company_ID",Company_name );
 	     Log4j.infoLog("select the company");
 	     
 	     addbranchInCXO(ADDBranchName);
@@ -1125,188 +1342,22 @@ public class ProjectSetUpComponeat {
 	    		}
 	    		
 	    	}
-   	       Sync.procesWait(2000);
-   	    UTF.clickelement("partialLinkText", "Update");  
-   	      
-   	      
-   	  
-      }
+   	         Sync.procesWait(2000);
+   	         UTF.clickelement("partialLinkText", "Update");  
+   	       }
    
       
     
+      /*
+       * 
+       */
       
-       
-       public void clickCancel_marketing_EMAIL_SETTINGS() {
-    	   Sync.procesWait(2000);
-    	   UTF.clickelement("xpath", ".//*[@id='dynamic_curd_form']//button");
-    	   Log4j.infoLog("click the cancel");
-    	   
-       }
-       public void clickSave_Save() {
-    	   Sync.procesWait(2000);
-    	   UTF.clickelement("id", "addSubmit");
-    	   Log4j.infoLog("click the Save");
-    	   
-       }
-       
-       public void marketing_EMAIL_SETTINGS_Creating() throws Exception {
-    	   Sync.procesWait(2000);
-    	   String Company_Name=readData.getdata("emailsettingsform", "Company_Name");
-    	   String From =readData.getdata("emailsettingsform", "From");
-    	   String  Reply_To=readData.getdata("emailsettingsform", "Reply_To");
-    	   String CC=readData.getdata("emailsettingsform", "CC");
-    	   String BCC=readData.getdata("emailsettingsform", "BCC");
-    	   
-    	   clickplusbutton();
-    	   UTF.selectByVisibleText("id", "Company_ID", Company_Name);
-    	   Log4j.infoLog("select the compnay name");
-    	   
-    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[2]/input", From);
-    	   Log4j.infoLog("enter the from email");
-    	  
-    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[3]/input", Reply_To);
-    	   Log4j.infoLog("enter the To email");
-    	   
-    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[4]/input", CC);
-    	   Log4j.infoLog("enter the CC");
-    	   
-    	   UTF.inputText("xpath", ".//*[@id='dynamic_curd_form']/div[5]/input", BCC);
-    	   Log4j.infoLog("enter the BCC");
-    	   clickSave_Save();
-       }
-       
-       
-       public void clickplusbutton() {
-    	   Sync.procesWait(2000);
-    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-    	   Sync.procesWait(2000);
-    	   UTF.clickelement("id", "action");
-       }
-       public void marketing_EMAIL_SETTINGS_Nodataverification() throws Exception {
-    	   Sync.procesWait(2000);
-    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-           String emailseetingmessage=	UTF.findElement("xpath", "//form[@id='dynamic_curd_form']/following::div[2]").getText();   
-    	   Log4j.infoLog("get the message "+emailseetingmessage);
-    	   if(emailseetingmessage.equals("No Emails Found")) {
-    		   Log4j.infoLog("No Emails Found display");
-    		   }
-    	   else {
-    		   Log4j.infoLog("datata allredy exist");
-    	   }
-    	   }
-    
+      
        
        
        /*
         * sma related functions
         */
-       
-       public void sms_Sender_Names_noData_verifying() {
-    	   
-    	  Sync.procesWait(2000);
-      	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-      	  Log4j.infoLog(" shifting to sms sender name  frame");
-      	 String message= UTF.findElement("xpath", "//form[@id='dynamic_curd_form']/following::div[3]").getText();
-	     Log4j.infoLog(message); 
-	   if(message.equals("NO DATA")) {
-		   Log4j.infoLog("no data is prest on screen");
-		   }
-	  else {
-	    	Log4j.infoLog("scren is present edit on it");
-	       }
-      	  
-    	   
-       }
-       public void clicksave_SmsSendername() {
-    	   Sync.procesWait(2000);
-    	   UTF.clickelement("id", "addsendername");
-    	   Log4j.infoLog("click the save buttion");
-       }
-       
-       public void clickeplusbutton() {
-    	   Sync.procesWait(2000);
-    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-    	   Sync.procesWait(2000);
-    	   UTF.clickelement("id", "action");
-    	   Log4j.infoLog("click the plse buttion ");
-       }
-      public void sms_Sendername_creation(String datasetname) throws Exception {
-    	 String  companyname= readData.getdata(datasetname, "Company_Name");
-    	 String sendername=readData.getdata(datasetname, "Sender_Name");
-    	  
-    	 // clickOn_SENDER_NAMES_Editoption();
-    	 clickeplusbutton();
-    	  Sync.procesWait(2000);
-    	  UTF.selectByVisibleText("id", "Company_ID", companyname);
-    	  Log4j.infoLog("select the company name");
-    	  UTF.inputText("id", "Sender_ID", sendername);
-    	  Log4j.infoLog("enter the sender name");
-    	  clicksave_SmsSendername();
-    	  UTF.SwitchToDefaltFrame();
-    	  
-      }
-       
-   /*  public void delete_SmsSendername_creation() {
-    	Sync.procesWait(2000);
-  	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-  	   Sync.procesWait(2000);
-  	   UTF.clickelement("partialLinkText", "Delete");
-  	   Log4j.infoLog("click the delete buttion");
-  	   Sync.procesWait(2000);
-  	   
-  	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
-  	  Log4j.infoLog("click the confirm");
-  	  
-  	    
-  	   UTF.SwitchToDefaltFrame();
-     }
-     */
-     public void delete_smsSender(String datasetname) throws Exception {
-    	   String sendername=readData.getdata(datasetname, "Sender_Name");
-           Sync.procesWait(2000);
-    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-    	   Sync.procesWait(2000);
-    	   String sendernamexpath="//h4[contains(text(),'"+sendername.toUpperCase()+"')]/following::td[2]/h4/a";
-    	   UTF.clickelement("xpath",sendernamexpath );
-    	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
-    	   Log4j.infoLog("click the confirm");
-    	   UTF.SwitchToDefaltFrame();
-    	      }
-
-    	  public void saveSmsTemplate() {
-    		  UTF.clickelement("id", "addSubmittemp");
-    		  Log4j.infoLog("click on the save buttion");
-    	  }
-      public void creationSmsTemplate(String datasetname) throws Exception {
-    	  String Template_Name=readData.getdata(datasetname, "Template_Name");
-    	  String Template=readData.getdata(datasetname, "Template");
-    	  String companeyname=readData.getdata(datasetname, "companeyname");
-    	  
-    	 Sync.procesWait(2000);
-    	 UTF.selectByVisibleText("id", "Company_ID", companeyname);
-    	 Log4j.infoLog("Enter the company name::");
-    	 Sync.procesWait(2000);
-    	 UTF.inputText("id", "Template_Name", Template_Name);
-    	 Log4j.infoLog("Enter the  TemplateName ::");
-    	 Sync.procesWait(2000);
-    	 UTF.inputText("id", "Template", Template);
-    	 Log4j.infoLog("Enter the  Template  ::");
-    	 saveSmsTemplate();
-    	 UTF.SwitchToDefaltFrame();
-       }
-    	
-      public void SmsTemplate_deletion(String datasetname ) throws Exception {
-    	  //.//h4[contains(text(),' Bday_wish')]/following::td[3]/h4/a[2]
-    	  String Template_Name=readData.getdata(datasetname, "Template_Name");
-          Sync.procesWait(2000);
-   	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-   	   Sync.procesWait(2000);
-   	   String Template_Namexpath=" .//h4[contains(text(),'"+ Template_Name+"')]/following::td[3]/h4/a[2]";
-   	   UTF.clickelement("xpath",Template_Namexpath );
-   	   UTF.clickelement("xpath", "//div[@class='jconfirm-buttons']/button[1]");
-   	   Log4j.infoLog("click the confirm");
-   	   UTF.SwitchToDefaltFrame();
-      }
        
      
 
@@ -1315,83 +1366,156 @@ public class ProjectSetUpComponeat {
  * @throws Exception 
  * 
  */
-  public void userPrivileges_web(String datasetname) throws Exception {
-  String calenderview=readData.getdata(datasetname, "calenderview");
-  String Calendar_add=readData.getdata(datasetname, "Calendar_add");
-  String Calendar_Update=readData.getdata(datasetname, "Calendar_Update");
-  String Contacts_Addevent=readData.getdata(datasetname, "Contacts_Addevent");
-  String Contacts_viewgroup=readData.getdata(datasetname, "Contacts_viewgroup");
-  String Contacts_AddGroup=readData.getdata(datasetname, "Contacts_AddGroup");
-  String Contacts_EditGroup=readData.getdata(datasetname, "Contacts_EditGroup");
-  String Contacts_DeleteGroup=readData.getdata(datasetname, "Contacts_DeleteGroup");
-  String Contacts_ShareGroup=readData.getdata(datasetname, "Contacts_ShareGroup");
-  String Contacts_MoveGroup=readData.getdata(datasetname, "Contacts_MoveGroup");
-  String Contacts_SetPermission=readData.getdata(datasetname, "Contacts_SetPermission");
-  String Contacts_ViewContacts=readData.getdata(datasetname, "Contacts_ViewContacts");
-  String Contacts_DeleteContact=readData.getdata(datasetname, "Contacts_DeleteContact");
-  String Contacts_AddComment=readData.getdata(datasetname, "Contacts_AddComment");
-  String Contacts_SMS=readData.getdata(datasetname, "Contacts_SMS");
-  String Contacts_Voice=readData.getdata(datasetname, "Contacts_Voice");
-  String Contacts_Email=readData.getdata(datasetname, "Contacts_Email");
-  String Contacts_Upload=readData.getdata(datasetname, "Contacts_Upload");
-  String reportingview=readData.getdata(datasetname, "reportingview");
-  String sourceTracker=readData.getdata(datasetname, "sourceTracker");
-     Sync.frameToBeAvailableAndSwitchToitlocator("id", "Dynamic_Frame", 40);
-     UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-     
-      UTF.clickelement("xpath", ".//*[contains(text(),'manoj kumar')]");
-      Log4j.infoLog("click the the useres");
-      UTF.clickelement("xpath", ".//input[@name='Web_Email_Prev[]']/following::span[1]");
-      Log4j.infoLog("selecting the webmail view option");
-      
-      UTF.clickelement("xpath",calenderview);
-      
-      UTF.clickelement("xpath",Calendar_add);
-      
-      UTF.clickelement("xpath",Calendar_Update);
-      
-      UTF.clickelement("xpath",Contacts_Addevent);
-      
-      UTF.clickelement("xpath",Contacts_viewgroup);
-      
-      UTF.clickelement("xpath",Contacts_AddGroup);
-      
-      UTF.clickelement("xpath",Contacts_EditGroup);
-      
-      UTF.clickelement("xpath",Contacts_DeleteGroup);
-      
-      UTF.clickelement("xpath",Contacts_ShareGroup);
-      
-      UTF.clickelement("xpath",Contacts_MoveGroup);
-      
-      UTF.clickelement("xpath",Contacts_SetPermission);
-      
-      UTF.clickelement("xpath",Contacts_ViewContacts);
-      
-      UTF.clickelement("xpath",Contacts_DeleteContact);
-      
-      UTF.clickelement("xpath",Contacts_AddComment);
-      
-      UTF.clickelement("xpath",Contacts_SMS);
-      
-      UTF.clickelement("xpath",Contacts_Voice);
-      
-      UTF.clickelement("xpath",Contacts_Email);
-      
-      
-      UTF.clickelement("xpath",Contacts_Upload);
-      
-      
-      UTF.clickelement("xpath",reportingview);
-      
-      UTF.clickelement("xpath",sourceTracker);
-      
-      
-      
-      UTF.clickelement("xpath", ".//*[@id='assign_usermenus_submit']");
-  
-     
+      public  void clickOn__userprivilleges_Upperbord() {
+      	UTF.clickelement("xpath", "//*[@index='MARKETING_USER_ROLES|append_values_12']");
+      	Log4j.infoLog("ClickOn__userprivilleges_Upperbord");
       }
+      public  void clickOn__userprivilleges_lowerbord() {
+      	
+      	UTF.clickelement("xpath", "//*[contains(@title, 'User Privilleges')]");
+      	Log4j.infoLog("ClickOn__userprivilleges_lowerbord");
+      }
+       public  void clickOn_userPrivilleges_Editoption() {
+      	UTF.clickelement("xpath", ".//span[@id='MARKETING_USER_ROLES']/following::button[2]");
+      	Log4j.infoLog("ClickOn_userPrivilleges_Editoption");
+       }
+       public void delete_userPrivilleges() {
+      	 UTF.clickelement("xpath", ".//span[@id='MARKETING_USER_ROLES']/following::button[1]");
+      	 UTF.clickelement("partialLinkText", "Yes");
+    	     Log4j.infoLog("delete_userPrivilleges");
+       }
+       
+     
+       
+      
+       
+       public void selectall_userPrivileges() {
+    	   UTF.clickelement("id", "select_allusermenus");
+    	   Log4j.infoLog("select all the users ");
+       }
+       
+       public void webmailSelect_All() {
+    	  UTF.clickelement("xpath", ".//input[@id='select_all01_3']"); 
+    	  Log4j.infoLog("select all option in webmail");
+       }
+       public void Select_webmail_View() {
+    	   UTF.clickelement("xpath", ".//input[@name='Web_Email_Prev[]']/following::span[1]");
+       }
+       
+       
+       public void selectAll_Calendervalues() {
+        UTF.clickelement("xpath", ".//*[@id='Get_AllWebSiteAPIs']/div[3]/ul/ul/li/span/label/span");
+         Log4j.infoLog("select all the calenders vallues");
+       }
+       public void select_calenderSelction(String option) {
+    	   String[] calender=option.split("/");
+    	   for(String calendernames:calender ) {
+    	   String xpaths="//*[@name='Calendar_Prev[]' and @value='"+calendernames+"']/following::span[1]";
+    	   UTF.clickelement("xpath", xpaths);
+    	   Log4j.infoLog(calendernames+"is selected");
+    	   }
+    	   }
+       public void select_Contacts(String allContacts) {
+    	   String[] contacts=allContacts.split("/");
+    	   for(String contactname:contacts) {
+    		   String xpaths="//*[text()='"+contactname+"']";
+    		   UTF.clickelement("xpath",xpaths );
+    		   Log4j.infoLog(contactname+"is click");
+    	   }
+         }
+       
+       public void selectwebtrafic_view() {
+    	   UTF.clickelement("xpath", ".//input[@name='Web_Traffic_Prev[]' and @value='View']/following::span[1]");
+    	   Log4j.infoLog("selcet the webtrafics");
+         }
+       
+       
+       public void select_Reports(String allReports) {
+    	       String[] reports=allReports.split("/");
+    	       for(String reportsname:reports) {
+    		   String xpaths=".//*[@name='Reports_Prev[]' and @value='"+reportsname+"']/following::span[1]";
+    		   UTF.clickelement("xpath",xpaths );
+    		   Log4j.infoLog(reportsname+"is click");
+    	   }
+       }
+       
+       public void select_SourceTracker(String SourceTrackes){
+    	   String[] sourcetraker=SourceTrackes.split("/");
+	       for(String sourcetrakersnames:sourcetraker) {
+		   String xpaths=".//*[@name='Source_Tracker_Prev[]' and @value='"+sourcetrakersnames+"']/following::span[1]";
+		   UTF.clickelement("xpath",xpaths );
+		   Log4j.infoLog(sourcetrakersnames+"is click");
+	   }
+       }
+       
+       public void select_Builder_SetUp(String BuilderSetUps){
+    	   String[] BuilderSetUp=BuilderSetUps.split("/");
+	       for(String BuilderSetUpsnames:BuilderSetUp) {
+		   String xpaths=".//*[@name='Builder_SetUp_Prev[]' and @value='"+BuilderSetUpsnames+"']/following::span[1]";
+		   UTF.clickelement("xpath",xpaths );
+		   Log4j.infoLog(BuilderSetUpsnames+"is click");
+	   }
+       }
+       public void select_Drip_Management(String Drip_Managements){
+    	   String[] Drip_Management=Drip_Managements.split("/");
+	       for(String Drip_Managementpsnames:Drip_Management) {
+		   String xpaths=".//*[@name='Drip_Management_Prev[]' and @value='"+Drip_Managementpsnames+"']/following::span[1]";
+		   UTF.clickelement("xpath",xpaths );
+		   Log4j.infoLog(Drip_Managementpsnames+"is click");
+	   }
+       }
+      
+    	public void clickSubbmit_userPriviliges() {
+    		UTF.clickelement("xpath", ".//*[@id='assign_usermenus_submit']");
+    		Log4j.infoLog("click the submit");
+    	}
+    				   
+       
+       
+       
+       
+  public void userPrivileges_creation_web(String datasetname) throws Exception{
+	   String userrole=readData.getdata(datasetname, "userrole");
+	   String Users=readData.getdata(datasetname, "Users");
+	   String Contacts=readData.getdata(datasetname, "Contacts");
+	   String calender=readData.getdata(datasetname, "calender");
+	   String Reports=readData.getdata(datasetname, "Reports");
+	   String Source_Tracker=readData.getdata(datasetname, "Source_Tracker");
+	   String Builder_SetUp=readData.getdata(datasetname, "Builder_SetUp");
+	   String Drip_Management=readData.getdata(datasetname, "Drip_Management");
+	  
+	   Sync.procesWait(5000);
+	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+	   Log4j.infoLog("frame is switch");
+	   
+	    UTF.clickelement("id", "userrole");
+	    UTF.selectByVisibleText("id", "userrole", userrole);
+	    Log4j.infoLog("user roole is selected"+userrole);
+	    UTF.clickEneter();
+	  
+	    UTF.clickelement("xpath", "//*[text()='"+Users+"']");
+	    Log4j.infoLog("user is selected"+Users);
+	  
+	    Select_webmail_View();
+	    
+	    select_calenderSelction(calender);
+	    
+	    select_Contacts(Contacts);
+	    
+	    selectwebtrafic_view();
+	    
+	    select_Reports(Reports);
+	    select_SourceTracker(Source_Tracker);
+	    select_Builder_SetUp(Builder_SetUp);
+	    select_Drip_Management(Drip_Management);
+	    clickSubbmit_userPriviliges();
+	    
+  }
+       
+       
+       
+       
+ 
   
   
   
@@ -1400,24 +1524,21 @@ public class ProjectSetUpComponeat {
   */
   
   public void clickSourceManagemenet_UpperBord() {
-	   Sync.elementToBeClickable("id", "flow_name,append_values_36,MARKETING_MARKETING_MANAGEMENT", 40);
-	   UTF.clickelement("id", "flow_name,append_values_36,MARKETING_MARKETING_MANAGEMENT");
+	  Sync.procesWait(2000);
+     	UTF.clickelement("xpath", "//*[@index='MARKETING_MARKETING_MANAGEMENT|append_values_36']");
 	   Log4j.infoLog("clickSourceManagemenet_UpperBord");
 	   }
   
   public void clickSourceManagemenet_lowerBord() {
-	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Management')]/div", 40);
-	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Management')]/div");
+	 
+	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Management')]");
   	   Log4j.infoLog("clickSourceManagemenet_lowerBord");
        }
   public static void delete_SourceManagemenetnode() {
-	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Management')]/div", 40);
-	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Management')]/div");
-	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Management')]/div/button[1]", 40);
-	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Management')]/div/button[1]");
-	   Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
-	   UTF.clickelement("partialLinkText", "Yes");
-	   Log4j.infoLog("delete_SourceManagemenetnode");
+   	 UTF.clickelement("xpath", ".//span[@id='MARKETING_MARKETING_MANAGEMENT']/following::button[1]");
+   	 UTF.clickelement("partialLinkText", "Yes");
+ 	 Log4j.infoLog("delete_userPrivilleges");
+	 Log4j.infoLog("delete_SourceManagemenetnode");
   }
   
   /*
@@ -1426,29 +1547,23 @@ public class ProjectSetUpComponeat {
   
  
     public void clickProductCosting_UpperBord() {
-	   Sync.elementToBeClickable("id", "append_values_36,append_values_38,MARKETING_MARKETING_COSTING", 40);
-	   UTF.clickelement("id", "append_values_36,append_values_38,MARKETING_MARKETING_COSTING");
-	   Log4j.infoLog("clickProductCosting_UpperBord");
+    	Sync.procesWait(2000);
+    	UTF.clickelement("xpath", "//*[@index='MARKETING_MARKETING_COSTING|append_values_38']");
+	    Log4j.infoLog("clickProductCosting_UpperBord");
 	   }
     
     public void clickProductCosting_lowerBord() {
- 	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Product Costing')]/div", 40);
- 	   UTF.clickelement("xpath", "//*[contains(@title, 'Product Costing')]/div");
-   	   Log4j.infoLog("clickProductCosting_lowerBord");
+ 	    UTF.clickelement("xpath", "//*[contains(@title, 'Product Costing')]");
+   	    Log4j.infoLog("clickProductCosting_lowerBord");
         }
     
     public  void clickProductCosting_Edit()  {
-    	  Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_MARKETING_COSTING']", 40);
-	      UTF.clickelement("xpath", ".//button[@id='MARKETING_MARKETING_COSTING']");
-	      Log4j.infoLog("clickOn_Audio_Editoption");
-	      Sync.procesWait(2000);
+        UTF.clickelement("xpath", ".//span[@id='MARKETING_MARKETING_COSTING']/following::button[2]");
+	    Log4j.infoLog("clickProductCosting_Edit");
+	  
       }
     public void delete_ProductCostingnode() {
-       Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Product Costing')]/div", 40);
-   	   UTF.clickelement("xpath", "//*[contains(@title, 'Product Costing')]/div");
- 	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Product Costing')]/div/button[2]", 40);
- 	   UTF.clickelement("xpath", "//*[contains(@title, 'Product Costing')]/div/button[2]");
- 	   Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+       UTF.clickelement("xpath", ".//span[@id='MARKETING_MARKETING_COSTING']/following::button[1]");
  	   UTF.clickelement("partialLinkText", "Yes");
  	   Log4j.infoLog("delete_ProductCostingnode");
    }
@@ -1457,22 +1572,17 @@ public class ProjectSetUpComponeat {
     */
     
     public void clickSourceTracker_UpperBord() {
- 	   Sync.elementToBeClickable("id", "append_values_36,append_values_93,MARKETING_SOURCE_TRACKER", 40);
- 	   UTF.clickelement("id", "append_values_36,append_values_93,MARKETING_SOURCE_TRACKER");
- 	   Log4j.infoLog("clickSourceTracker_UpperBord");
+ 	 Sync.procesWait(2000);
+ 	 UTF.clickelement("xpath", "//*[@index='MARKETING_SOURCE_TRACKER|append_values_93']");
+ 	 Log4j.infoLog("clickSourceTracker_UpperBord");
  	   }
      
      public void clickSourceTracker_lowerBord() {
-  	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Tracker')]/div", 40);
-  	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Tracker')]/div");
+  	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Tracker')]");
        Log4j.infoLog("clickSourceTracker_lowerBord");
          }
      public void delete_SourceTrackernode() {
-       Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Tracker')]/div", 40);
-       UTF.clickelement("xpath", "//*[contains(@title, 'Source Tracker')]/div");
-   	   Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Source Tracker')]/div/button[1]", 40);
-   	   UTF.clickelement("xpath", "//*[contains(@title, 'Source Tracker')]/div/button[1]");
-   	   Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+       UTF.clickelement("xpath", ".//span[@id='MARKETING_SOURCE_TRACKER']/following::button[1]");
    	   UTF.clickelement("partialLinkText", "Yes");
    	   Log4j.infoLog("delete_SourceTrackernode");
        }
@@ -1483,28 +1593,28 @@ public class ProjectSetUpComponeat {
 	 * Sources  related nodes flow
      */
      public void clickSource_UpperBord() {
-   	   Sync.elementToBeClickable("id", "append_values_93,append_values_97,MARKETING_SOURCE_MANAGER", 40);
-   	   UTF.clickelement("id", "append_values_93,append_values_97,MARKETING_SOURCE_MANAGER");
+        Sync.procesWait(2000);
+   	    UTF.clickelement("xpath", "//*[@index='MARKETING_SOURCE_MANAGER|append_values_97']");
    	   Log4j.infoLog("clickSources_UpperBord()");
    	   }
        
      public void clickSource_lowerBord() {
-       Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Sources')]/div", 40);
+      
        UTF.clickelement("xpath", "//*[contains(@title, 'Sources')]/div");
        Log4j.infoLog("clickSource_lowerBord");
        }
      public void clickSource_edit() {
-       Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOURCE_MANAGER']", 40);
-	   UTF.clickelement("xpath", ".//button[@id='MARKETING_SOURCE_MANAGER']");
+
+       UTF.clickelement("xpath", ".//span[@id='MARKETING_SOURCE_MANAGER']/following::button[2]");
 	   Log4j.infoLog("clickSource_edit");
 	   }
      public void delete_SourceNode() {
        /* Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Sources')]/div", 40);
        UTF.clickelement("xpath", "//*[contains(@title, 'Sources')]/div");
        */
-       Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOURCE_MANAGER']/following::button[1]", 40);
-       UTF.clickelement("xpath", ".//button[@id='MARKETING_SOURCE_MANAGER']/following::button[1]");
-       Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+       
+       UTF.clickelement("xpath", ".//span[@id='MARKETING_SOURCE_MANAGER']/following::button[1]");
+       
        UTF.clickelement("partialLinkText", "Yes");
        Log4j.infoLog("delete_SourceTrackernode");
          }
@@ -1516,26 +1626,24 @@ public class ProjectSetUpComponeat {
      */
      
        public void clickEvents_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_93,append_values_96,MARKETING_EVENT_MANAGER", 40);
-     	   UTF.clickelement("id", "append_values_93,append_values_96,MARKETING_EVENT_MANAGER");
+     	  Sync.procesWait(2000);
+     	 UTF.clickelement("xpath", "//*[@index='MARKETING_EVENT_MANAGER|append_values_96']");
      	   Log4j.infoLog("clickEvents_UpperBord()");
      	   }
          
        public void clickEvents_lowerBord() {
-          Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Events')]/div", 40);
+          
           UTF.clickelement("xpath", "//*[contains(@title, 'Events')]/div");
           Log4j.infoLog("clickEvents_lowerBord");
           }
        public void clickEvents_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_EVENT_MANAGER']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_EVENT_MANAGER']");
+        
+          UTF.clickelement("xpath", ".//span[@id='MARKETING_EVENT_MANAGER']/following::button[2]");
   	      Log4j.infoLog("clickEvents_edit");
   	     
   	      }
        public void delete_EventsNode() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_EVENT_MANAGER']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_EVENT_MANAGER']/following::button[1]");
-          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+         UTF.clickelement("xpath", ".//span[@id='MARKETING_EVENT_MANAGER']/following::button[1]");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_SourceTrackernode");
           }
@@ -1544,14 +1652,39 @@ public class ProjectSetUpComponeat {
      	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
        }
        
-       public void creatingEvents(String datasheetname) throws Exception {
+       public String existeventnameIntable() {
+    	   String eventsname=UTF.findElement("xpath", ".//*[@class='evet-task-table']/table/tbody/tr/td[2]/h4/span[2]").getText();
+            return eventsname;
+       }
+       
+       public void creatingEventsIn_eventNode(String datasheetname) throws Exception {
+    	  
     	   String Event_Name= readData.getdata(datasheetname, "Event_Name");
+    	   
     	   Sync.procesWait(2000);
-    	   UTF.inputText("xpath", ".//*[@id='dynamic_source_form']/div[1]/input", Event_Name);
-    	   Log4j.infoLog("entring user name ");
-           Sync.elementToBeClickable("xpath", ".//*[@id='dynamic_source_form']/div[2]/input", 40);
-           UTF.clickelement("xpath", ".//*[@id='dynamic_source_form']/div[2]/input");
+    	   UTF.inputText("id", "event_name", Event_Name);
+    	   Log4j.infoLog("entring event name ");
+           UTF.clickelement("xpath", ".//*[@id='dynamic_source_form']/div[2]/input[2]");
            Log4j.infoLog("clcik the save buttion ");
+          // String mm=UTF.findElement("id", "manoj").getText();
+          // String eventmessage=UTF.findElement("id", "insert_success").getText();
+          /* if("Event Name added Successfully.".equals(UTF.findElement("id", "insert_success").getText())) {
+        	   Log4j.infoLog("Event Name added Successfully.");
+            }
+            */
+           if(UTF.findElement("id", "insert_success").isDisplayed()) {
+        	   
+           }
+          else {
+        	  String errortext= UTF.findElement("xpath", "html/body/div[1]/span[1]").getText();
+        	     Log4j.infoLog(errortext);
+           }
+         //  Assert.assertTrue(eventmessage.equals("Event Name added Successfully."));
+           
+            Sync.procesWait(2000);
+            String eventsname=UTF.findElement("xpath", ".//*[@class='evet-task-table']/table/tbody/tr/td[2]/h4/span[2]").getText();
+            Assert.assertTrue(eventsname.equals(Event_Name));
+            
     	   }
        
        public void creatingsources(String datasheetname) throws Exception {

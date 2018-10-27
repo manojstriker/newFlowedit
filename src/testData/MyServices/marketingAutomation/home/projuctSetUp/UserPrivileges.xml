@@ -2,11 +2,18 @@
 <Testdata>
 
 
-<dataset name="Manager">
-<userrole>Manager</userrole>
-<Users>manoj kumar</Users>
-<calenderview>".//*[@name='Calendar_Prev[]' and @value='View']/following::span[1]"</calenderview>
+<dataset name="Cxo">
+<userrole>CXO</userrole>
+<Users>manoj kumarm</Users>
+<calender>View/Add/Update</calender>
+<Contacts>Add Event/View Group/Edit Contact</Contacts>
+<Reports>View/Download</Reports>
+<Source_Tracker>View</Source_Tracker>
+<Builder_SetUp>Create</Builder_SetUp>
+<Drip_Management>Create</Drip_Management>
+</dataset>
 
+<dataset name ="sample xpaths">
 <Calendar_add>".//*[@name='Calendar_Prev[]' and @value='Add']/following::span[1]"</Calendar_add>
 <Calendar_Update>".//*[@name='Calendar_Prev[]' and @value='Update']/following::span[1]"</Calendar_Update>
 <Contacts_Addevent>".//*[@value='Add Event']/following::span[1]"</Contacts_Addevent>

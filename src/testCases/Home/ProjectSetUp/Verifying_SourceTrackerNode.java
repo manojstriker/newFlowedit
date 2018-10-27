@@ -30,9 +30,7 @@ public class Verifying_SourceTrackerNode {
 				e.printStackTrace();
 				Assert.fail();
 				    }
-			 finally {
-				 ProjectSetUpComponeat.delete_SourceManagemenetnode();
-			  }   
+			 
 	  }
 	  @BeforeMethod
 	  public void beforeMethod() {

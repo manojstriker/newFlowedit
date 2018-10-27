@@ -10,14 +10,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class Creating_eventname {
-	 @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
-	  public void creating_eventname() {
+public class Creating_eventname_eventnode {
+	 @Test
+	  public void creating_eventname_eventnode() {
 		    ProjectSetUpComponeat project;
 			try {
-				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","Creating_eventname");
+				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","Creating_eventname_eventnode");
 				project.clickFlowEdit();
-				UTF.refresh();
+		
 				project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
 				project.clickSourceTracker_UpperBord();
@@ -26,7 +26,7 @@ public class Creating_eventname {
 				project.clickEvents_lowerBord();
 				project.clickEvents_edit();
 				project.clickeplusbutton();
-				project.creatingEvents("eventname_summeroffers");
+				project.creatingEventsIn_eventNode("eventname_eventnode");
 				UTF.SwitchToDefaltFrame();
 			    }
 				catch (Exception e) {
