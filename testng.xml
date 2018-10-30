@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testCases.MyServices.MarketingAutomation.TestCases"/>
+      <class name="testCases/Home/ProjectSetUp/Creating_eventname_eventnode"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

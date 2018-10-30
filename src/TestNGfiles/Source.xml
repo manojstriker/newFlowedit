@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="example suite 1" verbose="1" >
+<listeners>
+<listener class-name="utilities.Listeners"></listener>
+</listeners>
+<test name="source_creations">
+<classes>
+ <class name="testCases/Home/ProjectSetUp/Creating_eventname_eventnode"/>
+ 
+
+</classes>
+</test>
+</suite>
+ 

@@ -33,7 +33,7 @@ import utilities.PropertiesReusabuls;
 		
 	  }
 	  public static List<WebElement> findelements(String attributeType, String attributeValue) {
-		
+		   
 			return	driver.findElements(locator(attributeType,attributeValue));
 		
 	}

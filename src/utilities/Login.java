@@ -13,7 +13,7 @@ public class Login
 	public static void LoginWithAdmin(String filepath)
 	{
 		try {
-			Browser.startBrowser("Chrome", "http://demo.office24by7.com/");
+			Browser.startBrowser("Chrome", "http://10.10.10.3/office24by7");
 			XmlReader readData=new XmlReader(filepath);
 			String username=readData.getdata("AdminLogin", "username");
 			String password=readData.getdata("AdminLogin", "password");

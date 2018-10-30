@@ -2,7 +2,7 @@ package testCases.Home.ProjectSetUp;
 
 import org.testng.annotations.Test;
 
-import ActionDriver.UTF;
+import basedriver.Browser;
 import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
@@ -10,14 +10,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class Creating_Sources {
-	 @Test
-	  public void creating_eventname() {
+public class Verifying_Addoption_InSourceNode {
+	@Test
+	  public void verifying_Addoption_InSourceNode() {
 		    ProjectSetUpComponeat project;
 			try {
-				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","Creating_eventname");
+				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","verifying_Addoption_InSourceNode");
 				project.clickFlowEdit();
-				
 				project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
 				project.clickSourceTracker_UpperBord();
@@ -25,9 +24,7 @@ public class Creating_Sources {
 				project.clickSource_UpperBord();
 				project.clickSource_lowerBord();
 				project.clickSource_edit();
-				project.clickPlsebuttion();
-				project.creatingsources("source_Creation1");
-				UTF.SwitchToDefaltFrame();
+				project.addEventIn_SourceNode("events_Names_Adding_SourceNode");
 			    }
 				catch (Exception e) {
 				e.printStackTrace();
@@ -46,5 +43,8 @@ public class Creating_Sources {
 
 	  @AfterMethod
 	  public void afterMethod() {
+		  Browser.closebrowser();
 	  }
+
+
 }

@@ -3,7 +3,7 @@ package pageobject.MyServices.marketingAutomation.home;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -15,16 +15,21 @@ import com.google.common.base.Utf8;
 
 import ActionDriver.Sync;
 import ActionDriver.UTF;
-
+import utilities.DataSheet;
 import utilities.Log4j;
 import utilities.XmlReader;
 
 public class ProjectSetUpComponeat {
 	 public static	XmlReader readData;
-	 
+	 public static DataSheet datssheet;
 	 public ProjectSetUpComponeat (String filename,String className) throws Exception{
 		  UTF.callLog4j(className);
 		  readData=new XmlReader(filename);
+		  }
+	 public ProjectSetUpComponeat (String xmlfilename,String className,String excelFile) throws Exception{
+		  UTF.callLog4j(className);
+		  readData=new XmlReader(xmlfilename);
+		  datssheet=new DataSheet(excelFile);
 		  }
 	 public ProjectSetUpComponeat (String className) throws Exception{
 		  UTF.callLog4j(className);
@@ -1524,7 +1529,7 @@ public class ProjectSetUpComponeat {
   */
   
   public void clickSourceManagemenet_UpperBord() {
-	  Sync.procesWait(2000);
+	    Sync.procesWait(2000);
      	UTF.clickelement("xpath", "//*[@index='MARKETING_MARKETING_MANAGEMENT|append_values_36']");
 	   Log4j.infoLog("clickSourceManagemenet_UpperBord");
 	   }
@@ -1652,56 +1657,215 @@ public class ProjectSetUpComponeat {
      	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
        }
        
-       public String existeventnameIntable() {
-    	   String eventsname=UTF.findElement("xpath", ".//*[@class='evet-task-table']/table/tbody/tr/td[2]/h4/span[2]").getText();
-            return eventsname;
+       public List<String> exist_eventname_Intable() {
+    	      List<String> currentOptions = new ArrayList<>();
+    	      Sync.procesWait(2000);
+     	     List<WebElement> eventwebelements=UTF.findelements("xpath", ".//*[@class='evet-task-table']/table/tbody/tr/td[2]/h4/span[2]");
+          for(int i=0;i<eventwebelements.size();i++) {
+        	  Log4j.infoLog(eventwebelements.get(i).getText());
+    	     currentOptions.add( eventwebelements.get(i).getText());
+    	  }
+    	    return currentOptions;
        }
        
-       public void creatingEventsIn_eventNode(String datasheetname) throws Exception {
-    	  
+       
+   
+      public void creatingEventsIn_eventNode(String datasheetname) throws Exception {
     	   String Event_Name= readData.getdata(datasheetname, "Event_Name");
-    	   
+	       Sync.procesWait(2000);
+    	   UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
     	   Sync.procesWait(2000);
-    	   UTF.inputText("id", "event_name", Event_Name);
-    	   Log4j.infoLog("entring event name ");
-           UTF.clickelement("xpath", ".//*[@id='dynamic_source_form']/div[2]/input[2]");
-           Log4j.infoLog("clcik the save buttion ");
-          // String mm=UTF.findElement("id", "manoj").getText();
-          // String eventmessage=UTF.findElement("id", "insert_success").getText();
-          /* if("Event Name added Successfully.".equals(UTF.findElement("id", "insert_success").getText())) {
-        	   Log4j.infoLog("Event Name added Successfully.");
-            }
-            */
-           if(UTF.findElement("id", "insert_success").isDisplayed()) {
-        	   
-           }
-          else {
-        	  String errortext= UTF.findElement("xpath", "html/body/div[1]/span[1]").getText();
-        	     Log4j.infoLog(errortext);
-           }
-         //  Assert.assertTrue(eventmessage.equals("Event Name added Successfully."));
-           
-            Sync.procesWait(2000);
-            String eventsname=UTF.findElement("xpath", ".//*[@class='evet-task-table']/table/tbody/tr/td[2]/h4/span[2]").getText();
-            Assert.assertTrue(eventsname.equals(Event_Name));
+    	   String[] event=Event_Name.split("/");
+    	   for(String eventsnames:event) {
+    		   Log4j.infoLog(eventsnames +"xml");
+    	   if(exist_eventname_Intable().contains(eventsnames)) {
+    	   Log4j.infoLog(eventsnames +"is alredy  created");
+    	   
+    	   }
+      else {
+    	     UTF.clickelement("id", "action");
+           	 Sync.procesWait(2000);
+          	 UTF.inputText("id", "event_name", eventsnames);
+          	 UTF.clickelement("xpath", ".//*[@id='dynamic_source_form']/div[2]/input[2]");
+             Sync.procesWait(2000);
+             UTF.findElement("id", "insert_success").getText().equals("Event Name added Successfully.");
+             Log4j.infoLog(eventsnames+"is  newly created");
+                
+    		 }
+    	   }
+            
             
     	   }
        
+    
+    
+      public  List<String> eventsNames_Sourcenode() throws Exception {
+          ArrayList<String> currentOptionssourc = new ArrayList<>();
+    	  Sync.procesWait(2000);
+    	  List<WebElement> eventwebelementsInsourcenode=UTF.findelements("xpath", ".//*[@id='Event_Name']");
+          for(int i=0;i<eventwebelementsInsourcenode.size();i++) {
+          currentOptionssourc.add( eventwebelementsInsourcenode.get(i).getText().trim());
+           }
+            return currentOptionssourc;
+           }
+    
+     public void verifyingeventsnames_sourcnode(String datasheetname) throws Exception {
+    	    clickplusbutton();
+  	    	String Event_Name_source= readData.getdata(datasheetname, "Event_Name");
+ 	        String[] event=Event_Name_source.split("/");
+    	    for(String sourceventsnames:event) {
+    	   Assert.assertTrue(eventsNames_Sourcenode().get(0).contains(sourceventsnames));
+    	   }
+    	}
+     
+      
+      public void verifying_Sourcetypes(String datasheetname) throws Exception{
+    	  String Source_Type= readData.getdata(datasheetname, "Source_Type");
+    	  ArrayList<String> currentOptionssourc = new ArrayList<>();
+    	  Sync.procesWait(2000);
+          List<WebElement>sourctypewebelemnts= UTF.findelements("xpath", ".//*[@id='source_type_id']");
+    	  for(int i=0;i<sourctypewebelemnts.size();i++) {
+    	      currentOptionssourc.add(sourctypewebelemnts.get(i).getText().trim()); 
+    	  }
+    	  
+    	  String[] Source_TypeArry=Source_Type.split("/");
+    	  for(int i=0;i<Source_TypeArry.length;i++) {
+    		  Assert.assertTrue(currentOptionssourc.get(0).contains(Source_TypeArry[i]), "this are  present in source");
+    		  Log4j.infoLog("this are present in source node");
+    	  }
+    	  }
+        public void addEventIn_SourceNode(String datasheetname) throws Exception {
+        	clickeplusbutton();
+        	String Event_Name= readData.getdata(datasheetname, "Event_Name");
+        	UTF.clickelement("id", "addevent");
+        	Sync.procesWait(2000);
+        	UTF.inputText("id", "MEvent_Name", Event_Name);
+        	UTF.clickelement("id", "Eventtypes");
+        	//Event Name exist
+        	if(UTF.findElement("id", "ev_msg").getText().equals("Event Name exist"))
+        	{
+        		Log4j.infoLog("event allredy exist");
+        	}
+        	else if(UTF.findElement("id", "ev_msg").getText().equals("Event Name exist")){
+        		Log4j.infoLog("event name is created");
+        	}
+        	UTF.clickelement("xpath", ".//*[@class='close']");
+        	
+        	UTF.clickelement("id", "refreshevents");
+        	Assert.assertTrue(eventsNames_Sourcenode().get(0).contains(Event_Name));
+        	Log4j.infoLog("event add on source node");
+        	
+        }
+      
+      
+      
+      
        public void creatingsources(String datasheetname) throws Exception {
     	   String Event_Name= readData.getdata(datasheetname, "Event_Name");
     	   String Source_Type= readData.getdata(datasheetname, "Source_Type");
     	   String Source_Name= readData.getdata(datasheetname, "Source_Name");
+    	   int i=0;
+    	   int j=0;
+    	  
     	   Sync.procesWait(2000);
-    	   UTF.selectByVisibleText("xpath", ".//*[@id='Event_Name']", Event_Name);
-    	   Log4j.infoLog("entring user name ");
-    	   Sync.procesWait(2000);
-    	   UTF.selectByVisibleText("id", "source_type_id", Source_Type);
-    	   Sync.procesWait(2000);
-    	   UTF.inputText("id", "src_type", Source_Name);
-    	   
-    	   UTF.clickelement("xpath", ".//*[@id='dynamic_source_form']/div[5]/input");
+    	// UTF.selectByVisibleText("xpath", ".//*[@id='Event_Name']", Event_Name);
+    	   String[] arrysourcType=Source_Type.split("/");
+    	   for(i=0;i<arrysourcType.length;++i) {
+    		    String[] arrysourcName=Source_Name.split("/");
+    		    for(j=0;j<arrysourcName.length;j++) {
+    		    	UTF.selectByVisibleText("xpath", ".//*[@id='Event_Name']", Event_Name);
+    			    UTF.selectByVisibleText("id", "source_type_id", arrysourcType[i]);
+        		    Log4j.infoLog( arrysourcType[i]);
+    			    UTF.inputText("id", "src_type", arrysourcName[j]);
+    			    Log4j.infoLog(arrysourcName[j]);
+    			    UTF.clickelement("xpath", ".//*[@id='dynamic_source_form']/div[5]/input");
+    			    Assert.assertTrue(UTF.findElement("id", "insert_success").getText().equals("Source added Successfully."));
+    			  
+    			    
+    			    
+    			    
+    			    UTF.findElement("id", "action").isDisplayed();
+    			    UTF.clickelement("id", "action");
+    			    Log4j.infoLog("click the plse buttion9 ");
+    			    }
+    	 }
     	   
        }
+       
+       /*
+        * This node is for Bulder node
+        * 
+        */
+       
+       
+        public void clickBuilder_UpperBord() {
+      	   Sync.procesWait(2000);
+      	   UTF.clickelement("xpath", "//*[@index='MARKETING_BUILDER|append_values_99']");
+      	   Log4j.infoLog("clickBuilder_UpperBord");
+      	   }
+          
+        public void clickBuilder_lowerBord() {
+           UTF.clickelement("xpath", "//*[contains(@title, 'Builder')]/div");
+           Log4j.infoLog("clickBuilder_lowerBord");
+           }
+     
+        public void delete_BuilderNode() {
+          UTF.clickelement("xpath", ".//span[@id='MARKETING_BUILDER']/following::button[1]");
+           UTF.clickelement("partialLinkText", "Yes");
+           Log4j.infoLog("delete_BuilderNode");
+           }
+       
+       /*
+        * landing page
+        */
+       
+       
+
+        public void click_landingpage_UpperBord() {
+      	   Sync.procesWait(2000);
+      	   UTF.clickelement("xpath", "//*[@index='MARKETING_LANDING_PAGE|append_values_110']");
+      	   Log4j.infoLog("click_landingpage_UpperBord");
+      	   }
+          
+        public void click_landingpage_lowerBord() {
+           UTF.clickelement("xpath", "//*[contains(@title, 'Landing Page')]/div");
+           Log4j.infoLog("clickBuilder_lowerBord");
+           }
+        public void click_landingpage_edit() {
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_LANDING_PAGE']/following::button[2]");
+    	   Log4j.infoLog(" click_landingpage_lowerBord");
+    	   }
+        public void delete_landingpage() {
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_LANDING_PAGE']/following::button[1]");
+           UTF.clickelement("partialLinkText", "Yes");
+           Log4j.infoLog("delete_landingpage");
+           }
+       
+        
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
       /* this node is CONNECTOR
        * 
        * 
@@ -2236,7 +2400,8 @@ public class ProjectSetUpComponeat {
              UTF.clickelement("xpath", ".//button[@id='click_FieldWise_edit']/following::button[1]");
              UTF.clickelement("partialLinkText", "Yes");
              Log4j.infoLog("delete_FieldWise_Node");
-             } 
+             }
+	
            
         
         

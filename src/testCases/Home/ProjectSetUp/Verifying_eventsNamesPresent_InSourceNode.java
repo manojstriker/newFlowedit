@@ -2,7 +2,7 @@ package testCases.Home.ProjectSetUp;
 
 import org.testng.annotations.Test;
 
-import ActionDriver.UTF;
+import basedriver.Browser;
 import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
@@ -10,14 +10,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class Creating_Sources {
+public class Verifying_eventsNamesPresent_InSourceNode {
 	 @Test
-	  public void creating_eventname() {
+	  public void verifying_eventsNamesPresent_InSourceNode() {
 		    ProjectSetUpComponeat project;
 			try {
-				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","Creating_eventname");
+				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","verifying_eventsNamesPresent_InSourceNode");
 				project.clickFlowEdit();
-				
 				project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
 				project.clickSourceTracker_UpperBord();
@@ -25,9 +24,7 @@ public class Creating_Sources {
 				project.clickSource_UpperBord();
 				project.clickSource_lowerBord();
 				project.clickSource_edit();
-				project.clickPlsebuttion();
-				project.creatingsources("source_Creation1");
-				UTF.SwitchToDefaltFrame();
+				project.verifyingeventsnames_sourcnode("events_Names_SourceNode_Verification");
 			    }
 				catch (Exception e) {
 				e.printStackTrace();
@@ -46,5 +43,7 @@ public class Creating_Sources {
 
 	  @AfterMethod
 	  public void afterMethod() {
+		  Browser.closebrowser();
 	  }
+
 }

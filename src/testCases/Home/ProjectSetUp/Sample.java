@@ -5,6 +5,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import ActionDriver.UTF;
 import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
@@ -13,14 +14,27 @@ public class Sample {
 		@Test
 		
 		   public void projuctSet_validation () throws Exception {
-			ProjectSetUpComponeat project=new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Manager.xml","Verifying_projuctSet_validation");
+			ProjectSetUpComponeat project;
 			try {
+				
+				
+				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","verifying_eventsNamesPresent_InSourceNode","/home/striker/eclipse-workspace/bugstraking.xlsx");
+				//project.verifying_events_evalable_In_SourcenodeEvents("sample");
+				
 				project.clickFlowEdit();
-				project.clickOn_ProjectManagement_upperbord();
-				project.clickOn_projuctManagement_lowerbord();
-				project.clickOn__userprivilleges_Upperbord();
-				project.clickOn__userprivilleges_lowerbord();
-				project.clickOn_userPrivilleges_Editoption();
+	        	project.clickSourceManagemenet_UpperBord();
+				project.clickSourceManagemenet_lowerBord();
+				project.clickSourceTracker_UpperBord();
+				project.clickSourceTracker_lowerBord();
+				project.clickSource_UpperBord();
+				project.clickSource_lowerBord();
+				project.clickSource_edit();
+			//	project.verifyingeventsnames_sourcnode("events_Names_SourceNode");
+				//project.eventsNames_Sourcenode();
+				//project.verifyingeventsnames_sourcnode("events_Names_SourceNode");
+			
+				//project.creatingEventsIn_eventNode("eventname_eventnode");
+				//UTF.SwitchToDefaltFrame();
 			
 			
 				

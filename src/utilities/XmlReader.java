@@ -1,9 +1,16 @@
 package utilities;
 
+import java.io.File;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
+import org.w3c.dom.Attr;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -14,6 +21,7 @@ String filepath;
   DocumentBuilder dBuilder;
   Document doc;
   String value;
+  Attr attr;
  static NodeList nlist;
  public XmlReader(String filepath) {
 	   this.filepath=System.getProperty("user.dir")+"//src//testData//"+filepath;
@@ -33,8 +41,26 @@ String filepath;
 		   }
  	   } return null;
 }
-   public void writedata(String datasetname,String keyValue) throws Exception {
-	    
+   public void writedata(String datasetname,String keyValue,String data) throws Exception {
+	   DocumentBuilderFactory documentFactory = DocumentBuilderFactory.newInstance();
+	   DocumentBuilder documentBuilder = documentFactory.newDocumentBuilder();
+	   Document document = documentBuilder.newDocument();
+
+	   Element testdata = document.createElement("Testdata");
+	   document.appendChild(testdata);
+	   
+	   Element dataset = document.createElement("datasetname");
+	   testdata.appendChild(dataset);
+	   Attr attr = document.createAttribute(keyValue);
+	   attr.setValue(data);
+	   dataset.setAttributeNode(attr);
+	   TransformerFactory  transformerFactory = TransformerFactory.newInstance();
+	   Transformer    transformer = transformerFactory.newTransformer();
+	   DOMSource   source = new DOMSource(doc);
+	   StreamResult result = new StreamResult(new File(filepath));
+	  transformer.transform(source, result);
+
+			  
    }
    
 }

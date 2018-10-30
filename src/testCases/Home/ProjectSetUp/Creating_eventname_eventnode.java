@@ -3,6 +3,7 @@ package testCases.Home.ProjectSetUp;
 import org.testng.annotations.Test;
 
 import ActionDriver.UTF;
+import basedriver.Browser;
 import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
@@ -17,16 +18,15 @@ public class Creating_eventname_eventnode {
 			try {
 				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","Creating_eventname_eventnode");
 				project.clickFlowEdit();
-		
-				project.clickSourceManagemenet_UpperBord();
+	        	project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
 				project.clickSourceTracker_UpperBord();
 				project.clickSourceTracker_lowerBord();
 				project.clickEvents_UpperBord();
 				project.clickEvents_lowerBord();
 				project.clickEvents_edit();
-				project.clickeplusbutton();
 				project.creatingEventsIn_eventNode("eventname_eventnode");
+				
 				UTF.SwitchToDefaltFrame();
 			    }
 				catch (Exception e) {
@@ -46,6 +46,7 @@ public class Creating_eventname_eventnode {
 
 	  @AfterMethod
 	  public void afterMethod() {
+		  Browser.closebrowser();
 	  }
 
 }
