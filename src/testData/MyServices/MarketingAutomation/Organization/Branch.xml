@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+/********************Branch_creation************************/
+<dataset name="addBranchTable_Features">
+<addBranchTable_Features>Sl.No/Company Name/Branch Name/Status/Action</addBranchTable_Features>
+</dataset>
+
+/*********ADDing the branch****/////
+<dataset name="addBranchTable">
+<company_Name>Striker</company_Name>
+<Branchname>hitech</Branchname>
+</dataset>
+
+/***** update branch ****/
+<dataset name="update_branch_madhapur">
+<company_Name>Striker</company_Name>
+<editBranchName>madhapur</editBranchName>
+<Branchname>madhapur</Branchname>
+</dataset>
+
+<dataset name="update_branch_ongole">
+<company_Name>Striker</company_Name>
+<editBranchName>ongole</editBranchName>
+<Branchname>madhapur</Branchname>
+</dataset>
+
+*********delete branch****
+<dataset name="deletebranch">
+<Branchname>ongole</Branchname>
+</dataset>
+/*branch data verifying****
+<dataset name="brach_data_verfying">
+<branch_data>1/Striker/hitech/Active/Update Delete</branch_data>
+</dataset>
+
+/*****branch_table_data_And_features_verifying******/
+<dataset name ="branch_table_data_And_features_verifying">
+<addBranchTable_Features>Sl.No/Company Name/Branch Name/Status/Action</addBranchTable_Features>
+<branch_data>1/Striker/hitech/Active/Update Delete</branch_data>
+</dataset>
+</Testdata>

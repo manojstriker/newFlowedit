@@ -20,7 +20,7 @@ public class CreatingLongCode {
 				UTF.refresh();
 				project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
-				project.click__LongCode_UpperBord();
+				project.click_LongCode_UpperBord();
 				project.click_LongCode_lowerBord();
 				project.click_LongCode_edit();
 				project.clickeplusbutton();

@@ -1102,9 +1102,7 @@ public class ProjectSetUpComponeat {
      public void clickPlsebuttion() {
   	    Sync.procesWait(2000);
   	    UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-	 	    Log4j.infoLog("switch the frame");
-  		UTF.clickelement("xpath", ".//*[@id='action']/img");
-	    	Log4j.infoLog("click the pluse button");
+	 	UTF.clickelement("xpath", ".//*[@id='action']/img");
 	    	}
      
      public void addbranchInCXO(String Branchname) {
@@ -1766,6 +1764,7 @@ public class ProjectSetUpComponeat {
     	   String Source_Name= readData.getdata(datasheetname, "Source_Name");
     	   int i=0;
     	   int j=0;
+    	   
     	  
     	   Sync.procesWait(2000);
     	// UTF.selectByVisibleText("xpath", ".//*[@id='Event_Name']", Event_Name);
@@ -1779,14 +1778,15 @@ public class ProjectSetUpComponeat {
     			    UTF.inputText("id", "src_type", arrysourcName[j]);
     			    Log4j.infoLog(arrysourcName[j]);
     			    UTF.clickelement("xpath", ".//*[@id='dynamic_source_form']/div[5]/input");
-    			    Assert.assertTrue(UTF.findElement("id", "insert_success").getText().equals("Source added Successfully."));
-    			  
-    			    
-    			    
-    			    
+    			if(UTF.findElement("id", "insert_success").getText().equals("Source added Successfully.")) {
+    				Log4j.infoLog("sourctype"+"***"+arrysourcType[i]+"sourcename"+">>>"+arrysourcName[j]+"Source added Successfully");
+    			}
+    			else {
+    				Log4j.infoLog("sourctype"+"***"+arrysourcType[i]+"sourcename"+">>>"+arrysourcName[j]+" it alredy created"+"Source added Faild");
+    			}
     			    UTF.findElement("id", "action").isDisplayed();
     			    UTF.clickelement("id", "action");
-    			    Log4j.infoLog("click the plse buttion9 ");
+    			    //Log4j.infoLog("click the plse buttion");
     			    }
     	 }
     	   
@@ -1840,8 +1840,307 @@ public class ProjectSetUpComponeat {
            UTF.clickelement("partialLinkText", "Yes");
            Log4j.infoLog("delete_landingpage");
            }
-       
+       /*
+        * 
+        * ****
+        * 
+        */
+        public void height(String height) {
+        	UTF.inputText("xpath", ".//input[@name='height']", height);
+        	Log4j.infoLog(height+"----is enter");
+        	}
+        public void Art_Board_Properties_submitbutton() {
+        	Sync.procesWait(2000);
+     	    UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+        	UTF.clickelement("xpath", ".//*[@id='art-sampleone']/span/ul/li[3]/button");
+        	Log4j.infoLog("click the submitbuttion");
+        	Sync.procesWait(2000);
+        	
+            }
+         public void click_Templates() {
+        	 UTF.clickelement("xpath", "//*[@class='templetes active']/a");
+        	 Log4j.infoLog("Template Button click");
+        	 
+         }
+         public void click_properties() {
+        	 UTF.clickelement("xpath", ".//[@class='properties']");
+        	 Log4j.infoLog("click the properties");
+         }
+        public void  Click_Default_Templates() {
+        	 UTF.clickelement("xpath", ".//*[text()='Default Templates']");
+        	 Log4j.infoLog("click the Default_Templates");
+        	 List<WebElement> Default_Templates=UTF.findelements("xpath", "//*[@id='layouts1']/ul/li");
+        	 if(Default_Templates.size()==6) {
+            	  Log4j.infoLog("defalt frames are present");
+              }
+              else {
+            	  Log4j.infoLog("defalt frames are missing ");
+            	  Assert.fail();
+              }
+         }
+        public void clickMyTemplates() {
+        	UTF.clickelement("xpath", "  .//*[text()='My Templates']");
+        	Log4j.infoLog("clickMyTemplates");
+        }
+        public List<String> DefaltCategoryType() {
+        	ArrayList<String>arry=new ArrayList<String>();
+        	List<WebElement> CategoryType=UTF.findelements("name", "defaulttempcat");
+        	for(int i=0;i<CategoryType.size();i++) {
+        	 arry.add(CategoryType.get(i).getText().replace("Select Category Type", "").trim());
+         	}
+        	return arry;
+            }
         
+        public void clicktools() {
+        	UTF.clickelement("xpath", ".//*[@class='tools active']");
+        	Log4j.infoLog("tootls is click");
+      
+            }
+        public void verifying_toolsbutton() {
+        	List<WebElement>tools=UTF.findelements("xpath", ".//*[@id='tools']/ul/li");
+        	if(tools.size()==9) {
+              	 Log4j.infoLog("total  tools are present");
+                 }
+                else {
+              	 Log4j.infoLog("some  tools are missing ");
+              	 Assert.fail();
+                }
+           	 }
+     
+        
+        public void clickTextTool() {
+        	 UTF.clickelement("xpath", ".//li[@class='textframehide text-active active']/a");
+        	 List<WebElement> textTools=UTF.findelements("xpath", ".//*[@id='text']/ul/li");
+        	 if(textTools.size()==7) {
+           	 Log4j.infoLog("total text tools are present");
+              }
+             else {
+           	 Log4j.infoLog("some Text tools are missing ");
+           	 Assert.fail();
+             }
+        	 }
+        
+        public void clickTextTool_Related(String texttool) {
+        	UTF.clickelement("xpath", "//*[text()='"+texttool+"']");
+        	Log4j.infoLog(texttool+"----.is clicked");
+        }
+        /*Shape_Tool related methods
+         * 
+         */
+        public void click_Shape_Tool() {
+        	UTF.click("xpath", ".//*[@id='tools']/ul/li[3]");
+        	Log4j.infoLog("Shape tool is click");
+        	 List<WebElement> Shape_Tools=UTF.findelements("xpath", ".//*[@id='shapes']/ul/li");
+        	 if(Shape_Tools.size()==10) {
+           	 Log4j.infoLog("total text Shape_tools are present");
+              }
+             else {
+           	 Log4j.infoLog("some Shape_tools are missing ");
+           	 Assert.fail();
+             }
+        }
+        
+        public void click_Shape_Tools_Related(String Shape_Tools ) {
+        	UTF.click("xpath", "//*[text()='"+Shape_Tools+"']");
+        	Log4j.infoLog(Shape_Tools+"-----> is clicked");
+        }
+        /*Standard_Form_Tool related methods
+         * 
+         */
+        public void click_Standard_Form_Tool() {
+        	UTF.click("xpath", ".//*[@id='tools']/ul/li[4]");
+        	Log4j.infoLog("Standard_Form_Tool is click ");
+        	 List<WebElement> Standard_Form_Tool=UTF.findelements("xpath", ".//*[@id='standard']/ul/li");
+        	 if(Standard_Form_Tool.size()==21) {
+           	 Log4j.infoLog("total standard_Form_Tool are present");
+              }
+             else {
+           	 Log4j.infoLog("some standard_Form_Tool are missing ");
+           	 Assert.fail();
+             }
+          }
+        public void click_Standard_Form_Tool_Related(String Standard_Form_Tool ) {
+        	UTF.click("xpath", "//*[text()='"+Standard_Form_Tool+"']");
+        	Log4j.infoLog(Standard_Form_Tool+"-----> is clicked");
+        }
+     /*
+      * custome from tool  methods   
+      */
+        public void click_customform_tool() {
+        	 UTF.click("xpath", ".//*[@id='tools']/ul/li[5]");
+        	 Log4j.infoLog("customform_tool is click ");
+        	 List<WebElement> Standard_Form_Tool=UTF.findelements("xpath", ".//*[@id='custom']/ul/li");
+        	 if(Standard_Form_Tool.size()==8) {
+           	 Log4j.infoLog("total customform_tool are present");
+              }
+             else {
+           	 Log4j.infoLog("some customform_tool are missing ");
+           	 Assert.fail();
+             }
+            }
+        public void click_customform_tool_Related(String customform_tool ) {
+        	UTF.click("xpath", "//*[text()='"+customform_tool+"']");
+        	Log4j.infoLog(customform_tool+"-----> is clicked");
+        }
+        
+     /*
+      * Socail Media Tools related methods    
+      */
+        
+        public void click_Socail_Media_Tool() {
+       	 UTF.click("xpath", ".//*[@id='tools']/ul/li[6]");
+       	 Log4j.infoLog("customform_tool is click ");
+       	 List<WebElement> Standard_Form_Tool=UTF.findelements("xpath", ".//*[@id='socialmedia']/ul/li");
+       	 if(Standard_Form_Tool.size()==12) {
+          	 Log4j.infoLog("total Socail_Media_Tool are present");
+             }
+         else {
+          	 Log4j.infoLog("some Socail_Media_Tool are missing ");
+          	 Assert.fail();
+             }
+             }
+        public void click_Socail_Media_Tool_Related(String Socail_Media_tool ) {
+       	 UTF.click("xpath", "//*[text()='"+Socail_Media_tool+"']");
+       	 Log4j.infoLog(Socail_Media_tool+"-----> is clicked");
+       }
+        
+     /*
+      * Optical Code tools related methods
+      *    
+      */
+        public void click_Optical_Code_tool() {
+          	 UTF.click("xpath", ".//*[@id='tools']/ul/li[7]");
+          	 Log4j.infoLog("customform_tool is click ");
+          	 List<WebElement> Standard_Form_Tool=UTF.findelements("xpath", ".//*[@id='opticalcode']/ul/li");
+          	 if(Standard_Form_Tool.size()==2) {
+             	 Log4j.infoLog("total Optical_Codel are present");
+                }
+            else {
+             	 Log4j.infoLog("some Optical_Code are missing ");
+             	 Assert.fail();
+                }
+                }
+           public void click_Optical_Code_tools(String OpticalCode ) {
+          	 UTF.click("xpath", "//*[text()='"+OpticalCode+"']");
+          	 Log4j.infoLog(OpticalCode+"-----> is clicked");
+          }
+           
+      /*
+       * Footer Options
+       *   
+       */
+        
+           public void click_Footer_Options() {
+            	 UTF.click("xpath", ".//*[@id='tools']/ul/li[8]");
+            	 Log4j.infoLog("Footer_Options is click ");
+            	 List<WebElement> Standard_Form_Tool=UTF.findelements("xpath", ".//*[@id='footer']/ul/li");
+            	 if(Standard_Form_Tool.size()==2) {
+               	 Log4j.infoLog("total Footer_Options are present");
+                  }
+              else {
+               	 Log4j.infoLog("some Footer_Options missing ");
+               	 Assert.fail();
+                  }
+                  }
+             public void click_Footer_Options(String FooterOptions ) {
+            	 UTF.click("xpath", "//*[text()='"+FooterOptions+"']");
+            	 Log4j.infoLog(FooterOptions+"-----> is clicked");
+            }
+        
+        
+        /*
+         * Layer Options     
+         */
+             
+             public void click_Layer_Options() {
+            	 UTF.click("xpath", ".//*[@id='tools']/ul/li[9]");
+            	 Log4j.infoLog("Layer_Options is click ");
+            
+                  }
+             
+             
+        public void click_media_Tool() {
+        	UTF.clickelement("xpath", ".//li[@class='imgframehide']/a");
+        }
+        
+        
+        
+        
+        public void click_revert_confirm() {
+        	UTF.clickelement("xpath", "//ul[@class='footer-list']/a/li");
+        	UTF.clickelement("xpath", "//*[@class='jconfirm-buttons']/button[1]");
+        	Log4j.infoLog("revert click and confirm");
+        }
+        public void click_revert_cancel() {
+        	UTF.clickelement("xpath", "//ul[@class='footer-list']/a/li");
+        	UTF.clickelement("xpath", "//*[@class='jconfirm-buttons']/button[2]");
+        	Log4j.infoLog("revert click and cancel");
+        }
+        
+        
+        
+        public void clickLeadSubmit() {
+        	UTF.clickelement("xpath", "//*[text()='Submit']");
+        	Log4j.infoLog("click the submit");
+        }
+        
+        
+        
+        
+        
+        
+        /*
+         * Short Url
+         */
+       
+        public void click_SHORT_URL_UpperBord() {
+       	   Sync.procesWait(2000);
+       	   UTF.clickelement("xpath", "//*[@index='MARKETING_SHORT_URL|append_values_112']");
+       	   Log4j.infoLog("click_SHORT_URL_UpperBord");
+       	   }
+           
+         public void click_SHORT_URL_lowerBord() {
+            UTF.clickelement("xpath", "//*[contains(@title, 'Short URL')]/div");
+            Log4j.infoLog("click_SHORT_URL_lowerBord");
+            }
+         public void click_SHORT_URL_edit() {
+            UTF.clickelement("xpath", ".//span[@id='MARKETING_SHORT_URL']/following::button[2]");
+     	   Log4j.infoLog(" click_SHORT_URL_edit");
+     	   }
+         public void delete_SHORT_URL() {
+            UTF.clickelement("xpath", ".//span[@id='MARKETING_SHORT_URL']/following::button[1]");
+            UTF.clickelement("partialLinkText", "Yes");
+            Log4j.infoLog("delete_SHORT_URL");
+            }
+       
+       
+       
+         public void shortUrl(String datasheetname) throws Exception {
+        	  String Event_Name= readData.getdata(datasheetname, "Event_Name");
+       	      String Source_Name= readData.getdata(datasheetname, "Source_Name");
+       	      String URL= readData.getdata(datasheetname, "URL");
+       	      
+       	      int count=0;
+       	      String[] Source_NameArry=Source_Name.split("/");
+       	      for(int i=0;i<Source_NameArry.length;++i) {
+       	      UTF.selectByVisibleText("id", "Event_Name", Event_Name);
+       	      UTF.selectByVisibleText("id","source_name",Source_NameArry[i]);
+       	      String[] URLArry=URL.split(",");
+       	      for(int j=count;j<URLArry.length;) {
+       	      UTF.inputText("id", "URL_link", URLArry[j]);
+       	      Sync.procesWait(2000);
+       	      UTF.clickelement("id", "gobtn");
+       	      Sync.procesWait(2000);
+       	      UTF.clickelement("id", "fieldsssubmit");
+       	      UTF.findElement("id", "action").isDisplayed();
+       		  UTF.clickelement("id", "action");
+       	      count++;  
+       		  break;  
+       	      }
+       	      }
+       	   
+        	 
+         }
        
        
        
@@ -1849,7 +2148,469 @@ public class ProjectSetUpComponeat {
        
        
        
+      /*
+       * 
+       *  source management---->  Web site Tracker   
+       *  
+       *    Website Tracker   related node 
+       */
        
+         public void click_Website_Tracker_UpperBord() {
+         	   Sync.procesWait(2000);
+         	   UTF.clickelement("xpath", "//*[@index='MARKETING_WEBSITE_TRACKER|append_values_92']");
+         	   Log4j.infoLog("click_Website_Tracker_UpperBord");
+         	   }
+         public void click_Website_Tracker_lowerBord() {
+              UTF.clickelement("xpath", "//*[contains(@title, 'Website Tracker')]/div");
+              Log4j.infoLog("click_Website_Tracker_lowerBord");
+              }
+         public void delete_Website_Tracker_() {
+              UTF.clickelement("xpath", ".//span[@id='MARKETING_WEBSITE_TRACKER']/following::button[1]");
+              UTF.clickelement("partialLinkText", "Yes");
+              Log4j.infoLog("delete_Website_Tracker_");
+              }
+       
+         
+         
+
+         public void click_Tracking_script_UpperBord() {
+         	   Sync.procesWait(2000);
+         	   UTF.clickelement("xpath", "//*[@index='MARKETING_TRACKING_SCRIPT|append_values_95']");
+         	   Log4j.infoLog("click_Tracking_script_UpperBord");
+         	   }
+         public void click_Tracking_script_lowerBord() {
+               UTF.clickelement("xpath", "//*[contains(@title, 'Tracking script')]/div");
+               Log4j.infoLog("click_Tracking_script_lowerBord");
+               }
+         public void click_STracking_script_edit() {
+               UTF.clickelement("xpath", ".//span[@id='MARKETING_TRACKING_SCRIPT']/following::button[2]");
+      	       Log4j.infoLog(" click_STracking_script_edit");
+      	       }
+         
+         public void delete_Tracking_script() {
+              UTF.clickelement("xpath", ".//span[@id='MARKETING_TRACKING_SCRIPT']/following::button[1]");
+              UTF.clickelement("partialLinkText", "Yes");
+              Log4j.infoLog("delete_Tracking_script_Tracker_");
+              }       
+       
+         
+         
+         public  List<String> Titlte_Names_Tracking_Script(){
+			
+        	 ArrayList<String> currentOptionssourc = new ArrayList<>();
+       	     Sync.procesWait(2000);
+       	     List<WebElement> TitileNames=UTF.findelements("xpath", ".//*[@class='evet-task-table']/table/tbody/tr[1]/td[1]/h4/span");
+             for(int i=0;i<TitileNames.size();i++) {
+             currentOptionssourc.add( TitileNames.get(i).getText().trim());
+             }
+               return currentOptionssourc;
+              }//.//*[@class='evet-task-table']/table/tbody/tr[1]/td[1]/h4/span
+      
+        	 
+         public void veryfing_title_names_TrackingScript(String Title) {
+        	 if(Titlte_Names_Tracking_Script().contains(Title)){
+        		 Log4j.infoLog("title is present");
+        	 }
+        	 else {
+        		 Log4j.infoLog("title is not present");
+        	 }
+         }
+         
+         
+         public void  creation_trckerScrept(String datasheetname) throws Exception {
+           String Event_Name= readData.getdata(datasheetname, "Event_Name");
+     	   String Source_Type= readData.getdata(datasheetname, "Source_Type");
+     	   String Source_Name= readData.getdata(datasheetname, "Source_Name");
+     	   String Titles= readData.getdata(datasheetname, "Titles");
+     	 
+     	   int count=0;
+     	   String[] Source_NameArry=Source_Name.split("/");
+     	   for(int i=0;i<Source_NameArry.length;i++) {
+     		  UTF.selectByVisibleText("id", "track_events", Event_Name);
+     		  UTF.selectByVisibleText("id","script_type",Source_Type);
+     		  
+     		  UTF.selectByVisibleText("id","source_val",Source_NameArry[i]);
+     		  
+     		  String[] TitlesArry=Titles.split("/");
+     		  for(int j=count;j<TitlesArry.length;) {
+     			  UTF.inputText("xpath", ".//*[@id='event_from']/div[5]/input", TitlesArry[i]);
+     			  UTF.clickelement("xpath", ".//*[@id='event_from']/div[7]/input[1]");
+     			  UTF.clickelement("id", "submit_btn");
+     			  if(UTF.findElement("xpath", ".//*[@id='event_from']/span[1]").getText().equals("Already Exist")) {
+     				  Log4j.infoLog(TitlesArry[i]+">>Title...."+"alredy created ");
+     				  UTF.clickelement("xpath", ".//*[@id='event_from']/div[7]/input[2]");
+     			  }
+     			  else {
+     				 Log4j.infoLog(TitlesArry[i]+"created  ");
+     			  }
+     			  UTF.clickelement("id", "action");
+     			  count++;
+     			  break;
+     		  }
+     	   }
+     	  }
+         
+         
+         
+         
+         
+         /*
+          * Source Management---->>>VIRTUAL_NUMBER Node
+          * 
+          * 
+          */
+         
+        public void click_VIRTUAL_NUMBER_UpperBord() {
+       	   Sync.procesWait(2000);
+       	   UTF.clickelement("xpath", "//*[@index='MARKETING_MARKETING_VIRTUAL_NUMBER|append_values_75']");
+       	   Log4j.infoLog("click_VIRTUAL_NUMBER_UpperBord");
+       	   }
+        public void click_VIRTUAL_NUMBER_lowerBord() {
+            UTF.clickelement("xpath", "//*[contains(@title, 'Virtaul Number')]");
+            Log4j.infoLog("click_Website_Tracker_lowerBord");
+            }
+        public void click_VIRTUAL_NUMBER_edit() {
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_MARKETING_VIRTUAL_NUMBER']/following::button[2]");
+  	       Log4j.infoLog(" click_STracking_script_edit");
+  	       }
+        public void delete_VIRTUAL_NUMBER_() {
+            UTF.clickelement("xpath", ".//span[@id='MARKETING_MARKETING_VIRTUAL_NUMBER']/following::button[1]");
+            UTF.clickelement("partialLinkText", "Yes");
+            Log4j.infoLog("delete_Website_Tracker_");
+            }
+         
+         
+    
+         public void Virtual_Number_allocation_Missedcall(String datasheetname) throws Exception {
+        	String Division_Name= readData.getdata(datasheetname, "Division_Name");
+            String Event_Name= readData.getdata(datasheetname, "Event_Name");
+       	    String Source_Name= readData.getdata(datasheetname, "Source_Name");
+       	    String Virtual_Number= readData.getdata(datasheetname, "Virtual_Number");
+       	    String service_type= readData.getdata(datasheetname, "service_type");
+       	    String ring_duration=readData.getdata(datasheetname, "ring_duration");
+       	    
+        	
+        	 UTF.selectByVisibleText("id", "Division_ID",Division_Name);
+        	 Log4j.infoLog(Division_Name+"=====>Division_Name");
+        	 UTF.selectByVisibleText("id", "Event_Name", Event_Name);
+        	 
+        	 Log4j.infoLog(Event_Name+"=====>Event_Name");
+        	 UTF.selectByVisibleText("id", "source_name", Source_Name);
+        	 Log4j.infoLog(Source_Name+"=====>Source_Name");
+        	 
+        	 UTF.clickelement("xpath", ".//*[@id='fieldwisescore']/div/div[6]/div/a[1]");
+        	 Log4j.infoLog("click the refresh button"); 
+        	 
+        	 UTF.selectByVisibleText("id", "did_number", Virtual_Number);
+        	 Log4j.infoLog(Virtual_Number+"=====>Virtual_Number");
+        	 
+        	 UTF.selectByVisibleText("id", "service_type", service_type);
+        	 Log4j.infoLog(Virtual_Number+"=====>Virtual_Number");
+        	 
+        	 UTF.selectByVisibleText("id", "ring_duration", ring_duration);
+        	 Log4j.infoLog(ring_duration+"=====>ring_duration");
+        	 
+        	 UTF.clickelement("id", "fieldsssubmit");
+         }
+         
+         public void delete_Virtual_Number_allocation(String datasheetname) throws Exception {
+        	 String Event_Name= readData.getdata(datasheetname, "Event_Name"); 
+        	 String delete_Virtual_Number=readData.getdata(datasheetname, "delete_Virtual_Number");
+        	// Log4j.infoLog(delete_Virtual_Number);
+        	 Sync.procesWait(1000);
+       	    UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+       	    
+       	 List<WebElement>clickWebElements=UTF.findelements("xpath", ".//*[@id='tablelist']/tbody/tr[1]/td[4]/button");
+    	    for(int i=0;i<clickWebElements.size();i++) {
+    	    	Sync.procesWait(3000);
+    	    	clickWebElements.get(i).click();
+    	    	//Log4j.infoLog(UTF.findElement("xpath", "//h4[text()='"+delete_Virtual_Number+"']").getText().replaceAll("Virtual Number:", ""));
+    	    	if(UTF.findElement("xpath", "//h4[text()='"+delete_Virtual_Number+"']").getText().replaceAll("Virtual Number:", "").trim().equals(delete_Virtual_Number)) {
+    	    	   	Sync.procesWait(3000);    	    		
+    	    		UTF.clickelement("partialLinkText", "Deactive");
+    	    		UTF.clickelement("xpath", ".//div[@class='jconfirm-buttons']/button[1]");
+    	    		break;
+    	    	}
+    	    	else {
+    	    		clickWebElements.get(i).click();
+    	    	}
+    	    }
+       	 }
+         public void surch_Virtuslnumber(String datasheetname) throws Exception {
+        	 String Number=readData.getdata(datasheetname, "Number");
+        	 UTF.inputText("xpath", ".//*[@class='form-group']/input[1]", Number);
+        	 UTF.clickelement("xpath", ".//*[@class='form-group']/input[2]");
+        	 UTF.clickelement("xpath", ".//span[text()='"+Number+"']");
+        	 Log4j.infoLog("number is selected");
+        	 
+         }
+         
+         public void clicksubmit_Virtualnumber(){
+        	 UTF.clickelement("xpath", ".//*[@id='dynamic_curd_edit']/div[2]/div[2]/input");
+        	 Log4j.infoLog("clcik the submit buttion");
+         }
+         
+          public void  clickBuyNow() {
+        	  UTF.clickelement("id", "updateformprofile");
+          }
+         
+         public void buy_Virtual_Number(String datasheetname) throws Exception {
+        	// String Number=readData.getdata(datasheetname, "Number");
+        	 String Virtual_NumberType=readData.getdata(datasheetname, "Virtual_NumberType");
+        	 String Number_plan=readData.getdata(datasheetname, "Number_plan");
+        	 UTF.clickelement("partialLinkText", "Buy");
+        	 UTF.SwitchtoSecondWindow();
+        	 UTF.clickelement("id", "virtual_numbers");
+        	
+        	 UTF.clickelement("xpath", ".//li[text()='"+Virtual_NumberType+"']");
+        	 Log4j.infoLog(Virtual_NumberType+"-->Virtual_Number is selected");
+        	 UTF.clickelement("id", "number_plan");
+        	 UTF.clickelement("xpath", "//li[text()='"+Number_plan+"']");
+        	 Log4j.infoLog(Number_plan+"-->Number_Type is selected");
+        	 UTF.clickelement("xpath", ".//div[@class='pricing-plan']/following::input");
+        	 surch_Virtuslnumber(datasheetname);
+        	 clicksubmit_Virtualnumber();
+        	 clickBuyNow();
+        
+         }
+         public void inVoice_BillingDetails(String datasheetname) throws Exception {
+        	 
+        	 String Address=readData.getdata(datasheetname, "Address");
+        	
+        	 String country=readData.getdata(datasheetname, "country");
+        	 String state=readData.getdata(datasheetname, "state");
+        	 String city=readData.getdata(datasheetname, "city");
+        	 String pincode=readData.getdata(datasheetname, "pincode");
+        	 String gst=readData.getdata(datasheetname, "gst");
+        	 
+        	
+        	 UTF.inputText("xpath", ".//*[@class='smart-formborder-div']/div[1]/div", Address);
+        	 UTF.selectByVisibleText("id", "countryid", country);
+        	 UTF.selectByVisibleText("id", "stateid", state);
+        	 UTF.selectByVisibleText("id", "cityid", city);
+        	 UTF.inputText("xpath", "//*[text()='Pincode']/following::div[1]/input", pincode);
+        	 UTF.inputText("xpath", "//*[text()='GST Number']/following::div[1]/input", gst);
+        	 
+         }
+         
+         
+         
+         /*
+          * need to write  class for this
+          * 
+            Long Code
+          *  sourcemanagement---->>-->Long Code
+
+          *  
+          *  
+          */
+          public void click_LongCode_UpperBord() {
+         	   Sync.procesWait(3000);
+        	   UTF.clickelement("xpath", "//*[@index='MARKETING_LONG_CODE|append_values_77']");;
+           	   Log4j.infoLog("click__LongCode_UpperBord");
+         	   }
+           
+          public void click_LongCode_edit() {
+               UTF.clickelement("xpath", ".//span[@id='MARKETING_LONG_CODE']/following::button[2]");
+      	       Log4j.infoLog("click__ILongCode_edit");
+      	       }
+          public void click_LongCode_lowerBord() {
+        	   UTF.clickelement("xpath", "//*[contains(@title, 'Long Code')]");;
+               Log4j.infoLog("click___LongCode_lowerBord");
+               }
+          
+          public void delete_LongCode_Node() {
+        	  UTF.clickelement("xpath", ".//span[@id='MARKETING_LONG_CODE']/following::button[1]");
+              UTF.clickelement("partialLinkText", "Yes");
+              Log4j.infoLog("delete___LongCode_Node");
+              } 
+          
+          public void addSource_inLogcode(String newSourcename) {
+        	  UTF.clickelement("id", "addsource");
+        	  UTF.inputText("id", "src_type",newSourcename );
+        	  UTF.click("id", "Sourcetypes");
+        	  UTF.clickelement("xpath", "//*[@id='sourcemod']/div/div/div[1]/button");
+        	  UTF.clickelement("id", "refreshsource");
+           }
+          
+          public void filling_LongCode(String datasheetname) throws Exception {
+          	 String Event_Name=readData.getdata(datasheetname, "Event_Name");
+             String source_name=readData.getdata(datasheetname, "source_name");
+          	 String long_code=readData.getdata(datasheetname, "long_code");
+          	 String Division=readData.getdata(datasheetname, "Division");
+          	 String newSourcename=readData.getdata(datasheetname, "newSourcename");
+          	
+          	 UTF.selectByVisibleText("id", "Division_ID", Division);
+         
+          	 UTF.selectByVisibleText("id", "Event_Name", Event_Name);
+          	 Log4j.infoLog(" select the event name");
+          	
+          	 UTF.selectByVisibleText("id", "source_name",source_name);
+          	 Log4j.infoLog(" select the source_name");
+          	
+             UTF.selectByVisibleText("id", "long_code", long_code);
+          	 Log4j.infoLog(" select the long_code");
+          	
+          	 UTF.clickelement("id", "fieldsssubmit");
+          	 Log4j.infoLog(" click save ");
+          	
+          }
+          
+         
+        /*
+         * need to write class for this 
+         *  
+         *  this node   Web Traffic
+         *  
+         *  
+         */
+          
+          public void click_WebTraffic_UpperBord() {
+       	    Sync.procesWait(2000);
+       	    UTF.clickelement("xpath", "//*[@index='MARKETING_WEB_TRAFFIC|append_values_73']");
+       	    Log4j.infoLog("click_WebTraffic_UpperBord");
+       	    }
+         public void click_WebTraffic_lowerBord() {
+            UTF.clickelement("xpath", "//*[contains(@title, 'Web Traffic')]");
+            Log4j.infoLog("click_WebTraffic_UpperBord");
+            }
+         public void delete_WebTraffi() {
+            UTF.clickelement("xpath", ".//span[@id='MARKETING_WEB_TRAFFIC']/following::button[1]");
+  	        Log4j.infoLog("click_WebTraffic_UpperBord");
+  	       }
+         
+          /*
+           *          **   node Downloads  ***
+           * this    Web Traffic----> Downloads
+           * 
+           */
+        public void click_Downloads_UpperBord() {
+      	   Sync.procesWait(2000);
+      	   UTF.clickelement("xpath", "//*[@index='MARKETING_WEB_TRAFFIC_DOWNLOAD|append_values_83']");
+      	   Log4j.infoLog("click_Downloads_UpperBord");
+      	   }
+       public void click_Downloads_lowerBord() {
+           UTF.clickelement("xpath", "//*[contains(@title, 'Downloads')]");
+           Log4j.infoLog("click_Downloads_lowerBord");
+           }
+       public void click_Downloads_edit() {
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_WEB_TRAFFIC_DOWNLOAD']/following::button[2]");
+  	       Log4j.infoLog("click_Downloads_edit");
+  	       }
+       public void delete_Downloads() {
+          UTF.clickelement("xpath", ".//span[@id='MARKETING_WEB_TRAFFIC_DOWNLOAD']/following::button[1]");
+ 	       Log4j.infoLog("delete_Downloads");
+ 	       }
+       
+       
+       public void creatingDownlodFrom(String datasheetname) throws Exception {
+    	  String Company=readData.getdata(datasheetname, "Company");
+    	  String event=readData.getdata(datasheetname, "event");
+    	  String script_type=readData.getdata(datasheetname, "script_type");
+    	  String Source_Name=readData.getdata(datasheetname, "Source_Name");
+    	  String file_name=readData.getdata(datasheetname, "file_name");
+    	  String URL=readData.getdata(datasheetname, "URL");
+    	   
+    	   
+    	   UTF.selectByVisibleText("id", "Company_ID", Company);
+    	   UTF.selectByVisibleText("id", "track_events", event);
+    	   UTF.selectByVisibleText("id", "script_type", script_type);
+    	   UTF.selectByVisibleText("id", "source_val", Source_Name);
+    	   UTF.inputText("id", "file_name", file_name);
+    	   UTF.inputText("id", "url_idval", URL);
+    	   UTF.clickelement("id", "notvalid");
+       }
+  
+       public void DeleteDownloadFile(String datasheetname) throws Exception {
+    	   String filename=readData.getdata(datasheetname, "filename");
+    	   List<WebElement> files=UTF.findelements("xpath", ".//*[@class='month-border']/following::td[1]/h4");
+           for(int i=0;i<files.size();i++) {
+   	       if(files.get(i).getText().replaceAll("File Name:", "").trim().equals(filename)) {
+   	       UTF.clickelement("xpath", ".//*[text()='"+filename+"']/following::td[2]/h4/a");
+   	       Log4j.infoLog(filename+"---->is deleted");
+   	       break;
+   	        }
+   	       else {
+   	       Log4j.infoLog("---");
+   	    	}
+   	    	   	    		
+           }
+           }
+       
+       
+       /*
+        *          **   node Authentications ***
+        * this    Web Traffic----> Authentications
+        * 
+        */
+       
+       
+       
+       public void click_Authentications_UpperBord() {
+      	   Sync.procesWait(2000);
+      	   UTF.clickelement("xpath", "//*[@index='MARKETING_WEB_TRAFFIC_AUTHENTICATIONS|append_values_84']");
+      	   Log4j.infoLog("click_Authentications_UpperBord");
+      	   }
+       public void click_Authentications_lowerBord() {
+           UTF.clickelement("xpath", "//*[contains(@title, 'Authentications')]");
+           Log4j.infoLog("click_Authentications_lowerBord");
+           }
+       public void click_Authentications_edit() {
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_WEB_TRAFFIC_AUTHENTICATIONS']/following::button[2]");
+  	       Log4j.infoLog("click_Authentications_edit");
+  	       }
+       public void delete_Authentications() {
+           UTF.clickelement("xpath", ".//span[@id='MARKETING_WEB_TRAFFIC_AUTHENTICATIONS']/following::button[1]");
+ 	       Log4j.infoLog("delete_Authentications");
+ 	       }
+       
+       public void Authentication_OTP_Enter(String OTP){
+    	   UTF.inputText("id", "otpTime", OTP);
+     	   Log4j.infoLog("otp is eneter ");
+           }
+       public void Authentication_otpTimeOption(String ValueotpTimeOption) {
+    	   UTF.selectByValue("id", "otpTimeOption", ValueotpTimeOption);
+      	   Log4j.infoLog("OTP option is selected ");
+           }
+       public void AuthenticationLevel(String valueLevel) {
+    	   UTF.selectByValue("id", "authlevel", valueLevel);
+      	   Log4j.infoLog("OTP option levels ");
+           }
+       public void AuthenticationType(String type) {
+    	   UTF.clickelement("xpath", "//*[text()='"+type+"']");
+    	   Log4j.infoLog("AuthenticationType is selected ");
+       }
+       
+      public void Authentication_OTP(String datasheetname) throws Exception {
+    	  String OTP=readData.getdata(datasheetname, "OTP");
+    	  String ValueotpTimeOption=readData.getdata(datasheetname, "ValueotpTimeOption");
+    	  String valueLevel=readData.getdata(datasheetname, "valueLevel");
+    	  String type=readData.getdata(datasheetname, "type");
+    	  Log4j.infoLog(OTP);
+    	  Sync.procesWait(2000); 
+    	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+    	  Authentication_OTP_Enter(OTP);
+    	  
+    	  Authentication_otpTimeOption(ValueotpTimeOption);
+    	  AuthenticationLevel(valueLevel);
+    	  AuthenticationType(type);
+    	  Sync.procesWait(2000);
+    	  UTF.clickelement("xpath", "//input[@value='Submit']");
+    	  String message= UTF.findElement("id", "insert_success").getText();
+    	  Log4j.infoLog(message);
+    	  
+    	  //UTF.inputText("xpath", ".//*[@id='otpTime']", OTP);
+    	  
+    	  
+    	  /* UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+    	  Sync.procesWait(2000); 
+    	  Authentication_OTP_Enter(OTP);
+    	  Authentication_otpTimeOption(ValueotpTimeOption);
+    	  AuthenticationLevel(valueLevel);
+    	  AuthenticationType(type);
+    	
+    	  */
+      }
        
        
        
@@ -1874,28 +2635,27 @@ public class ProjectSetUpComponeat {
        *  
        */
        
+          
+          
+         
+           
 
        public void click_CONNECTOR_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_36,append_values_98,MARKETING_CONNECTOR", 40);
-     	   UTF.clickelement("id", "append_values_36,append_values_98,MARKETING_CONNECTOR");
+     	   Sync.procesWait(2000);
+     	   UTF.clickelement("xpath", "//*[@index='MARKETING_CONNECTOR|append_values_98']");
      	   Log4j.infoLog("clickCONNECTOR_UpperBord()");
      	   }
          
        public void click_CONNECTOR_lowerBord() {
-          Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Connector')]/div", 40);
-          UTF.clickelement("xpath", "//*[contains(@title, 'Connector')]/div");
+          UTF.clickelement("xpath", "//*[contains(@title, 'Connector')]");
           Log4j.infoLog("clickCONNECTOR_lowerBord");
           }
        public void click_CONNECTOR_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_CONNECTOR']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_CONNECTOR']");
+          UTF.clickelement("xpath", ".//span[@id='MARKETING_CONNECTOR']/following::button[2]");
   	      Log4j.infoLog("clickCONNECTOR_edit");
-  	     
-  	      }
+  	     }
        public void delete_CONNECTOR_Node() {
-          Sync.elementToBeClickable("xpath", "//button[@id='MARKETING_CONNECTOR']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_CONNECTOR']/following::button[1]");
-          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+          UTF.clickelement("xpath", ".//span[@id='MARKETING_CONNECTOR']/following::button[2]");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_SourceTrackernode");
           } 
@@ -1928,8 +2688,22 @@ public class ProjectSetUpComponeat {
     	   
     	   UTF.clickelement("xpath", ".//*[@id='connectorForm']/div[3]/input");
     	   Log4j.infoLog("click the  save button");
+    	   }
+       
+       
+       public void editConnector_Configuration(String Datasheetname) throws Exception {
+    	   String Permanent_Token= readData.getdata(Datasheetname, "Permanent_Token");
+    	   String Ad_Account_Id= readData.getdata(Datasheetname, "Ad_Account_Id");
     	   
-       }
+    	   UTF.clickelement("xpath", ".//*[text()='Update']");
+    	   UTF.inputText("xpath", ".//*[@id='connectorFormEdit']/div[2]/input[1]", Permanent_Token);
+    	   
+    	   UTF.inputText("xpath", ".//*[@id='connectorFormEdit']/div[2]/input[1]", Ad_Account_Id);
+    	   
+    	   UTF.clickelement("xpath", ".//*[@id='connectorFormEdit']/div[3]/button[1]");
+    	   
+    	   }
+       
       /*
        * 
        *  Social Media 
@@ -2235,55 +3009,7 @@ public class ProjectSetUpComponeat {
           Log4j.infoLog("delete__IN_APP_MESSAGES_Node");
           } 
        
-       /*
-        * 
-        * 
-          Long Code
-        *  sourcemanagement---->>-->Long Code
-
-        *  
-        *  
-        */
-        public void click__LongCode_UpperBord() {
-       	
-       	   UTF.clickelement("id", "append_values_36,append_values_77,MARKETING_LONG_CODE");
-       	   Log4j.infoLog("click__LongCode_UpperBord");
-       	   }
-         
-        public void click_LongCode_edit() {
-              UTF.clickelement("xpath", ".//button[@id='MARKETING_LONG_CODE']");
-    	      Log4j.infoLog("click__ILongCode_edit");
-    	     
-    	      }
-        public void click_LongCode_lowerBord() {
-          UTF.clickelement("xpath", ".//*[contains(@title, 'Long Code')]/div");
-          Log4j.infoLog("click___LongCode_lowerBord");
-          }
-        
-        public void delete_LongCode_Node() {
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_LONG_CODE']/following::button[1]");
-          UTF.clickelement("partialLinkText", "Yes");
-          Log4j.infoLog("delete___LongCode_Node");
-          } 
-        
-        public void filling_LongCode(String datasheetname) throws Exception {
-        	String Event_Name=readData.getdata(datasheetname, "Event_Name");
-
-        	String source_name=readData.getdata(datasheetname, "source_name");
-        	Log4j.infoLog("source_name is enter");
-        	String long_code=readData.getdata(datasheetname, "long_code");
-        	
-        	UTF.selectByVisibleText("id", "Event_Name", Event_Name);
-        	Log4j.infoLog(" select the event name");
-        	UTF.selectByVisibleText("id", "source_name",source_name);
-        	Log4j.infoLog(" select the source_name");
-        	UTF.selectByVisibleText("id", "long_code", long_code);
-        	Log4j.infoLog(" select the long_code");
-        	UTF.clickelement("id", "fieldsssubmit");
-        	Log4j.infoLog(" click save ");
-        	
-        }
-        
+      
         
         /*
          * 

@@ -11,32 +11,33 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class Creating_eventname_eventnode {
+public class Creating_Script_TrackingScriptnode {
 	 @Test
-	  public void creating_eventname_eventnode() {
+	  public void creating_Script_TrackingScriptnode() {
 		    ProjectSetUpComponeat project;
 			try {
-				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","Creating_eventname_eventnode");
+				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","Creating_Script_TrackingScriptnode");
 				project.clickFlowEdit();
-	        	project.clickSourceManagemenet_UpperBord();
+				
+				project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
-				project.clickSourceTracker_UpperBord();
-				project.clickSourceTracker_lowerBord();
-				project.clickEvents_UpperBord();
-				project.clickEvents_lowerBord();
-				project.clickEvents_edit();
-				project.creatingEventsIn_eventNode("eventname_eventnode");
-			    UTF.SwitchToDefaltFrame();
-			    }
+				project.click_Website_Tracker_UpperBord();
+				project.click_Website_Tracker_lowerBord();
+				project.click_Tracking_script_UpperBord();
+				project.click_Tracking_script_lowerBord();
+				project.click_STracking_script_edit();
+				project.clickPlsebutton();
+				project.creation_trckerScrept("source_Creation_Form_TrackingScript");
+			}
 				catch (Exception e) {
 				e.printStackTrace();
 				Assert.fail();
 				    }
-			/* finally {
-				 ProjectSetUpComponeat.delete_SourceManagemenetnode();
-			  } 
-			  */  
-	  }
+			
+	      }
+	 
+	
+	 
 	  @BeforeMethod
 	  public void beforeMethod() {
 		  Login.LoginWithAdmin("MyServices//AdminLogin.xml");
@@ -47,5 +48,4 @@ public class Creating_eventname_eventnode {
 	  public void afterMethod() {
 		  Browser.closebrowser();
 	  }
-
 }

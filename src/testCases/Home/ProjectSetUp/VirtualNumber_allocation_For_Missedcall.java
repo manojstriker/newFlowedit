@@ -2,7 +2,7 @@ package testCases.Home.ProjectSetUp;
 
 import org.testng.annotations.Test;
 
-import ActionDriver.UTF;
+
 import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
@@ -10,29 +10,26 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class Verifying_LongCode_Node {
-	 @Test(retryAnalyzer=utilities.RetryAnalyzer.class)
-	  public void verifying_LongCode_Node() {
+public class VirtualNumber_allocation_For_Missedcall {
+	@Test
+	  public void virtualNumber_allocation_For_Missedcall() {
 		    ProjectSetUpComponeat project;
 			try {
-				project = new ProjectSetUpComponeat("Verifying_LongCode_Node");
+				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","virtualNumber_allocation_For_Missedcall");
 				project.clickFlowEdit();
-				UTF.refresh();
 				project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
-				project.click_LongCode_UpperBord();
-				project.click_LongCode_lowerBord();
-				project.click_LongCode_edit();
-				project.delete_LongCode_Node();
+				project.click_VIRTUAL_NUMBER_UpperBord();
+				project.click_VIRTUAL_NUMBER_lowerBord();
+				project.click_VIRTUAL_NUMBER_edit();
+				project.clickeplusbutton();
+				project.Virtual_Number_allocation_Missedcall("VirtualNumber_allocationMissedcall");
 			    }
 				catch (Exception e) {
 				e.printStackTrace();
 				Assert.fail();
 				    }
-			 finally {
-				 ProjectSetUpComponeat.delete_SourceManagemenetnode();
-			  } 
-			   
+		
 	  }
 	  @BeforeMethod
 	  public void beforeMethod() {

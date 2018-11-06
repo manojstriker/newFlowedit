@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+/********division features******
+<dataset name="DivisionTableFeatures">
+<addBranchTable_Features>S.No/Company Name/Division Name/No. Of Users/Division Type/Status/Caller IDs/Action</addBranchTable_Features>
+</dataset>
+
+
+*****add division****
+<dataset name="divisionCreation_cxo">
+<companyname>Striker</companyname>
+<SelectDivisionType>CXO</SelectDivisionType>
+<creatingDivisionName>Sales</creatingDivisionName>
+<Allow_Duplicate_Records>Yes</Allow_Duplicate_Records>
+</dataset>
+</Testdata>

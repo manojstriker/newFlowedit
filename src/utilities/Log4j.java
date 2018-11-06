@@ -1,7 +1,12 @@
 package utilities;
 
+
+
+import java.awt.Color;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+
 
 public class Log4j {
 	static Logger log;
@@ -13,6 +18,9 @@ public class Log4j {
 		log.info(message);
 	}
     public static void errorLogLog(String message){
+    	Color color = Color.RED;
+    	
+        
     	log.error(message);
     	
     }

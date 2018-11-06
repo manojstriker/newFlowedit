@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+<dataset name ="companiTable_name">
+<companifeatures>Sl.No/Company Name/Address/Zip code/City/State/Country/Status/KYC Documents/Action</companifeatures>
+<compani_Data>1/Striker/Hyderabad/500073/Hyderabad/TELANGANA/INDIA/Active/Upload KYC/Update</compani_Data>
+</dataset>
+
+***********edit company detiles**********
+<dataset name='edit_companyDetiles'>
+<Companyname>Striker</Companyname>
+<SecureLogin>Yes</SecureLogin>
+<ContactAddress>Hyderabad,Hitech</ContactAddress>
+<country>INDIA</country>
+<State>GOA</State>
+<pincode>500072</pincode>
+<GSTNumber></GSTNumber>
+</dataset>
+
+/***********Purchase Company **********/
+<dataset name="Purchase_Company_service">
+<ApplicationType>Service</ApplicationType>
+<Service_Type>Smart App</Service_Type>
+<Virtual_Number>Tollfree Standard</Virtual_Number>
+<Number_plan>GOLD</Number_plan>
+<Validity>1 Year</Validity>
+</dataset>
+
+
+<dataset name="Purchase_Company_solution">
+<ApplicationType>Solution</ApplicationType>
+<Service_Type>Sales Automation</Service_Type>
+<Virtual_Number>Tollfree Standard</Virtual_Number>
+<Number_plan>GOLD</Number_plan>
+<users>5</users>
+<Validity>1 Year</Validity>
+</dataset>
+
+/*******************Purchase Application ********************/
+<dataset name="Purchase_Application_service">
+<ApplicationType>Service</ApplicationType>
+<Service_Type>Smart App</Service_Type>
+<Virtual_Number>Tollfree Standard</Virtual_Number>
+<Number_plan>GOLD</Number_plan>
+<Validity>1 Year</Validity>
+</dataset>
+
+<dataset name ="companiTable_name">
+<companifeatures>Sl.No/Company Name/Address/Zip code/City/State/Country/Status/KYC Documents/Action</companifeatures>
+<compani_Data>1/Striker/Hyderabad/500073/Hyderabad/TELANGANA/INDIA/Active/Upload KYC/Update</compani_Data>
+</dataset>
+
+<dataset name="Purchase_Application_solution">
+<ApplicationType>Solution</ApplicationType>
+<Service_Type>Sales Automation</Service_Type>
+<Virtual_Number>Tollfree Standard</Virtual_Number>
+<Number_plan>GOLD</Number_plan>
+<users>5</users>
+<Validity>1 Year</Validity>
+</dataset>
+
+/********************Branch_creation************************/
+<dataset name="addBranchTable_Features">
+<addBranchTable_Features>Sl.No/Company Name/Branch Name/Status/Action/Update/Delete</addBranchTable_Features>
+</dataset>
+
+//ADDing the branch///
+<dataset name="addBranchTable">
+<company_Name>striker</company_Name>
+<Branchname>hitech</Branchname>
+</dataset>
+//brnch Table data verifying/////
+<dataset name ="branchtable_branchName">
+<companifeatures>Sl.No/Company Name/Branch Name/Status/Action</companifeatures>
+<compani_Data>1/Striker/hitech/Active/</compani_Data>
+</dataset>
+</Testdata>

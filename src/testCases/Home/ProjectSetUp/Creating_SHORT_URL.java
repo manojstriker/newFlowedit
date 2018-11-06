@@ -3,7 +3,6 @@ package testCases.Home.ProjectSetUp;
 import org.testng.annotations.Test;
 
 import ActionDriver.UTF;
-import basedriver.Browser;
 import pageobject.MyServices.marketingAutomation.home.ProjectSetUpComponeat;
 import utilities.Login;
 
@@ -11,22 +10,23 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class Creating_eventname_eventnode {
+public class Creating_SHORT_URL {
 	 @Test
-	  public void creating_eventname_eventnode() {
+	  public void creating_SHORT_URL() {
 		    ProjectSetUpComponeat project;
 			try {
-				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","Creating_eventname_eventnode");
+				project = new ProjectSetUpComponeat("MyServices/marketingAutomation/home/projuctSetUp/Sourcetracker.xml","Creating_SHORT_URL");
 				project.clickFlowEdit();
-	        	project.clickSourceManagemenet_UpperBord();
+				project.clickSourceManagemenet_UpperBord();
 				project.clickSourceManagemenet_lowerBord();
-				project.clickSourceTracker_UpperBord();
-				project.clickSourceTracker_lowerBord();
-				project.clickEvents_UpperBord();
-				project.clickEvents_lowerBord();
-				project.clickEvents_edit();
-				project.creatingEventsIn_eventNode("eventname_eventnode");
-			    UTF.SwitchToDefaltFrame();
+				project.clickBuilder_UpperBord();
+				project.clickBuilder_lowerBord();
+				project.click_SHORT_URL_UpperBord();
+				project.click_SHORT_URL_lowerBord();
+				project.click_SHORT_URL_edit();
+				project.clickPlsebuttion();
+				project.shortUrl("short_URl_event1");
+				UTF.SwitchToDefaltFrame();
 			    }
 				catch (Exception e) {
 				e.printStackTrace();
@@ -45,7 +45,6 @@ public class Creating_eventname_eventnode {
 
 	  @AfterMethod
 	  public void afterMethod() {
-		  Browser.closebrowser();
 	  }
 
 }
