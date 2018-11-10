@@ -1,0 +1,1588 @@
+2018-11-05 16:11:972 INFO  Log4j:18 - click the Organization 
+2018-11-05 16:11:815 INFO  Log4j:18 - click the Branches 
+2018-11-05 16:11:896 INFO  Log4j:18 -  Shift to Division  
+2018-11-05 16:11:744 INFO  Log4j:18 - click the Organization 
+2018-11-05 16:11:627 INFO  Log4j:18 - click the Branches 
+2018-11-05 16:11:741 INFO  Log4j:18 -  Shift to Division  
+2018-11-05 16:11:900 INFO  Log4j:18 - click the Organization 
+2018-11-05 16:11:757 INFO  Log4j:18 - click the Branches 
+2018-11-05 16:11:891 INFO  Log4j:18 -  Shift to Division  
+2018-11-05 17:11:651 INFO  Log4j:18 - click the Organization 
+2018-11-05 17:11:416 INFO  Log4j:18 - click the Branches 
+2018-11-05 17:11:524 INFO  Log4j:18 -  Shift to Division  
+2018-11-05 17:11:568 INFO  Log4j:18 - click the Organization 
+2018-11-05 17:11:520 INFO  Log4j:18 - click the Branches 
+2018-11-05 17:11:629 INFO  Log4j:18 -  Shift to Division  
+2018-11-06 09:11:69 INFO  Log4j:18 - click the Organization 
+2018-11-06 09:11:996 INFO  Log4j:18 - click the Branches 
+2018-11-06 09:11:124 INFO  Log4j:18 -  Shift to Division  
+2018-11-06 09:11:237 INFO  Log4j:18 - 1 Striker credit -- CXO Active Update
+2018-11-06 09:11:454 INFO  Log4j:18 - 2 Striker outsidesales -- Manager Active Update
+2018-11-06 09:11:550 INFO  Log4j:18 - 3 Striker sales -- CXO Active Update
+2018-11-06 09:11:73 INFO  Log4j:18 - click the Organization 
+2018-11-06 09:11:972 INFO  Log4j:18 - click the Branches 
+2018-11-06 09:11:94 INFO  Log4j:18 -  Shift to Division  
+2018-11-06 10:11:629 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:568 INFO  Log4j:18 - click the Branches 
+2018-11-06 10:11:665 INFO  Log4j:18 -  Shift to Division  
+2018-11-06 10:11:862 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:729 INFO  Log4j:18 - click the Branches 
+2018-11-06 10:11:825 INFO  Log4j:18 -  Shift to Division  
+2018-11-06 10:11:192 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:257 INFO  Log4j:18 - click the Branches 
+2018-11-06 10:11:394 INFO  Log4j:18 -  Shift to Division  
+2018-11-06 10:11:197 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:58 INFO  Log4j:18 - click the Branches 
+2018-11-06 10:11:182 INFO  Log4j:18 -  Shift to Division  
+2018-11-06 10:11:25 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:902 INFO  Log4j:18 - click the Branches 
+2018-11-06 10:11:16 INFO  Log4j:18 -  Shift to Division  
+2018-11-06 10:11:808 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:849 INFO  Log4j:18 - click the Branches 
+2018-11-06 10:11:972 INFO  Log4j:18 -  Shift to Division  
+2018-11-06 10:11:29 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:870 INFO  Log4j:18 - click the users
+2018-11-06 10:11:339 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:141 INFO  Log4j:18 - click the users
+2018-11-06 10:11:474 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:395 INFO  Log4j:18 - click the users
+2018-11-06 10:11:335 INFO  Log4j:18 - click the Organization 
+2018-11-06 10:11:309 INFO  Log4j:18 - click the users
+2018-11-06 10:11:316 INFO  Log4j:18 - click the CXO
+2018-11-06 11:11:387 INFO  Log4j:18 - click the Organization 
+2018-11-06 11:11:310 INFO  Log4j:18 - click the users
+2018-11-06 11:11:279 INFO  Log4j:18 - click the CXO
+2018-11-06 11:11:400 INFO  Log4j:18 - Sl.No
+2018-11-06 11:11:475 INFO  Log4j:18 - Company Name
+2018-11-06 11:11:558 INFO  Log4j:18 - User Name
+2018-11-06 11:11:622 INFO  Log4j:18 - First Name
+2018-11-06 11:11:687 INFO  Log4j:18 - Last Name
+2018-11-06 11:11:760 INFO  Log4j:18 - Mobile
+2018-11-06 11:11:841 INFO  Log4j:18 - Email
+2018-11-06 11:11:944 INFO  Log4j:18 - Department
+2018-11-06 11:11:55 INFO  Log4j:18 - Division
+2018-11-06 11:11:122 INFO  Log4j:18 - Reporting To
+2018-11-06 11:11:220 INFO  Log4j:18 - Status
+2018-11-06 11:11:377 INFO  Log4j:18 - Privileges
+2018-11-06 11:11:454 INFO  Log4j:18 - Services
+2018-11-06 11:11:536 INFO  Log4j:18 - Is Available
+2018-11-06 11:11:590 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 11:11:664 INFO  Log4j:18 - Action
+2018-11-06 11:11:120 INFO  Log4j:18 - click the Organization 
+2018-11-06 11:11:66 INFO  Log4j:18 - click the users
+2018-11-06 11:11:37 INFO  Log4j:18 - click the CXO
+2018-11-06 11:11:120 INFO  Log4j:18 - Sl.No
+2018-11-06 11:11:210 INFO  Log4j:18 - Company Name
+2018-11-06 11:11:280 INFO  Log4j:18 - User Name
+2018-11-06 11:11:402 INFO  Log4j:18 - First Name
+2018-11-06 11:11:477 INFO  Log4j:18 - Last Name
+2018-11-06 11:11:534 INFO  Log4j:18 - Mobile
+2018-11-06 11:11:597 INFO  Log4j:18 - Email
+2018-11-06 11:11:706 INFO  Log4j:18 - Department
+2018-11-06 11:11:783 INFO  Log4j:18 - Division
+2018-11-06 11:11:849 INFO  Log4j:18 - Reporting To
+2018-11-06 11:11:947 INFO  Log4j:18 - Status
+2018-11-06 11:11:30 INFO  Log4j:18 - Privileges
+2018-11-06 11:11:117 INFO  Log4j:18 - Services
+2018-11-06 11:11:176 INFO  Log4j:18 - Is Available
+2018-11-06 11:11:284 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 11:11:323 INFO  Log4j:18 - Action
+2018-11-06 11:11:344 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 11:11:345 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 11:11:345 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 11:11:346 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 11:11:346 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 11:11:346 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 11:11:346 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 11:11:347 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 11:11:347 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 11:11:347 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 11:11:348 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 11:11:348 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 11:11:353 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 11:11:354 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 11:11:354 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 11:11:354 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 15:11:122 INFO  Log4j:18 - click the Organization 
+2018-11-06 15:11:61 INFO  Log4j:18 - click the users
+2018-11-06 15:11:954 INFO  Log4j:18 - click the CXO
+2018-11-06 15:11:69 INFO  Log4j:18 - Sl.No
+2018-11-06 15:11:157 INFO  Log4j:18 - Company Name
+2018-11-06 15:11:251 INFO  Log4j:18 - User Name
+2018-11-06 15:11:334 INFO  Log4j:18 - First Name
+2018-11-06 15:11:402 INFO  Log4j:18 - Last Name
+2018-11-06 15:11:479 INFO  Log4j:18 - Mobile
+2018-11-06 15:11:543 INFO  Log4j:18 - Email
+2018-11-06 15:11:633 INFO  Log4j:18 - Department
+2018-11-06 15:11:687 INFO  Log4j:18 - Division
+2018-11-06 15:11:786 INFO  Log4j:18 - Reporting To
+2018-11-06 15:11:866 INFO  Log4j:18 - Status
+2018-11-06 15:11:967 INFO  Log4j:18 - Privileges
+2018-11-06 15:11:51 INFO  Log4j:18 - Services
+2018-11-06 15:11:111 INFO  Log4j:18 - Is Available
+2018-11-06 15:11:170 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 15:11:222 INFO  Log4j:18 - Action
+2018-11-06 15:11:241 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 15:11:241 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 15:11:242 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 15:11:242 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 15:11:242 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 15:11:242 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 15:11:242 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 15:11:243 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 15:11:243 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 15:11:243 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 15:11:243 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 15:11:243 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 15:11:244 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 15:11:244 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 15:11:244 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 15:11:244 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 15:11:868 INFO  Log4j:18 - click the Organization 
+2018-11-06 15:11:817 INFO  Log4j:18 - click the users
+2018-11-06 15:11:733 INFO  Log4j:18 - click the CXO
+2018-11-06 15:11:864 INFO  Log4j:18 - Sl.No
+2018-11-06 15:11:944 INFO  Log4j:18 - Company Name
+2018-11-06 15:11:47 INFO  Log4j:18 - User Name
+2018-11-06 15:11:106 INFO  Log4j:18 - First Name
+2018-11-06 15:11:204 INFO  Log4j:18 - Last Name
+2018-11-06 15:11:284 INFO  Log4j:18 - Mobile
+2018-11-06 15:11:366 INFO  Log4j:18 - Email
+2018-11-06 15:11:458 INFO  Log4j:18 - Department
+2018-11-06 15:11:524 INFO  Log4j:18 - Division
+2018-11-06 15:11:600 INFO  Log4j:18 - Reporting To
+2018-11-06 15:11:686 INFO  Log4j:18 - Status
+2018-11-06 15:11:770 INFO  Log4j:18 - Privileges
+2018-11-06 15:11:844 INFO  Log4j:18 - Services
+2018-11-06 15:11:904 INFO  Log4j:18 - Is Available
+2018-11-06 15:11:957 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 15:11:07 INFO  Log4j:18 - Action
+2018-11-06 15:11:28 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 15:11:28 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 15:11:32 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 15:11:37 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 15:11:38 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 15:11:38 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 15:11:39 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 15:11:39 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 15:11:40 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 15:11:40 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 15:11:40 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 15:11:41 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 15:11:42 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 15:11:43 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 15:11:43 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 15:11:44 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 15:11:842 INFO  Log4j:18 - click  the plse button
+2018-11-06 15:11:427 INFO  Log4j:18 - click the Organization 
+2018-11-06 15:11:296 INFO  Log4j:18 - click the users
+2018-11-06 15:11:184 INFO  Log4j:18 - click the CXO
+2018-11-06 15:11:330 INFO  Log4j:18 - Sl.No
+2018-11-06 15:11:406 INFO  Log4j:18 - Company Name
+2018-11-06 15:11:505 INFO  Log4j:18 - User Name
+2018-11-06 15:11:631 INFO  Log4j:18 - First Name
+2018-11-06 15:11:710 INFO  Log4j:18 - Last Name
+2018-11-06 15:11:801 INFO  Log4j:18 - Mobile
+2018-11-06 15:11:874 INFO  Log4j:18 - Email
+2018-11-06 15:11:946 INFO  Log4j:18 - Department
+2018-11-06 15:11:11 INFO  Log4j:18 - Division
+2018-11-06 15:11:75 INFO  Log4j:18 - Reporting To
+2018-11-06 15:11:170 INFO  Log4j:18 - Status
+2018-11-06 15:11:292 INFO  Log4j:18 - Privileges
+2018-11-06 15:11:362 INFO  Log4j:18 - Services
+2018-11-06 15:11:427 INFO  Log4j:18 - Is Available
+2018-11-06 15:11:488 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 15:11:534 INFO  Log4j:18 - Action
+2018-11-06 15:11:552 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 15:11:553 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 15:11:554 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 15:11:554 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 15:11:555 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 15:11:562 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 15:11:568 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 15:11:570 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 15:11:570 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 15:11:570 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 15:11:573 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 15:11:573 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 15:11:573 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 15:11:574 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 15:11:574 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 15:11:574 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 15:11:456 INFO  Log4j:18 - click  the plse button
+2018-11-06 15:11:166 INFO  Log4j:18 - enter the user name
+2018-11-06 15:11:695 INFO  Log4j:18 - enter the password
+2018-11-06 15:11:88 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 15:11:442 INFO  Log4j:18 - enter the FistName
+2018-11-06 15:11:808 INFO  Log4j:18 - enter LastName
+2018-11-06 15:11:403 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 15:11:52 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 15:11:668 INFO  Log4j:18 - click the Organization 
+2018-11-06 15:11:535 INFO  Log4j:18 - click the users
+2018-11-06 15:11:450 INFO  Log4j:18 - click the CXO
+2018-11-06 15:11:606 INFO  Log4j:18 - Sl.No
+2018-11-06 15:11:700 INFO  Log4j:18 - Company Name
+2018-11-06 15:11:781 INFO  Log4j:18 - User Name
+2018-11-06 15:11:866 INFO  Log4j:18 - First Name
+2018-11-06 15:11:948 INFO  Log4j:18 - Last Name
+2018-11-06 15:11:28 INFO  Log4j:18 - Mobile
+2018-11-06 15:11:108 INFO  Log4j:18 - Email
+2018-11-06 15:11:187 INFO  Log4j:18 - Department
+2018-11-06 15:11:251 INFO  Log4j:18 - Division
+2018-11-06 15:11:336 INFO  Log4j:18 - Reporting To
+2018-11-06 15:11:418 INFO  Log4j:18 - Status
+2018-11-06 15:11:523 INFO  Log4j:18 - Privileges
+2018-11-06 15:11:585 INFO  Log4j:18 - Services
+2018-11-06 15:11:664 INFO  Log4j:18 - Is Available
+2018-11-06 15:11:707 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 15:11:779 INFO  Log4j:18 - Action
+2018-11-06 15:11:806 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 15:11:807 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 15:11:807 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 15:11:807 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 15:11:808 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 15:11:808 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 15:11:808 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 15:11:809 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 15:11:809 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 15:11:809 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 15:11:810 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 15:11:810 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 15:11:811 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 15:11:811 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 15:11:811 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 15:11:812 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 15:11:728 INFO  Log4j:18 - click  the plse button
+2018-11-06 15:11:330 INFO  Log4j:18 - enter the user name
+2018-11-06 15:11:927 INFO  Log4j:18 - enter the password
+2018-11-06 15:11:391 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 15:11:754 INFO  Log4j:18 - enter the FistName
+2018-11-06 15:11:105 INFO  Log4j:18 - enter LastName
+2018-11-06 15:11:696 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 15:11:329 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 15:11:611 INFO  Log4j:18 - select the company
+2018-11-06 15:11:332 INFO  Log4j:18 - branch is selected
+2018-11-06 15:11:640 INFO  Log4j:18 - click the  addGroup
+2018-11-06 15:11:953 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 15:11:200 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 15:11:492 INFO  Log4j:18 - click the  closebutton
+2018-11-06 15:11:103 INFO  Log4j:18 - select the AddDivision
+2018-11-06 15:11:453 INFO  Log4j:18 - click the addUserrole
+2018-11-06 15:11:886 INFO  Log4j:18 - enter userrole
+2018-11-06 15:11:139 INFO  Log4j:18 - select the level
+2018-11-06 15:11:367 INFO  Log4j:18 - select the ReportingRole
+2018-11-06 15:11:667 INFO  Log4j:18 - click the addbutton
+2018-11-06 15:11:04 INFO  Log4j:18 - click the close button
+2018-11-06 15:11:900 INFO  Log4j:18 - click the Organization 
+2018-11-06 15:11:843 INFO  Log4j:18 - click the users
+2018-11-06 15:11:913 INFO  Log4j:18 - click the CXO
+2018-11-06 15:11:24 INFO  Log4j:18 - Sl.No
+2018-11-06 15:11:97 INFO  Log4j:18 - Company Name
+2018-11-06 15:11:216 INFO  Log4j:18 - User Name
+2018-11-06 15:11:293 INFO  Log4j:18 - First Name
+2018-11-06 15:11:380 INFO  Log4j:18 - Last Name
+2018-11-06 15:11:436 INFO  Log4j:18 - Mobile
+2018-11-06 15:11:507 INFO  Log4j:18 - Email
+2018-11-06 15:11:598 INFO  Log4j:18 - Department
+2018-11-06 15:11:709 INFO  Log4j:18 - Division
+2018-11-06 15:11:776 INFO  Log4j:18 - Reporting To
+2018-11-06 15:11:860 INFO  Log4j:18 - Status
+2018-11-06 15:11:959 INFO  Log4j:18 - Privileges
+2018-11-06 15:11:21 INFO  Log4j:18 - Services
+2018-11-06 15:11:83 INFO  Log4j:18 - Is Available
+2018-11-06 15:11:145 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 15:11:204 INFO  Log4j:18 - Action
+2018-11-06 15:11:230 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 15:11:231 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 15:11:231 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 15:11:231 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 15:11:231 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 15:11:231 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 15:11:232 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 15:11:232 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 15:11:232 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 15:11:232 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 15:11:233 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 15:11:233 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 15:11:235 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 15:11:236 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 15:11:238 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 15:11:242 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 15:11:897 INFO  Log4j:18 - click  the plse button
+2018-11-06 15:11:498 INFO  Log4j:18 - enter the user name
+2018-11-06 15:11:932 INFO  Log4j:18 - enter the password
+2018-11-06 15:11:484 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 15:11:849 INFO  Log4j:18 - enter the FistName
+2018-11-06 15:11:198 INFO  Log4j:18 - enter LastName
+2018-11-06 15:11:797 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 15:11:431 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 15:11:709 INFO  Log4j:18 - select the company
+2018-11-06 15:11:202 INFO  Log4j:18 - branch is selected
+2018-11-06 15:11:536 INFO  Log4j:18 - click the  addGroup
+2018-11-06 15:11:936 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 15:11:249 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 15:11:567 INFO  Log4j:18 - click the  closebutton
+2018-11-06 15:11:58 INFO  Log4j:18 - select the AddDivision
+2018-11-06 15:11:374 INFO  Log4j:18 - click the addUserrole
+2018-11-06 15:11:963 INFO  Log4j:18 - click the Organization 
+2018-11-06 15:11:899 INFO  Log4j:18 - click the users
+2018-11-06 15:11:773 INFO  Log4j:18 - click the CXO
+2018-11-06 15:11:903 INFO  Log4j:18 - Sl.No
+2018-11-06 15:11:998 INFO  Log4j:18 - Company Name
+2018-11-06 15:11:82 INFO  Log4j:18 - User Name
+2018-11-06 15:11:182 INFO  Log4j:18 - First Name
+2018-11-06 15:11:254 INFO  Log4j:18 - Last Name
+2018-11-06 15:11:343 INFO  Log4j:18 - Mobile
+2018-11-06 15:11:414 INFO  Log4j:18 - Email
+2018-11-06 15:11:511 INFO  Log4j:18 - Department
+2018-11-06 15:11:603 INFO  Log4j:18 - Division
+2018-11-06 15:11:675 INFO  Log4j:18 - Reporting To
+2018-11-06 15:11:812 INFO  Log4j:18 - Status
+2018-11-06 15:11:887 INFO  Log4j:18 - Privileges
+2018-11-06 15:11:960 INFO  Log4j:18 - Services
+2018-11-06 15:11:19 INFO  Log4j:18 - Is Available
+2018-11-06 15:11:90 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 15:11:153 INFO  Log4j:18 - Action
+2018-11-06 15:11:186 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 15:11:188 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 15:11:188 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 15:11:188 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 15:11:189 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 15:11:189 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 15:11:190 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 15:11:190 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 15:11:190 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 15:11:190 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 15:11:191 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 15:11:195 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 15:11:196 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 15:11:196 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 15:11:196 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 15:11:197 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 15:11:92 INFO  Log4j:18 - click  the plse button
+2018-11-06 15:11:750 INFO  Log4j:18 - enter the user name
+2018-11-06 15:11:280 INFO  Log4j:18 - enter the password
+2018-11-06 15:11:717 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 15:11:66 INFO  Log4j:18 - enter the FistName
+2018-11-06 15:11:424 INFO  Log4j:18 - enter LastName
+2018-11-06 15:11:59 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 15:11:682 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 15:11:973 INFO  Log4j:18 - select the company
+2018-11-06 15:11:467 INFO  Log4j:18 - branch is selected
+2018-11-06 15:11:804 INFO  Log4j:18 - click the  addGroup
+2018-11-06 15:11:244 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 15:11:474 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 15:11:740 INFO  Log4j:18 - click the  closebutton
+2018-11-06 15:11:225 INFO  Log4j:18 - select the AddDivision
+2018-11-06 15:11:530 INFO  Log4j:18 - click the addUserrole
+2018-11-06 15:11:811 INFO  Log4j:18 - enter userrole
+2018-11-06 15:11:94 INFO  Log4j:18 - select the level
+2018-11-06 15:11:326 INFO  Log4j:18 - select the ReportingRole
+2018-11-06 15:11:642 INFO  Log4j:18 - click the addbutton
+2018-11-06 15:11:952 INFO  Log4j:18 - click the close button
+2018-11-06 15:11:56 INFO  Log4j:18 - select the add user role
+2018-11-06 15:11:283 INFO  Log4j:18 - select the deporting
+2018-11-06 15:11:512 INFO  Log4j:18 - select the Country
+2018-11-06 15:11:699 INFO  Log4j:18 - select the state
+2018-11-06 15:11:953 INFO  Log4j:18 - select the city
+2018-11-06 15:11:719 INFO  Log4j:18 - select the ContactAddress
+2018-11-06 15:11:110 INFO  Log4j:18 - select the PinCode
+2018-11-06 15:11:405 INFO  Log4j:18 - select Date of join 
+2018-11-06 15:11:770 INFO  Log4j:18 - select JoiningDateManth 
+2018-11-06 15:11:987 INFO  Log4j:18 - select JoiningDateyear 
+2018-11-06 15:11:320 INFO  Log4j:18 - select DAY 
+2018-11-06 15:11:850 INFO  Log4j:18 - EmployeeID 
+2018-11-06 15:11:122 INFO  Log4j:18 - select DateOfBirth 
+2018-11-06 15:11:297 INFO  Log4j:18 - select DateOfBirth month 
+2018-11-06 15:11:492 INFO  Log4j:18 - select DateOfBirthyear 
+2018-11-06 15:11:793 INFO  Log4j:18 - Day selected 
+2018-11-06 15:11:150 INFO  Log4j:18 - click submit buttion
+2018-11-06 15:11:665 INFO  Log4j:18 - click the Organization 
+2018-11-06 15:11:577 INFO  Log4j:18 - click the users
+2018-11-06 15:11:494 INFO  Log4j:18 - click the CXO
+2018-11-06 15:11:618 INFO  Log4j:18 - Sl.No
+2018-11-06 15:11:679 INFO  Log4j:18 - Company Name
+2018-11-06 15:11:772 INFO  Log4j:18 - User Name
+2018-11-06 15:11:854 INFO  Log4j:18 - First Name
+2018-11-06 15:11:943 INFO  Log4j:18 - Last Name
+2018-11-06 15:11:53 INFO  Log4j:18 - Mobile
+2018-11-06 15:11:137 INFO  Log4j:18 - Email
+2018-11-06 15:11:254 INFO  Log4j:18 - Department
+2018-11-06 15:11:307 INFO  Log4j:18 - Division
+2018-11-06 15:11:402 INFO  Log4j:18 - Reporting To
+2018-11-06 15:11:511 INFO  Log4j:18 - Status
+2018-11-06 15:11:634 INFO  Log4j:18 - Privileges
+2018-11-06 15:11:684 INFO  Log4j:18 - Services
+2018-11-06 15:11:787 INFO  Log4j:18 - Is Available
+2018-11-06 15:11:846 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 15:11:908 INFO  Log4j:18 - Action
+2018-11-06 15:11:940 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 15:11:942 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 15:11:942 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 15:11:942 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 15:11:943 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 15:11:943 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 15:11:944 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 15:11:944 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 15:11:944 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 15:11:944 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 15:11:945 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 15:11:945 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 15:11:946 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 15:11:946 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 15:11:946 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 15:11:947 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 15:11:887 INFO  Log4j:18 - click  the plse button
+2018-11-06 15:11:530 INFO  Log4j:18 - enter the user name
+2018-11-06 15:11:39 INFO  Log4j:18 - enter the password
+2018-11-06 15:11:498 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 15:11:862 INFO  Log4j:18 - enter the FistName
+2018-11-06 15:11:233 INFO  Log4j:18 - enter LastName
+2018-11-06 15:11:792 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 15:11:407 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 15:11:661 INFO  Log4j:18 - select the company
+2018-11-06 15:11:107 INFO  Log4j:18 - branch is selected
+2018-11-06 15:11:414 INFO  Log4j:18 - click the  addGroup
+2018-11-06 15:11:714 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 15:11:979 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 15:11:310 INFO  Log4j:18 - click the  closebutton
+2018-11-06 15:11:864 INFO  Log4j:18 - select the AddDivision
+2018-11-06 15:11:165 INFO  Log4j:18 - click the addUserrole
+2018-11-06 15:11:465 INFO  Log4j:18 - enter userrole
+2018-11-06 15:11:754 INFO  Log4j:18 - select the level
+2018-11-06 15:11:995 INFO  Log4j:18 - select the ReportingRole
+2018-11-06 15:11:297 INFO  Log4j:18 - click the addbutton
+2018-11-06 15:11:586 INFO  Log4j:18 - click the close button
+2018-11-06 15:11:786 INFO  Log4j:18 - click the Organization 
+2018-11-06 15:11:682 INFO  Log4j:18 - click the users
+2018-11-06 15:11:593 INFO  Log4j:18 - click the CXO
+2018-11-06 15:11:687 INFO  Log4j:18 - Sl.No
+2018-11-06 15:11:757 INFO  Log4j:18 - Company Name
+2018-11-06 15:11:834 INFO  Log4j:18 - User Name
+2018-11-06 15:11:914 INFO  Log4j:18 - First Name
+2018-11-06 15:11:984 INFO  Log4j:18 - Last Name
+2018-11-06 15:11:65 INFO  Log4j:18 - Mobile
+2018-11-06 15:11:129 INFO  Log4j:18 - Email
+2018-11-06 15:11:192 INFO  Log4j:18 - Department
+2018-11-06 15:11:271 INFO  Log4j:18 - Division
+2018-11-06 15:11:353 INFO  Log4j:18 - Reporting To
+2018-11-06 15:11:420 INFO  Log4j:18 - Status
+2018-11-06 15:11:470 INFO  Log4j:18 - Privileges
+2018-11-06 15:11:533 INFO  Log4j:18 - Services
+2018-11-06 15:11:694 INFO  Log4j:18 - Is Available
+2018-11-06 15:11:776 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 15:11:856 INFO  Log4j:18 - Action
+2018-11-06 15:11:879 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 15:11:879 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 15:11:881 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 15:11:883 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 15:11:883 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 15:11:883 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 15:11:884 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 15:11:884 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 15:11:884 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 15:11:885 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 15:11:886 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 15:11:888 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 15:11:890 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 15:11:891 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 15:11:892 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 15:11:893 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 15:11:770 INFO  Log4j:18 - click  the plse button
+2018-11-06 15:11:414 INFO  Log4j:18 - enter the user name
+2018-11-06 15:11:961 INFO  Log4j:18 - enter the password
+2018-11-06 15:11:386 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 15:11:762 INFO  Log4j:18 - enter the FistName
+2018-11-06 15:11:111 INFO  Log4j:18 - enter LastName
+2018-11-06 15:11:699 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 15:11:378 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 15:11:642 INFO  Log4j:18 - select the company
+2018-11-06 15:11:125 INFO  Log4j:18 - branch is selected
+2018-11-06 15:11:412 INFO  Log4j:18 - click the  addGroup
+2018-11-06 15:11:836 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 15:11:128 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 15:11:491 INFO  Log4j:18 - click the  closebutton
+2018-11-06 15:11:26 INFO  Log4j:18 - select the AddDivision
+2018-11-06 15:11:366 INFO  Log4j:18 - click the addUserrole
+2018-11-06 15:11:671 INFO  Log4j:18 - enter userrole
+2018-11-06 15:11:993 INFO  Log4j:18 - select the level
+2018-11-06 15:11:234 INFO  Log4j:18 - select the ReportingRole
+2018-11-06 15:11:582 INFO  Log4j:18 - click the addbutton
+2018-11-06 15:11:936 INFO  Log4j:18 - click the close button
+2018-11-06 16:11:41 INFO  Log4j:18 - click the Organization 
+2018-11-06 16:11:912 INFO  Log4j:18 - click the users
+2018-11-06 16:11:801 INFO  Log4j:18 - click the CXO
+2018-11-06 16:11:929 INFO  Log4j:18 - Sl.No
+2018-11-06 16:11:12 INFO  Log4j:18 - Company Name
+2018-11-06 16:11:86 INFO  Log4j:18 - User Name
+2018-11-06 16:11:151 INFO  Log4j:18 - First Name
+2018-11-06 16:11:216 INFO  Log4j:18 - Last Name
+2018-11-06 16:11:318 INFO  Log4j:18 - Mobile
+2018-11-06 16:11:382 INFO  Log4j:18 - Email
+2018-11-06 16:11:474 INFO  Log4j:18 - Department
+2018-11-06 16:11:574 INFO  Log4j:18 - Division
+2018-11-06 16:11:675 INFO  Log4j:18 - Reporting To
+2018-11-06 16:11:743 INFO  Log4j:18 - Status
+2018-11-06 16:11:816 INFO  Log4j:18 - Privileges
+2018-11-06 16:11:902 INFO  Log4j:18 - Services
+2018-11-06 16:11:984 INFO  Log4j:18 - Is Available
+2018-11-06 16:11:64 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 16:11:140 INFO  Log4j:18 - Action
+2018-11-06 16:11:156 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 16:11:156 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 16:11:156 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 16:11:157 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 16:11:159 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 16:11:161 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 16:11:162 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 16:11:164 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 16:11:165 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 16:11:167 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 16:11:168 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 16:11:170 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 16:11:171 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 16:11:172 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 16:11:173 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 16:11:174 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 16:11:125 INFO  Log4j:18 - click  the plse button
+2018-11-06 16:11:703 INFO  Log4j:18 - enter the user name
+2018-11-06 16:11:192 INFO  Log4j:18 - enter the password
+2018-11-06 16:11:602 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 16:11:09 INFO  Log4j:18 - enter the FistName
+2018-11-06 16:11:356 INFO  Log4j:18 - enter LastName
+2018-11-06 16:11:946 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 16:11:500 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 16:11:756 INFO  Log4j:18 - select the company
+2018-11-06 16:11:380 INFO  Log4j:18 - branch is selected
+2018-11-06 16:11:802 INFO  Log4j:18 - click the  addGroup
+2018-11-06 16:11:120 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 16:11:342 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 16:11:741 INFO  Log4j:18 - click the  closebutton
+2018-11-06 16:11:438 INFO  Log4j:18 - select the AddDivision
+2018-11-06 16:11:772 INFO  Log4j:18 - click the addUserrole
+2018-11-06 16:11:96 INFO  Log4j:18 - enter userrole
+2018-11-06 16:11:361 INFO  Log4j:18 - select the level
+2018-11-06 16:11:579 INFO  Log4j:18 - select the ReportingRole
+2018-11-06 16:11:906 INFO  Log4j:18 - click the addbutton
+2018-11-06 16:11:243 INFO  Log4j:18 - click the close button
+2018-11-06 16:11:207 INFO  Log4j:18 - click the Organization 
+2018-11-06 16:11:191 INFO  Log4j:18 - click the users
+2018-11-06 16:11:123 INFO  Log4j:18 - click the Managers
+2018-11-06 16:11:318 INFO  Log4j:18 - click the Organization 
+2018-11-06 16:11:275 INFO  Log4j:18 - click the users
+2018-11-06 16:11:294 INFO  Log4j:18 - click the Managers
+2018-11-06 16:11:246 INFO  Log4j:18 - click  the plse button
+2018-11-06 16:11:925 INFO  Log4j:18 - enter the user name
+2018-11-06 16:11:414 INFO  Log4j:18 - enter the password
+2018-11-06 16:11:865 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 16:11:222 INFO  Log4j:18 - enter the FistName
+2018-11-06 16:11:548 INFO  Log4j:18 - enter LastName
+2018-11-06 16:11:159 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 16:11:770 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 16:11:48 INFO  Log4j:18 - select the company
+2018-11-06 16:11:584 INFO  Log4j:18 - branch is selected
+2018-11-06 16:11:886 INFO  Log4j:18 - click the  addGroup
+2018-11-06 16:11:317 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 16:11:522 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 16:11:820 INFO  Log4j:18 - click the  closebutton
+2018-11-06 16:11:104 INFO  Log4j:18 - click the Organization 
+2018-11-06 16:11:83 INFO  Log4j:18 - click the users
+2018-11-06 16:11:108 INFO  Log4j:18 - click the Managers
+2018-11-06 16:11:934 INFO  Log4j:18 - click  the plse button
+2018-11-06 16:11:554 INFO  Log4j:18 - enter the user name
+2018-11-06 16:11:32 INFO  Log4j:18 - enter the password
+2018-11-06 16:11:503 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 16:11:849 INFO  Log4j:18 - enter the FistName
+2018-11-06 16:11:166 INFO  Log4j:18 - enter LastName
+2018-11-06 16:11:837 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 16:11:455 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 16:11:728 INFO  Log4j:18 - select the company
+2018-11-06 16:11:288 INFO  Log4j:18 - branch is selected
+2018-11-06 16:11:604 INFO  Log4j:18 - click the  addGroup
+2018-11-06 16:11:29 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 16:11:256 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 16:11:546 INFO  Log4j:18 - click the  closebutton
+2018-11-06 16:11:75 INFO  Log4j:18 - select the AddDivision
+2018-11-06 16:11:399 INFO  Log4j:18 - click the addUserrole
+2018-11-06 16:11:653 INFO  Log4j:18 - click the Organization 
+2018-11-06 16:11:724 INFO  Log4j:18 - click the users
+2018-11-06 16:11:733 INFO  Log4j:18 - click the Managers
+2018-11-06 16:11:611 INFO  Log4j:18 - click  the plse button
+2018-11-06 16:11:263 INFO  Log4j:18 - enter the user name
+2018-11-06 16:11:749 INFO  Log4j:18 - enter the password
+2018-11-06 16:11:208 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 16:11:570 INFO  Log4j:18 - enter the FistName
+2018-11-06 16:11:927 INFO  Log4j:18 - enter LastName
+2018-11-06 16:11:518 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 16:11:153 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 16:11:425 INFO  Log4j:18 - select the company
+2018-11-06 16:11:923 INFO  Log4j:18 - branch is selected
+2018-11-06 16:11:256 INFO  Log4j:18 - click the  addGroup
+2018-11-06 16:11:613 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 16:11:871 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 16:11:220 INFO  Log4j:18 - click the  closebutton
+2018-11-06 16:11:857 INFO  Log4j:18 - select the AddDivision
+2018-11-06 16:11:129 INFO  Log4j:18 - click the addUserrole
+2018-11-06 16:11:527 INFO  Log4j:18 - enter userrole
+2018-11-06 16:11:795 INFO  Log4j:18 - select the level
+2018-11-06 16:11:23 INFO  Log4j:18 - select the ReportingRole
+2018-11-06 16:11:346 INFO  Log4j:18 - click the addbutton
+2018-11-06 16:11:663 INFO  Log4j:18 - click the close button
+2018-11-06 16:11:534 INFO  Log4j:18 - click the Organization 
+2018-11-06 16:11:421 INFO  Log4j:18 - click the users
+2018-11-06 16:11:254 INFO  Log4j:18 - click the CXO
+2018-11-06 16:11:413 INFO  Log4j:18 - Sl.No
+2018-11-06 16:11:474 INFO  Log4j:18 - Company Name
+2018-11-06 16:11:561 INFO  Log4j:18 - User Name
+2018-11-06 16:11:646 INFO  Log4j:18 - First Name
+2018-11-06 16:11:755 INFO  Log4j:18 - Last Name
+2018-11-06 16:11:821 INFO  Log4j:18 - Mobile
+2018-11-06 16:11:916 INFO  Log4j:18 - Email
+2018-11-06 16:11:991 INFO  Log4j:18 - Department
+2018-11-06 16:11:83 INFO  Log4j:18 - Division
+2018-11-06 16:11:141 INFO  Log4j:18 - Reporting To
+2018-11-06 16:11:279 INFO  Log4j:18 - Status
+2018-11-06 16:11:389 INFO  Log4j:18 - Privileges
+2018-11-06 16:11:445 INFO  Log4j:18 - Services
+2018-11-06 16:11:514 INFO  Log4j:18 - Is Available
+2018-11-06 16:11:562 INFO  Log4j:18 - Is Acc Locked
+2018-11-06 16:11:610 INFO  Log4j:18 - Action
+2018-11-06 16:11:636 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-06 16:11:637 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-06 16:11:637 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-06 16:11:637 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-06 16:11:638 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-06 16:11:638 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-06 16:11:638 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-06 16:11:638 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-06 16:11:639 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-06 16:11:639 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-06 16:11:639 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-06 16:11:639 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-06 16:11:640 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-06 16:11:640 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-06 16:11:640 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-06 16:11:640 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-06 16:11:587 INFO  Log4j:18 - click  the plse button
+2018-11-06 16:11:312 INFO  Log4j:18 - enter the user name
+2018-11-06 16:11:863 INFO  Log4j:18 - enter the password
+2018-11-06 16:11:355 INFO  Log4j:18 - enter the confirmpassword
+2018-11-06 16:11:705 INFO  Log4j:18 - enter the FistName
+2018-11-06 16:11:61 INFO  Log4j:18 - enter LastName
+2018-11-06 16:11:562 INFO  Log4j:18 - enter Emailaddress
+2018-11-06 16:11:31 INFO  Log4j:18 - enter Mobilenumber
+2018-11-06 16:11:278 INFO  Log4j:18 - select the company
+2018-11-06 16:11:699 INFO  Log4j:18 - branch is selected
+2018-11-06 16:11:31 INFO  Log4j:18 - click the  addGroup
+2018-11-06 16:11:410 INFO  Log4j:18 - enter the AddDivision 
+2018-11-06 16:11:637 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-06 16:11:973 INFO  Log4j:18 - click the  closebutton
+2018-11-06 16:11:522 INFO  Log4j:18 - select the AddDivision
+2018-11-06 16:11:819 INFO  Log4j:18 - click the addUserrole
+2018-11-06 16:11:79 INFO  Log4j:18 - enter userrole
+2018-11-06 16:11:338 INFO  Log4j:18 - select the level
+2018-11-06 16:11:581 INFO  Log4j:18 - select the ReportingRole
+2018-11-06 16:11:947 INFO  Log4j:18 - click the addbutton
+2018-11-06 16:11:234 INFO  Log4j:18 - click the close button
+2018-11-08 09:11:160 INFO  Log4j:18 - click the Organization 
+2018-11-08 09:11:149 INFO  Log4j:18 - click the users
+2018-11-08 09:11:187 INFO  Log4j:18 - click the CXO
+2018-11-08 09:11:326 INFO  Log4j:18 - Sl.No
+2018-11-08 09:11:411 INFO  Log4j:18 - Company Name
+2018-11-08 09:11:486 INFO  Log4j:18 - User Name
+2018-11-08 09:11:589 INFO  Log4j:18 - First Name
+2018-11-08 09:11:647 INFO  Log4j:18 - Last Name
+2018-11-08 09:11:703 INFO  Log4j:18 - Mobile
+2018-11-08 09:11:789 INFO  Log4j:18 - Email
+2018-11-08 09:11:931 INFO  Log4j:18 - Department
+2018-11-08 09:11:37 INFO  Log4j:18 - Division
+2018-11-08 09:11:157 INFO  Log4j:18 - Reporting To
+2018-11-08 09:11:263 INFO  Log4j:18 - Status
+2018-11-08 09:11:368 INFO  Log4j:18 - Privileges
+2018-11-08 09:11:418 INFO  Log4j:18 - Services
+2018-11-08 09:11:478 INFO  Log4j:18 - Is Available
+2018-11-08 09:11:535 INFO  Log4j:18 - Is Acc Locked
+2018-11-08 09:11:607 INFO  Log4j:18 - Action
+2018-11-08 09:11:633 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-08 09:11:635 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-08 09:11:635 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-08 09:11:636 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-08 09:11:637 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-08 09:11:638 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-08 09:11:639 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-08 09:11:639 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-08 09:11:639 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-08 09:11:639 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-08 09:11:640 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-08 09:11:640 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-08 09:11:640 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-08 09:11:640 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-08 09:11:641 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-08 09:11:642 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-08 09:11:690 INFO  Log4j:18 - click  the plse button
+2018-11-08 09:11:368 INFO  Log4j:18 - enter the user name
+2018-11-08 09:11:950 INFO  Log4j:18 - enter the password
+2018-11-08 09:11:557 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 09:11:947 INFO  Log4j:18 - enter the FistName
+2018-11-08 09:11:331 INFO  Log4j:18 - enter LastName
+2018-11-08 09:11:796 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 09:11:396 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 09:11:663 INFO  Log4j:18 - select the company
+2018-11-08 09:11:159 INFO  Log4j:18 - branch is selected
+2018-11-08 09:11:531 INFO  Log4j:18 - click the  addGroup
+2018-11-08 09:11:891 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 09:11:124 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-08 09:11:410 INFO  Log4j:18 - click the  closebutton
+2018-11-08 09:11:974 INFO  Log4j:18 - select the AddDivision
+2018-11-08 09:11:322 INFO  Log4j:18 - click the addUserrole
+2018-11-08 09:11:616 INFO  Log4j:18 - enter userrole
+2018-11-08 09:11:908 INFO  Log4j:18 - select the level
+2018-11-08 09:11:128 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 09:11:488 INFO  Log4j:18 - click the addbutton
+2018-11-08 09:11:786 INFO  Log4j:18 - click the close button
+2018-11-08 09:11:835 INFO  Log4j:18 - click the Organization 
+2018-11-08 09:11:551 INFO  Log4j:18 - click the users
+2018-11-08 09:11:18 INFO  Log4j:18 - click the CXO
+2018-11-08 09:11:237 INFO  Log4j:18 - Sl.No
+2018-11-08 09:11:354 INFO  Log4j:18 - Company Name
+2018-11-08 09:11:499 INFO  Log4j:18 - User Name
+2018-11-08 09:11:693 INFO  Log4j:18 - First Name
+2018-11-08 09:11:920 INFO  Log4j:18 - Last Name
+2018-11-08 09:11:67 INFO  Log4j:18 - Mobile
+2018-11-08 09:11:112 INFO  Log4j:18 - Email
+2018-11-08 09:11:229 INFO  Log4j:18 - Department
+2018-11-08 09:11:288 INFO  Log4j:18 - Division
+2018-11-08 09:11:377 INFO  Log4j:18 - Reporting To
+2018-11-08 09:11:478 INFO  Log4j:18 - Status
+2018-11-08 09:11:597 INFO  Log4j:18 - Privileges
+2018-11-08 09:11:725 INFO  Log4j:18 - Services
+2018-11-08 09:11:804 INFO  Log4j:18 - Is Available
+2018-11-08 09:11:939 INFO  Log4j:18 - Is Acc Locked
+2018-11-08 09:11:13 INFO  Log4j:18 - Action
+2018-11-08 09:11:29 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-08 09:11:30 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-08 09:11:30 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-08 09:11:30 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-08 09:11:30 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-08 09:11:31 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-08 09:11:31 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-08 09:11:31 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-08 09:11:31 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-08 09:11:32 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-08 09:11:32 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-08 09:11:32 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-08 09:11:32 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-08 09:11:33 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-08 09:11:33 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-08 09:11:33 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-08 09:11:469 INFO  Log4j:18 - click  the plse button
+2018-11-08 09:11:47 INFO  Log4j:18 - enter the user name
+2018-11-08 09:11:462 INFO  Log4j:18 - enter the password
+2018-11-08 09:11:40 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 09:11:474 INFO  Log4j:18 - enter the FistName
+2018-11-08 09:11:797 INFO  Log4j:18 - enter LastName
+2018-11-08 09:11:397 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 09:11:217 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 09:11:519 INFO  Log4j:18 - select the company
+2018-11-08 09:11:294 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 09:11:68 INFO  Log4j:18 - branch is selected
+2018-11-08 09:11:495 INFO  Log4j:18 - click the  addGroup
+2018-11-08 09:11:876 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 09:11:146 INFO  Log4j:18 - click the  ADDbuttion
+2018-11-08 09:11:447 INFO  Log4j:18 - click the  closebutton
+2018-11-08 09:11:908 INFO  Log4j:18 - select the AddDivision
+2018-11-08 09:11:207 INFO  Log4j:18 - click the addUserrole
+2018-11-08 09:11:508 INFO  Log4j:18 - enter userrole
+2018-11-08 09:11:784 INFO  Log4j:18 - select the level
+2018-11-08 09:11:54 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 09:11:378 INFO  Log4j:18 - click the addbutton
+2018-11-08 09:11:810 INFO  Log4j:18 - click the close button
+2018-11-08 09:11:427 INFO  Log4j:18 - click the Organization 
+2018-11-08 09:11:597 INFO  Log4j:18 - click the users
+2018-11-08 09:11:60 INFO  Log4j:18 - click the CXO
+2018-11-08 09:11:226 INFO  Log4j:18 - Sl.No
+2018-11-08 09:11:310 INFO  Log4j:18 - Company Name
+2018-11-08 09:11:433 INFO  Log4j:18 - User Name
+2018-11-08 09:11:628 INFO  Log4j:18 - First Name
+2018-11-08 09:11:843 INFO  Log4j:18 - Last Name
+2018-11-08 09:11:56 INFO  Log4j:18 - Mobile
+2018-11-08 09:11:160 INFO  Log4j:18 - Email
+2018-11-08 09:11:324 INFO  Log4j:18 - Department
+2018-11-08 09:11:390 INFO  Log4j:18 - Division
+2018-11-08 09:11:510 INFO  Log4j:18 - Reporting To
+2018-11-08 09:11:564 INFO  Log4j:18 - Status
+2018-11-08 09:11:635 INFO  Log4j:18 - Privileges
+2018-11-08 09:11:682 INFO  Log4j:18 - Services
+2018-11-08 09:11:732 INFO  Log4j:18 - Is Available
+2018-11-08 09:11:806 INFO  Log4j:18 - Is Acc Locked
+2018-11-08 09:11:855 INFO  Log4j:18 - Action
+2018-11-08 09:11:874 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-08 09:11:875 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-08 09:11:875 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-08 09:11:880 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-08 09:11:881 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-08 09:11:881 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-08 09:11:886 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-08 09:11:886 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-08 09:11:886 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-08 09:11:886 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-08 09:11:887 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-08 09:11:887 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-08 09:11:887 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-08 09:11:887 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-08 09:11:888 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-08 09:11:888 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-08 09:11:833 INFO  Log4j:18 - click  the plse button
+2018-11-08 09:11:438 INFO  Log4j:18 - enter the user name
+2018-11-08 09:11:884 INFO  Log4j:18 - enter the password
+2018-11-08 09:11:339 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 09:11:631 INFO  Log4j:18 - enter the FistName
+2018-11-08 09:11:21 INFO  Log4j:18 - enter LastName
+2018-11-08 09:11:658 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 09:11:314 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 09:11:557 INFO  Log4j:18 - select the company
+2018-11-08 09:11:435 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 09:11:465 INFO  Log4j:18 - branch is selected
+2018-11-08 09:11:784 INFO  Log4j:18 - click the  addGroup
+2018-11-08 09:11:177 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 09:11:443 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 09:11:783 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 09:11:275 INFO  Log4j:18 - select the AddDivision
+2018-11-08 09:11:584 INFO  Log4j:18 - click the addUserrole
+2018-11-08 09:11:881 INFO  Log4j:18 - enter userrole
+2018-11-08 09:11:190 INFO  Log4j:18 - select the  user role level
+2018-11-08 09:11:417 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 09:11:765 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 09:11:77 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 10:11:199 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:89 INFO  Log4j:18 - click the users
+2018-11-08 10:11:960 INFO  Log4j:18 - click the CXO
+2018-11-08 10:11:93 INFO  Log4j:18 - Sl.No
+2018-11-08 10:11:156 INFO  Log4j:18 - Company Name
+2018-11-08 10:11:240 INFO  Log4j:18 - User Name
+2018-11-08 10:11:326 INFO  Log4j:18 - First Name
+2018-11-08 10:11:403 INFO  Log4j:18 - Last Name
+2018-11-08 10:11:481 INFO  Log4j:18 - Mobile
+2018-11-08 10:11:536 INFO  Log4j:18 - Email
+2018-11-08 10:11:594 INFO  Log4j:18 - Department
+2018-11-08 10:11:665 INFO  Log4j:18 - Division
+2018-11-08 10:11:760 INFO  Log4j:18 - Reporting To
+2018-11-08 10:11:829 INFO  Log4j:18 - Status
+2018-11-08 10:11:910 INFO  Log4j:18 - Privileges
+2018-11-08 10:11:53 INFO  Log4j:18 - Services
+2018-11-08 10:11:130 INFO  Log4j:18 - Is Available
+2018-11-08 10:11:219 INFO  Log4j:18 - Is Acc Locked
+2018-11-08 10:11:271 INFO  Log4j:18 - Action
+2018-11-08 10:11:322 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-08 10:11:324 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-08 10:11:327 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-08 10:11:338 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-08 10:11:345 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-08 10:11:347 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-08 10:11:348 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-08 10:11:349 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-08 10:11:351 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-08 10:11:351 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-08 10:11:352 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-08 10:11:352 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-08 10:11:352 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-08 10:11:352 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-08 10:11:353 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-08 10:11:353 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-08 10:11:271 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:12 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:505 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:27 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:398 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:770 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:360 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:919 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:208 INFO  Log4j:18 - select the company
+2018-11-08 10:11:08 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:803 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:147 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:538 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 10:11:764 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 10:11:88 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 10:11:659 INFO  Log4j:18 - select the AddDivision
+2018-11-08 10:11:968 INFO  Log4j:18 - click the addUserrole
+2018-11-08 10:11:280 INFO  Log4j:18 - enter userrole
+2018-11-08 10:11:569 INFO  Log4j:18 - select the  user role level
+2018-11-08 10:11:810 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 10:11:176 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 10:11:499 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 10:11:228 INFO  Log4j:18 - select the add user role
+2018-11-08 10:11:460 INFO  Log4j:18 - select the deporting
+2018-11-08 10:11:646 INFO  Log4j:18 - select the Country
+2018-11-08 10:11:849 INFO  Log4j:18 - select the state
+2018-11-08 10:11:73 INFO  Log4j:18 - select the city
+2018-11-08 10:11:799 INFO  Log4j:18 - select the ContactAddress
+2018-11-08 10:11:162 INFO  Log4j:18 - select the PinCode
+2018-11-08 10:11:476 INFO  Log4j:18 - select Date of join 
+2018-11-08 10:11:845 INFO  Log4j:18 - select JoiningDateManth 
+2018-11-08 10:11:63 INFO  Log4j:18 - select JoiningDateyear 
+2018-11-08 10:11:422 INFO  Log4j:18 - select DAY 
+2018-11-08 10:11:885 INFO  Log4j:18 - EmployeeID 
+2018-11-08 10:11:175 INFO  Log4j:18 - select DateOfBirth 
+2018-11-08 10:11:323 INFO  Log4j:18 - select DateOfBirth month 
+2018-11-08 10:11:538 INFO  Log4j:18 - select DateOfBirthyear 
+2018-11-08 10:11:918 INFO  Log4j:18 - Day selected 
+2018-11-08 10:11:305 INFO  Log4j:18 - click submit buttion
+2018-11-08 10:11:993 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:869 INFO  Log4j:18 - click the users
+2018-11-08 10:11:782 INFO  Log4j:18 - click the CXO
+2018-11-08 10:11:932 INFO  Log4j:18 - Sl.No
+2018-11-08 10:11:19 INFO  Log4j:18 - Company Name
+2018-11-08 10:11:105 INFO  Log4j:18 - User Name
+2018-11-08 10:11:170 INFO  Log4j:18 - First Name
+2018-11-08 10:11:249 INFO  Log4j:18 - Last Name
+2018-11-08 10:11:323 INFO  Log4j:18 - Mobile
+2018-11-08 10:11:397 INFO  Log4j:18 - Email
+2018-11-08 10:11:546 INFO  Log4j:18 - Department
+2018-11-08 10:11:637 INFO  Log4j:18 - Division
+2018-11-08 10:11:711 INFO  Log4j:18 - Reporting To
+2018-11-08 10:11:801 INFO  Log4j:18 - Status
+2018-11-08 10:11:920 INFO  Log4j:18 - Privileges
+2018-11-08 10:11:968 INFO  Log4j:18 - Services
+2018-11-08 10:11:50 INFO  Log4j:18 - Is Available
+2018-11-08 10:11:105 INFO  Log4j:18 - Is Acc Locked
+2018-11-08 10:11:184 INFO  Log4j:18 - Action
+2018-11-08 10:11:201 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-08 10:11:203 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-08 10:11:205 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-08 10:11:207 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-08 10:11:209 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-08 10:11:211 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-08 10:11:213 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-08 10:11:214 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-08 10:11:216 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-08 10:11:217 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-08 10:11:218 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-08 10:11:220 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-08 10:11:221 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-08 10:11:223 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-08 10:11:224 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-08 10:11:225 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-08 10:11:111 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:661 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:88 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:586 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:969 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:299 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:899 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:568 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:858 INFO  Log4j:18 - select the company
+2018-11-08 10:11:622 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:529 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:926 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:293 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 10:11:506 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 10:11:736 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 10:11:297 INFO  Log4j:18 - select the AddDivision
+2018-11-08 10:11:588 INFO  Log4j:18 - click the addUserrole
+2018-11-08 10:11:856 INFO  Log4j:18 - enter userrole
+2018-11-08 10:11:163 INFO  Log4j:18 - select the  user role level
+2018-11-08 10:11:398 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 10:11:753 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 10:11:65 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 10:11:731 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:646 INFO  Log4j:18 - click the users
+2018-11-08 10:11:557 INFO  Log4j:18 - click the CXO
+2018-11-08 10:11:687 INFO  Log4j:18 - Sl.No
+2018-11-08 10:11:809 INFO  Log4j:18 - Company Name
+2018-11-08 10:11:874 INFO  Log4j:18 - User Name
+2018-11-08 10:11:936 INFO  Log4j:18 - First Name
+2018-11-08 10:11:26 INFO  Log4j:18 - Last Name
+2018-11-08 10:11:147 INFO  Log4j:18 - Mobile
+2018-11-08 10:11:208 INFO  Log4j:18 - Email
+2018-11-08 10:11:268 INFO  Log4j:18 - Department
+2018-11-08 10:11:341 INFO  Log4j:18 - Division
+2018-11-08 10:11:416 INFO  Log4j:18 - Reporting To
+2018-11-08 10:11:504 INFO  Log4j:18 - Status
+2018-11-08 10:11:639 INFO  Log4j:18 - Privileges
+2018-11-08 10:11:714 INFO  Log4j:18 - Services
+2018-11-08 10:11:798 INFO  Log4j:18 - Is Available
+2018-11-08 10:11:852 INFO  Log4j:18 - Is Acc Locked
+2018-11-08 10:11:930 INFO  Log4j:18 - Action
+2018-11-08 10:11:951 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-08 10:11:951 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-08 10:11:953 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-08 10:11:954 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-08 10:11:955 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-08 10:11:957 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-08 10:11:958 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-08 10:11:960 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-08 10:11:962 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-08 10:11:963 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-08 10:11:963 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-08 10:11:964 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-08 10:11:964 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-08 10:11:964 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-08 10:11:964 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-08 10:11:964 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-08 10:11:837 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:528 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:133 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:540 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:898 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:265 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:825 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:470 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:753 INFO  Log4j:18 - select the company
+2018-11-08 10:11:530 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:292 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:709 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:104 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 10:11:358 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 10:11:672 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 10:11:138 INFO  Log4j:18 - select the AddDivision
+2018-11-08 10:11:435 INFO  Log4j:18 - click the addUserrole
+2018-11-08 10:11:727 INFO  Log4j:18 - enter userrole
+2018-11-08 10:11:03 INFO  Log4j:18 - select the  user role level
+2018-11-08 10:11:243 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 10:11:567 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 10:11:880 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 10:11:693 INFO  Log4j:18 - select the add user role
+2018-11-08 10:11:65 INFO  Log4j:18 - select the deporting
+2018-11-08 10:11:269 INFO  Log4j:18 - select the Country
+2018-11-08 10:11:485 INFO  Log4j:18 - select the state
+2018-11-08 10:11:747 INFO  Log4j:18 - select the city
+2018-11-08 10:11:500 INFO  Log4j:18 - select the ContactAddress
+2018-11-08 10:11:857 INFO  Log4j:18 - select the PinCode
+2018-11-08 10:11:167 INFO  Log4j:18 - select Date of join 
+2018-11-08 10:11:512 INFO  Log4j:18 - select JoiningDateManth 
+2018-11-08 10:11:699 INFO  Log4j:18 - select JoiningDateyear 
+2018-11-08 10:11:26 INFO  Log4j:18 - select DAY 
+2018-11-08 10:11:456 INFO  Log4j:18 - EmployeeID 
+2018-11-08 10:11:748 INFO  Log4j:18 - select DateOfBirth 
+2018-11-08 10:11:899 INFO  Log4j:18 - select DateOfBirth month 
+2018-11-08 10:11:103 INFO  Log4j:18 - select DateOfBirthyear 
+2018-11-08 10:11:489 INFO  Log4j:18 - Day selected 
+2018-11-08 10:11:838 INFO  Log4j:18 - click submit buttion
+2018-11-08 10:11:893 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:21 INFO  Log4j:18 - click the users
+2018-11-08 10:11:137 INFO  Log4j:18 - click the Managers
+2018-11-08 10:11:465 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:87 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:693 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:157 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:575 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:17 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:681 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:346 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:648 INFO  Log4j:18 - select the company
+2018-11-08 10:11:500 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:310 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:619 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:995 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 10:11:231 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 10:11:526 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 10:11:100 INFO  Log4j:18 - select the AddDivision
+2018-11-08 10:11:408 INFO  Log4j:18 - click the addUserrole
+2018-11-08 10:11:773 INFO  Log4j:18 - enter userrole
+2018-11-08 10:11:31 INFO  Log4j:18 - select the  user role level
+2018-11-08 10:11:288 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 10:11:635 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 10:11:956 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 10:11:95 INFO  Log4j:18 - select the add user role
+2018-11-08 10:11:969 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:01 INFO  Log4j:18 - click the users
+2018-11-08 10:11:924 INFO  Log4j:18 - click the Managers
+2018-11-08 10:11:877 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:489 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:930 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:363 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:688 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:24 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:653 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:296 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:568 INFO  Log4j:18 - select the company
+2018-11-08 10:11:455 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:253 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:550 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:658 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:566 INFO  Log4j:18 - click the users
+2018-11-08 10:11:565 INFO  Log4j:18 - click the CXO
+2018-11-08 10:11:682 INFO  Log4j:18 - Sl.No
+2018-11-08 10:11:770 INFO  Log4j:18 - Company Name
+2018-11-08 10:11:841 INFO  Log4j:18 - User Name
+2018-11-08 10:11:909 INFO  Log4j:18 - First Name
+2018-11-08 10:11:967 INFO  Log4j:18 - Last Name
+2018-11-08 10:11:42 INFO  Log4j:18 - Mobile
+2018-11-08 10:11:94 INFO  Log4j:18 - Email
+2018-11-08 10:11:144 INFO  Log4j:18 - Department
+2018-11-08 10:11:220 INFO  Log4j:18 - Division
+2018-11-08 10:11:297 INFO  Log4j:18 - Reporting To
+2018-11-08 10:11:381 INFO  Log4j:18 - Status
+2018-11-08 10:11:484 INFO  Log4j:18 - Privileges
+2018-11-08 10:11:580 INFO  Log4j:18 - Services
+2018-11-08 10:11:661 INFO  Log4j:18 - Is Available
+2018-11-08 10:11:723 INFO  Log4j:18 - Is Acc Locked
+2018-11-08 10:11:797 INFO  Log4j:18 - Action
+2018-11-08 10:11:824 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-08 10:11:825 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-08 10:11:825 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-08 10:11:825 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-08 10:11:826 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-08 10:11:826 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-08 10:11:826 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-08 10:11:827 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-08 10:11:827 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-08 10:11:827 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-08 10:11:827 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-08 10:11:828 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-08 10:11:828 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-08 10:11:828 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-08 10:11:828 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-08 10:11:829 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-08 10:11:721 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:473 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:03 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:560 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:960 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:344 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:952 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:542 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:830 INFO  Log4j:18 - select the company
+2018-11-08 10:11:627 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:469 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:803 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:198 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 10:11:463 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 10:11:765 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 10:11:262 INFO  Log4j:18 - select the AddDivision
+2018-11-08 10:11:591 INFO  Log4j:18 - click the addUserrole
+2018-11-08 10:11:899 INFO  Log4j:18 - enter userrole
+2018-11-08 10:11:183 INFO  Log4j:18 - select the  user role level
+2018-11-08 10:11:398 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 10:11:693 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 10:11:969 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 10:11:105 INFO  Log4j:18 - select the add user role
+2018-11-08 10:11:339 INFO  Log4j:18 - select the deporting
+2018-11-08 10:11:612 INFO  Log4j:18 - select the Country
+2018-11-08 10:11:815 INFO  Log4j:18 - select the state
+2018-11-08 10:11:58 INFO  Log4j:18 - select the city
+2018-11-08 10:11:838 INFO  Log4j:18 - select the ContactAddress
+2018-11-08 10:11:234 INFO  Log4j:18 - select the PinCode
+2018-11-08 10:11:517 INFO  Log4j:18 - select Date of join 
+2018-11-08 10:11:871 INFO  Log4j:18 - select JoiningDateManth 
+2018-11-08 10:11:80 INFO  Log4j:18 - select JoiningDateyear 
+2018-11-08 10:11:409 INFO  Log4j:18 - select DAY 
+2018-11-08 10:11:877 INFO  Log4j:18 - EmployeeID 
+2018-11-08 10:11:148 INFO  Log4j:18 - select DateOfBirth 
+2018-11-08 10:11:303 INFO  Log4j:18 - select DateOfBirth month 
+2018-11-08 10:11:503 INFO  Log4j:18 - select DateOfBirthyear 
+2018-11-08 10:11:859 INFO  Log4j:18 - Day selected 
+2018-11-08 10:11:182 INFO  Log4j:18 - click submit buttion
+2018-11-08 10:11:249 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:133 INFO  Log4j:18 - click the users
+2018-11-08 10:11:08 INFO  Log4j:18 - click the Managers
+2018-11-08 10:11:869 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:507 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:09 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:471 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:841 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:215 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:827 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:445 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:749 INFO  Log4j:18 - select the company
+2018-11-08 10:11:515 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:298 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:612 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:987 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 10:11:227 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 10:11:526 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 10:11:23 INFO  Log4j:18 - select the AddDivision
+2018-11-08 10:11:333 INFO  Log4j:18 - click the addUserrole
+2018-11-08 10:11:638 INFO  Log4j:18 - enter userrole
+2018-11-08 10:11:920 INFO  Log4j:18 - select the  user role level
+2018-11-08 10:11:137 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 10:11:460 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 10:11:761 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 10:11:957 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:924 INFO  Log4j:18 - click the users
+2018-11-08 10:11:897 INFO  Log4j:18 - click the Managers
+2018-11-08 10:11:821 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:403 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:886 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:376 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:759 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:100 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:719 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:312 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:601 INFO  Log4j:18 - select the company
+2018-11-08 10:11:442 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:216 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:523 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:888 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 10:11:147 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 10:11:420 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 10:11:891 INFO  Log4j:18 - select the AddDivision
+2018-11-08 10:11:156 INFO  Log4j:18 - click the addUserrole
+2018-11-08 10:11:521 INFO  Log4j:18 - enter userrole
+2018-11-08 10:11:790 INFO  Log4j:18 - select the  user role level
+2018-11-08 10:11:23 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 10:11:342 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 10:11:636 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 10:11:948 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:918 INFO  Log4j:18 - click the users
+2018-11-08 10:11:911 INFO  Log4j:18 - click the Managers
+2018-11-08 10:11:900 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:494 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:956 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:407 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:756 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:109 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:751 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:349 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:628 INFO  Log4j:18 - select the company
+2018-11-08 10:11:434 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:215 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:523 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:881 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 10:11:121 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 10:11:403 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 10:11:940 INFO  Log4j:18 - select the AddDivision
+2018-11-08 10:11:263 INFO  Log4j:18 - click the addUserrole
+2018-11-08 10:11:585 INFO  Log4j:18 - enter userrole
+2018-11-08 10:11:864 INFO  Log4j:18 - select the  user role level
+2018-11-08 10:11:95 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 10:11:417 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 10:11:745 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 10:11:970 INFO  Log4j:18 - click the Organization 
+2018-11-08 10:11:928 INFO  Log4j:18 - click the users
+2018-11-08 10:11:887 INFO  Log4j:18 - click the Managers
+2018-11-08 10:11:784 INFO  Log4j:18 - click  the plse button
+2018-11-08 10:11:384 INFO  Log4j:18 - enter the user name
+2018-11-08 10:11:840 INFO  Log4j:18 - enter the password
+2018-11-08 10:11:287 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 10:11:644 INFO  Log4j:18 - enter the FistName
+2018-11-08 10:11:03 INFO  Log4j:18 - enter LastName
+2018-11-08 10:11:610 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 10:11:207 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 10:11:480 INFO  Log4j:18 - select the company
+2018-11-08 10:11:274 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 10:11:85 INFO  Log4j:18 - branch is selected
+2018-11-08 10:11:408 INFO  Log4j:18 - click the  addGroup
+2018-11-08 10:11:839 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 10:11:59 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 10:11:347 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 10:11:881 INFO  Log4j:18 - select the AddDivision
+2018-11-08 10:11:184 INFO  Log4j:18 - click the addUserrole
+2018-11-08 10:11:515 INFO  Log4j:18 - enter userrole
+2018-11-08 10:11:798 INFO  Log4j:18 - select the  user role level
+2018-11-08 10:11:33 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 10:11:352 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 10:11:663 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 11:11:455 INFO  Log4j:18 - click the Organization 
+2018-11-08 11:11:347 INFO  Log4j:18 - click the users
+2018-11-08 11:11:243 INFO  Log4j:18 - click the CXO
+2018-11-08 11:11:355 INFO  Log4j:18 - Sl.No
+2018-11-08 11:11:417 INFO  Log4j:18 - Company Name
+2018-11-08 11:11:491 INFO  Log4j:18 - User Name
+2018-11-08 11:11:572 INFO  Log4j:18 - First Name
+2018-11-08 11:11:634 INFO  Log4j:18 - Last Name
+2018-11-08 11:11:693 INFO  Log4j:18 - Mobile
+2018-11-08 11:11:826 INFO  Log4j:18 - Email
+2018-11-08 11:11:947 INFO  Log4j:18 - Department
+2018-11-08 11:11:23 INFO  Log4j:18 - Division
+2018-11-08 11:11:112 INFO  Log4j:18 - Reporting To
+2018-11-08 11:11:202 INFO  Log4j:18 - Status
+2018-11-08 11:11:341 INFO  Log4j:18 - Privileges
+2018-11-08 11:11:408 INFO  Log4j:18 - Services
+2018-11-08 11:11:478 INFO  Log4j:18 - Is Available
+2018-11-08 11:11:530 INFO  Log4j:18 - Is Acc Locked
+2018-11-08 11:11:579 INFO  Log4j:18 - Action
+2018-11-08 11:11:597 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-08 11:11:598 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-08 11:11:598 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-08 11:11:598 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-08 11:11:598 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-08 11:11:599 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-08 11:11:599 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-08 11:11:599 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-08 11:11:600 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-08 11:11:600 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-08 11:11:600 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-08 11:11:600 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-08 11:11:601 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-08 11:11:601 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-08 11:11:601 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-08 11:11:601 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-08 11:11:547 INFO  Log4j:18 - click  the plse button
+2018-11-08 11:11:266 INFO  Log4j:18 - enter the user name
+2018-11-08 11:11:863 INFO  Log4j:18 - enter the password
+2018-11-08 11:11:340 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 11:11:747 INFO  Log4j:18 - enter the FistName
+2018-11-08 11:11:122 INFO  Log4j:18 - enter LastName
+2018-11-08 11:11:732 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 11:11:394 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 11:11:668 INFO  Log4j:18 - click the Organization 
+2018-11-08 11:11:608 INFO  Log4j:18 - click the users
+2018-11-08 11:11:572 INFO  Log4j:18 - click the CXO
+2018-11-08 11:11:706 INFO  Log4j:18 - Sl.No
+2018-11-08 11:11:788 INFO  Log4j:18 - Company Name
+2018-11-08 11:11:864 INFO  Log4j:18 - User Name
+2018-11-08 11:11:959 INFO  Log4j:18 - First Name
+2018-11-08 11:11:22 INFO  Log4j:18 - Last Name
+2018-11-08 11:11:111 INFO  Log4j:18 - Mobile
+2018-11-08 11:11:220 INFO  Log4j:18 - Email
+2018-11-08 11:11:301 INFO  Log4j:18 - Department
+2018-11-08 11:11:389 INFO  Log4j:18 - Division
+2018-11-08 11:11:464 INFO  Log4j:18 - Reporting To
+2018-11-08 11:11:571 INFO  Log4j:18 - Status
+2018-11-08 11:11:635 INFO  Log4j:18 - Privileges
+2018-11-08 11:11:733 INFO  Log4j:18 - Services
+2018-11-08 11:11:808 INFO  Log4j:18 - Is Available
+2018-11-08 11:11:869 INFO  Log4j:18 - Is Acc Locked
+2018-11-08 11:11:939 INFO  Log4j:18 - Action
+2018-11-08 11:11:956 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-08 11:11:956 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-08 11:11:958 INFO  Log4j:18 - User Name---- feture is present in table
+2018-11-08 11:11:959 INFO  Log4j:18 - First Name---- feture is present in table
+2018-11-08 11:11:960 INFO  Log4j:18 - Last Name---- feture is present in table
+2018-11-08 11:11:960 INFO  Log4j:18 - Mobile---- feture is present in table
+2018-11-08 11:11:960 INFO  Log4j:18 - Email---- feture is present in table
+2018-11-08 11:11:961 INFO  Log4j:18 - Department---- feture is present in table
+2018-11-08 11:11:961 INFO  Log4j:18 - Division---- feture is present in table
+2018-11-08 11:11:961 INFO  Log4j:18 - Reporting To---- feture is present in table
+2018-11-08 11:11:962 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-08 11:11:964 INFO  Log4j:18 - Privileges---- feture is present in table
+2018-11-08 11:11:965 INFO  Log4j:18 - Services---- feture is present in table
+2018-11-08 11:11:966 INFO  Log4j:18 - Is Available---- feture is present in table
+2018-11-08 11:11:968 INFO  Log4j:18 - Is Acc Locked---- feture is present in table
+2018-11-08 11:11:969 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-08 11:11:959 INFO  Log4j:18 - click  the plse button
+2018-11-08 11:11:678 INFO  Log4j:18 - enter the user name
+2018-11-08 11:11:140 INFO  Log4j:18 - enter the password
+2018-11-08 11:11:572 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 11:11:945 INFO  Log4j:18 - enter the FistName
+2018-11-08 11:11:290 INFO  Log4j:18 - enter LastName
+2018-11-08 11:11:903 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 11:11:497 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 11:11:777 INFO  Log4j:18 - select the company
+2018-11-08 11:11:600 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 11:11:608 INFO  Log4j:18 - branch is selected
+2018-11-08 11:11:880 INFO  Log4j:18 - click the  addGroup
+2018-11-08 11:11:260 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 11:11:479 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 11:11:830 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 11:11:443 INFO  Log4j:18 - select the AddDivision
+2018-11-08 11:11:766 INFO  Log4j:18 - click the addUserrole
+2018-11-08 11:11:95 INFO  Log4j:18 - enter userrole
+2018-11-08 11:11:401 INFO  Log4j:18 - select the  user role level
+2018-11-08 11:11:635 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 11:11:988 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 11:11:308 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 11:11:542 INFO  Log4j:18 - select the add user role
+2018-11-08 11:11:769 INFO  Log4j:18 - select the deporting
+2018-11-08 11:11:995 INFO  Log4j:18 - select the Country
+2018-11-08 11:11:187 INFO  Log4j:18 - select the state
+2018-11-08 11:11:439 INFO  Log4j:18 - select the city
+2018-11-08 11:11:187 INFO  Log4j:18 - select the ContactAddress
+2018-11-08 11:11:610 INFO  Log4j:18 - select the PinCode
+2018-11-08 11:11:849 INFO  Log4j:18 - select Date of join 
+2018-11-08 11:11:213 INFO  Log4j:18 - select JoiningDateManth 
+2018-11-08 11:11:423 INFO  Log4j:18 - select JoiningDateyear 
+2018-11-08 11:11:745 INFO  Log4j:18 - select DAY 
+2018-11-08 11:11:268 INFO  Log4j:18 - EmployeeID 
+2018-11-08 11:11:549 INFO  Log4j:18 - select DateOfBirth 
+2018-11-08 11:11:703 INFO  Log4j:18 - select DateOfBirth month 
+2018-11-08 11:11:944 INFO  Log4j:18 - select DateOfBirthyear 
+2018-11-08 11:11:328 INFO  Log4j:18 - Day selected 
+2018-11-08 11:11:717 INFO  Log4j:18 - click submit buttion
+2018-11-08 11:11:576 INFO  Log4j:18 - click the Organization 
+2018-11-08 11:11:554 INFO  Log4j:18 - click the users
+2018-11-08 11:11:636 INFO  Log4j:18 - click the Managers
+2018-11-08 11:11:573 INFO  Log4j:18 - click  the plse button
+2018-11-08 11:11:117 INFO  Log4j:18 - enter the user name
+2018-11-08 11:11:630 INFO  Log4j:18 - enter the password
+2018-11-08 11:11:61 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 11:11:418 INFO  Log4j:18 - enter the FistName
+2018-11-08 11:11:783 INFO  Log4j:18 - enter LastName
+2018-11-08 11:11:410 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 11:11:68 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 11:11:389 INFO  Log4j:18 - select the company
+2018-11-08 11:11:280 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 11:11:00 INFO  Log4j:18 - branch is selected
+2018-11-08 11:11:313 INFO  Log4j:18 - click the  addGroup
+2018-11-08 11:11:731 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 11:11:972 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 11:11:263 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 11:11:260 INFO  Log4j:18 - select the AddDivision
+2018-11-08 11:11:515 INFO  Log4j:18 - click the addUserrole
+2018-11-08 11:11:841 INFO  Log4j:18 - enter userrole
+2018-11-08 11:11:154 INFO  Log4j:18 - select the  user role level
+2018-11-08 11:11:404 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 11:11:725 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 11:11:36 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 11:11:926 INFO  Log4j:18 - select the add user role
+2018-11-08 11:11:889 INFO  Log4j:18 - click the Organization 
+2018-11-08 11:11:769 INFO  Log4j:18 - click the users
+2018-11-08 11:11:748 INFO  Log4j:18 - click the Managers
+2018-11-08 11:11:641 INFO  Log4j:18 - click  the plse button
+2018-11-08 11:11:194 INFO  Log4j:18 - enter the user name
+2018-11-08 11:11:688 INFO  Log4j:18 - enter the password
+2018-11-08 11:11:143 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 11:11:503 INFO  Log4j:18 - enter the FistName
+2018-11-08 11:11:879 INFO  Log4j:18 - enter LastName
+2018-11-08 11:11:453 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 11:11:58 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 11:11:310 INFO  Log4j:18 - select the company
+2018-11-08 11:11:76 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 11:11:794 INFO  Log4j:18 - branch is selected
+2018-11-08 11:11:105 INFO  Log4j:18 - click the  addGroup
+2018-11-08 11:11:517 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 11:11:759 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 11:11:43 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 11:11:565 INFO  Log4j:18 - select the AddDivision
+2018-11-08 11:11:872 INFO  Log4j:18 - click the addUserrole
+2018-11-08 11:11:208 INFO  Log4j:18 - enter userrole.....manager
+2018-11-08 11:11:494 INFO  Log4j:18 - select the  user role level
+2018-11-08 11:11:718 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 11:11:26 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 11:11:339 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 11:11:566 INFO  Log4j:18 - click the Organization 
+2018-11-08 11:11:475 INFO  Log4j:18 - click the users
+2018-11-08 11:11:451 INFO  Log4j:18 - click the Managers
+2018-11-08 11:11:690 INFO  Log4j:18 - click  the plse button
+2018-11-08 11:11:291 INFO  Log4j:18 - enter the user name
+2018-11-08 11:11:735 INFO  Log4j:18 - enter the password
+2018-11-08 11:11:192 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 11:11:543 INFO  Log4j:18 - enter the FistName
+2018-11-08 11:11:907 INFO  Log4j:18 - enter LastName
+2018-11-08 11:11:494 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 11:11:104 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 11:11:388 INFO  Log4j:18 - select the company
+2018-11-08 11:11:193 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 11:11:919 INFO  Log4j:18 - branch is selected
+2018-11-08 11:11:235 INFO  Log4j:18 - click the  addGroup
+2018-11-08 11:11:623 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 11:11:864 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 11:11:179 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 11:11:697 INFO  Log4j:18 - select the AddDivision
+2018-11-08 11:11:14 INFO  Log4j:18 - click the addUserrole
+2018-11-08 11:11:370 INFO  Log4j:18 - enter userrole.....manager
+2018-11-08 11:11:683 INFO  Log4j:18 - select the  user role level
+2018-11-08 11:11:945 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 11:11:285 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 11:11:573 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 11:11:24 INFO  Log4j:18 - select the add user role
+2018-11-08 11:11:796 INFO  Log4j:18 - click the Organization 
+2018-11-08 11:11:685 INFO  Log4j:18 - click the users
+2018-11-08 11:11:632 INFO  Log4j:18 - click the Managers
+2018-11-08 11:11:981 INFO  Log4j:18 - click  the plse button
+2018-11-08 11:11:557 INFO  Log4j:18 - enter the user name
+2018-11-08 11:11:23 INFO  Log4j:18 - enter the password
+2018-11-08 11:11:517 INFO  Log4j:18 - enter the confirmpassword
+2018-11-08 11:11:854 INFO  Log4j:18 - enter the FistName
+2018-11-08 11:11:215 INFO  Log4j:18 - enter LastName
+2018-11-08 11:11:748 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 11:11:433 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 11:11:693 INFO  Log4j:18 - select the company
+2018-11-08 11:11:517 INFO  Log4j:18 - this branch is new ly created
+2018-11-08 11:11:344 INFO  Log4j:18 - branch is selected
+2018-11-08 11:11:655 INFO  Log4j:18 - click the  addGroup
+2018-11-08 11:11:45 INFO  Log4j:18 - enter the AddDivision 
+2018-11-08 11:11:312 INFO  Log4j:18 - click the  division  ADDbuttion
+2018-11-08 11:11:612 INFO  Log4j:18 - click the division  closebutton
+2018-11-08 11:11:101 INFO  Log4j:18 - select the AddDivision
+2018-11-08 11:11:408 INFO  Log4j:18 - click the addUserrole
+2018-11-08 11:11:767 INFO  Log4j:18 - enter userrole.....manager4
+2018-11-08 11:11:61 INFO  Log4j:18 - select the  user role level
+2018-11-08 11:11:313 INFO  Log4j:18 - select the ReportingRole
+2018-11-08 11:11:651 INFO  Log4j:18 - click the   user crecation addbutton
+2018-11-08 11:11:984 INFO  Log4j:18 - click the usercreation  close button
+2018-11-08 11:11:421 INFO  Log4j:18 - select the add user role
+2018-11-08 14:11:618 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:568 INFO  Log4j:18 - click the users
+2018-11-08 14:11:481 INFO  Log4j:18 - click the CXO
+2018-11-08 14:11:976 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:947 INFO  Log4j:18 - click the users
+2018-11-08 14:11:919 INFO  Log4j:18 - click the CXO
+2018-11-08 14:11:632 INFO  Log4j:18 - enter the FistName
+2018-11-08 14:11:120 INFO  Log4j:18 - enter LastName
+2018-11-08 14:11:805 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 14:11:462 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 14:11:646 INFO  Log4j:18 - branch is selected
+2018-11-08 14:11:819 INFO  Log4j:18 - select the AddDivision
+2018-11-08 14:11:691 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:695 INFO  Log4j:18 - click the users
+2018-11-08 14:11:703 INFO  Log4j:18 - click the CXO
+2018-11-08 14:11:901 INFO  Log4j:18 - enter the FistName
+2018-11-08 14:11:386 INFO  Log4j:18 - enter LastName
+2018-11-08 14:11:979 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 14:11:607 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 14:11:792 INFO  Log4j:18 - branch is selected
+2018-11-08 14:11:943 INFO  Log4j:18 - select the AddDivision
+2018-11-08 14:11:103 INFO  Log4j:18 - select the add user role
+2018-11-08 14:11:931 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:872 INFO  Log4j:18 - click the users
+2018-11-08 14:11:837 INFO  Log4j:18 - click the CXO
+2018-11-08 14:11:328 INFO  Log4j:18 - enter the FistName
+2018-11-08 14:11:905 INFO  Log4j:18 - enter LastName
+2018-11-08 14:11:496 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 14:11:114 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 14:11:267 INFO  Log4j:18 - branch is selected
+2018-11-08 14:11:424 INFO  Log4j:18 - select the AddDivision
+2018-11-08 14:11:583 INFO  Log4j:18 - select the add user role
+2018-11-08 14:11:803 INFO  Log4j:18 - select the deporting
+2018-11-08 14:11:618 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:621 INFO  Log4j:18 - click the users
+2018-11-08 14:11:686 INFO  Log4j:18 - click the CXO
+2018-11-08 14:11:810 INFO  Log4j:18 - enter the FistName
+2018-11-08 14:11:452 INFO  Log4j:18 - enter LastName
+2018-11-08 14:11:37 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 14:11:729 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 14:11:908 INFO  Log4j:18 - branch is selected
+2018-11-08 14:11:73 INFO  Log4j:18 - select the AddDivision
+2018-11-08 14:11:252 INFO  Log4j:18 - select the add user role
+2018-11-08 14:11:446 INFO  Log4j:18 - select the deporting
+2018-11-08 14:11:572 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:688 INFO  Log4j:18 - click the users
+2018-11-08 14:11:857 INFO  Log4j:18 - click the CXO
+2018-11-08 14:11:968 INFO  Log4j:18 - enter the FistName
+2018-11-08 14:11:551 INFO  Log4j:18 - enter LastName
+2018-11-08 14:11:239 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 14:11:908 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 14:11:83 INFO  Log4j:18 - branch is selected
+2018-11-08 14:11:254 INFO  Log4j:18 - select the AddDivision
+2018-11-08 14:11:463 INFO  Log4j:18 - select the add user role
+2018-11-08 14:11:684 INFO  Log4j:18 - select the deporting
+2018-11-08 14:11:300 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:284 INFO  Log4j:18 - click the users
+2018-11-08 14:11:283 INFO  Log4j:18 - click the CXO
+2018-11-08 14:11:464 INFO  Log4j:18 - enter the FistName
+2018-11-08 14:11:978 INFO  Log4j:18 - enter LastName
+2018-11-08 14:11:494 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 14:11:119 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 14:11:292 INFO  Log4j:18 - branch is selected
+2018-11-08 14:11:467 INFO  Log4j:18 - select the AddDivision
+2018-11-08 14:11:631 INFO  Log4j:18 - select the add user role
+2018-11-08 14:11:821 INFO  Log4j:18 - select the deporting
+2018-11-08 14:11:864 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:892 INFO  Log4j:18 - click the users
+2018-11-08 14:11:879 INFO  Log4j:18 - click the CXO
+2018-11-08 14:11:395 INFO  Log4j:18 - enter the FistName
+2018-11-08 14:11:824 INFO  Log4j:18 - enter LastName
+2018-11-08 14:11:452 INFO  Log4j:18 - enter Emailaddress
+2018-11-08 14:11:125 INFO  Log4j:18 - enter Mobilenumber
+2018-11-08 14:11:386 INFO  Log4j:18 - branch is selected
+2018-11-08 14:11:633 INFO  Log4j:18 - select the AddDivision
+2018-11-08 14:11:773 INFO  Log4j:18 - select the add user role
+2018-11-08 14:11:974 INFO  Log4j:18 - select the deporting
+2018-11-08 14:11:22 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:14 INFO  Log4j:18 - click the users
+2018-11-08 14:11:20 INFO  Log4j:18 - click the CXO
+2018-11-08 14:11:957 INFO  Log4j:18 - click the Organization 
+2018-11-08 14:11:940 INFO  Log4j:18 - click the users
+2018-11-08 14:11:959 INFO  Log4j:18 - click the CXO
+2018-11-08 15:11:768 INFO  Log4j:18 - click the Organization 
+2018-11-08 15:11:767 INFO  Log4j:18 - click the users
+2018-11-08 15:11:770 INFO  Log4j:18 - click the CXO
+2018-11-08 15:11:543 INFO  Log4j:18 - click the Organization 
+2018-11-08 15:11:446 INFO  Log4j:18 - click the users
+2018-11-08 15:11:345 INFO  Log4j:18 - click the CXO
+2018-11-08 15:11:698 INFO  Log4j:18 - click the Organization 
+2018-11-08 15:11:651 INFO  Log4j:18 - click the users
+2018-11-08 15:11:623 INFO  Log4j:18 - click the CXO

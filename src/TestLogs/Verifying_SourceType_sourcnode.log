@@ -1,0 +1,480 @@
+2018-10-30 11:10:171 INFO  Log4j:13 - clickhomebutton
+2018-10-30 11:10:339 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 11:10:414 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 11:10:740 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 11:10:89 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 11:10:321 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 11:10:594 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 11:10:531 INFO  Log4j:13 - clickhomebutton
+2018-10-30 11:10:678 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 11:10:662 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 11:10:01 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 11:10:299 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 11:10:551 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 11:10:877 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 11:10:114 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 11:10:445 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 11:10:768 INFO  Log4j:13 - clickSource_edit
+2018-10-30 11:10:852 INFO  Log4j:13 - switch the frame
+2018-10-30 11:10:260 INFO  Log4j:13 - click the pluse button
+2018-10-30 11:10:352 INFO  Log4j:13 - LandingPage>> this are not present in source
+2018-10-30 11:10:353 INFO  Log4j:13 - Form>> this are not present in source
+2018-10-30 11:10:355 INFO  Log4j:13 - VirtualNumber>> this are not present in source
+2018-10-30 11:10:355 INFO  Log4j:13 - Longcode>> this are not present in source
+2018-10-30 11:10:362 INFO  Log4j:13 - Ads>> this are not present in source
+2018-10-30 11:10:363 INFO  Log4j:13 - Downloads>> this are not present in source
+2018-10-30 11:10:369 INFO  Log4j:13 - Web Page>> this are not present in source
+2018-10-30 11:10:370 INFO  Log4j:13 - ShortURL>> this are not present in source
+2018-10-30 11:10:371 INFO  Log4j:13 - API>> this are not present in source
+2018-10-30 11:10:374 INFO  Log4j:13 - Other>> this are not present in source
+2018-10-30 11:10:387 INFO  Log4j:13 - APP>> this are not present in source
+2018-10-30 11:10:396 INFO  Log4j:13 - Email>> this are not present in source
+2018-10-30 11:10:398 INFO  Log4j:13 - InsideTeam>> this are not present in source
+2018-10-30 11:10:436 INFO  Log4j:13 - clickhomebutton
+2018-10-30 11:10:564 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 11:10:551 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 11:10:872 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 11:10:179 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 11:10:584 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 11:10:916 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 11:10:175 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 11:10:538 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 11:10:836 INFO  Log4j:13 - clickSource_edit
+2018-10-30 11:10:916 INFO  Log4j:13 - switch the frame
+2018-10-30 11:10:357 INFO  Log4j:13 - click the pluse button
+2018-10-30 11:10:431 INFO  Log4j:13 - Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 11:10:457 INFO  Log4j:13 - LandingPage>> this are not present in source
+2018-10-30 11:10:459 INFO  Log4j:13 - Form>> this are not present in source
+2018-10-30 11:10:459 INFO  Log4j:13 - VirtualNumber>> this are not present in source
+2018-10-30 11:10:460 INFO  Log4j:13 - Longcode>> this are not present in source
+2018-10-30 11:10:461 INFO  Log4j:13 - Ads>> this are not present in source
+2018-10-30 11:10:461 INFO  Log4j:13 - Downloads>> this are not present in source
+2018-10-30 11:10:461 INFO  Log4j:13 - Web Page>> this are not present in source
+2018-10-30 11:10:461 INFO  Log4j:13 - ShortURL>> this are not present in source
+2018-10-30 11:10:461 INFO  Log4j:13 - API>> this are not present in source
+2018-10-30 11:10:462 INFO  Log4j:13 - Other>> this are not present in source
+2018-10-30 11:10:462 INFO  Log4j:13 - APP>> this are not present in source
+2018-10-30 11:10:462 INFO  Log4j:13 - Email>> this are not present in source
+2018-10-30 11:10:462 INFO  Log4j:13 - InsideTeam>> this are not present in source
+2018-10-30 11:10:753 INFO  Log4j:13 - clickhomebutton
+2018-10-30 11:10:914 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 11:10:925 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 11:10:208 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 11:10:519 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 11:10:753 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 11:10:65 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 11:10:786 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 11:10:90 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 11:10:400 INFO  Log4j:13 - clickSource_edit
+2018-10-30 11:10:491 INFO  Log4j:13 - switch the frame
+2018-10-30 11:10:914 INFO  Log4j:13 - click the pluse button
+2018-10-30 11:10:11 INFO  Log4j:13 - Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 11:10:37 INFO  Log4j:13 - Landing Page>> this are not present in source
+2018-10-30 11:10:38 INFO  Log4j:13 - Form>> this are not present in source
+2018-10-30 11:10:38 INFO  Log4j:13 - Virtual Number>> this are not present in source
+2018-10-30 11:10:42 INFO  Log4j:13 - Longcode>> this are not present in source
+2018-10-30 11:10:43 INFO  Log4j:13 - Ads>> this are not present in source
+2018-10-30 11:10:46 INFO  Log4j:13 - Downloads>> this are not present in source
+2018-10-30 11:10:47 INFO  Log4j:13 - Web Page>> this are not present in source
+2018-10-30 11:10:48 INFO  Log4j:13 - Short URL>> this are not present in source
+2018-10-30 11:10:49 INFO  Log4j:13 - API>> this are not present in source
+2018-10-30 11:10:53 INFO  Log4j:13 - Other>> this are not present in source
+2018-10-30 11:10:54 INFO  Log4j:13 - APP>> this are not present in source
+2018-10-30 11:10:55 INFO  Log4j:13 - Email>> this are not present in source
+2018-10-30 11:10:56 INFO  Log4j:13 - Inside Team>> this are not present in source
+2018-10-30 11:10:879 INFO  Log4j:13 - clickhomebutton
+2018-10-30 11:10:230 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 11:10:289 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 11:10:627 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 11:10:965 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 11:10:244 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 11:10:599 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 11:10:837 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 11:10:142 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 11:10:438 INFO  Log4j:13 - clickSource_edit
+2018-10-30 11:10:522 INFO  Log4j:13 - switch the frame
+2018-10-30 11:10:936 INFO  Log4j:13 - click the pluse button
+2018-10-30 11:10:20 INFO  Log4j:13 - Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 11:10:59 INFO  Log4j:13 - Select Source Type>> this are not present in source
+2018-10-30 11:10:61 INFO  Log4j:13 - Landing Page>> this are not present in source
+2018-10-30 11:10:63 INFO  Log4j:13 - Form>> this are not present in source
+2018-10-30 11:10:68 INFO  Log4j:13 - Virtual Number>> this are not present in source
+2018-10-30 11:10:69 INFO  Log4j:13 - Longcode>> this are not present in source
+2018-10-30 11:10:71 INFO  Log4j:13 - Ads>> this are not present in source
+2018-10-30 11:10:72 INFO  Log4j:13 - Downloads>> this are not present in source
+2018-10-30 11:10:83 INFO  Log4j:13 - Web Page>> this are not present in source
+2018-10-30 11:10:85 INFO  Log4j:13 - Short URL>> this are not present in source
+2018-10-30 11:10:96 INFO  Log4j:13 - API>> this are not present in source
+2018-10-30 11:10:96 INFO  Log4j:13 - Other>> this are not present in source
+2018-10-30 11:10:96 INFO  Log4j:13 - APP>> this are not present in source
+2018-10-30 11:10:96 INFO  Log4j:13 - Email>> this are not present in source
+2018-10-30 11:10:97 INFO  Log4j:13 - Inside Team>> this are not present in source
+2018-10-30 12:10:246 INFO  Log4j:13 - clickhomebutton
+2018-10-30 12:10:393 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 12:10:374 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 12:10:713 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 12:10:86 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 12:10:319 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 12:10:651 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 12:10:876 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 12:10:191 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 12:10:512 INFO  Log4j:13 - clickSource_edit
+2018-10-30 12:10:589 INFO  Log4j:13 - switch the frame
+2018-10-30 12:10:992 INFO  Log4j:13 - click the pluse button
+2018-10-30 12:10:81 INFO  Log4j:13 - Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 12:10:107 INFO  Log4j:13 - Select Source Type>> this are not present in source
+2018-10-30 12:10:108 INFO  Log4j:13 - Landing Page>> this are not present in source
+2018-10-30 12:10:110 INFO  Log4j:13 - Form>> this are not present in source
+2018-10-30 12:10:113 INFO  Log4j:13 - Virtual Number>> this are not present in source
+2018-10-30 12:10:113 INFO  Log4j:13 - Longcode>> this are not present in source
+2018-10-30 12:10:114 INFO  Log4j:13 - Ads>> this are not present in source
+2018-10-30 12:10:114 INFO  Log4j:13 - Downloads>> this are not present in source
+2018-10-30 12:10:115 INFO  Log4j:13 - Web Page>> this are not present in source
+2018-10-30 12:10:116 INFO  Log4j:13 - Short URL>> this are not present in source
+2018-10-30 12:10:117 INFO  Log4j:13 - API>> this are not present in source
+2018-10-30 12:10:118 INFO  Log4j:13 - Other>> this are not present in source
+2018-10-30 12:10:120 INFO  Log4j:13 - APP>> this are not present in source
+2018-10-30 12:10:121 INFO  Log4j:13 - Email>> this are not present in source
+2018-10-30 12:10:122 INFO  Log4j:13 - Inside Team>> this are not present in source
+2018-10-30 12:10:174 INFO  Log4j:13 - clickhomebutton
+2018-10-30 12:10:405 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 12:10:391 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 12:10:732 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 12:10:40 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 12:10:279 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 12:10:83 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 12:10:324 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 12:10:705 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 12:10:05 INFO  Log4j:13 - clickSource_edit
+2018-10-30 12:10:92 INFO  Log4j:13 - switch the frame
+2018-10-30 12:10:487 INFO  Log4j:13 - click the pluse button
+2018-10-30 12:10:566 INFO  Log4j:13 - Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 12:10:590 INFO  Log4j:13 - Select Source Type>> this are not present in source
+2018-10-30 12:10:591 INFO  Log4j:13 - Landing Page>> this are not present in source
+2018-10-30 12:10:593 INFO  Log4j:13 - Form>> this are not present in source
+2018-10-30 12:10:596 INFO  Log4j:13 - Virtual Number>> this are not present in source
+2018-10-30 12:10:597 INFO  Log4j:13 - Longcode>> this are not present in source
+2018-10-30 12:10:599 INFO  Log4j:13 - Ads>> this are not present in source
+2018-10-30 12:10:601 INFO  Log4j:13 - Downloads>> this are not present in source
+2018-10-30 12:10:603 INFO  Log4j:13 - Web Page>> this are not present in source
+2018-10-30 12:10:605 INFO  Log4j:13 - Short URL>> this are not present in source
+2018-10-30 12:10:605 INFO  Log4j:13 - API>> this are not present in source
+2018-10-30 12:10:614 INFO  Log4j:13 - Other>> this are not present in source
+2018-10-30 12:10:615 INFO  Log4j:13 - APP>> this are not present in source
+2018-10-30 12:10:615 INFO  Log4j:13 - Email>> this are not present in source
+2018-10-30 12:10:615 INFO  Log4j:13 - Inside Team>> this are not present in source
+2018-10-30 12:10:785 INFO  Log4j:13 - clickhomebutton
+2018-10-30 12:10:944 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 12:10:995 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 12:10:304 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 12:10:644 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 12:10:897 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 12:10:234 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 12:10:481 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 12:10:812 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 12:10:104 INFO  Log4j:13 - clickSource_edit
+2018-10-30 12:10:192 INFO  Log4j:13 - switch the frame
+2018-10-30 12:10:625 INFO  Log4j:13 - click the pluse button
+2018-10-30 12:10:708 INFO  Log4j:13 - Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 12:10:711 INFO  Log4j:13 - Select Source Type>> this are not present in source
+2018-10-30 12:10:712 INFO  Log4j:13 - Landing Page>> this are not present in source
+2018-10-30 12:10:714 INFO  Log4j:13 - Form>> this are not present in source
+2018-10-30 12:10:716 INFO  Log4j:13 - Virtual Number>> this are not present in source
+2018-10-30 12:10:717 INFO  Log4j:13 - Longcode>> this are not present in source
+2018-10-30 12:10:717 INFO  Log4j:13 - Ads>> this are not present in source
+2018-10-30 12:10:718 INFO  Log4j:13 - Downloads>> this are not present in source
+2018-10-30 12:10:719 INFO  Log4j:13 - Web Page>> this are not present in source
+2018-10-30 12:10:720 INFO  Log4j:13 - Short URL>> this are not present in source
+2018-10-30 12:10:721 INFO  Log4j:13 - API>> this are not present in source
+2018-10-30 12:10:722 INFO  Log4j:13 - Other>> this are not present in source
+2018-10-30 12:10:723 INFO  Log4j:13 - APP>> this are not present in source
+2018-10-30 12:10:724 INFO  Log4j:13 - Email>> this are not present in source
+2018-10-30 12:10:725 INFO  Log4j:13 - Inside Team>> this are not present in source
+2018-10-30 12:10:721 INFO  Log4j:13 - clickhomebutton
+2018-10-30 12:10:925 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 12:10:897 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 12:10:201 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 12:10:538 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 12:10:777 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 12:10:96 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 12:10:358 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 12:10:662 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 12:10:962 INFO  Log4j:13 - clickSource_edit
+2018-10-30 12:10:44 INFO  Log4j:13 - switch the frame
+2018-10-30 12:10:423 INFO  Log4j:13 - click the pluse button
+2018-10-30 12:10:91 INFO  Log4j:13 - clickhomebutton
+2018-10-30 12:10:214 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 12:10:224 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 12:10:550 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 12:10:905 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 12:10:158 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 12:10:496 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 12:10:738 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 12:10:59 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 12:10:369 INFO  Log4j:13 - clickSource_edit
+2018-10-30 12:10:455 INFO  Log4j:13 - switch the frame
+2018-10-30 12:10:862 INFO  Log4j:13 - click the pluse button
+2018-10-30 12:10:949 INFO  Log4j:13 - Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 12:10:951 INFO  Log4j:13 - Select Source Type>> this are not present in source
+2018-10-30 12:10:954 INFO  Log4j:13 - Landing Page>> this are not present in source
+2018-10-30 12:10:955 INFO  Log4j:13 - Form>> this are not present in source
+2018-10-30 12:10:957 INFO  Log4j:13 - Virtual Number>> this are not present in source
+2018-10-30 12:10:959 INFO  Log4j:13 - Longcode>> this are not present in source
+2018-10-30 12:10:959 INFO  Log4j:13 - Ads>> this are not present in source
+2018-10-30 12:10:960 INFO  Log4j:13 - Downloads>> this are not present in source
+2018-10-30 12:10:961 INFO  Log4j:13 - Web Page>> this are not present in source
+2018-10-30 12:10:962 INFO  Log4j:13 - Short URL>> this are not present in source
+2018-10-30 12:10:963 INFO  Log4j:13 - API>> this are not present in source
+2018-10-30 12:10:963 INFO  Log4j:13 - Other>> this are not present in source
+2018-10-30 12:10:964 INFO  Log4j:13 - APP>> this are not present in source
+2018-10-30 12:10:965 INFO  Log4j:13 - Email>> this are not present in source
+2018-10-30 12:10:966 INFO  Log4j:13 - Inside Team>> this are not present in source
+2018-10-30 12:10:846 INFO  Log4j:13 - clickhomebutton
+2018-10-30 12:10:971 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 12:10:311 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 12:10:620 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 12:10:960 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 12:10:215 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 12:10:541 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 12:10:790 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 12:10:113 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 12:10:418 INFO  Log4j:13 - clickSource_edit
+2018-10-30 12:10:495 INFO  Log4j:13 - switch the frame
+2018-10-30 12:10:920 INFO  Log4j:13 - click the pluse button
+2018-10-30 12:10:999 INFO  Log4j:13 - /Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 12:10:01 INFO  Log4j:13 - Select Source Type>> this are not present in source
+2018-10-30 12:10:03 INFO  Log4j:13 - Landing Page>> this are not present in source
+2018-10-30 12:10:05 INFO  Log4j:13 - Form>> this are not present in source
+2018-10-30 12:10:08 INFO  Log4j:13 - Virtual Number>> this are not present in source
+2018-10-30 12:10:09 INFO  Log4j:13 - Longcode>> this are not present in source
+2018-10-30 12:10:10 INFO  Log4j:13 - Ads>> this are not present in source
+2018-10-30 12:10:10 INFO  Log4j:13 - Downloads>> this are not present in source
+2018-10-30 12:10:10 INFO  Log4j:13 - Web Page>> this are not present in source
+2018-10-30 12:10:11 INFO  Log4j:13 - Short URL>> this are not present in source
+2018-10-30 12:10:11 INFO  Log4j:13 - API>> this are not present in source
+2018-10-30 12:10:11 INFO  Log4j:13 - Other>> this are not present in source
+2018-10-30 12:10:11 INFO  Log4j:13 - APP>> this are not present in source
+2018-10-30 12:10:11 INFO  Log4j:13 - Email>> this are not present in source
+2018-10-30 12:10:11 INFO  Log4j:13 - Inside Team>> this are not present in source
+2018-10-30 12:10:658 INFO  Log4j:13 - clickhomebutton
+2018-10-30 12:10:842 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 12:10:844 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 12:10:176 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 12:10:504 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 12:10:752 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 12:10:83 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 12:10:339 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 12:10:630 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 12:10:948 INFO  Log4j:13 - clickSource_edit
+2018-10-30 12:10:34 INFO  Log4j:13 - switch the frame
+2018-10-30 12:10:425 INFO  Log4j:13 - click the pluse button
+2018-10-30 12:10:502 INFO  Log4j:13 - Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 12:10:506 INFO  Log4j:13 - Select Source Type>> this are present in source
+2018-10-30 12:10:507 INFO  Log4j:13 - Landing Page>> this are present in source
+2018-10-30 12:10:508 INFO  Log4j:13 - Form>> this are present in source
+2018-10-30 12:10:512 INFO  Log4j:13 - Virtual Number>> this are present in source
+2018-10-30 12:10:513 INFO  Log4j:13 - Longcode>> this are present in source
+2018-10-30 12:10:514 INFO  Log4j:13 - Ads>> this are present in source
+2018-10-30 12:10:515 INFO  Log4j:13 - Downloads>> this are present in source
+2018-10-30 12:10:515 INFO  Log4j:13 - Web Page>> this are present in source
+2018-10-30 12:10:517 INFO  Log4j:13 - Short URL>> this are present in source
+2018-10-30 12:10:520 INFO  Log4j:13 - API>> this are present in source
+2018-10-30 12:10:520 INFO  Log4j:13 - Other>> this are present in source
+2018-10-30 12:10:520 INFO  Log4j:13 - APP>> this are present in source
+2018-10-30 12:10:521 INFO  Log4j:13 - Email>> this are present in source
+2018-10-30 12:10:521 INFO  Log4j:13 - Inside Team>> this are present in source
+2018-10-30 12:10:952 INFO  Log4j:13 - clickhomebutton
+2018-10-30 12:10:105 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 12:10:126 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 12:10:441 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 12:10:779 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 12:10:37 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 12:10:360 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 12:10:599 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 12:10:904 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 12:10:257 INFO  Log4j:13 - clickSource_edit
+2018-10-30 12:10:339 INFO  Log4j:13 - switch the frame
+2018-10-30 12:10:729 INFO  Log4j:13 - click the pluse button
+2018-10-30 12:10:822 INFO  Log4j:13 - Select Source Type
+Landing Page
+Form
+Virtual Number
+Longcode
+Ads
+Downloads
+Web Page
+Short URL
+API
+Other
+APP
+Email
+Inside Team
+2018-10-30 12:10:443 INFO  Log4j:13 - clickhomebutton
+2018-10-30 12:10:577 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 12:10:597 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 12:10:918 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 12:10:243 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 12:10:484 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 12:10:816 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 12:10:64 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 12:10:863 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 12:10:176 INFO  Log4j:13 - clickSource_edit
+2018-10-30 12:10:255 INFO  Log4j:13 - switch the frame
+2018-10-30 12:10:684 INFO  Log4j:13 - click the pluse button
+2018-10-30 12:10:798 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:803 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:807 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:808 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:814 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:816 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:817 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:818 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:818 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:818 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:819 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:819 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:822 INFO  Log4j:13 - this are present in source node
+2018-10-30 12:10:823 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:129 INFO  Log4j:13 - clickhomebutton
+2018-10-30 15:10:226 INFO  Log4j:13 - clickProjectSetUp
+2018-10-30 15:10:248 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-30 15:10:553 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-30 15:10:892 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-30 15:10:144 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-30 15:10:940 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-30 15:10:201 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-30 15:10:514 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-30 15:10:822 INFO  Log4j:13 - clickSource_edit
+2018-10-30 15:10:911 INFO  Log4j:13 - switch the frame
+2018-10-30 15:10:303 INFO  Log4j:13 - click the pluse button
+2018-10-30 15:10:388 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:390 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:391 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:393 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:396 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:397 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:398 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:399 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:400 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:401 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:402 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:403 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:404 INFO  Log4j:13 - this are present in source node
+2018-10-30 15:10:405 INFO  Log4j:13 - this are present in source node

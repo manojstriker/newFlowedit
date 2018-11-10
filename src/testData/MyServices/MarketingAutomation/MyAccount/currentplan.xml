@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+<dataset name="currentplanTable">
+<currentplanTablefeatures>S.No/Company/Plan Name/Plan Type/No. Of Users/Forwarding Users/Price/Free Balance/Balance Mode/Validity/Activation Date/Expiry Date/Status/Actions</currentplanTablefeatures> 
+<currentplanData>1/Striker/Marketing Automation/Package Plan/6/--/33600.00/21600.00/Account Balance/365 Days/2018-11-08/2019-11-08/Active/Numbers</currentplanData>
+</dataset>
+<dataset name="numberplan">
+<company>Striker</company>
+<planname>Marketing Automation</planname>
+</dataset>
+</Testdata>

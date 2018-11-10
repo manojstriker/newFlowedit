@@ -1,0 +1,296 @@
+2018-10-31 13:10:236 INFO  Log4j:13 - clickhomebutton
+2018-10-31 13:10:369 INFO  Log4j:13 - clickProjectSetUp
+2018-10-31 13:10:407 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-31 13:10:713 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-31 13:10:57 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-31 13:10:310 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-31 13:10:658 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-31 13:10:902 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-31 13:10:260 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-31 13:10:556 INFO  Log4j:13 - clickSource_edit
+2018-10-31 13:10:608 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:93 INFO  Log4j:13 - google
+2018-10-31 13:10:817 INFO  Log4j:13 - googleSource added Successfully
+2018-10-31 13:10:446 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:927 INFO  Log4j:13 - face book
+2018-10-31 13:10:647 INFO  Log4j:13 - face bookSource added Successfully
+2018-10-31 13:10:672 INFO  Log4j:13 - clickhomebutton
+2018-10-31 13:10:824 INFO  Log4j:13 - clickProjectSetUp
+2018-10-31 13:10:841 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-31 13:10:154 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-31 13:10:488 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-31 13:10:748 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-31 13:10:84 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-31 13:10:331 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-31 13:10:668 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-31 13:10:957 INFO  Log4j:13 - clickSource_edit
+2018-10-31 13:10:04 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:478 INFO  Log4j:13 - google
+2018-10-31 13:10:220 INFO  Log4j:13 - google it alredy createdSource added Faild
+2018-10-31 13:10:832 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:262 INFO  Log4j:13 - face book
+2018-10-31 13:10:24 INFO  Log4j:13 - face book it alredy createdSource added Faild
+2018-10-31 13:10:298 INFO  Log4j:13 - Form
+2018-10-31 13:10:759 INFO  Log4j:13 - feedback form
+2018-10-31 13:10:431 INFO  Log4j:13 - feedback formSource added Successfully
+2018-10-31 13:10:471 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:908 INFO  Log4j:13 - missed calls
+2018-10-31 13:10:620 INFO  Log4j:13 - missed callsSource added Successfully
+2018-10-31 13:10:177 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:798 INFO  Log4j:13 - Call Forwarding 
+2018-10-31 13:10:473 INFO  Log4j:13 - Call Forwarding Source added Successfully
+2018-10-31 13:10:30 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:590 INFO  Log4j:13 - Click To Call 
+2018-10-31 13:10:292 INFO  Log4j:13 - Click To Call Source added Successfully
+2018-10-31 13:10:353 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:710 INFO  Log4j:13 - google
+2018-10-31 13:10:466 INFO  Log4j:13 - google it alredy createdSource added Faild
+2018-10-31 13:10:04 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:435 INFO  Log4j:13 - face book
+2018-10-31 13:10:102 INFO  Log4j:13 - face book it alredy createdSource added Faild
+2018-10-31 13:10:22 INFO  Log4j:13 - Longcode
+2018-10-31 13:10:584 INFO  Log4j:13 - face book 
+2018-10-31 13:10:310 INFO  Log4j:13 - face book Source added Successfully
+2018-10-31 13:10:877 INFO  Log4j:13 - Longcode
+2018-10-31 13:10:336 INFO  Log4j:13 - tv adds 
+2018-10-31 13:10:41 INFO  Log4j:13 - tv adds Source added Successfully
+2018-10-31 13:10:52 INFO  Log4j:13 - Ads
+2018-10-31 13:10:537 INFO  Log4j:13 - services
+2018-10-31 13:10:303 INFO  Log4j:13 - servicesSource added Successfully
+2018-10-31 13:10:862 INFO  Log4j:13 - Ads
+2018-10-31 13:10:288 INFO  Log4j:13 - products
+2018-10-31 13:10:952 INFO  Log4j:13 - productsSource added Successfully
+2018-10-31 13:10:50 INFO  Log4j:13 - Downloads
+2018-10-31 13:10:552 INFO  Log4j:13 - feedback form
+2018-10-31 13:10:266 INFO  Log4j:13 - feedback formSource added Successfully
+2018-10-31 13:10:359 INFO  Log4j:13 - Form
+2018-10-31 13:10:905 INFO  Log4j:13 - feedback form
+2018-10-31 13:10:606 INFO  Log4j:13 - feedback form it alredy createdSource added Faild
+2018-10-31 13:10:623 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:05 INFO  Log4j:13 - wtsapp
+2018-10-31 13:10:800 INFO  Log4j:13 - wtsappSource added Successfully
+2018-10-31 13:10:450 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:887 INFO  Log4j:13 - face book
+2018-10-31 13:10:568 INFO  Log4j:13 - face bookSource added Successfully
+2018-10-31 13:10:158 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:560 INFO  Log4j:13 - twitter
+2018-10-31 13:10:259 INFO  Log4j:13 - twitterSource added Successfully
+2018-10-31 13:10:156 INFO  Log4j:13 - clickhomebutton
+2018-10-31 13:10:410 INFO  Log4j:13 - clickProjectSetUp
+2018-10-31 13:10:458 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-31 13:10:779 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-31 13:10:83 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-31 13:10:343 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-31 13:10:665 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-31 13:10:907 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-31 13:10:223 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-31 13:10:521 INFO  Log4j:13 - clickSource_edit
+2018-10-31 13:10:641 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:110 INFO  Log4j:13 - google
+2018-10-31 13:10:878 INFO  Log4j:13 - google it alredy createdSource added Faild
+2018-10-31 13:10:510 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:972 INFO  Log4j:13 - face book
+2018-10-31 13:10:704 INFO  Log4j:13 - face book it alredy createdSource added Faild
+2018-10-31 13:10:854 INFO  Log4j:13 - Form
+2018-10-31 13:10:311 INFO  Log4j:13 - feedback form
+2018-10-31 13:10:22 INFO  Log4j:13 - feedback form it alredy createdSource added Faild
+2018-10-31 13:10:17 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:484 INFO  Log4j:13 - missed calls
+2018-10-31 13:10:176 INFO  Log4j:13 - missed calls it alredy createdSource added Faild
+2018-10-31 13:10:830 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:409 INFO  Log4j:13 - Call Forwarding 
+2018-10-31 13:10:109 INFO  Log4j:13 - Call Forwarding  it alredy createdSource added Faild
+2018-10-31 13:10:707 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:233 INFO  Log4j:13 - Click To Call 
+2018-10-31 13:10:915 INFO  Log4j:13 - Click To Call  it alredy createdSource added Faild
+2018-10-31 13:10:06 INFO  Log4j:13 - Longcode
+2018-10-31 13:10:520 INFO  Log4j:13 - face book 
+2018-10-31 13:10:204 INFO  Log4j:13 - face book  it alredy createdSource added Faild
+2018-10-31 13:10:816 INFO  Log4j:13 - Longcode
+2018-10-31 13:10:260 INFO  Log4j:13 - tv adds 
+2018-10-31 13:10:958 INFO  Log4j:13 - tv adds  it alredy createdSource added Faild
+2018-10-31 13:10:00 INFO  Log4j:13 - Ads
+2018-10-31 13:10:436 INFO  Log4j:13 - services
+2018-10-31 13:10:281 INFO  Log4j:13 - services it alredy createdSource added Faild
+2018-10-31 13:10:913 INFO  Log4j:13 - Ads
+2018-10-31 13:10:287 INFO  Log4j:13 - products
+2018-10-31 13:10:989 INFO  Log4j:13 - products it alredy createdSource added Faild
+2018-10-31 13:10:72 INFO  Log4j:13 - Downloads
+2018-10-31 13:10:532 INFO  Log4j:13 - feedback form
+2018-10-31 13:10:219 INFO  Log4j:13 - feedback form it alredy createdSource added Faild
+2018-10-31 13:10:305 INFO  Log4j:13 - Web Page
+2018-10-31 13:10:706 INFO  Log4j:13 - google
+2018-10-31 13:10:401 INFO  Log4j:13 - googleSource added Successfully
+2018-10-31 13:10:47 INFO  Log4j:13 - Web Page
+2018-10-31 13:10:400 INFO  Log4j:13 - blog
+2018-10-31 13:10:183 INFO  Log4j:13 - blogSource added Successfully
+2018-10-31 13:10:252 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:673 INFO  Log4j:13 - google
+2018-10-31 13:10:473 INFO  Log4j:13 - googleSource added Successfully
+2018-10-31 13:10:150 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:580 INFO  Log4j:13 - face book
+2018-10-31 13:10:284 INFO  Log4j:13 - face bookSource added Successfully
+2018-10-31 13:10:891 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:309 INFO  Log4j:13 - office24by7
+2018-10-31 13:10:24 INFO  Log4j:13 - office24by7Source added Successfully
+2018-10-31 13:10:974 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:446 INFO  Log4j:13 - wtsapp
+2018-10-31 13:10:285 INFO  Log4j:13 - wtsapp it alredy createdSource added Faild
+2018-10-31 13:10:943 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:360 INFO  Log4j:13 - face book
+2018-10-31 13:10:149 INFO  Log4j:13 - face book it alredy createdSource added Faild
+2018-10-31 13:10:766 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:125 INFO  Log4j:13 - twitter
+2018-10-31 13:10:819 INFO  Log4j:13 - twitter it alredy createdSource added Faild
+2018-10-31 13:10:617 INFO  Log4j:13 - clickhomebutton
+2018-10-31 13:10:849 INFO  Log4j:13 - clickProjectSetUp
+2018-10-31 13:10:840 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-31 13:10:223 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-31 13:10:565 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-31 13:10:806 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-31 13:10:624 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-31 13:10:886 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-31 13:10:232 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-31 13:10:535 INFO  Log4j:13 - clickSource_edit
+2018-10-31 13:10:619 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:81 INFO  Log4j:13 - google
+2018-10-31 13:10:803 INFO  Log4j:13 - google it alredy createdSource added Faild
+2018-10-31 13:10:502 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:936 INFO  Log4j:13 - face book
+2018-10-31 13:10:654 INFO  Log4j:13 - face book it alredy createdSource added Faild
+2018-10-31 13:10:700 INFO  Log4j:13 - Form
+2018-10-31 13:10:196 INFO  Log4j:13 - feedback form
+2018-10-31 13:10:963 INFO  Log4j:13 - feedback form it alredy createdSource added Faild
+2018-10-31 13:10:107 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:667 INFO  Log4j:13 - missed calls
+2018-10-31 13:10:372 INFO  Log4j:13 - missed calls it alredy createdSource added Faild
+2018-10-31 13:10:981 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:590 INFO  Log4j:13 - Call Forwarding 
+2018-10-31 13:10:272 INFO  Log4j:13 - Call Forwarding  it alredy createdSource added Faild
+2018-10-31 13:10:863 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:420 INFO  Log4j:13 - Click To Call 
+2018-10-31 13:10:108 INFO  Log4j:13 - Click To Call  it alredy createdSource added Faild
+2018-10-31 13:10:118 INFO  Log4j:13 - Longcode
+2018-10-31 13:10:586 INFO  Log4j:13 - face book 
+2018-10-31 13:10:254 INFO  Log4j:13 - face book  it alredy createdSource added Faild
+2018-10-31 13:10:882 INFO  Log4j:13 - Longcode
+2018-10-31 13:10:287 INFO  Log4j:13 - tv adds 
+2018-10-31 13:10:909 INFO  Log4j:13 - tv adds  it alredy createdSource added Faild
+2018-10-31 13:10:14 INFO  Log4j:13 - Ads
+2018-10-31 13:10:432 INFO  Log4j:13 - services
+2018-10-31 13:10:95 INFO  Log4j:13 - services it alredy createdSource added Faild
+2018-10-31 13:10:623 INFO  Log4j:13 - Ads
+2018-10-31 13:10:26 INFO  Log4j:13 - products
+2018-10-31 13:10:683 INFO  Log4j:13 - products it alredy createdSource added Faild
+2018-10-31 13:10:683 INFO  Log4j:13 - Downloads
+2018-10-31 13:10:167 INFO  Log4j:13 - feedback form
+2018-10-31 13:10:988 INFO  Log4j:13 - feedback form it alredy createdSource added Faild
+2018-10-31 13:10:46 INFO  Log4j:13 - Web Page
+2018-10-31 13:10:360 INFO  Log4j:13 - google
+2018-10-31 13:10:92 INFO  Log4j:13 - google it alredy createdSource added Faild
+2018-10-31 13:10:694 INFO  Log4j:13 - Web Page
+2018-10-31 13:10:38 INFO  Log4j:13 - blog
+2018-10-31 13:10:826 INFO  Log4j:13 - blog it alredy createdSource added Faild
+2018-10-31 13:10:972 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:327 INFO  Log4j:13 - google
+2018-10-31 13:10:979 INFO  Log4j:13 - google it alredy createdSource added Faild
+2018-10-31 13:10:568 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:967 INFO  Log4j:13 - face book
+2018-10-31 13:10:744 INFO  Log4j:13 - face book it alredy createdSource added Faild
+2018-10-31 13:10:434 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:02 INFO  Log4j:13 - office24by7
+2018-10-31 13:10:667 INFO  Log4j:13 - office24by7 it alredy createdSource added Faild
+2018-10-31 13:10:738 INFO  Log4j:13 - API
+2018-10-31 13:10:76 INFO  Log4j:13 - wtsapp
+2018-10-31 13:10:830 INFO  Log4j:13 - wtsappSource added Successfully
+2018-10-31 13:10:370 INFO  Log4j:13 - API
+2018-10-31 13:10:828 INFO  Log4j:13 - face book
+2018-10-31 13:10:501 INFO  Log4j:13 - face bookSource added Successfully
+2018-10-31 13:10:121 INFO  Log4j:13 - API
+2018-10-31 13:10:560 INFO  Log4j:13 - twitter
+2018-10-31 13:10:244 INFO  Log4j:13 - twitterSource added Successfully
+2018-10-31 13:10:884 INFO  Log4j:13 - clickhomebutton
+2018-10-31 13:10:73 INFO  Log4j:13 - clickProjectSetUp
+2018-10-31 13:10:52 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-31 13:10:396 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-31 13:10:710 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-31 13:10:939 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-31 13:10:222 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-31 13:10:321 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-31 13:10:727 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-31 13:10:35 INFO  Log4j:13 - clickSource_edit
+2018-10-31 13:10:123 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:561 INFO  Log4j:13 - google
+2018-10-31 13:10:315 INFO  Log4j:13 - sourctype***Landing Pagesourcename>>>google it alredy createdSource added Faild
+2018-10-31 13:10:939 INFO  Log4j:13 - Landing Page
+2018-10-31 13:10:383 INFO  Log4j:13 - face book
+2018-10-31 13:10:116 INFO  Log4j:13 - sourctype***Landing Pagesourcename>>>face book it alredy createdSource added Faild
+2018-10-31 13:10:115 INFO  Log4j:13 - Form
+2018-10-31 13:10:626 INFO  Log4j:13 - feedback form
+2018-10-31 13:10:293 INFO  Log4j:13 - sourctype***Formsourcename>>>feedback form it alredy createdSource added Faild
+2018-10-31 13:10:288 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:782 INFO  Log4j:13 - missed calls
+2018-10-31 13:10:450 INFO  Log4j:13 - sourctype***Virtual Numbersourcename>>>missed calls it alredy createdSource added Faild
+2018-10-31 13:10:10 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:598 INFO  Log4j:13 - Call Forwarding 
+2018-10-31 13:10:279 INFO  Log4j:13 - sourctype***Virtual Numbersourcename>>>Call Forwarding  it alredy createdSource added Faild
+2018-10-31 13:10:889 INFO  Log4j:13 - Virtual Number
+2018-10-31 13:10:437 INFO  Log4j:13 - Click To Call 
+2018-10-31 13:10:110 INFO  Log4j:13 - sourctype***Virtual Numbersourcename>>>Click To Call  it alredy createdSource added Faild
+2018-10-31 13:10:141 INFO  Log4j:13 - Longcode
+2018-10-31 13:10:617 INFO  Log4j:13 - face book 
+2018-10-31 13:10:396 INFO  Log4j:13 - sourctype***Longcodesourcename>>>face book  it alredy createdSource added Faild
+2018-10-31 13:10:958 INFO  Log4j:13 - Longcode
+2018-10-31 13:10:387 INFO  Log4j:13 - tv adds 
+2018-10-31 13:10:206 INFO  Log4j:13 - sourctype***Longcodesourcename>>>tv adds  it alredy createdSource added Faild
+2018-10-31 13:10:220 INFO  Log4j:13 - Ads
+2018-10-31 13:10:609 INFO  Log4j:13 - services
+2018-10-31 13:10:402 INFO  Log4j:13 - sourctype***Adssourcename>>>services it alredy createdSource added Faild
+2018-10-31 13:10:11 INFO  Log4j:13 - Ads
+2018-10-31 13:10:462 INFO  Log4j:13 - products
+2018-10-31 13:10:239 INFO  Log4j:13 - sourctype***Adssourcename>>>products it alredy createdSource added Faild
+2018-10-31 13:10:357 INFO  Log4j:13 - Downloads
+2018-10-31 13:10:851 INFO  Log4j:13 - feedback form
+2018-10-31 13:10:600 INFO  Log4j:13 - sourctype***Downloadssourcename>>>feedback form it alredy createdSource added Faild
+2018-10-31 13:10:682 INFO  Log4j:13 - Web Page
+2018-10-31 13:10:130 INFO  Log4j:13 - google
+2018-10-31 13:10:809 INFO  Log4j:13 - sourctype***Web Pagesourcename>>>google it alredy createdSource added Faild
+2018-10-31 13:10:337 INFO  Log4j:13 - Web Page
+2018-10-31 13:10:710 INFO  Log4j:13 - blog
+2018-10-31 13:10:434 INFO  Log4j:13 - sourctype***Web Pagesourcename>>>blog it alredy createdSource added Faild
+2018-10-31 13:10:473 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:900 INFO  Log4j:13 - google
+2018-10-31 13:10:696 INFO  Log4j:13 - sourctype***Short URLsourcename>>>google it alredy createdSource added Faild
+2018-10-31 13:10:233 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:673 INFO  Log4j:13 - face book
+2018-10-31 13:10:354 INFO  Log4j:13 - sourctype***Short URLsourcename>>>face book it alredy createdSource added Faild
+2018-10-31 13:10:960 INFO  Log4j:13 - Short URL
+2018-10-31 13:10:532 INFO  Log4j:13 - office24by7
+2018-10-31 13:10:242 INFO  Log4j:13 - sourctype***Short URLsourcename>>>office24by7 it alredy createdSource added Faild
+2018-10-31 13:10:283 INFO  Log4j:13 - API
+2018-10-31 13:10:704 INFO  Log4j:13 - wtsapp
+2018-10-31 13:10:464 INFO  Log4j:13 - sourctype***APIsourcename>>>wtsapp it alredy createdSource added Faild
+2018-10-31 13:10:113 INFO  Log4j:13 - API
+2018-10-31 13:10:516 INFO  Log4j:13 - face book
+2018-10-31 13:10:265 INFO  Log4j:13 - sourctype***APIsourcename>>>face book it alredy createdSource added Faild
+2018-10-31 13:10:828 INFO  Log4j:13 - API
+2018-10-31 13:10:186 INFO  Log4j:13 - twitter
+2018-10-31 13:10:880 INFO  Log4j:13 - sourctype***APIsourcename>>>twitter it alredy createdSource added Faild
+2018-10-31 13:10:964 INFO  Log4j:13 - Email
+2018-10-31 13:10:495 INFO  Log4j:13 - wtsapp
+2018-10-31 13:10:180 INFO  Log4j:13 - sourctype***Emailsourcename>>>wtsappSource added Successfully
+2018-10-31 13:10:794 INFO  Log4j:13 - Email
+2018-10-31 13:10:201 INFO  Log4j:13 - face book
+2018-10-31 13:10:61 INFO  Log4j:13 - sourctype***Emailsourcename>>>face bookSource added Successfully
+2018-10-31 13:10:634 INFO  Log4j:13 - Email
+2018-10-31 13:10:78 INFO  Log4j:13 - twitter
+2018-10-31 13:10:839 INFO  Log4j:13 - sourctype***Emailsourcename>>>twitterSource added Successfully
+2018-10-31 13:10:928 INFO  Log4j:13 - Inside Team
+2018-10-31 13:10:417 INFO  Log4j:13 - missed calls
+2018-10-31 13:10:239 INFO  Log4j:13 - sourctype***Inside Teamsourcename>>>missed callsSource added Successfully
+2018-10-31 13:10:23 INFO  Log4j:13 - Inside Team
+2018-10-31 13:10:592 INFO  Log4j:13 - Call Forwarding 
+2018-10-31 13:10:423 INFO  Log4j:13 - sourctype***Inside Teamsourcename>>>Call Forwarding Source added Successfully
+2018-10-31 13:10:16 INFO  Log4j:13 - Inside Team
+2018-10-31 13:10:545 INFO  Log4j:13 - Click To Call
+2018-10-31 13:10:265 INFO  Log4j:13 - sourctype***Inside Teamsourcename>>>Click To CallSource added Successfully

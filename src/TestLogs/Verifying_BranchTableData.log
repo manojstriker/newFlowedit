@@ -1,0 +1,92 @@
+2018-11-05 11:11:558 INFO  Log4j:18 - click the Organization 
+2018-11-05 11:11:388 INFO  Log4j:18 - click the Branches 
+2018-11-05 11:11:520 INFO  Log4j:18 -  Shift to Branches  
+2018-11-05 11:11:598 INFO  Log4j:18 - click the Organization 
+2018-11-05 11:11:471 INFO  Log4j:18 - click the Branches 
+2018-11-05 11:11:566 INFO  Log4j:18 -  Shift to Branches  
+2018-11-05 11:11:213 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-05 11:11:214 INFO  Log4j:18 - 1---- data is present in table
+2018-11-05 11:11:215 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-05 11:11:215 INFO  Log4j:18 - Striker---- data is present in table
+2018-11-05 11:11:216 INFO  Log4j:18 - Branch Name---- feture is present in table
+2018-11-05 11:11:216 INFO  Log4j:18 - hitech---- data is present in table
+2018-11-05 11:11:217 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-05 11:11:217 INFO  Log4j:18 - Active---- data is present in table
+2018-11-05 11:11:218 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-05 11:11:341 ERROR Log4j:24 - -----some  data is present in table
+2018-11-05 11:11:805 INFO  Log4j:18 - click the Organization 
+2018-11-05 11:11:685 INFO  Log4j:18 - click the Branches 
+2018-11-05 11:11:766 INFO  Log4j:18 -  Shift to Branches  
+2018-11-05 11:11:557 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-05 11:11:558 INFO  Log4j:18 - 1---- data is present in table
+2018-11-05 11:11:558 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-05 11:11:559 INFO  Log4j:18 - Striker---- data is present in table
+2018-11-05 11:11:561 INFO  Log4j:18 - Branch Name---- feture is present in table
+2018-11-05 11:11:562 INFO  Log4j:18 - hitech---- data is present in table
+2018-11-05 11:11:564 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-05 11:11:592 INFO  Log4j:18 - Active---- data is present in table
+2018-11-05 11:11:593 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-05 11:11:607 ERROR Log4j:24 - Update-----some  data is present in table
+2018-11-05 11:11:263 INFO  Log4j:18 - click the Organization 
+2018-11-05 11:11:67 INFO  Log4j:18 - click the Branches 
+2018-11-05 11:11:164 INFO  Log4j:18 -  Shift to Branches  
+2018-11-05 11:11:438 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:439 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:441 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:441 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:442 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:442 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:376 INFO  Log4j:18 - click the Organization 
+2018-11-05 11:11:232 INFO  Log4j:18 - click the Branches 
+2018-11-05 11:11:319 INFO  Log4j:18 -  Shift to Branches  
+2018-11-05 11:11:564 INFO  Log4j:18 - 1---- feture is present in table
+2018-11-05 11:11:565 INFO  Log4j:18 - Striker---- feture is present in table
+2018-11-05 11:11:565 INFO  Log4j:18 - hitech---- feture is present in table
+2018-11-05 11:11:565 INFO  Log4j:18 - Active---- feture is present in table
+2018-11-05 11:11:585 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:586 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:416 INFO  Log4j:18 - click the Organization 
+2018-11-05 11:11:277 INFO  Log4j:18 - click the Branches 
+2018-11-05 11:11:390 INFO  Log4j:18 -  Shift to Branches  
+2018-11-05 11:11:463 INFO  Log4j:18 - 1
+2018-11-05 11:11:540 INFO  Log4j:18 - Striker
+2018-11-05 11:11:602 INFO  Log4j:18 - hitech
+2018-11-05 11:11:674 INFO  Log4j:18 - Active
+2018-11-05 11:11:763 INFO  Log4j:18 - Update Delete
+2018-11-05 11:11:797 INFO  Log4j:18 - 1---- feture is present in table
+2018-11-05 11:11:804 INFO  Log4j:18 - Striker---- feture is present in table
+2018-11-05 11:11:805 INFO  Log4j:18 - hitech---- feture is present in table
+2018-11-05 11:11:805 INFO  Log4j:18 - Active---- feture is present in table
+2018-11-05 11:11:815 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:816 ERROR Log4j:24 - some fetures are missing
+2018-11-05 11:11:312 INFO  Log4j:18 - click the Organization 
+2018-11-05 11:11:145 INFO  Log4j:18 - click the Branches 
+2018-11-05 11:11:243 INFO  Log4j:18 -  Shift to Branches  
+2018-11-05 11:11:344 INFO  Log4j:18 - 1
+2018-11-05 11:11:427 INFO  Log4j:18 - Striker
+2018-11-05 11:11:490 INFO  Log4j:18 - hitech
+2018-11-05 11:11:583 INFO  Log4j:18 - Active
+2018-11-05 11:11:645 INFO  Log4j:18 - Update Delete
+2018-11-05 11:11:668 INFO  Log4j:18 - 1---- feture is present in table
+2018-11-05 11:11:669 INFO  Log4j:18 - Striker---- feture is present in table
+2018-11-05 11:11:669 INFO  Log4j:18 - hitech---- feture is present in table
+2018-11-05 11:11:669 INFO  Log4j:18 - Active---- feture is present in table
+2018-11-05 11:11:670 INFO  Log4j:18 - Update Delete---- feture is present in table
+2018-11-05 11:11:406 INFO  Log4j:18 - click the Organization 
+2018-11-05 11:11:236 INFO  Log4j:18 - click the Branches 
+2018-11-05 11:11:333 INFO  Log4j:18 -  Shift to Branches  
+2018-11-05 11:11:615 INFO  Log4j:18 - 1---- feture is present in table
+2018-11-05 11:11:616 INFO  Log4j:18 - Striker---- feture is present in table
+2018-11-05 11:11:616 INFO  Log4j:18 - hitech---- feture is present in table
+2018-11-05 11:11:625 INFO  Log4j:18 - Active---- feture is present in table
+2018-11-05 11:11:626 INFO  Log4j:18 - Update Delete---- feture is present in table
+2018-11-05 11:11:253 INFO  Log4j:18 - Sl.No---- feture is present in table
+2018-11-05 11:11:254 INFO  Log4j:18 - 1---- data is present in table
+2018-11-05 11:11:256 INFO  Log4j:18 - Company Name---- feture is present in table
+2018-11-05 11:11:256 INFO  Log4j:18 - Striker---- data is present in table
+2018-11-05 11:11:256 INFO  Log4j:18 - Branch Name---- feture is present in table
+2018-11-05 11:11:258 INFO  Log4j:18 - hitech---- data is present in table
+2018-11-05 11:11:259 INFO  Log4j:18 - Status---- feture is present in table
+2018-11-05 11:11:260 INFO  Log4j:18 - Active---- data is present in table
+2018-11-05 11:11:261 INFO  Log4j:18 - Action---- feture is present in table
+2018-11-05 11:11:262 INFO  Log4j:18 - Update Delete---- data is present in table

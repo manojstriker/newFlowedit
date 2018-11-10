@@ -1,0 +1,87 @@
+2018-10-27 10:10:483 INFO  Log4j:13 - clickhomebutton
+2018-10-27 10:10:898 INFO  Log4j:13 - clickProjectSetUp
+2018-10-27 10:10:558 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-27 10:10:469 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-27 10:10:778 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-27 10:10:46 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-27 10:10:354 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-27 11:10:612 INFO  Log4j:13 - clickhomebutton
+2018-10-27 11:10:436 INFO  Log4j:13 - clickProjectSetUp
+2018-10-27 11:10:26 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-27 11:10:797 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-27 11:10:169 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-27 11:10:394 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-27 11:10:690 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-27 13:10:353 INFO  Log4j:13 - clickhomebutton
+2018-10-27 13:10:213 INFO  Log4j:13 - clickProjectSetUp
+2018-10-27 13:10:48 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-27 13:10:770 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-27 13:10:80 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-27 13:10:339 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-27 13:10:150 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-27 13:10:426 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-27 13:10:724 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-27 13:10:52 INFO  Log4j:13 - clickSource_edit
+2018-10-27 13:10:546 INFO  Log4j:13 - delete_SourceTrackernode
+2018-10-27 13:10:936 INFO  Log4j:13 - clickhomebutton
+2018-10-27 13:10:68 INFO  Log4j:13 - clickProjectSetUp
+2018-10-27 13:10:939 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-27 13:10:720 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-27 13:10:82 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-27 13:10:321 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-27 13:10:588 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-27 13:10:129 INFO  Log4j:13 - clickhomebutton
+2018-10-27 13:10:756 INFO  Log4j:13 - clickProjectSetUp
+2018-10-27 13:10:578 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-27 13:10:57 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-27 13:10:423 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-27 13:10:677 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-27 13:10:982 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-27 13:10:229 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-27 13:10:558 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-27 13:10:849 INFO  Log4j:13 - clickSource_edit
+2018-10-27 13:10:304 INFO  Log4j:13 - delete_SourceTrackernode
+2018-10-27 13:10:438 INFO  Log4j:13 - clickhomebutton
+2018-10-27 13:10:241 INFO  Log4j:13 - clickProjectSetUp
+2018-10-27 13:10:937 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-27 13:10:365 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-27 13:10:723 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-27 13:10:969 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-27 13:10:319 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-27 13:10:584 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-27 13:10:918 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-27 13:10:214 INFO  Log4j:13 - clickSource_edit
+2018-10-27 13:10:16 INFO  Log4j:13 - delete_SourceTrackernode
+2018-10-27 15:10:685 INFO  Log4j:13 - clickhomebutton
+2018-10-27 15:10:456 INFO  Log4j:13 - clickProjectSetUp
+2018-10-27 15:10:251 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-27 15:10:717 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-27 15:10:82 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-27 15:10:327 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-27 15:10:639 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-27 15:10:871 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-27 15:10:683 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-27 15:10:973 INFO  Log4j:13 - clickSource_edit
+2018-10-27 15:10:469 INFO  Log4j:13 - delete_SourceTrackernode
+2018-10-29 15:10:333 INFO  Log4j:13 - clickhomebutton
+2018-10-29 15:10:536 INFO  Log4j:13 - clickProjectSetUp
+2018-10-29 15:10:584 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-29 15:10:902 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-29 15:10:248 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-29 15:10:492 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-29 15:10:843 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-29 15:10:83 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-29 15:10:388 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-29 15:10:712 INFO  Log4j:13 - clickSource_edit
+2018-10-29 15:10:771 INFO  Log4j:13 - delete_SourceTrackernode
+2018-10-29 16:10:506 INFO  Log4j:13 - clickhomebutton
+2018-10-29 16:10:719 INFO  Log4j:13 - clickProjectSetUp
+2018-10-29 16:10:729 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-29 16:10:80 INFO  Log4j:13 - clickSourceManagemenet_UpperBord
+2018-10-29 16:10:406 INFO  Log4j:13 - clickSourceManagemenet_lowerBord
+2018-10-29 16:10:671 INFO  Log4j:13 - clickSourceTracker_UpperBord
+2018-10-29 16:10:946 INFO  Log4j:13 - clickSourceTracker_lowerBord
+2018-10-29 16:10:931 INFO  Log4j:13 - clickSources_UpperBord()
+2018-10-29 16:10:268 INFO  Log4j:13 - clickSource_lowerBord
+2018-10-29 16:10:579 INFO  Log4j:13 - clickSource_edit
+2018-10-29 16:10:821 INFO  Log4j:13 - delete_SourceTrackernode

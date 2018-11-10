@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+**********Add User Hierarchy******
+<dataset name="AddUserHierarchy">
+<Company>Striker</Company>
+<User_Role>Manager</User_Role>
+<Hierarchy_Name>Testing_manager</Hierarchy_Name>
+<Level>Level 2</Level>
+<Reporting_to>COO</Reporting_to>
+</dataset>
+*******************DepartmentsHierarchytablefeatures***********************
+<dataset name="DepartmentsHierarchytablefeatures">
+<features>Sl.No/Company Name/Role/User Hierarchy/Level/Reporting to/Status/Action</features>
+</dataset>
+
+
+</Testdata>
+	

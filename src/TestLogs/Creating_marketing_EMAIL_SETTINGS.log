@@ -1,0 +1,18 @@
+2018-10-26 17:10:421 INFO  Log4j:13 - clickhomebutton
+2018-10-26 17:10:392 INFO  Log4j:13 - clickProjectSetUp
+2018-10-26 17:10:427 INFO  Log4j:13 -  clickFlowEdit buttion
+2018-10-26 17:10:898 INFO  Log4j:13 - click on the ProjectManagement_upperbord
+2018-10-26 17:10:314 INFO  Log4j:13 - clickOn_projuctManagement_lowerbord
+2018-10-26 17:10:578 INFO  Log4j:13 - click On Template_Settings_upper
+2018-10-26 17:10:841 INFO  Log4j:13 -  ClickOn_Template_Settings_Lowerbord
+2018-10-26 17:10:101 INFO  Log4j:13 - clickOn_Email_Upperbord
+2018-10-26 17:10:398 INFO  Log4j:13 - ClickOn_Email_Lowerbord
+2018-10-26 17:10:638 INFO  Log4j:13 - clickOn_MARKETING_EMAIL_SETTINGS_Upperbord
+2018-10-26 17:10:908 INFO  Log4j:13 - ClickOn_MARKETING_EMAIL_SETTINGS_Lowerbord
+2018-10-26 17:10:120 INFO  Log4j:13 - clickOn_MARKETING_EMAIL_SETTINGS_Editoption
+2018-10-26 17:10:515 INFO  Log4j:13 - select the compnay name
+2018-10-26 17:10:249 INFO  Log4j:13 - enter the from email
+2018-10-26 17:10:999 INFO  Log4j:13 - enter the To email
+2018-10-26 17:10:680 INFO  Log4j:13 - enter the CC
+2018-10-26 17:10:374 INFO  Log4j:13 - enter the BCC
+2018-10-26 17:10:187 INFO  Log4j:13 - click the Save

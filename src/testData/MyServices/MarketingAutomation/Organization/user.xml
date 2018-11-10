@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Testdata>
+<dataset name="userTableFeatures">
+<UserTable_Features>Sl.No/Company Name/User Name/First Name/Last Name/Mobile/Email/Department/Division/Reporting To/Status/Privileges/Services/Is Available/Is Acc Locked/Action</UserTable_Features>
+</dataset>
+
+*************user CXO creation*************
+<dataset name ="cxo_user">
+<username>manojkumar</username>
+<password>Striker@123</password>
+<ConfirmPassword>Striker@123</ConfirmPassword>
+<FistName>manoj</FistName>
+<LastName>kumar</LastName>
+<Emailaddress>manoj.k@gmail.com</Emailaddress>
+<Mobilenumber>8919184272</Mobilenumber>
+<Company_name>Striker</Company_name>
+<ADDBranchName>kphb</ADDBranchName>
+<AddDivision>marketing</AddDivision>
+<AddUserRole>MD</AddUserRole>
+<AddUserRoles>MD</AddUserRoles>
+<seleteLevel>Level 1</seleteLevel>
+<SelectReportingRole>Admin</SelectReportingRole>
+<Reportingto></Reportingto>
+<Country>1_INDIA</Country>
+<state>TELANGANA</state>
+<city>Belampalli</city>
+<ContactAddress>TELANGANA,Belampalli</ContactAddress>
+<PinCode>500089</PinCode>
+<JoiningDateManth>Jul</JoiningDateManth>
+<JoiningDateyear>2017</JoiningDateyear>
+<EmployeeID>11kq1a1</EmployeeID>
+<DateOfBirthmanth>Jul</DateOfBirthmanth> 
+<DateOfBirthyear>2000</DateOfBirthyear>
+<Status>Active</Status>
+</dataset>
+
+
+*********************manager creation ***********
+<dataset name ="manager_user">
+
+<username>sundeep</username>
+<password>Striker@123</password>
+<ConfirmPassword>Striker@123</ConfirmPassword>
+<FistName>manoj</FistName>
+<LastName>kumar</LastName>
+<Emailaddress>sundeep.n@gmail.com</Emailaddress>
+<Mobilenumber>8500563032</Mobilenumber>
+<Company_name>Striker</Company_name>
+<ADDBranchName>madhapur</ADDBranchName>
+<AddDivision>insideTeam</AddDivision>
+<AddUserRole>manager4</AddUserRole>
+<seleteLevel>Level 4</seleteLevel>
+<SelectReportingRole>CXO</SelectReportingRole>
+<AddUserRoles>manager4</AddUserRoles>
+<Reportingto></Reportingto>
+<Country>1_INDIA</Country>
+<state>TELANGANA</state>
+<city>Belampalli</city>
+<ContactAddress>TELANGANA,Belampalli</ContactAddress>
+<PinCode>500089</PinCode>
+<JoiningDateManth>Jul</JoiningDateManth>
+<JoiningDateyear>2017</JoiningDateyear>
+<EmployeeID>11kq1a12</EmployeeID>
+<DateOfBirthmanth>Jul</DateOfBirthmanth> 
+<DateOfBirthyear>1993</DateOfBirthyear>
+<Status>Active</Status>
+</dataset>
+******************edit data*****************
+<dataset name ="cxo_user_edit">
+<username>manojkumar</username>
+<FistName>manoj</FistName>
+<LastName>koppnadham</LastName>
+<Emailaddress>manoj.k@gmail.com</Emailaddress>
+<Mobilenumber>8919184272</Mobilenumber>
+<Branchname>madhapur</Branchname>
+<DivisionName>marketing</DivisionName>
+<UserRole>MD( Level 1)</UserRole>
+<seleteLevel>Level 1</seleteLevel>
+<SelectReportingRole>Admin</SelectReportingRole>
+
+<Country>INDIA</Country>
+<state>TELANGANA</state>
+<city>Belampalli</city>
+<ContactAddress>TELANGANA,Belampalli</ContactAddress>
+<PinCode>500089</PinCode>
+<JoiningDateManth>Jul</JoiningDateManth>
+<JoiningDateyear>2017</JoiningDateyear>
+<EmployeeID>11kq1a1</EmployeeID>
+<DateOfBirthmanth>Jul</DateOfBirthmanth> 
+<DateOfBirthyear>2000</DateOfBirthyear>
+<Status>Active</Status>
+<acountyes_No>No</acountyes_No>
+
+
+
+
+</dataset>
+
+
+
+</Testdata>
