@@ -695,7 +695,7 @@ public class ProjectSetUpComponeat {
     public String getpasswordNotification(String passwrod) throws InterruptedException
        {	
     	
-    	   if(passwrod!=null) {
+    	     if(passwrod!=null) {
     		   Sync.procesWait(3000);
     		   UTF.inputText("id", "password", passwrod);
     		   Thread.sleep(2000);
@@ -765,20 +765,8 @@ public class ProjectSetUpComponeat {
 	    	}
        
        public void addbranchInManager(String Branchname) {
-    	  
-    	 Sync.procesWait(2000);
-    	 //List<WebElement> totalbrancs=UTF.findelements("xpath", ".//*[@id='Branch_ID']");
-    	    
-    	    /*for(WebElement totalbrancsnames:totalbrancs) {
-    		 Log4j.infoLog(totalbrancsnames.getText());
-    		 while(totalbrancsnames.getText().equals(Branchname)) {
-    			 Sync.procesWait(2000);
-    			 UTF.selectByVisibleText("id", "Branch_ID",Branchname );
-    		   
-    		 }
-    		 }*/
-    	
-			 UTF.findElement("id", "addDesg").click();
+    	     Sync.procesWait(2000);
+    	     UTF.findElement("id", "addDesg").click();
 			 Sync.procesWait(2000);
 	  	     UTF.inputText("xpath", ".//*[@id='designtn']",Branchname );
 	  	     UTF.clickelement("id", "designatins");
@@ -883,10 +871,6 @@ public class ProjectSetUpComponeat {
 	     String DateOfBirthmonth=readData.getdata(datasetname, "DateOfBirthmanth");
 	     String DateOfBirthyear=readData.getdata(datasetname, "DateOfBirthyear");
 	   
-	     
-	     
-	     
-	    
 	     Sync.procesWait(2000);
 	     UTF.inputText("id", "username", username);
 	     Log4j.infoLog("enter the user name");
@@ -909,9 +893,7 @@ public class ProjectSetUpComponeat {
 	     
 	     addbranchInManager(ADDBranchName);
 	     
-         
-	     
-	     addDivisionInmanager(AddDivision);
+         addDivisionInmanager(AddDivision);
 	     
 	     adduserRolesInManager(AddUserRole,seleteLevel,SelectReportingRole,AddUserRoles);
 	     Sync.procesWait(2000);
@@ -955,131 +937,9 @@ public class ProjectSetUpComponeat {
 	     Log4j.infoLog("Day selected ");
 	     Sync.procesWait(2000);
 	     managersubmitbuttion();
-	     
-	     /*UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
-	     Sync.procesWait(2000);
-	     Log4j.infoLog("switch the frame");
-	     UTF.clickelement("xpath", ".//*[@id='action']/img");
-	     Log4j.infoLog("click the pluse button");
-	    
-	     Sync.procesWait(2000);
-	     UTF.inputText("id", "username", username);
-	     Log4j.infoLog("enter the user name");
-	     UTF.inputText("id", "password", password);
-	     Log4j.infoLog("enter the password");
-	     UTF.inputText("id", "conf_password", ConfirmPassword);
-	     Log4j.infoLog("enter the confirmpassword");
-	     UTF.inputText("id", "First_Name", FistName);
-	     Log4j.infoLog("enter the FistName");
-	     UTF.inputText("id", "Last_Name", LastName);
-	     Log4j.infoLog("enter LastName");
-	     UTF.inputText("name", "Email_ID",Emailaddress);
-	     Log4j.infoLog("enter Emailaddress");
-	     UTF.inputText("id", "Mobile_Number", Mobilenumber);
-	     Log4j.infoLog("enter Mobilenumber");
-	     UTF.selectByValue("id", "Company_ID","125_striker" );
-	     Log4j.infoLog("select the company");
-	     UTF.findElement("id", "addDesg").click();
-	     Sync.procesWait(2000);
-	     UTF.inputText("id", "designtn",ADDBranchName );
-	     Log4j.infoLog("enter the ADDBranchName ");
-	     UTF.clickelement("xpath", ".//*[@id='designationadd']/following::button");
-	     Log4j.infoLog("close the popup branchname ");
-	   
-	     UTF.clickelement("id", "designatins");
-	     UTF.selectByVisibleText("id", "Branch_ID", ADDBranchName);
-	     Log4j.infoLog("select the branch  ");
-	    
-	     Sync.procesWait(2000);
-	     UTF.clickelement("id", "addGroup");
-	     Log4j.infoLog("click the  addGroup");
-	     Sync.procesWait(2000);
-	     UTF.inputText("id", "group",AddDivision );
-	     Log4j.infoLog("enter the AddDivision ");
-	     UTF.clickelement("id", "groups");
-	     Log4j.infoLog("click the  ADDbuttion");
-	     UTF.clickelement("xpath", ".//*[@id='groupadd']/following::button");
-	     Log4j.infoLog("click the  closebutton");
-	     UTF.selectByVisibleText("id", "Group_ID",AddDivision );
-	     Log4j.infoLog("select the AddDivision");
-	     
-	     
-	     UTF.clickelement("id", "addUserrole");
-	     Log4j.infoLog("click the addUserrole");
-	     Sync.procesWait(2000);
-	     UTF.inputText("id", "deptname", AddUserRole);
-	     Log4j.infoLog("enter userrole");
-	     Sync.procesWait(2000);
-	     UTF.selectByValue("id", "Dept_Level", seleteLevel);
-	    
-	     Log4j.infoLog("select the level");
-	     Sync.procesWait(2000);
-	     UTF.selectByVisibleText("id", "Reporting_Dept", SelectReportingRole);
-	     Log4j.infoLog("select the ReportingRole");
-	     UTF.clickelement("id", "userroles");
-	     Log4j.infoLog("click the addbutton");
-	     UTF.clickelement("cssSelector", ".close");
-	     Log4j.infoLog("click the close button");
-	     
-	     UTF.selectByVisibleText("id", "Dept_ID", AddUserRoles);
-	     Log4j.infoLog("select the add user role");
-	     
-	     Sync.procesWait(2000);
-	     UTF.selectByVisibleText("id", "Reporting_Dept_UserId", SelectReportingRole);
-	     Log4j.infoLog("select the deporting");
-	     
-	     UTF.selectByValue("id", "countryid", Country);
-	     Log4j.infoLog("select the Country");
-	     UTF.selectByVisibleText("id", "stateid",state );
-	     Log4j.infoLog("select the state");
-	     UTF.selectByVisibleText("id", "cityid", city);
-	     Log4j.infoLog("select the city");
-	     UTF.inputText("id", "Contact_Address", ContactAddress);
-	     Log4j.infoLog("select the ContactAddress");
-	     UTF.inputText("id", "Pincode", PinCode);
-	     Log4j.infoLog("select the PinCode");
-	     
-	     UTF.clickelement("id", "DOJ");
-	     Log4j.infoLog("select Date of join ");
-	     
-	     UTF.selectByVisibleText("className", "ui-datepicker-month", JoiningDateMonth);
-	     Log4j.infoLog("select JoiningDateManth ");
-	    
-	     UTF.selectByValue("className", "ui-datepicker-year", JoiningDateyear);
-	     Log4j.infoLog("select JoiningDateyear ");
-	     UTF.clickelement("partialLinkText", "6");
-	     Log4j.infoLog("select DAY ");
-	     UTF.inputText("id", "Emp_ID", EmployeeID);
-	     Log4j.infoLog("EmployeeID ");
-	  
-	     UTF.clickelement("id", "DOB");
-	     Log4j.infoLog("select DateOfBirth ");
-	     Sync.procesWait(2000);
-	     UTF.selectByVisibleText("className", "ui-datepicker-month", DateOfBirthmonth);
-	     Log4j.infoLog("select DateOfBirth month ");
-	    
-	     Sync.procesWait(2000);
-	     UTF.selectByValue("className", "ui-datepicker-year", DateOfBirthyear);
-	     Log4j.infoLog("select DateOfBirthyear ");
-	     UTF.clickelement("partialLinkText", "6");
-	     Log4j.infoLog("Day selected ");
-	     Sync.procesWait(2000);
-	     // clickSave_Save();
-	     managersubmitbuttion();
-	     // UTF.clickelement("xpath", ".//*[@id='usersubmit']");
-	     // UTF.javaScriptclick("xpath", ".//input[@id='usersubmit']");
-	     // UTF.doubleclick("xpath",".//input[@id='usersubmit']");
-	     //Log4j.infoLog("click submit ");
-	     
-	     /*UTF.clickelement("xpath", ".//*[@id='adduser']/div[21]/button");
-	     Log4j.infoLog("click the cancile ");
-	     */
-	     
-	  
-   }
+	     }
 
-     
-     public void edit_flows_settingfor_manger()   {
+      public void edit_flows_settingfor_manger()   {
     	 Sync.procesWait(4000);
     	if( UTF.findElement("id", "MARKETING_USER_MANAGER").getText().equals("Manager")) {
     		clickOn_Manager_Editoption() ;
@@ -1863,10 +1723,10 @@ public class ProjectSetUpComponeat {
         	 
          }
          public void click_properties() {
-        	 UTF.clickelement("xpath", ".//[@class='properties']");
+        	 UTF.clickelement("xpath", ".//*[@class='properties']");
         	 Log4j.infoLog("click the properties");
          }
-        public void  Click_Default_Templates() {
+        public void  Click_Default_Templates_LandingPage() {
         	 UTF.clickelement("xpath", ".//*[text()='Default Templates']");
         	 Log4j.infoLog("click the Default_Templates");
         	 List<WebElement> Default_Templates=UTF.findelements("xpath", "//*[@id='layouts1']/ul/li");
@@ -1892,11 +1752,11 @@ public class ProjectSetUpComponeat {
             }
         
         public void clicktools() {
-        	UTF.clickelement("xpath", ".//*[@class='tools active']");
+        	UTF.clickelement("xpath", ".//*[@title='Tools']");
         	Log4j.infoLog("tootls is click");
       
             }
-        public void verifying_toolsbutton() {
+        public void verifying_toolsbutton_landingPage() {
         	List<WebElement>tools=UTF.findelements("xpath", ".//*[@id='tools']/ul/li");
         	if(tools.size()==9) {
               	 Log4j.infoLog("total  tools are present");
@@ -1918,7 +1778,9 @@ public class ProjectSetUpComponeat {
            	 Log4j.infoLog("some Text tools are missing ");
            	 Assert.fail();
              }
+        	
         	 }
+        
         
         public void clickTextTool_Related(String texttool) {
         	UTF.clickelement("xpath", "//*[text()='"+texttool+"']");
@@ -2085,9 +1947,273 @@ public class ProjectSetUpComponeat {
         }
         
         
+    
         
+        public void SaveTemplate(String datasheetname) throws Exception {
+        	String templatename=readData.getdata(datasheetname, "templatename");
+        	String divisionName=readData.getdata(datasheetname, "divisionName");
+        	String eventname=readData.getdata(datasheetname, "eventname");
+        	String downloadfrom=readData.getdata(datasheetname, "downloadfrom");
+        	String verificationFromYes_No=readData.getdata(datasheetname, "verificationFromYes_No");
+        	UTF.inputText("xpath", "//*[@name='templateName']", templatename);
+        	Log4j.infoLog("template name is enter");
+        	UTF.selectByVisibleText("xpath", "//*[@name='category_divisions']",divisionName);
+        	Log4j.infoLog("select division");
+        	UTF.selectByVisibleText("xpath", "//*[@name='form_event_name']", eventname);
+        	Log4j.infoLog("select event name");
+        	selectDonloadFrom(downloadfrom);
+        	verificationFromYes_No(verificationFromYes_No);
+        	UTF.clickelement("xpath", ".//*[text()='Save']");
+        }
         
+      
+      public void selectDonloadFrom(String selectfrom) {
+    	  UTF.selectByVisibleText("xpath", "//*[@name='templateFile']", selectfrom);
+    	
+      }
+      public void verificationFromYes_No(String status) {
+    	  if(status.equals("Yes")) {
+    		  UTF.findElement("xpath", ".//*[@id='formSave-template']/div/div/div[8]/div[3]/input[1]");
+    	  }
+    	  else {
+    		  UTF.findElement("xpath", ".//*[@id='formSave-template']/div/div/div[8]/div[3]/input[2]");
+    	  }
+      }
+      
+    /*
+     * this node builder--->formsnode
+     * 
+     * formsnode
+     * 
+     */
+      public void click_formsNode_UpperBord() {
+    	   Sync.procesWait(2000);
+    	   UTF.clickelement("xpath", "//*[@index='MARKETING_WEB_TRAFFIC_FORM|append_values_114']");
+    	   Log4j.infoLog("click_forms_UpperBord");
+    	   }
         
+      public void click_formsNode_lowerBord() {
+         UTF.clickelement("xpath", "//*[contains(@title, 'Form')]/div");
+         Log4j.infoLog("click_forms_lowerBord");
+         }
+      public void click_formsnode_edit() {
+         UTF.clickelement("xpath", ".//span[@id='MARKETING_WEB_TRAFFIC_FORM']/following::button[2]");
+  	   Log4j.infoLog(" click_forms_edit");
+  	   }
+      public void delete_formsNode() {
+         UTF.clickelement("xpath", ".//span[@id='MARKETING_WEB_TRAFFIC_FORM']/following::button[1]");
+         UTF.clickelement("partialLinkText", "Yes");
+         Log4j.infoLog("delete_landingpage");
+         }
+      
+      public void  Click_Default_Templates_forms() {
+     	 UTF.clickelement("xpath", ".//*[text()='Default Templates']");
+     	 Log4j.infoLog("click the Default_Templates");
+     	 List<WebElement> Default_Templates=UTF.findelements("xpath", "//*[@id='layouts1']/ul/li");
+     	 if(Default_Templates.size()==12) {
+         	  Log4j.infoLog("defalt frames are present");
+           }
+           else {
+         	  Log4j.infoLog("defalt frames are missing ");
+         	  Assert.fail();
+           }
+      }
+      
+      
+      public void saveTemplate_FormsNode(String datasheetname) throws Exception {
+    		String templatename=readData.getdata(datasheetname, "templatename");
+    		String leadform=readData.getdata(datasheetname, "leadform");
+        	String divisionName=readData.getdata(datasheetname, "divisionName");
+        	String eventname=readData.getdata(datasheetname, "eventname");
+        	String downloadfrom=readData.getdata(datasheetname, "downloadfrom");
+        	String verificationFromYes_No=readData.getdata(datasheetname, "verificationFromYes_No");
+        	UTF.inputText("xpath", "//*[@name='templateName']", templatename);
+        	Log4j.infoLog("template name is enter");
+        	
+        	UTF.selectByVisibleText("xpath", ".//*[@name='form_type']", leadform);
+        	Log4j.infoLog("select the leadfrom");
+        	
+        	UTF.selectByVisibleText("xpath", "//*[@name='category_divisions']",divisionName);
+        	Log4j.infoLog("select division");
+        	UTF.selectByVisibleText("xpath", "//*[@name='form_event_name']", eventname);
+        	Log4j.infoLog("select event name");
+        	selectDonloadFrom(downloadfrom);
+        	verificationFromYes_No(verificationFromYes_No);
+        	UTF.clickelement("xpath", ".//*[text()='Save']");
+         }
+      
+      
+     
+      /*
+       *Builder---> EmailTemplates
+       *EmailTemplatesNode
+       * 
+       * 
+       */
+      
+      public void click_EmailTemplates_UpperBord() {
+   	    Sync.procesWait(2000);
+   	    UTF.clickelement("xpath", "//*[@index='MARKETING_EMAIL_TEMPLETES|append_values_115']");
+   	    Log4j.infoLog("click_EmailTemplates_UpperBord");
+   	    }
+       
+      public void click_EmailTemplates_lowerBord() {
+        UTF.clickelement("xpath", "//*[contains(@title, 'Email Templates')]/div");
+        Log4j.infoLog("click_EmailTemplates_lowerBord");
+        }
+      public void click_EmailTemplates_edit() {
+        UTF.clickelement("xpath", ".//span[@id='MARKETING_EMAIL_TEMPLETES']/following::button[2]");
+ 	    Log4j.infoLog(" click_EmailTemplates_edit");
+ 	    }
+      public void delete_EmailTemplates_Node() {
+        UTF.clickelement("xpath", ".//span[@id='MARKETING_EMAIL_TEMPLETES']/following::button[1]");
+        UTF.clickelement("partialLinkText", "Yes");
+        Log4j.infoLog("delete_EmailTemplates");
+        }
+      
+      public void  Click_Default_Templates_EmailTemplates() {
+      	 UTF.clickelement("xpath", ".//*[text()='Default Templates']");
+      	 Log4j.infoLog("click the Default_Templates");
+      	 List<WebElement> Default_Templates=UTF.findelements("xpath", "//*[@id='layouts1']/ul/li");
+      	 if(Default_Templates.size()==5) {
+            Log4j.infoLog("defalt frames are present");
+            }
+       else {
+          	 Log4j.errorLogLog("defalt frames are missing ");
+          	 Assert.fail();
+            }
+            }
+      
+      
+     public void clickTextTool_EmailTemplates() {
+     	UTF.clickelement("xpath", ".//li[@class='textframehide text-active active']/a");
+     	List<WebElement> textTools=UTF.findelements("xpath", ".//*[@id='text']/ul/li");
+     	if(textTools.size()==21) {
+        	Log4j.infoLog("total text tools are present");
+            }
+       else {
+        	Log4j.infoLog("some Text tools are missing ");
+        	Assert.fail();
+            }
+     	    }
+      public void verifyingStandardFields_EmailTemplates() {
+      	 UTF.clickelement("xpath", ".//li[@class='textframehide text-active active']/a");
+      	 List<WebElement> textTools=UTF.findelements("xpath", "//h5[text()='Standard Fields']/following-sibling::li");
+      	 if(textTools.size()==4 ) {
+         	 Log4j.infoLog("total text tools are present");
+             }
+        else {
+         	 Log4j.infoLog("some Text tools are missing ");
+         	 Assert.fail();
+             }
+      	     }
+      public void click_FistName() {
+    	  UTF.clickelement("xpath", "//*[text()='[[ First Name ]]']");
+    	  Log4j.infoLog("click_FistName");
+      }
+      public void click_LastName() {
+    	  UTF.clickelement("xpath", "//*[text()='[[ Last Name ]]']");
+    	  Log4j.infoLog("click_LastNamee");
+      }
+      public void click_Email() {
+    	  UTF.clickelement("xpath", "//*[text()='[[ Email ]']");
+    	  Log4j.infoLog("click_Email");
+      }
+      public void click_Mobileno() {
+    	  UTF.clickelement("xpath", "//*[text()='[[ Mobile no ]]']");
+    	  Log4j.infoLog("click_Mobileno");
+      }
+   
+      
+      public void Creating_EmailTemplate(String datasheetname) throws Exception {
+    	
+      	String eventname=readData.getdata(datasheetname, "eventname");
+      	String templateName=readData.getdata(datasheetname, "templateName");
+      	
+    	UTF.selectByVisibleText("xpath", ".//*[@id='emailcampaignlist']", eventname);
+      	Log4j.infoLog("select the event");
+      	
+      	UTF.inputText("xpath", "//*[@name='email_tempname']", templateName);
+      	Log4j.infoLog("enter templateName");
+      	UTF.clickelement("xpath", "//button[text()='Save']");
+      	Log4j.infoLog("clcik the save button template creation");
+      
+      }
+      
+      /*
+       * Builder--->FeedbeckNode
+       * FeedbeckNode
+       */
+       public void click_FeedbeckNode_UpperBord() {
+     	    Sync.procesWait(2000);
+     	    UTF.clickelement("xpath", "//*[@index='MARKETING_FEEDBACK|append_values_113']");
+     	    Log4j.infoLog("click_FeedbeckNode_UpperBord");
+     	    }
+         
+       public void click_FeedbeckNode_lowerBord() {
+            UTF.clickelement("xpath", "//*[contains(@title, 'Feedback')]/div");
+            Log4j.infoLog("click_FeedbeckNode_lowerBord");
+            }
+       public void click_FeedbeckNode_edit() {
+            UTF.clickelement("xpath", ".//span[@id='MARKETING_FEEDBACK']/following::button[2]");
+   	        Log4j.infoLog(" click_FeedbeckNode_edit");
+   	        }
+       public void delete_FeedbeckNode_Node() {
+            UTF.clickelement("xpath", ".//span[@id='MARKETING_FEEDBACK']/following::button[1]");
+            UTF.clickelement("partialLinkText", "Yes");
+            Log4j.infoLog("delete_FeedbeckNode_Node");
+            }
+        
+       public void clickTextTool_FeedbeckNode() {
+    	   UTF.clickelement("xpath", "//a[@title='Text Tools']");
+    	   UTF.clickelement("xpath", ".//li[@class='textframehide text-active active']/a");
+      	   List<WebElement> textTools=UTF.findelements("xpath", ".//*[@id='text']/ul[1]/li");
+      	   if(textTools.size()==7) {
+         	  Log4j.infoLog("total text tools are present");
+              }
+           else
+              {
+         	  Log4j.infoLog("some Text tools are missing ");
+         	  Assert.fail();
+              }
+              }
+       
+      
+       public void click_customform_tool_FeedbackTool() {
+        	 UTF.click("xpath", ".//*[@id='tools']/ul/li[5]");
+      	     Log4j.infoLog("customform_tool is click ");
+      	     List<WebElement> Standard_Form_Tool=UTF.findelements("xpath", ".//*[@id='custom']/ul/li");
+      	     if(Standard_Form_Tool.size()==9) {
+         	 Log4j.infoLog("total customform_tool are present");
+             }
+             else {
+         	 Log4j.infoLog("some customform_tool are missing ");
+         	 Assert.fail();
+             }
+             }
+      public void click_customform_tool_Related_FeedbackTool(String customform_tool ) {
+      	     UTF.click("xpath", "//*[text()='"+customform_tool+"']");
+      	     Log4j.infoLog(customform_tool+"-----> is clicked");
+             }
+      public void saveTemplate_Feedbeck(String datasheetname) throws Exception {
+  		     String templatename=readData.getdata(datasheetname, "templatename");
+  		
+      	     String divisionName=readData.getdata(datasheetname, "divisionName");
+      	     String eventname=readData.getdata(datasheetname, "eventname");
+        
+      	     UTF.inputText("xpath", "//*[@name='templateName']", templatename);
+      	     Log4j.infoLog("template name is enter");
+      	
+      	     UTF.selectByVisibleText("xpath", "//*[@name='category_divisions']",divisionName);
+      	     Log4j.infoLog("select division");
+      	
+      	     UTF.selectByVisibleText("xpath", "//*[@name='form_event_name']", eventname);
+      	     Log4j.infoLog("select event name");
+      	     UTF.clickelement("xpath", ".//*[text()='Save']");
+       }
+      
+      
+      
         
         /*
          * Short Url
@@ -2298,7 +2424,7 @@ public class ProjectSetUpComponeat {
         	 UTF.selectByVisibleText("id", "source_name", Source_Name);
         	 Log4j.infoLog(Source_Name+"=====>Source_Name");
         	 
-        	 UTF.clickelement("xpath", ".//*[@id='fieldwisescore']/div/div[6]/div/a[1]");
+        	 UTF.clickelement("xpath", ".//*[@id='fieldwise	']/div/div[6]/div/a[1]");
         	 Log4j.infoLog("click the refresh button"); 
         	 
         	 UTF.selectByVisibleText("id", "did_number", Virtual_Number);
@@ -2656,6 +2782,7 @@ public class ProjectSetUpComponeat {
   	     }
        public void delete_CONNECTOR_Node() {
           UTF.clickelement("xpath", ".//span[@id='MARKETING_CONNECTOR']/following::button[2]");
+          
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_SourceTrackernode");
           } 
@@ -2712,23 +2839,22 @@ public class ProjectSetUpComponeat {
        *  
        */
        
+     
        public void click_SocialMedia_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_36,append_values_100,MARKETING_SOCIAL_MEDIA'", 40);
-     	   UTF.clickelement("id", "append_values_36,append_values_100,MARKETING_SOCIAL_MEDIA'");
-     	   Log4j.infoLog("click_SocialMedia_UpperBord()");
+     	    Sync.procesWait(2000);
+     	    UTF.clickelement("xpath", "//*[@index='MARKETING_SOCIAL_MEDIA|append_values_100']");
+     	    Log4j.infoLog("click_SocialMedia_UpperBord()");
      	   }
          
        public void click_SocialMedia_lowerBord() {
-          Sync.elementToBeClickable("xpath", "//*[contains(@title, 'Social Media')]/div", 40);
-          UTF.clickelement("xpath", "//*[contains(@title, 'Social Media')]/div");
-          Log4j.infoLog("click_SocialMedia_lowerBord");
+           
+            UTF.clickelement("xpath", "//*[contains(@title, 'Social Media')]/div");
+            Log4j.infoLog("click_SocialMedia_lowerBord");
           }
        public void delete_SocialMedia_Node() {
-           Sync.elementToBeClickable("xpath", ".//span[@id='MARKETING_SOCIAL_MEDIA']/following::button[1]", 40);
-           UTF.clickelement("xpath", ".//span[@id='MARKETING_SOCIAL_MEDIA']/following::button[1]");
-           Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
-           UTF.clickelement("partialLinkText", "Yes");
-           Log4j.infoLog("delete_SourceTrackernode");
+            UTF.clickelement("xpath", ".//span[@id='MARKETING_SOCIAL_MEDIA']/following::button[1]");
+            UTF.clickelement("partialLinkText", "Yes");
+            Log4j.infoLog("delete_SourceTrackernode");
            } 
        
        /*
@@ -2739,26 +2865,23 @@ public class ProjectSetUpComponeat {
         *  
         */
        public void click_Socialmediasource_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_100,append_values_101,MARKETING_SOCIAL_SOURCE", 40);
-     	   UTF.clickelement("id", "append_values_100,append_values_101,MARKETING_SOCIAL_SOURCE");
+     	   Sync.procesWait(2000);
+     	   UTF.clickelement("xpath", "//*[@index='MARKETING_SOCIAL_SOURCE|append_values_101']");
      	   Log4j.infoLog(" click_Socialmediasource_UpperBord");
      	   }
          
        public void click_Socialmediasource_lowerBord() {
           Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Social media source')]/div", 40);
-          UTF.clickelement("xpath", ".//*[contains(@title, 'Social media source')]/div");
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Social media source')]");
           Log4j.infoLog("click_Socialmediasource_lowerBord");
           }
        public void click_Socialmediasource_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOCIAL_SOURCE']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_SOCIAL_SOURCE']");
+          UTF.clickelement("xpath", ".//span[@id='MARKETING_SOCIAL_SOURCE']/following::button[2]");
   	      Log4j.infoLog("click_Socialmediasource_edit");
   	     
   	      }
        public void delete_Socialmediasource_Node() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOCIAL_SOURCE']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_SOCIAL_SOURCE']/following::button[1]");
-          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
+    	  UTF.clickelement("xpath", ".//span[@id='MARKETING_SOCIAL_SOURCE']/following::button[1]");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_Socialmediasource_Node");
           } 
@@ -2771,28 +2894,24 @@ public class ProjectSetUpComponeat {
         *  
         */
        public void click_Addposting_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_100,append_values_102,MARKETING_ADD_POSTING", 40);
-     	   UTF.clickelement("id", "append_values_100,append_values_102,MARKETING_ADD_POSTING");
+    	   Sync.procesWait(200);
+    	   UTF.clickelement("xpath", "//*[@index='MARKETING_ADD_POSTING|append_values_102']");
      	   Log4j.infoLog(" click_Addposting_UpperBord");
      	   }
          
        public void click_Addposting_lowerBord() {
-          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Add posting')]/div", 40);
-          UTF.clickelement("xpath", ".//*[contains(@title, 'Add posting')]/div");
-          Log4j.infoLog("click_Addposting_lowerBord");
+           UTF.clickelement("xpath", ".//*[contains(@title, 'Add posting')]");
+           Log4j.infoLog("click_Addposting_lowerBord");
           }
        public void click_Addposting_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_ADD_POSTING']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_ADD_POSTING']");
-  	      Log4j.infoLog("click_Addposting_edit");
+    	   UTF.clickelement("xpath", ".//span[@id='MARKETING_ADD_POSTING']/following::button[2]");
+  	       Log4j.infoLog("click_Addposting_edit");
   	     
   	      }
        public void delete_Addposting_Node() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_ADD_POSTING']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_ADD_POSTING']/following::button[1]");
-          Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
-          UTF.clickelement("partialLinkText", "Yes");
-          Log4j.infoLog("delete_Addposting_Node");
+    	   UTF.clickelement("xpath", ".//span[@id='MARKETING_ADD_POSTING']/following::button[1]");
+           UTF.clickelement("partialLinkText", "Yes");
+           Log4j.infoLog("delete_Addposting_Node");
           } 
        /*
         * 
@@ -2802,8 +2921,8 @@ public class ProjectSetUpComponeat {
         *  
         */
        public void click_AccountInformation_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_100,append_values_103,MARKETING_ACCOUNT_INFORMATION", 40);
-     	   UTF.clickelement("id", "append_values_100,append_values_103,MARKETING_ACCOUNT_INFORMATION");
+    	   Sync.procesWait(200);
+    	   UTF.clickelement("xpath", "//*[@index='MARKETING_ACCOUNT_INFORMATION|append_values_103']");
      	   Log4j.infoLog(" click_Addposting_UpperBord");
      	   }
          
@@ -2813,14 +2932,12 @@ public class ProjectSetUpComponeat {
           Log4j.infoLog("click_AccountInformation_lowerBord");
           }
        public void click_AccountInformation_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_ACCOUNT_INFORMATION']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_ACCOUNT_INFORMATION']");
+    	   UTF.clickelement("xpath", ".//span[@id='MARKETING_ACCOUNT_INFORMATION']/following::button[2]");
   	      Log4j.infoLog("click_AccountInformation_edit");
   	     
   	      }
        public void delete_AccountInformation_Node() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_ACCOUNT_INFORMATION']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_ACCOUNT_INFORMATION']/following::button[1]");
+    	  UTF.clickelement("xpath", ".//span[@id='MARKETING_ACCOUNT_INFORMATION']/following::button[1]");
           Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_AccountInformation_Node");
@@ -2833,8 +2950,8 @@ public class ProjectSetUpComponeat {
         *  
         */
        public void click_Competitoranalysis_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_100,append_values_104,MARKETING_COMPETITOR_ANALYSIS", 40);
-     	   UTF.clickelement("id", "append_values_100,append_values_104,MARKETING_COMPETITOR_ANALYSIS");
+    	   Sync.procesWait(200);
+    	   UTF.clickelement("xpath", "//*[@index='MARKETING_COMPETITOR_ANALYSIS|append_values_104']");
      	   Log4j.infoLog(" click_Competitoranalysis_UpperBord");
      	   }
          
@@ -2844,14 +2961,12 @@ public class ProjectSetUpComponeat {
           Log4j.infoLog("click_Competitoranalysis_lowerBord");
           }
        public void click_Competitoranalysis_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_COMPETITOR_ANALYSIS']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_COMPETITOR_ANALYSIS']");
+    	   UTF.clickelement("xpath", ".//span[@id='MARKETING_COMPETITOR_ANALYSIS']/following::button[2]");
   	      Log4j.infoLog("click_AccountInformation_edit");
   	     
   	      }
        public void delete_Competitoranalysis_Node() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_COMPETITOR_ANALYSIS']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_COMPETITOR_ANALYSIS']/following::button[1]");
+    	   UTF.clickelement("xpath", ".//span[@id='MARKETING_COMPETITOR_ANALYSIS']/following::button[1]");
           Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_AccountInformation_Node");
@@ -2864,25 +2979,24 @@ public class ProjectSetUpComponeat {
         *  
         */
        public void click_Socialchart_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_100,append_values_105,MARKETING_SOCIAL_CHART", 40);
-     	   UTF.clickelement("id", "append_values_100,append_values_105,MARKETING_SOCIAL_CHART");
+    	   Sync.procesWait(200);
+    	   UTF.clickelement("xpath", "//*[@index='MARKETING_SOCIAL_CHART|append_values_105']");
      	   Log4j.infoLog(" click_Socialchart_UpperBord");
      	   }
          
        public void click_Socialchart_lowerBord() {
-          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Social chart')]/div", 40);
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Social chart')]", 40);
           UTF.clickelement("xpath", ".//*[contains(@title, 'Social chart')]/div");
           Log4j.infoLog("click_Socialchart_lowerBord");
           }
        public void click_Socialchart_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOCIAL_CHART']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_SOCIAL_CHART']");
+         
+    	   UTF.clickelement("xpath", ".//span[@id='MARKETING_SOCIAL_CHART']/following::button[2]");
   	      Log4j.infoLog("click_Socialchart_edit");
   	     
   	      }
        public void delete_Socialchart_Node() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_SOCIAL_CHART']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_SOCIAL_CHART']/following::button[1]");
+    	  UTF.clickelement("xpath", ".//span[@id='MARKETING_SOCIAL_CHART']/following::button[1]");
           Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_Socialchart_Node");
@@ -2896,20 +3010,19 @@ public class ProjectSetUpComponeat {
         *  
         */
        public void click_PushNotifications_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_36,append_values_106,MARKETING_PUSH_NOTIFICATIONS", 40);
-     	   UTF.clickelement("id", "append_values_36,append_values_106,MARKETING_PUSH_NOTIFICATIONS");
+    	   Sync.procesWait(200);
+    	   UTF.clickelement("xpath", "//*[@index='MARKETING_PUSH_NOTIFICATIONS|append_values_106']");
      	   Log4j.infoLog(" click_Socialchart_UpperBord");
      	   }
          
        public void click_PushNotifications_lowerBord() {
           Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Push Notifications')]/div", 40);
-          UTF.clickelement("xpath", ".//*[contains(@title, 'Push Notifications')]/div");
+          UTF.clickelement("xpath", ".//*[contains(@title, 'Push Notifications')]");
           Log4j.infoLog("click_Socialchart_lowerBord");
           }
       
        public void delete_PushNotifications_Node() {
-          Sync.elementToBeClickable("xpath", ".//span[@id='MARKETING_MARKETING_MANAGEMENT']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//span[@id='MARKETING_MARKETING_MANAGEMENT']/following::button[1]");
+    	  UTF.clickelement("xpath", ".//span[@id='MARKETING_PUSH_NOTIFICATIONS']/following::button[1]");
           Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_Socialchart_Node");
@@ -2923,25 +3036,23 @@ public class ProjectSetUpComponeat {
         *  
         */
        public void click_MOBILE_PUSH_NOTIFICATIONS_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_106,append_values_107,MARKETING_MOBILE_PUSH_NOTIFICATIONS", 40);
-     	   UTF.clickelement("id", "append_values_106,append_values_107,MARKETING_MOBILE_PUSH_NOTIFICATIONS");
+    	   Sync.procesWait(200);
+    	   UTF.clickelement("xpath", "//*[@index='MARKETING_MOBILE_PUSH_NOTIFICATIONS|append_values_107']");
      	   Log4j.infoLog("click_MOBILE_PUSH_NOTIFICATIONS_UpperBord");
      	   }
          
        public void click_MOBILE_PUSH_NOTIFICATIONS_lowerBord() {
-          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Mobile push notifications')]/div", 40);
+          Sync.elementToBeClickable("xpath", ".//*[contains(@title, 'Mobile push notifications')]", 40);
           UTF.clickelement("xpath", ".//*[contains(@title, 'Mobile push notifications')]/div");
           Log4j.infoLog("click_MOBILE_PUSH_NOTIFICATIONS_lowerBord");
           }
        public void click_MOBILE_PUSH_NOTIFICATIONS_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']");
+    	   UTF.clickelement("xpath", ".//span[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']/following::button[2]");;
   	      Log4j.infoLog("click_MOBILE_PUSH_NOTIFICATIONS_edit");
   	     
   	      }
        public void delete_MOBILE_PUSH_NOTIFICATIONS_Node() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']/following::button[1]");
+    	  UTF.clickelement("xpath", ".//span[@id='MARKETING_MOBILE_PUSH_NOTIFICATIONS']/following::button[2]");
           Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_MOBILE_PUSH_NOTIFICATIONS_Node");
@@ -2954,8 +3065,8 @@ public class ProjectSetUpComponeat {
         *  
         */
        public void click__WEB_PUSH_NOTIFICATIONS_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_106,append_values_108,MARKETING_WEB_PUSH_NOTIFICATIONS", 40);
-     	   UTF.clickelement("id", "append_values_106,append_values_108,MARKETING_WEB_PUSH_NOTIFICATIONS");
+    	   Sync.procesWait(200);
+    	   UTF.clickelement("xpath", "//*[@index='MARKETING_WEB_PUSH_NOTIFICATIONS|append_values_108']");
      	   Log4j.infoLog("click_MOBILE_PUSH_NOTIFICATIONS_UpperBord");
      	   }
          
@@ -2965,14 +3076,12 @@ public class ProjectSetUpComponeat {
           Log4j.infoLog("click__WEB_PUSH_NOTIFICATIONS_lowerBord");
           }
        public void click__WEB_PUSH_NOTIFICATIONS_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']");
+    	   UTF.clickelement("xpath", ".//span[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']/following::button[2]");
   	      Log4j.infoLog("click__WEB_PUSH_NOTIFICATIONS_edit");
   	     
   	      }
        public void delete__WEB_PUSH_NOTIFICATIONS_Node() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']/following::button[1]");
+    	  UTF.clickelement("xpath", ".//span[@id='MARKETING_WEB_PUSH_NOTIFICATIONS']/following::button[1]");
           Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete_MOBILE_PUSH_NOTIFICATIONS_Node");
@@ -2985,8 +3094,8 @@ public class ProjectSetUpComponeat {
         *  
         */
        public void click__IN_APP_MESSAGES_UpperBord() {
-     	   Sync.elementToBeClickable("id", "append_values_106,append_values_109,MARKETING_IN_APP_MESSAGES", 40);
-     	   UTF.clickelement("id", "append_values_106,append_values_109,MARKETING_IN_APP_MESSAGES");
+    	   Sync.procesWait(200);
+    	   UTF.clickelement("xpath", "//*[@index='MARKETING_IN_APP_MESSAGES|append_values_109']");
      	   Log4j.infoLog("click__IN_APP_MESSAGES_UpperBord");
      	   }
          
@@ -2996,14 +3105,12 @@ public class ProjectSetUpComponeat {
           Log4j.infoLog("click__IN_APP_MESSAGES_lowerBord");
           }
        public void click__IN_APP_MESSAGES_edit() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_IN_APP_MESSAGES']", 40);
-  	      UTF.clickelement("xpath", ".//button[@id='MARKETING_IN_APP_MESSAGES']");
+    	  UTF.clickelement("xpath", ".//span[@id='MARKETING_IN_APP_MESSAGES']/following::button[2 ]");
   	      Log4j.infoLog("click__IN_APP_MESSAGES_edit");
   	     
   	      }
        public void delete__IN_APP_MESSAGES_Node() {
-          Sync.elementToBeClickable("xpath", ".//button[@id='MARKETING_IN_APP_MESSAGES']/following::button[1]", 40);
-          UTF.clickelement("xpath", ".//button[@id='MARKETING_IN_APP_MESSAGES']/following::button[1]");
+    	  UTF.clickelement("xpath", ".//span[@id='MARKETING_IN_APP_MESSAGES']/following::button[1]");
           Sync.textToBePresentInElementLocated("partialLinkText", "Yes", 40, "Yes");
           UTF.clickelement("partialLinkText", "Yes");
           Log4j.infoLog("delete__IN_APP_MESSAGES_Node");
@@ -3021,9 +3128,8 @@ public class ProjectSetUpComponeat {
          *  
          */
          public void click_CustomerScore_UpperBord() {
-        	
-        	   UTF.clickelement("id", "append_values_36,append_values_79,MARKETING_CUSTOMER_SCORE");
-        	   Log4j.infoLog("click__CustomerScore_UpperBord");
+        	   UTF.clickelement("xpath", ".//*[@index='MARKETING_CUSTOMER_SCORE|append_values_79']");
+        	   Log4j.infoLog("click_CustomerScore_UpperBord");
         	   }
           
        
@@ -3048,26 +3154,104 @@ public class ProjectSetUpComponeat {
           *  
           */
           public void click_SourceWise_UpperBord() {
-         	
-         	   UTF.clickelement("id", "append_values_79,append_values_86,MARKETING_CUSTOMER_SCORE_SOURCE_WISE");
+         	   Sync.procesWait(2000);
+         	   UTF.clickelement("xpath", ".//*[@index='MARKETING_CUSTOMER_SCORE_SOURCE_WISE|append_values_86']");
          	   Log4j.infoLog("click__SourceWise_UpperBord()");
          	   }
            
           public void click_SourceWise_edit() {
-                UTF.clickelement("xpath", ".//button[@id='MARKETING_CUSTOMER_SCORE_SOURCE_WISE']");
-      	        Log4j.infoLog("click_SourceWise_edit");
-      	     
-      	      }
+               UTF.clickelement("xpath", ".//span[@id='MARKETING_CUSTOMER_SCORE_SOURCE_WISE']/following::button[2]");
+      	       Log4j.infoLog("click_SourceWise_edit");
+      	       }
           public void click_SourceWise_lowerBord() {
-            UTF.clickelement("xpath", ".//*[contains(@title, 'Source Wise')]/div");
-            Log4j.infoLog("click_SourceWise_lowerBord");
-            }
+               UTF.clickelement("xpath", ".//*[contains(@title, 'Source Wise')]");
+               Log4j.infoLog("click_SourceWise_lowerBord");
+               }
           
           public void delete_SourceWise_Node() {
-            UTF.clickelement("xpath", ".//button[@id='MARKETING_CUSTOMER_SCORE_SOURCE_WISE']/following::button[1]");
+            UTF.clickelement("xpath", ".//span[@id='MARKETING_CUSTOMER_SCORE_SOURCE_WISE']/following::button[1]");
             UTF.clickelement("partialLinkText", "Yes");
             Log4j.infoLog("delete_SourceWise_Node");
             } 
+          
+          public void verifying_Sourcetypes__SourceWise_Node(String datasheetname) throws Exception{
+        	  String Source_Type= readData.getdata(datasheetname, "Source_Type");
+        	  ArrayList<String> currentOptionssourc = new ArrayList<>();
+        	  Sync.procesWait(2000);
+              List<WebElement>sourctypewebelemnts= UTF.findelements("xpath", ".//*[@id='source_type_id']");
+        	  for(int i=0;i<sourctypewebelemnts.size();i++) {
+        	      currentOptionssourc.add(sourctypewebelemnts.get(i).getText().trim()); 
+        	  }
+        	  
+        	  String[] Source_TypeArry=Source_Type.split("/");
+        	  for(int i=0;i<Source_TypeArry.length;i++) {
+        		  Assert.assertTrue(currentOptionssourc.get(0).contains(Source_TypeArry[i]), "this are  present in source");
+        		  Log4j.infoLog("this are present in source node");
+        	  }
+        	  }
+          
+          public void deleteSourcetypesscoreTable() {
+        	  Sync.procesWait(3000);
+        	  UTF.SwitchToFrameByWebElement("id", "Dynamic_Frame");
+  	 	      Log4j.infoLog("switch the frame");
+        	  List<WebElement>tablebutton=UTF.findelements("xpath", "//*[@id='tablelist']/tbody/tr/td[5]/button");
+        	  for(int i=0;i< tablebutton.size();i++) {
+        		  tablebutton.get(i).click();
+        		  List<WebElement>SourceType=UTF.findelements("xpath", "//*[@id='tablelist']/tbody/tr/td[3]/h4");
+        		  for(int j=0;j<SourceType.size();j++) {
+          			if(SourceType.get(j).getText().replaceAll("Source Type:", "").trim().equals("Landing Page")) {
+          				Log4j.infoLog("landingpage");
+          				List<WebElement>SourceName=UTF.findelements("xpath", "//*[@id='tablelist']/tbody/tr/td[4]/h4");
+          				//   String sourctyprID=SourceType.get(i).getAttribute("id");
+        				   System.out.println(SourceType.get(i).getAttribute("id"));
+        				   for(int k=0;k<SourceName.size();k++) 
+        				     {
+        					if(SourceName.get(k).getText().replaceAll("Source Name:", "").trim().equals("Google")) {
+        						Log4j.infoLog( "google");
+        						 String SourceNameID=SourceType.get(i).getAttribute("id");
+        						 System.out.println(SourceNameID);
+        						 k++;
+                                   break;
+        						 
+        						}
+        					else {
+        						Log4j.infoLog("*********second for looppp********");
+        						k++;
+        						break;
+        					}
+        					
+        				      }
+          			}
+          			else {
+          				Log4j.infoLog("*****************  FIST for loop ************");
+          			}
+        	  }
+        	  }
+        	 /* for(int i=0;i< tablebutton.size();i++) {
+        		  UTF.clickelement("xpath", "//*[@id='tablelist']/tbody/tr/td[5]/button[i]");
+        		  List<WebElement>SourceType=UTF.findelements("xpath", "//*[@id='tablelist']/tbody/tr/td[3]/h4");
+        		  for(int j=0;j<SourceType.size();j++) {
+        			if(SourceType.get(i).getText().replaceAll("Source Type:", "").trim().equals("Landing Page")) {
+        				String sourctyprID=SourceType.get(i).getAttribute("id");
+        				System.out.println(sourctyprID);
+        				List<WebElement>SourceName=UTF.findelements("xpath", "//*[@id='tablelist']/tbody/tr/td[4]/h4");
+        				for(int k=0;k<SourceName.size();k++) {
+        					if(SourceName.get(k).getText().replaceAll("Source Name:", "").trim().equals("Google")) {
+        					
+        						String SourceNameID=SourceType.get(i).getAttribute("id");
+        						System.out.println(SourceNameID);
+        					}
+        				}
+        			}
+        			else {
+        				Log4j.infoLog("not exist");
+        			}
+        		  }
+        	  }
+        	  */
+        	  
+        	  
+          }
           
          public void SourceWiseScore(String datasheetname) throws Exception {
              String Dynamic_Source=	 readData.getdata(datasheetname, "Dynamic_Source");
@@ -3087,11 +3271,10 @@ public class ProjectSetUpComponeat {
         	 UTF.inputText("id", "sourcescore", Source_Score);
         	 Log4j.infoLog("entring score  ");
         	 
-        	 
-        	 
         	 UTF.clickelement("id", "fieldsssubmit");
         	 Log4j.infoLog("click the save buttion");
-         }
+            }
+         
           
 
           /*
@@ -3105,9 +3288,9 @@ public class ProjectSetUpComponeat {
            *  
            */
            public void click__FieldWise_UpperBord() {
-          	
-          	   UTF.clickelement("id", "append_values_79,append_values_87,MARKETING_CUSTOMER_SCORE_FIELDS_WISE");
-          	   Log4j.infoLog("click__FieldWise_UpperBord()");
+          	  Sync.procesWait(2000);
+        	   UTF.clickelement("xpath", ".//*[@index='MARKETING_CUSTOMER_SCORE_FIELDS_WISE|append_values_87']");
+          	   Log4j.infoLog("click_FieldWise_UpperBord()");
           	   }
             
            
@@ -3120,16 +3303,63 @@ public class ProjectSetUpComponeat {
                UTF.clickelement("xpath", ".//button[@id='MARKETING_CUSTOMER_SCORE_FIELDS_WISE']");
      	        Log4j.infoLog("click_FieldWise_edit");
      	     
-     	      }
-           
+           }
            public void delete_FieldWise_Node() {
-             UTF.clickelement("xpath", ".//button[@id='click_FieldWise_edit']/following::button[1]");
+             UTF.clickelement("xpath", ".//span[@id='MARKETING_CUSTOMER_SCORE_FIELDS_WISE']/following::button[1]");
              UTF.clickelement("partialLinkText", "Yes");
              Log4j.infoLog("delete_FieldWise_Node");
              }
 	
+           public void Form_Type(String formtype) {
+        	   UTF.selectByVisibleText("xpath", ".//*[@id='Form_Type']", formtype);
+        	   Log4j.infoLog("select the from type");
+           }
+           public void selectDivision(String division) {
+        	   UTF.selectByVisibleText("xpath", ".//*[@id='Division_ID']",division);
+        	   Log4j.infoLog("select the division");
+           }
+           public void selectcoustemforms(String formstype ) {
+        	   UTF.selectByVisibleText("xpath", ".//*[@id='CustomFields_forms']", formstype);
+        	   Log4j.infoLog("select the  coustemform");
+           }
            
-        
+           public void fieldLables(String fieldlable) {
+        	   UTF.selectByVisibleText("xpath", ".//*[@id='CustomFields_Lables']", fieldlable);
+        	   Log4j.infoLog("select the fieldlable");
+           }
+           public void selectConditionaloperator(String condition) {
+        	   UTF.deselectByVisibleText("xpath", ".//*[@id='ConditionalOperator']", condition);
+        	   Log4j.infoLog("selectConditionaloperator");
+           }
+           
+           public void enterMatchingCriteria(String matchingcriteria) {
+        	   UTF.inputText("xpath", ".//*[@id='matchcriteria']", matchingcriteria);
+        	   Log4j.infoLog("enter the matchingcriteria");
+           }
+           public void enterfeldScore(String score) {
+        	   UTF.inputText("xpayh", ".//*[@id='fieldscore']", score);
+           }
+           
+           public void clickSave() {
+        	   UTF.clickelement("xpath", ".//*[@id='fieldsssubmit']");
+           }
+           
+           
+           
+           
+          public void Field_Wise_scor(String datasheetname) throws Exception {
+        	  String formtype=readData.getdata(datasheetname, "formtype");
+        	  String division=readData.getdata(datasheetname, "division");
+        	  String condition=readData.getdata(datasheetname, "condition");
+        	  String matchingcriteria=readData.getdata(datasheetname, "matchingcriteria");
+        	  String score=readData.getdata(datasheetname, "scores");
+        	  Form_Type(formtype);
+        	  selectDivision(division);
+        	  selectConditionaloperator(condition);
+        	  enterMatchingCriteria(matchingcriteria);
+        	  enterfeldScore(score);
+        	  clickSave();
+          }
         
         
        

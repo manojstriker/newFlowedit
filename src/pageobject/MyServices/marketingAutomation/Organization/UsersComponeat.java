@@ -85,7 +85,13 @@ public class UsersComponeat {
 		    UTF.findElement("id", "addDesg").click();
 		    Sync.procesWait(2000);
 	        UTF.inputText("xpath", ".//*[@id='designtn']",Branchname );
-	        UTF.clickelement("id", "designatins");
+	        UTF.clickelement("id", "designatins"); 
+	        if(UTF.findElement("id", "desg_msg").getText().equals("Branch name already exist")) {
+	        	Log4j.errorLogLog("this branch is already created");
+	        }
+	        else {
+	        	Log4j.infoLog("this branch is new ly created");
+	        }
 	        UTF.clickelement("xpath", "//*[@id='designationadd']/div/div/div[1]/button");
 	        UTF.clickelement("xpath", ".//*[@id='refreshDesg']");
 	        Sync.procesWait(2000);
@@ -99,9 +105,9 @@ public class UsersComponeat {
 	         UTF.inputText("id", "group",AddDivisionname );
 	         Log4j.infoLog("enter the AddDivision ");
 	         UTF.clickelement("id", "groups");
-	         Log4j.infoLog("click the  ADDbuttion");
+	         Log4j.infoLog("click the  division  ADDbuttion");
 	         UTF.clickelement("xpath", ".//*[@id='groupadd']/div/div/div[1]/button");
-	         Log4j.infoLog("click the  closebutton");
+	         Log4j.infoLog("click the division  closebutton");
 	         UTF.clickelement("xpath", " .//*[@id='refreshGroup']");
 	         Sync.procesWait(2000);
 	         UTF.selectByVisibleText("id", "Group_ID",AddDivisionname );
@@ -111,22 +117,22 @@ public class UsersComponeat {
    public void adduserRoles(String AddUserRole,String seleteLevelText,String SelectReportingRole,String AddUserRoles) {
   	     UTF.clickelement("id", "addUserrole");
 	     Log4j.infoLog("click the addUserrole");
-	    Sync.procesWait(2000);
+	     Sync.procesWait(2000);
 	     UTF.inputText("id", "deptname", AddUserRole);
-	     Log4j.infoLog("enter userrole");
+	     Log4j.infoLog("enter userrole....."+AddUserRole);
 	     
 	     UTF.selectByVisibleText("id", "Dept_Level", seleteLevelText);
-	     Log4j.infoLog("select the level");
+	     Log4j.infoLog("select the  user role level");
 	     Sync.procesWait(2000);
 	     UTF.selectByVisibleText("id", "Reporting_Dept", SelectReportingRole);
 	     Log4j.infoLog("select the ReportingRole");
 	     UTF.clickelement("id", "userroles");
-	     Log4j.infoLog("click the addbutton");
+	     Log4j.infoLog("click the   user crecation addbutton");
 	     UTF.clickelement("xpath", "//*[@id='userroleadd']/div/div/div[1]/button");
-	     Log4j.infoLog("click the close button");
-	   
+	     Log4j.infoLog("click the usercreation  close button");
+	     Sync.procesWait(2000);
 	     UTF.clickelement("xpath", ".//*[@id='refreshRole']");
-	    
+	     Sync.procesWait(2000);
 	     UTF.selectByVisibleText("id", "Dept_ID", AddUserRoles);
 	     Log4j.infoLog("select the add user role");
   	   
@@ -231,9 +237,151 @@ public class UsersComponeat {
    Log4j.infoLog("Day selected ");
    Sync.procesWait(2000);
    managersubmitbuttion();
- 
+   UTF.alertAcept();
    }
    
+   public void click_updatebutton(String datasheetname) throws Exception {
+	     String UserName=readData.getdata(datasheetname, "username");
+	     List<WebElement>UsertableWebElement=	UTF.findelements("xpath", "//table[@class='table smart-table']/tbody/tr/td[3]");
+	     for(int i=0;i<UsertableWebElement.size();i++) {
+	      if(UsertableWebElement.get(i).equals(UserName)) {
+	         UTF.clickelement("xpath", "//*[text()='"+UserName+"']/following::td[14]");
+	    	 }
+	    	 }
+             }
+
    
-   
+   public void update_User(String datasetname) throws Exception {
+	   String username=readData.getdata(datasetname, "username");
+
+	   String FistName=readData.getdata(datasetname, "FistName");
+	   String LastName=readData.getdata(datasetname, "LastName");
+
+	   String Emailaddress=readData.getdata(datasetname, "Emailaddress");
+	   String Mobilenumber=readData.getdata(datasetname, "Mobilenumber");
+	 
+	   String Branchname=readData.getdata(datasetname, "Branchname");
+	   String DivisionName=readData.getdata(datasetname, "DivisionName");
+	  
+	   String UserRole=readData.getdata(datasetname, "UserRole");
+	   String SelectReportingRole=readData.getdata(datasetname, "SelectReportingRole");
+	 
+	   String Country=readData.getdata(datasetname, "Country");
+	   String state=readData.getdata(datasetname, "state");
+	   String city=readData.getdata(datasetname, "city");
+	   String ContactAddress=readData.getdata(datasetname, "ContactAddress");
+	   String PinCode=readData.getdata(datasetname, "PinCode");
+	   String JoiningDateMonth=readData.getdata(datasetname, "JoiningDateManth");
+	   String JoiningDateyear=readData.getdata(datasetname, "JoiningDateyear");
+	   String EmployeeID=readData.getdata(datasetname, "EmployeeID");
+	   String DateOfBirthmonth=readData.getdata(datasetname, "DateOfBirthmanth");
+	   String DateOfBirthyear=readData.getdata(datasetname, "DateOfBirthyear");
+	   String Status=readData.getdata(datasetname, "Status");
+	   String acountyes_No=readData.getdata(datasetname, "acountyes_No");
+	  
+	   List<WebElement>UsertableWebElement=	UTF.findelements("xpath", "//table[@class='table smart-table']/tbody/tr/td[3]");
+	   for(int i=0;i<UsertableWebElement.size();i++) {
+	    if(UsertableWebElement.get(i).equals(username)) {
+	    	 UTF.clickelement("xpath", "//*[text()='"+username+"']");
+	         UTF.rightArrowlick("xpath", "//*[text()='"+username+"']");
+	         UTF.clickelement("xpath", "//*[text()='"+username+"']/following::td[14]");
+	    	 }
+	    	 }
+           
+	   
+	   
+	   
+	   UTF.inputText("id", "First_Name", FistName);
+	   Log4j.infoLog("enter the FistName");
+	  
+	   UTF.inputText("id", "Last_Name", LastName);
+	   Log4j.infoLog("enter LastName");
+	   
+	   UTF.inputText("name", "Email_ID",Emailaddress);
+	   Log4j.infoLog("enter Emailaddress");
+	  
+	   UTF.clickelement("id", "Mobile_Number");
+	   UTF.inputText("id", "Mobile_Number", Mobilenumber);
+	   Log4j.infoLog("enter Mobilenumber");
+	 
+	   UTF.selectByVisibleText("id", "Branch_ID",Branchname );
+	   Log4j.infoLog("branch is selected");
+	   
+	   UTF.selectByVisibleText("id", "Group_ID",DivisionName );
+       Log4j.infoLog("select the AddDivision");
+	   
+       UTF.selectByVisibleText("id", "Dept_ID", UserRole);
+	   Log4j.infoLog("select the add user role"); 
+	   
+	   
+	   UTF.selectByVisibleText("id", "Reporting_Dept_UserId", SelectReportingRole);
+	   Log4j.infoLog("select the deporting");
+	   
+	   UTF.selectByVisibleText("id", "countryid", Country);
+	   Log4j.infoLog("select the Country");
+	   UTF.selectByVisibleText("id", "stateid",state );
+	   Log4j.infoLog("select the state");
+	   UTF.selectByVisibleText("id", "cityid", city);
+	   Log4j.infoLog("select the city");
+	   UTF.inputText("id", "Contact_Address", ContactAddress);
+	   Log4j.infoLog("select the ContactAddress");
+	   UTF.inputText("id", "Pincode", PinCode);
+	   Log4j.infoLog("select the PinCode");
+	   
+	   UTF.clickelement("id", "DOJ");
+	   Log4j.infoLog("select Date of join ");
+	   
+	   UTF.selectByVisibleText("className", "ui-datepicker-month", JoiningDateMonth);
+	   Log4j.infoLog("select JoiningDateManth ");
+	  
+	   UTF.selectByValue("className", "ui-datepicker-year", JoiningDateyear);
+	   Log4j.infoLog("select JoiningDateyear ");
+	   UTF.clickelement("partialLinkText", "6");
+	   Log4j.infoLog("select DAY ");
+	   UTF.inputText("id", "Emp_ID", EmployeeID);
+	   Log4j.infoLog("EmployeeID ");
+
+	   UTF.clickelement("id", "DOB");
+	   Log4j.infoLog("select DateOfBirth ");
+	   Sync.procesWait(2000);
+	   UTF.selectByVisibleText("className", "ui-datepicker-month", DateOfBirthmonth);
+	   Log4j.infoLog("select DateOfBirth month ");
+	  
+	   Sync.procesWait(2000);
+	   UTF.selectByValue("className", "ui-datepicker-year", DateOfBirthyear);
+	   Log4j.infoLog("select DateOfBirthyear ");
+	   UTF.clickelement("partialLinkText", "6");
+	   Log4j.infoLog("Day selected ");
+	   status_Active_InActive(Status);
+	   IsAccountLocked_yes_No(acountyes_No);
+	   clicksubmit_information();
+	   
+	   
+	   
+   }
+   public void clicksubmit_information() {
+	   UTF.clickelement("xpath", ".//*[@id='submitbtn']");
+   }
+   public void status_Active_InActive(String Status) {
+	   UTF.clickelement("xpath", "//*[text()='"+Status+"']");
+	   Log4j.infoLog(Status+"....status is selected");
+	   
+   }
+   public void IsAccountLocked_yes_No(String acountyes_No) {
+	   UTF.clickelement("xpath", "//*[text()='"+acountyes_No+"']");
+	   Log4j.infoLog(acountyes_No+"....status is selected");
+   }
+   public void IsAvalable(String datasheetname) throws Exception {
+	     String UserName=readData.getdata(datasheetname, "username");
+	     List<WebElement>UsertableWebElement=UTF.findelements("xpath", "//table[@class='table smart-table']/tbody/tr/td[3]");
+	     for(int i=0;i<UsertableWebElement.size();i++) {
+	      if(UsertableWebElement.get(i).equals(UserName)) {
+	         UTF.clickelement("xpath", "//*[text()='manojkumar']/following::td[12]");
+	           UTF.alertAcept();
+			   UTF.alertAcept();
+	    	 }
+	    	 }
+           }
+  
+      
 }

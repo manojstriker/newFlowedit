@@ -18,7 +18,7 @@ public class CXO_Creation {
 		  user.click_Users();
 		  user.clcik_CXO();
 		  user.verifying_Users_features("userTableFeatures");
-		  user.  click_UserCreationPlseButton();
+		  user. click_UserCreationPlseButton();
 		  user.userCeation("cxo_user");
 		  }
 	  catch (Exception e) {

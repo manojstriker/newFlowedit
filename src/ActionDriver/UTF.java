@@ -183,6 +183,20 @@ import utilities.PropertiesReusabuls;
 		  Actions action=new Actions(driver);
 		  action.doubleClick(findElement(attributeType,attributeValue)).build().perform();
 	  }
+	  public void move() {
+		  Actions action=new Actions(driver);
+		  action.sendKeys(Keys.ARROW_RIGHT).clickAndHold().build().perform();
+	  }
+	  
+	  
+	  
+	  public static void rightArrowlick(String attributeType,String attributeValue) {
+		  Actions action=new Actions(driver);
+		  action.clickAndHold(findElement(attributeType, attributeValue)).build().perform();
+		  action.moveByOffset(0, 15).build().perform();
+		  
+	  }
+	  
 	  public static void takeScrenShort(String filepath) {
 		File srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
@@ -282,6 +296,12 @@ import utilities.PropertiesReusabuls;
        JavascriptExecutor executor = (JavascriptExecutor)driver;
        executor.executeScript("arguments[0].click();", element);
 	  }
+	  public static void javaScriptScroolhorizontally(String attributeType, String attributeValue) {
+		    WebElement element =findElement(attributeType,attributeValue);
+		    JavascriptExecutor js = (JavascriptExecutor) driver;
+		    js.executeScript("arguments[0].scrollIntoView();", element);
+	  }
+	  
 	  /*
 	  public static void javaScriptSchroolDown(findElement(String attributeType, String attributeValue ) ) {
 		  JavaScriptException js = (JavaScriptException)driver;

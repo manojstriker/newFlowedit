@@ -26,7 +26,7 @@ public class CreatingLanding_Page {
 			project.click_landingpage_lowerBord();
 			project.click_landingpage_edit();
 			project.Art_Board_Properties_submitbutton();
-			project.Click_Default_Templates();
+			project.Click_Default_Templates_forms();
 			project.DefaltCategoryType();
 		    }
 			catch (Exception e) {

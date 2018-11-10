@@ -25,8 +25,9 @@ public class Creating_SourceWiseScore {
 				project.click_SourceWise_UpperBord();
 				project.click_SourceWise_lowerBord();
 				project.click_SourceWise_edit();
-				project.clickPlsebutton();
-				project.SourceWiseScore("SourceWise");
+				project.deleteSourcetypesscoreTable();
+				//project.clickPlsebutton();
+			//	project.SourceWiseScore("SourceWise");
 			    }
 				catch (Exception e) {
 				e.printStackTrace();
@@ -45,6 +46,6 @@ public class Creating_SourceWiseScore {
 
 	  @AfterMethod
 	  public void afterMethod() {
-		  UTF.closebrowser();
+		 // UTF.closebrowser();
 	  }
 }

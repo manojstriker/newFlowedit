@@ -17,7 +17,6 @@ public class AddDivision {
 		  division=new DivisionsComponeat("MyServices/MarketingAutomation/Organization/Division.xml","addDivision");
 		  division. ClickOrganization();
 		  division.click_Divisions();
-		  
 		  division.app();
 		 // division.Add_Division("divisionCreation_cxo");
 		//  division.update("divisionCreation_cxo");

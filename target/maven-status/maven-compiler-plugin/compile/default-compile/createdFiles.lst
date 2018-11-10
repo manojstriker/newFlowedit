@@ -1,14 +1,1 @@
-pageobject/MyServices/SalesAutomation.class
-pageobject/MyServices/MarketingAutomation.class
-testCases/MyServices/MarketingAutomation/TestCases.class
-utilities/XmlReader.class
-utilities/ExcelReusables.class
-ActionDriver/Sync.class
-utilities/PropertiesReusabuls.class
-basedriver/Browser.class
-utilities/Login.class
-testCases/MyServices/MarketingAutomation/Test.class
 utilities/TextfileReusable.class
-utilities/Log4j.class
-utilities/Listeners.class
-ActionDriver/UTF.class

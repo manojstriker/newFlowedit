@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-10-09T17:59:38Z" name="Default suite" finished-at="2018-10-09T18:00:06Z" duration-ms="27515">
+  <suite name="Default suite" duration-ms="14592" started-at="2018-11-09T12:27:11Z" finished-at="2018-11-09T12:27:26Z">
     <groups>
     </groups>
-    <test started-at="2018-10-09T17:59:38Z" name="Default test" finished-at="2018-10-09T18:00:06Z" duration-ms="27515">
-      <class name="testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying@44a7bfbc]" started-at="2018-10-09T17:59:38Z" name="beforeMethod" finished-at="2018-10-09T17:59:56Z" duration-ms="17229" status="PASS">
+    <test name="Default test" duration-ms="14592" started-at="2018-11-09T12:27:11Z" finished-at="2018-11-09T12:27:26Z">
+      <class name="testCases.MyService.MarketingAutomation.MyAccount.currentPlan.Verifying_currentPlan_Componeat_table">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testCases.MyService.MarketingAutomation.MyAccount.currentPlan.Verifying_currentPlan_Componeat_table@5d7ca698]" name="beforeMethod" is-config="true" duration-ms="11312" started-at="2018-11-09T12:27:11Z" finished-at="2018-11-09T12:27:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifying_ProjuctSetUp_table_Fetures()[pri:0, instance:testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying@44a7bfbc]" started-at="2018-10-09T17:59:56Z" name="verifying_ProjuctSetUp_table_Fetures" finished-at="2018-10-09T18:00:06Z" duration-ms="10192" status="PASS">
+        <test-method status="PASS" signature="verifying_currentPlan_Componeat_table()[pri:0, instance:testCases.MyService.MarketingAutomation.MyAccount.currentPlan.Verifying_currentPlan_Componeat_table@5d7ca698]" name="verifying_currentPlan_Componeat_table" duration-ms="3135" started-at="2018-11-09T12:27:22Z" finished-at="2018-11-09T12:27:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifying_ProjuctSetUp_table_Fetures -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying@44a7bfbc]" started-at="2018-10-09T18:00:06Z" name="afterMethod" finished-at="2018-10-09T18:00:06Z" duration-ms="0" status="PASS">
+        </test-method> <!-- verifying_currentPlan_Componeat_table -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testCases.MyService.MarketingAutomation.MyAccount.currentPlan.Verifying_currentPlan_Componeat_table@5d7ca698]" name="afterMethod" is-config="true" duration-ms="2" started-at="2018-11-09T12:27:26Z" finished-at="2018-11-09T12:27:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testCases.Home.ProjectSetUp.ProjuctSetUp_table_Features_verifying -->
+      </class> <!-- testCases.MyService.MarketingAutomation.MyAccount.currentPlan.Verifying_currentPlan_Componeat_table -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
